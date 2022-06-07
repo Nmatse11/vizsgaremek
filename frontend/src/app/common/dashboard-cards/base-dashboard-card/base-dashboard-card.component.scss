@@ -1,0 +1,5 @@
+@use '../../../../assets/modules/color' as *;
+
+.card {
+  background-color: $dashboard-card-backgroundcolor;
+}

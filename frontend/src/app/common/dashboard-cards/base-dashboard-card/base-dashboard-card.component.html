@@ -1,0 +1,21 @@
+<div class="card border-dark text-white mb-3" style="max-width: 18rem;">
+  <div class="card-header">
+    <h5>{{ cardTitle }}</h5>
+  </div>
+  <div class="card-body text-white">
+    <div class="card-icon">
+      <i class="material-icons">{{ materialIcon }}</i>
+    </div>
+    <h4 *ngIf="materialIcon == 'storage'" class="card-title text-right h2">{{ cardValue$ | async | customCurrency }}
+    </h4>
+    <h4 *ngIf="materialIcon != 'storage'" class="card-title text-right h2">{{ cardValue$ | async | customNumber}}
+      {{ valueType }}
+    </h4>
+  </div>
+  <div *ngIf="materialIcon == 'storage'" class="card-footer text-muted">
+    <h6 class="text-right">{{ text[3].title }} : {{ footerValue | async | customCurrency }}</h6>
+  </div>
+  <div *ngIf="materialIcon != 'storage'" class="card-footer text-muted">
+    <h6 class="text-right">{{ text[3].title }} : {{ footerValue | async | customNumber }} {{ valueType }}</h6>
+  </div>
+</div>

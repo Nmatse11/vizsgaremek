@@ -1,0 +1,32 @@
+<div *ngIf="loading === true" class="container">
+  <div class="row my-3">
+    <div class="col-12 col-lg-8 offset-lg-2 d-md-flex flex-sm-row">
+      <div class="col-12 col-md-6">
+        <app-base-dashboard-menu-card [cardTitle]="cardTitle1" [materialIcon]="materialIcon1"
+          [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle2" [menuCodes]="menuCodesPrimeWithoutN"
+          [menuNumber]="menuNumberPrime" [key]="key1" [valueType]="valueType">
+        </app-base-dashboard-menu-card>
+      </div>
+      <div class="col-12 col-md-6">
+        <app-base-dashboard-menu-card [cardTitle]="cardTitle1" [materialIcon]="materialIcon1"
+          [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle2" [menuCodes]="menuCodesOption"
+          [menuNumber]="menuNumberOption" [key]="key1" [valueType]="valueType">
+        </app-base-dashboard-menu-card>
+      </div>
+    </div>
+    <div class="col-12 col-lg-8 offset-lg-2 d-md-flex flex-sm-row">
+      <div class="col-12 col-md-6">
+        <app-base-dashboard-menu-card [cardTitle]="cardTitle2" [materialIcon]="materialIcon2"
+          [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle2" [menuCodes]="menuCodesPrime"
+          [menuNumber]="menuOrderPrime" [key]="key2" [valueType]="valueType">
+        </app-base-dashboard-menu-card>
+      </div>
+      <div class="col-12 col-md-6">
+        <app-base-dashboard-menu-card [cardTitle]="cardTitle2" [materialIcon]="materialIcon2"
+          [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle2" [menuCodes]="menuCodesOption"
+          [menuNumber]="menuOrderOption" [key]="key2" [valueType]="valueType">
+        </app-base-dashboard-menu-card>
+      </div>
+    </div>
+  </div>
+</div>

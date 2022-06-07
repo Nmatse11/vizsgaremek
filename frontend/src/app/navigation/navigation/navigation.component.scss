@@ -1,0 +1,43 @@
+@use '../../../assets/modules/color' as *;
+
+.nav {
+
+  &-item &-link{
+       color: $button-color;
+       font-size: 0.8rem;
+       letter-spacing: 0.2rem;
+       margin: 0 1rem;
+       text-transform: uppercase;
+
+       &:hover {
+        color: $edit-button-backgroundcolor;
+      }
+   }
+
+   &-text {
+    margin: 0 0 0 0.4rem;
+   }
+
+}
+
+.dropdown-item{
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: arial;
+    color: $button-color-hover;
+    font-weight: lighter;
+    background-color: $edit-button-backgroundcolor;
+    transform-origin: center;
+
+    &:hover {
+      color: $button-color;
+    }
+}
+
+.navbar-brand{
+    text-transform:uppercase;
+    font-family:impact;
+    font-size: 1.5rem;
+    color: $button-color;
+    letter-spacing: 0.1rem;
+}

@@ -1,0 +1,47 @@
+@use '../../../../assets/modules/color' as *;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.tabletitle {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+}
+
+.admintable {
+  width: 100%
+}
+
+.admintd {
+  width: 15%
+}
+
+button, .nav-link, mat-paginator, mat-checkbox, mat-icon-button  {
+  pointer-events: auto;
+}
+
+.mat-add {
+  background-color: $list-button-backgroundcolor;
+  color: $button-color;
+}
+
+.mat-edit {
+  background-color: $edit-button-backgroundcolor;
+  color: $button-color;
+}
+
+.mat-delete {
+  background-color: $list-button-backgroundcolor;
+  color: $button-color;
+}
+
+::ng-deep mat-tooltip-component{
+  & .mat-edit, .mat-boolean {
+    background-color: $edit-button-backgroundcolor;
+  }
+
+  & .mat-delete{
+    background-color: $list-button-backgroundcolor;
+}
+
+}
+
+

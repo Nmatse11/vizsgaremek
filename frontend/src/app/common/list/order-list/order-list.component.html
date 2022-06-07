@@ -1,0 +1,29 @@
+<div class="container pt-3">
+  <hr>
+  <hr>
+  <div class="button-group d-flex flew-row justify-content-center">
+    <button mat-raised-button color="add" class="mr-3 pt-2 pb-1 orderButton" (click)="setOrderList('menu')">
+      <h2>{{ buttons[5].title }}</h2>
+    </button>
+    <button mat-raised-button color="add" class="pt-2 pb-1 orderButton" (click)="setOrderList('fastfood')">
+      <h2>{{ buttons[6].title }}</h2>
+    </button>
+  </div>
+  <hr>
+  <hr>
+</div>
+
+<app-base-list *ngIf="buttonClick === false" [List$]="List$" [columns]="columns" [componentName]="componentName"
+  [categoryName]="categoryName" [currencyPipeOn]="currencyPipeOn" [customerIdOn]="customerIdOn"
+  (removeById)="onDelete($event)">
+</app-base-list>
+
+<app-base-list *ngIf="buttonClick === true && buttonValue === 'menu'" [List$]="List$" [columns]="columns"
+  [componentName]="componentName" [categoryName]="categoryName" [currencyPipeOn]="currencyPipeOn"
+  [customerIdOn]="customerIdOn" (removeById)="onDelete($event)">
+</app-base-list>
+
+<app-base-list *ngIf="buttonClick === true && buttonValue === 'fastfood'" [List$]="List$" [columns]="columns"
+  [componentName]="componentName" [categoryName]="categoryName" [currencyPipeOn]="currencyPipeOn"
+  [customerIdOn]="customerIdOn" (removeById)="onDelete($event)">
+</app-base-list>
