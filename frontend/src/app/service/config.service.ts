@@ -53,6 +53,15 @@ export interface IDashboardTitleItem {
   title: string;
 }
 
+export interface IChartLabelItem {
+  label: string;
+}
+
+export interface IDateLabelItem {
+  label: string;
+  shortlabel: string
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -226,20 +235,28 @@ export class ConfigService {
     {title: 'Menürendelések', valueType: 'db'},
     {title: 'Gyorskajarendelések', valueType: 'db'},
     {title: 'Kintlévőségek'},
-    {title: 'Elérhető ételek száma', valueType: 'db'},
+    {title: 'Ételfajták', valueType: 'db'},
     {title: 'Leadott rendelések száma', valueType: 'db'},
     {title: "Név"},
-    {title: "Darab"}
+    {title: "Darab"},
+    {title: "Realizált bevétel"},
+    {title: "Bevétel"},
+    {title: "Összesen"},
+    {title: "Név"},
+    {title: "Rendelések száma"},
+    {title: "Realizált bevétel"},
+    {title: "Kiszállítások"},
   ]
 
   dashboardTitleItems: IDashboardTitleItem[] = [
     {title: 'Összesítő adatok'},
     {title: 'Még nem teljesített rendelések'},
     {title: 'Menü - Statisztika'},
-    {title: 'Összesen'}
+    {title: 'Összesen'},
+    {title: 'Gyorskaja - Statisztika'},
   ]
 
-  dashboardMenuCardItems: ITableColumnItem[] = [
+  dashboardTdCardItems: ITableColumnItem[] = [
     {key: 'N', title: 'Nyugdíjas menü'},
     {key: 'A', title: 'Alap menü'},
     {key: 'B', title: 'Basic menü'},
@@ -253,7 +270,60 @@ export class ConfigService {
     {key: 'S', title: 'Sütemény menü'},
     {key: 'SA', title: 'Savanyúság menü'},
     {key: 'I', title: 'Üdítő menü'},
+    {key: 'PIZ', title: 'Pizza'},
+    {key: 'GY1', title: 'Gyros (pita)'},
+    {key: 'GY2', title: 'Gyros (tál)'},
+    {key: 'HAMB1', title: 'Hamburger (alap)'},
+    {key: 'HAMB2', title: 'Hamburger (normál)'},
+    {key: 'HAMB3', title: 'Hamburger (extra)'},
+    {key: 'SAL', title: 'Saláta'},
+    {key: 'KÖR', title: 'Köret'},
+    {key: 'DES', title: 'Desszert'},
+    {key: 'DR', title: 'Üdítő'},
+    {key: 'free', title: 'Ingyenes'},
+    {key: 'personal', title: 'Személyes átvétel'},
+    {key: 'shipping', title: 'Kiszállítás'},
   ];
+
+  billChartLabel: IChartLabelItem[] = [
+    {label: 'Kintlévőségek'},
+    {label: 'Kiegyenlített számlák összege'},
+    {label: 'Kintlévőségek'},
+    {label: 'Realizált bevételek'},
+    {label: 'Menü rendelések'},
+    {label: 'Gyorskaja rendelések'},
+  ]
+
+  cityChartLabel: IChartLabelItem[] = [
+    {label: 'Szállítási területek eloszlása'},
+    {label: 'Menük'},
+    {label: 'Gyorskaják'},
+    {label: 'Fizetett rendelések darabszáma'},
+    {label: 'Fizetett rendelések bevétele'},
+  ]
+
+  dateChartLabel: IChartLabelItem[] = [
+    {label: 'Havi eloszlás'},
+    {label: 'Menük'},
+    {label: 'Gyorskaják'},
+    {label: 'Fizetett rendelések darabszáma'},
+    {label: 'Fizetett rendelések bevétele'},
+  ]
+
+  dateLabels: IDateLabelItem[] = [
+    {label: 'Január', shortlabel: 'Jan'},
+    {label: 'Február', shortlabel: 'Febr'},
+    {label: 'Március', shortlabel: 'Már'},
+    {label: 'Április', shortlabel: 'Ápr'},
+    {label: 'Május', shortlabel: 'Máj'},
+    {label: 'Június', shortlabel: 'Jún'},
+    {label: 'Július', shortlabel: 'Júl'},
+    {label: 'Augusztus', shortlabel: 'Aug'},
+    {label: 'Szeptember', shortlabel: 'Szept'},
+    {label: 'Október', shortlabel: 'Oket'},
+    {label: 'November', shortlabel: 'Nov'},
+    {label: 'December', shortlabel: 'Dec'}
+  ]
 
   constructor() {}
 }

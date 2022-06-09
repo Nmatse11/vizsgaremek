@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ConfigService } from 'src/app/service/config.service';
 import { CustomerService } from 'src/app/service/customer.service';
@@ -13,10 +13,10 @@ export class CustomerCardComponent implements OnInit {
   texts = this.config.dashboardCardItems
 
   materialIcon: string = "group";
-  activeCustomerNumber$:  Observable<Number> = this.customerService.getNumberOfValue('active', true);
   cardTitle: string = this.texts[0].title
   valueType = this.texts[0].valueType
-  allOfCustomer$: Observable<Number> = this.customerService.getNumberOf()
+  @Input() activeCustomerNumber$!:  Observable<Number>
+  @Input() allOfCustomer$!: Observable<Number>
 
   constructor(
     private customerService: CustomerService,

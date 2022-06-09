@@ -7,5 +7,8 @@ export class Fastfood {
   category: string = '';
   descripiton?: string = '';
   active: boolean = true;
-
+  numberOfOrder?: number = 0;
+  numberOfOrderFamily?: number = 0;
+  numberOfPaidOrder?: number = 0
+  numberOfPaidOrderFamily?: number = 0;
 }

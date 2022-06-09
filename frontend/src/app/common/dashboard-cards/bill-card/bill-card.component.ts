@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { BillService } from 'src/app/service/bill.service';
 import { ConfigService } from 'src/app/service/config.service';
@@ -13,12 +13,11 @@ export class BillCardComponent implements OnInit {
   texts = this.config.dashboardCardItems
 
   materialIcon: string = "storage";
-  dontPaidBillAmount$:  Observable<Number> = this.billService.getSumValue('status', 'new', 'amount')
   cardTitle: string = this.texts[3].title
-  allOfBillAmount$: Observable<Number> = this.billService.getSum('amount')
+  @Input() dontPaidBillAmount$!:  Observable<Number>
+  @Input() allOfBillAmount$!: Observable<Number>
 
   constructor(
-    private billService: BillService,
     private config: ConfigService
   ) { }
 

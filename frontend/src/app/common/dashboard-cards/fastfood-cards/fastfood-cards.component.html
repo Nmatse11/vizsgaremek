@@ -1,0 +1,101 @@
+<div *ngIf="loading === true" class="container d-flex justify-content-center d-md-block">
+  <div class="row col-12 col-md-10 offset-md-1 my-3">
+    <div class="col-12 d-md-flex flex-sm-row justify-content-center">
+      <div class="col-12 col-md-6">
+        <app-base-dashboard-stat-card [cardTitle]="cardTitle1" [materialIcon]="materialIcon1"
+          [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle2" [menuCodes]="fastfoodCodesPrimary"
+          [menuNumber]="fastfoodNumberPrimary" [valueType]="valueType" [sumOfValue]="sumOfNumberPrimary">
+        </app-base-dashboard-stat-card>
+      </div>
+      <div class="col-12 col-md-6">
+        <app-base-dashboard-stat-card [cardTitle]="cardTitle1" [materialIcon]="materialIcon1"
+          [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle2" [menuCodes]="fastfoodCodesSecondary"
+          [menuNumber]="fastfoodNumberSecondary" [valueType]="valueType" [sumOfValue]="sumOfNumberSecondary">
+        </app-base-dashboard-stat-card>
+      </div>
+    </div>
+    <div class="col-12 justify-content-center">
+
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped text-center mt-4">
+          <thead>
+            <tr>
+              <th>-</th>
+              <th class="font-weight-bold">{{ theadTitle1 }}</th>
+              <th class="font-weight-bold">{{ theadTitle2 }}</th>
+              <th class="font-weight-bold">{{ theadTitle3 }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let codes of fastfoodCodes; index as i">
+              <tr>
+                <td>
+                  <button class="btn btn-sm m-0 p-0" data-toggle="collapse" aria-expanded="false"
+                    attr.data-target="#collapse{{i}}" attr.aria-controls="collapse{{i}}"><span
+                      class="material-icons m-0 p-0">visibility</span></button>
+                </td>
+                <td>
+                  <p>{{ setFastfoodText(codes) }}</p>
+                </td>
+                <td>
+                  <p>{{ sumOfOrder[i] }} {{ valueType }}</p>
+                </td>
+                <td *ngIf="codes !== 'PIZ'">{{ sumOfAmount[i+1] | customCurrency }}</td>
+                <td *ngIf="codes === 'PIZ'">{{ (sumOfAmount[0] + sumOfAmount[1]) | customCurrency }}</td>
+              </tr>
+              <tr>
+                <td colspan="12" class="p-0">
+                  <div class="collapse" attr.id="collapse{{i}}" class="table-responsive">
+                    <table class="table table-bordered table-striped text-center">
+                      <thead>
+                        <tr>
+                          <th class="font-weight-bold">{{ theadTitle1 }}</th>
+                          <th class="font-weight-bold">{{ theadTitle2 }}</th>
+                          <th class="font-weight-bold">{{ theadTitle3 }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let fastfood of FastFoodList | filter: codes">
+                          <td>{{ fastfood.name }}</td>
+                          <td>{{ fastfood.numberOfOrder }} {{ valueType }}</td>
+                          <td *ngIf="fastfood.category !== 'PIZ'">{{ (fastfood.numberOfPaidOrder *
+                            fastfoodPricesWithoutPizza[i-1] ) | customCurrency }}</td>
+                          <td *ngIf="fastfood.category === 'PIZ'">{{ (fastfood.numberOfPaidOrder *
+                            fastfoodPricesPizza[0] + fastfood.numberOfPaidOrderFamily *
+                            fastfoodPricesPizza[1]) | customCurrency }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td><i class="material-icons text-muted">functions</i></td>
+              <td class="text-muted">{{ tfootText }}</td>
+              <td class="text-muted">{{ sumOfValueOrder }} {{ valueType }}</td>
+              <td class="text-muted">{{ sumOfValueAmount | customCurrency }}</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="col-12 d-md-flex flex-sm-row justify-content-center">
+        <div class="col-12 col-md-6">
+          <app-base-dashboard-stat-card [cardTitle]="cardTitle2" [materialIcon]="materialIcon2"
+            [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle4" [menuCodes]="shippingName"
+            [menuNumber]="shippingNumber" [valueType]="valueType" [sumOfValue]="sumOfShippingNumber">
+          </app-base-dashboard-stat-card>
+        </div>
+        <div class="col-12 col-md-6">
+          <app-base-dashboard-stat-card [cardTitle]="cardTitle2" [materialIcon]="materialIcon2"
+            [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle3" [menuCodes]="shippingName"
+            [menuNumber]="shippingAmount" [sumOfValue]="sumOfAmountNumber" [type]="type2">
+          </app-base-dashboard-stat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

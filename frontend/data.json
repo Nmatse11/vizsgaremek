@@ -7,8 +7,9 @@
       "notes": "option",
       "price": 150,
       "weight": 70,
-      "numberOfOrder": 9,
-      "numberOfFood": 14
+      "numberOfOrder": 13,
+      "numberOfFood": 14,
+      "numberOfPaidOrder": 5
     },
     {
       "id": 2,
@@ -17,8 +18,9 @@
       "notes": "option",
       "price": 170,
       "weight": 80,
-      "numberOfOrder": 3,
-      "numberOfFood": 10
+      "numberOfOrder": 8,
+      "numberOfFood": 10,
+      "numberOfPaidOrder": 8
     },
     {
       "id": 3,
@@ -27,8 +29,9 @@
       "notes": "prime",
       "price": 300,
       "weight": 300,
-      "numberOfOrder": 45,
-      "numberOfFood": 0
+      "numberOfOrder": 77,
+      "numberOfFood": 0,
+      "numberOfPaidOrder": 68
     },
     {
       "id": 4,
@@ -37,8 +40,9 @@
       "notes": "prime",
       "price": 900,
       "weight": 318,
-      "numberOfOrder": 45,
-      "numberOfFood": 0
+      "numberOfOrder": 77,
+      "numberOfFood": 0,
+      "numberOfPaidOrder": 68
     },
     {
       "id": 5,
@@ -47,8 +51,9 @@
       "notes": "prime",
       "price": 400,
       "weight": 400,
-      "numberOfOrder": 64,
-      "numberOfFood": 20
+      "numberOfOrder": 130,
+      "numberOfFood": 20,
+      "numberOfPaidOrder": 106
     },
     {
       "id": 6,
@@ -57,8 +62,9 @@
       "notes": "prime",
       "price": 1000,
       "weight": 530,
-      "numberOfOrder": 64,
-      "numberOfFood": 20
+      "numberOfOrder": 130,
+      "numberOfFood": 20,
+      "numberOfPaidOrder": 106
     },
     {
       "id": 7,
@@ -67,8 +73,9 @@
       "notes": "prime",
       "price": 500,
       "weight": 400,
-      "numberOfOrder": 25,
-      "numberOfFood": 20
+      "numberOfOrder": 51,
+      "numberOfFood": 20,
+      "numberOfPaidOrder": 34
     },
     {
       "id": 8,
@@ -77,8 +84,9 @@
       "notes": "prime",
       "price": 1100,
       "weight": 530,
-      "numberOfOrder": 25,
-      "numberOfFood": 20
+      "numberOfOrder": 51,
+      "numberOfFood": 20,
+      "numberOfPaidOrder": 34
     },
     {
       "id": 9,
@@ -87,8 +95,9 @@
       "notes": "prime",
       "price": 600,
       "weight": 400,
-      "numberOfOrder": 48,
-      "numberOfFood": 20
+      "numberOfOrder": 97,
+      "numberOfFood": 20,
+      "numberOfPaidOrder": 64
     },
     {
       "id": 10,
@@ -97,8 +106,9 @@
       "notes": "prime",
       "price": 1200,
       "weight": 530,
-      "numberOfOrder": 48,
-      "numberOfFood": 20
+      "numberOfOrder": 97,
+      "numberOfFood": 20,
+      "numberOfPaidOrder": 64
     },
     {
       "id": 11,
@@ -107,8 +117,9 @@
       "notes": "prime",
       "price": 1500,
       "weight": 480,
-      "numberOfOrder": 44,
-      "numberOfFood": 20
+      "numberOfOrder": 89,
+      "numberOfFood": 20,
+      "numberOfPaidOrder": 66
     },
     {
       "id": 12,
@@ -117,8 +128,9 @@
       "notes": "prime",
       "price": 500,
       "weight": 400,
-      "numberOfOrder": 54,
-      "numberOfFood": 20
+      "numberOfOrder": 112,
+      "numberOfFood": 20,
+      "numberOfPaidOrder": 83
     },
     {
       "id": 13,
@@ -127,8 +139,9 @@
       "notes": "prime",
       "price": 1000,
       "weight": 530,
-      "numberOfOrder": 54,
-      "numberOfFood": 20
+      "numberOfOrder": 112,
+      "numberOfFood": 20,
+      "numberOfPaidOrder": 83
     },
     {
       "id": 14,
@@ -137,8 +150,9 @@
       "notes": "prime",
       "price": 600,
       "weight": 400,
-      "numberOfOrder": 76,
-      "numberOfFood": 20
+      "numberOfOrder": 150,
+      "numberOfFood": 20,
+      "numberOfPaidOrder": 122
     },
     {
       "id": 15,
@@ -147,8 +161,9 @@
       "notes": "prime",
       "price": 1200,
       "weight": 530,
-      "numberOfOrder": 76,
-      "numberOfFood": 20
+      "numberOfOrder": 150,
+      "numberOfFood": 20,
+      "numberOfPaidOrder": 122
     },
     {
       "id": 16,
@@ -157,8 +172,9 @@
       "notes": "option",
       "price": 600,
       "weight": 90,
-      "numberOfOrder": 44,
-      "numberOfFood": 20
+      "numberOfOrder": 89,
+      "numberOfFood": 20,
+      "numberOfPaidOrder": 74
     },
     {
       "id": 17,
@@ -167,8 +183,9 @@
       "notes": "option",
       "price": 450,
       "weight": 100,
-      "numberOfOrder": 63,
-      "numberOfFood": 16
+      "numberOfOrder": 136,
+      "numberOfFood": 16,
+      "numberOfPaidOrder": 100
     },
     {
       "id": 18,
@@ -177,8 +194,9 @@
       "notes": "option",
       "price": 190,
       "weight": 150,
-      "numberOfOrder": 95,
-      "numberOfFood": 10
+      "numberOfOrder": 177,
+      "numberOfFood": 10,
+      "numberOfPaidOrder": 140
     },
     {
       "id": 19,
@@ -187,78 +205,112 @@
       "notes": "option",
       "price": 450,
       "weight": 0.33,
-      "numberOfOrder": 145,
-      "numberOfFood": 10
+      "numberOfOrder": 277,
+      "numberOfFood": 10,
+      "numberOfPaidOrder": 211
     }
   ],
   "category-fastfood": [
     {
       "id": 1,
-      "categoryCode": "P1",
+      "categoryCode": "PIZ",
       "menu": "pizza",
+      "notes": "primary",
       "price": 1610,
-      "size": 32
+      "size": 32,
+      "numberOfFood": 20,
+      "sumOfOrder": 195
     },
     {
       "id": 2,
-      "categoryCode": "P2",
+      "categoryCode": "PIZ",
       "menu": "pizza",
+      "notes": "primary",
       "price": 2890,
-      "size": 40
+      "size": 40,
+      "numberOfFood": 20,
+      "sumOfOrder": 195
     },
     {
       "id": 3,
       "categoryCode": "GY1",
       "menu": "gyros",
-      "price": 1090
+      "notes": "primary",
+      "price": 1090,
+      "numberOfFood": 1,
+      "sumOfOrder": 11
     },
     {
       "id": 4,
       "categoryCode": "GY2",
       "menu": "gyros",
-      "price": 2340
+      "notes": "primary",
+      "price": 2340,
+      "numberOfFood": 1,
+      "sumOfOrder": 9
     },
     {
       "id": 5,
       "categoryCode": "HAMB1",
       "menu": "hamburger",
-      "price": 1990
+      "notes": "primary",
+      "price": 1990,
+      "numberOfFood": 1,
+      "sumOfOrder": 7
     },
     {
       "id": 6,
       "categoryCode": "HAMB2",
       "menu": "hamburger",
-      "price": 2370
+      "notes": "primary",
+      "price": 2370,
+      "numberOfFood": 6,
+      "sumOfOrder": 49
     },
     {
       "id": 7,
       "categoryCode": "HAMB3",
       "menu": "hamburger",
-      "price": 2890
+      "notes": "primary",
+      "price": 2890,
+      "numberOfFood": 2,
+      "sumOfOrder": 16
     },
     {
       "id": 8,
       "categoryCode": "SAL",
       "menu": "salata",
-      "price": 1500
+      "notes": "secondary",
+      "price": 1500,
+      "numberOfFood": 4,
+      "sumOfOrder": 36
     },
     {
       "id": 9,
       "categoryCode": "KÖR",
       "menu": "side_dish",
-      "price": 750
+      "notes": "secondary",
+      "price": 750,
+      "numberOfFood": 2,
+      "sumOfOrder": 21
     },
     {
       "id": 10,
       "categoryCode": "DES",
       "menu": "dessert",
-      "price": 600
+      "notes": "secondary",
+      "price": 600,
+      "numberOfFood": 4,
+      "sumOfOrder": 40
     },
     {
       "id": 11,
       "categoryCode": "DR",
       "menu": "drink",
-      "price": 450
+      "notes": "secondary",
+      "price": 450,
+      "numberOfFood": 10,
+      "sumOfOrder": 82
     }
   ],
   "foods-menu": [
@@ -4256,7 +4308,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszósz, szalámi, kolbász, hagyma, bacon, erőspaprika, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 6,
+      "numberOfPaidOrder": 6,
+      "numberOfOrderFamily": 0,
+      "numberOfPaidOrderFamily": 0
     },
     {
       "id": 2,
@@ -4268,7 +4324,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszózs, sonka, ananász, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 12,
+      "numberOfPaidOrder": 10,
+      "numberOfOrderFamily": 3,
+      "numberOfPaidOrderFamily": 2
     },
     {
       "id": 3,
@@ -4280,7 +4340,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszósz, sonka, kukorica, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 9,
+      "numberOfPaidOrder": 9,
+      "numberOfOrderFamily": 2,
+      "numberOfPaidOrderFamily": 2
     },
     {
       "id": 4,
@@ -4292,7 +4356,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszósz, bacon, bab, chili, hagyma, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 5,
+      "numberOfPaidOrder": 5,
+      "numberOfOrderFamily": 2,
+      "numberOfPaidOrderFamily": 1
     },
     {
       "id": 5,
@@ -4304,7 +4372,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszósz, gomba, kukorica, borsó, paradicsom, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 10,
+      "numberOfPaidOrder": 10,
+      "numberOfOrderFamily": 3,
+      "numberOfPaidOrderFamily": 2
     },
     {
       "id": 6,
@@ -4316,7 +4388,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszósz, sonka, bacon, ördögmártás, erőspaprika, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 14,
+      "numberOfPaidOrder": 14,
+      "numberOfOrderFamily": 0,
+      "numberOfPaidOrderFamily": 0
     },
     {
       "id": 7,
@@ -4328,7 +4404,11 @@
       ],
       "category": "PIZ",
       "descripiton": "tejfölös alap, sonka bacon, szalámi, fokhagyma, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 12,
+      "numberOfPaidOrder": 11,
+      "numberOfOrderFamily": 3,
+      "numberOfPaidOrderFamily": 3
     },
     {
       "id": 8,
@@ -4340,7 +4420,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszósz, sonka, gomba, kukorica, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 9,
+      "numberOfPaidOrder": 9,
+      "numberOfOrderFamily": 4,
+      "numberOfPaidOrderFamily": 4
     },
     {
       "id": 9,
@@ -4352,7 +4436,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszósz, sonka, bazsalikom, paradicsom, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 6,
+      "numberOfPaidOrder": 6,
+      "numberOfOrderFamily": 0,
+      "numberOfPaidOrderFamily": 0
     },
     {
       "id": 10,
@@ -4364,7 +4452,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszósz, sonka, bacon, gomba, kukorica, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 7,
+      "numberOfPaidOrder": 7,
+      "numberOfOrderFamily": 1,
+      "numberOfPaidOrderFamily": 1
     },
     {
       "id": 11,
@@ -4376,7 +4468,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszósz, sonka, máj, hagyma, pepperoni, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 6,
+      "numberOfPaidOrder": 6,
+      "numberOfOrderFamily": 1,
+      "numberOfPaidOrderFamily": 1
     },
     {
       "id": 12,
@@ -4388,7 +4484,11 @@
       ],
       "category": "PIZ",
       "descripiton": "tejfölös alap pulykamell, ananász, őszibarack, eper, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 10,
+      "numberOfPaidOrder": 10,
+      "numberOfOrderFamily": 3,
+      "numberOfPaidOrderFamily": 3
     },
     {
       "id": 13,
@@ -4400,7 +4500,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszósz, sonka, tejföl, oregano, bazsalikom, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 7,
+      "numberOfPaidOrder": 7,
+      "numberOfOrderFamily": 2,
+      "numberOfPaidOrderFamily": 2
     },
     {
       "id": 14,
@@ -4412,7 +4516,11 @@
       ],
       "category": "PIZ",
       "descripiton": "tejfölös alap, sonka, bacon, szalámi, fokhagyma, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 11,
+      "numberOfPaidOrder": 11,
+      "numberOfOrderFamily": 0,
+      "numberOfPaidOrderFamily": 0
     },
     {
       "id": 15,
@@ -4424,7 +4532,11 @@
       ],
       "category": "PIZ",
       "descripiton": "tejfölös alap, sonka, ananász, őszibarack, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 8,
+      "numberOfPaidOrder": 8,
+      "numberOfOrderFamily": 0,
+      "numberOfPaidOrderFamily": 0
     },
     {
       "id": 16,
@@ -4436,7 +4548,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszózs, főtt-füstölt tarja, főtt tojás, hagyma, pepperoni, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 5,
+      "numberOfPaidOrder": 4,
+      "numberOfOrderFamily": 0,
+      "numberOfPaidOrderFamily": 0
     },
     {
       "id": 17,
@@ -4448,7 +4564,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszósz, tonhal, rák, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 8,
+      "numberOfPaidOrder": 8,
+      "numberOfOrderFamily": 1,
+      "numberOfPaidOrderFamily": 1
     },
     {
       "id": 18,
@@ -4460,7 +4580,11 @@
       ],
       "category": "PIZ",
       "descripiton": "pizzaszósz, sonka, gomba, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 6,
+      "numberOfPaidOrder": 6,
+      "numberOfOrderFamily": 0,
+      "numberOfPaidOrderFamily": 0
     },
     {
       "id": 19,
@@ -4472,7 +4596,11 @@
       ],
       "category": "PIZ",
       "descripiton": "tejfölös alap, csirkemell, gyros hús, paradicsom, fokhagyma, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 9,
+      "numberOfPaidOrder": 9,
+      "numberOfOrderFamily": 1,
+      "numberOfPaidOrderFamily": 1
     },
     {
       "id": 20,
@@ -4484,7 +4612,11 @@
       ],
       "category": "PIZ",
       "descripiton": "tejfölös alap, sonka, bacon, bab, erős paprika, sajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 8,
+      "numberOfPaidOrder": 8,
+      "numberOfOrderFamily": 1,
+      "numberOfPaidOrderFamily": 1
     },
     {
       "id": 21,
@@ -4497,7 +4629,9 @@
       ],
       "category": "HAMB1",
       "descripiton": "vaslapon sült húspogácsa 200g, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
-      "active": true
+      "active": true,
+      "numberOfOrder": 7,
+      "numberOfPaidOrder": 7
     },
     {
       "id": 22,
@@ -4510,7 +4644,9 @@
       ],
       "category": "HAMB2",
       "descripiton": "vaslapon sült húspogácsa 200g, sajt, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
-      "active": true
+      "active": true,
+      "numberOfOrder": 9,
+      "numberOfPaidOrder": 8
     },
     {
       "id": 23,
@@ -4523,7 +4659,9 @@
       ],
       "category": "HAMB2",
       "descripiton": "rántott camembert sajt, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
-      "active": true
+      "active": true,
+      "numberOfOrder": 7,
+      "numberOfPaidOrder": 7
     },
     {
       "id": 24,
@@ -4536,7 +4674,9 @@
       ],
       "category": "HAMB2",
       "descripiton": "vaslapon sült húspogácsa 200g, bacon, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
-      "active": true
+      "active": true,
+      "numberOfOrder": 6,
+      "numberOfPaidOrder": 6
     },
     {
       "id": 25,
@@ -4549,7 +4689,9 @@
       ],
       "category": "HAMB2",
       "descripiton": "vaslapon sült húspogácsa 200g, hagyma, uborka, paradicsom, jégsaláta, barbecue szósz",
-      "active": true
+      "active": true,
+      "numberOfOrder": 8,
+      "numberOfPaidOrder": 8
     },
     {
       "id": 26,
@@ -4562,7 +4704,9 @@
       ],
       "category": "HAMB2",
       "descripiton": "vaslapon sült húspogácsa 200g, ananász, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
-      "active": true
+      "active": true,
+      "numberOfOrder": 10,
+      "numberOfPaidOrder": 9
     },
     {
       "id": 27,
@@ -4575,7 +4719,9 @@
       ],
       "category": "HAMB2",
       "descripiton": "vaslapon sült húspogácsa 200g, jalapeno paprika, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
-      "active": true
+      "active": true,
+      "numberOfOrder": 9,
+      "numberOfPaidOrder": 9
     },
     {
       "id": 28,
@@ -4588,7 +4734,9 @@
       ],
       "category": "HAMB3",
       "descripiton": "vaslapon sült húspogácsa 400g, tarja, bacon, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
-      "active": true
+      "active": true,
+      "numberOfOrder": 9,
+      "numberOfPaidOrder": 9
     },
     {
       "id": 29,
@@ -4601,7 +4749,9 @@
       ],
       "category": "HAMB3",
       "descripiton": "vaslapon sült húspogácsa 200g, gyros hús, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
-      "active": true
+      "active": true,
+      "numberOfOrder": 7,
+      "numberOfPaidOrder": 7
     },
     {
       "id": 30,
@@ -4613,7 +4763,9 @@
       ],
       "category": "GY1",
       "descripiton": "pita, csirka gyros hús, tzatziki, csipős szósz, káposzta, hagyma, uborka, paradicsom",
-      "active": true
+      "active": true,
+      "numberOfOrder": 11,
+      "numberOfPaidOrder": 11
     },
     {
       "id": 31,
@@ -4625,7 +4777,9 @@
       ],
       "category": "GY2",
       "descripiton": "csirka gyros hús, sültkrumpli, tzatziki, csipős szósz, káposzta, hagyma, uborka, paradicsom",
-      "active": true
+      "active": true,
+      "numberOfOrder": 9,
+      "numberOfPaidOrder": 9
     },
     {
       "id": 32,
@@ -4638,7 +4792,9 @@
       ],
       "category": "SAL",
       "descripiton": "saláta, paradicsom, kígyó uborka, csirkemell, pirított kenyérkocka, cézár öntet",
-      "active": true
+      "active": true,
+      "numberOfOrder": 11,
+      "numberOfPaidOrder": 11
     },
     {
       "id": 33,
@@ -4651,7 +4807,9 @@
       ],
       "category": "SAL",
       "descripiton": "saláta, paradicsom, kígyó uborka, tonhal, pirított kenyérkocka, cézár öntet",
-      "active": true
+      "active": true,
+      "numberOfOrder": 11,
+      "numberOfPaidOrder": 11
     },
     {
       "id": 34,
@@ -4662,7 +4820,9 @@
       ],
       "category": "SAL",
       "descripiton": "saláta, paradicsom, uborka, lila hagyma, olívabogyó, fetasajt",
-      "active": true
+      "active": true,
+      "numberOfOrder": 11,
+      "numberOfPaidOrder": 10
     },
     {
       "id": 35,
@@ -4673,7 +4833,9 @@
       ],
       "category": "SAL",
       "descripiton": "pannónia sajt, parenyica sajt, karaván sajt, jégsaláta, paradicsom, olivabogyó",
-      "active": true
+      "active": true,
+      "numberOfOrder": 3,
+      "numberOfPaidOrder": 3
     },
     {
       "id": 36,
@@ -4681,7 +4843,9 @@
       "menu": "side_dish",
       "allergens": [],
       "category": "KÖR",
-      "active": true
+      "active": true,
+      "numberOfOrder": 14,
+      "numberOfPaidOrder": 14
     },
     {
       "id": 37,
@@ -4689,7 +4853,9 @@
       "menu": "side_dish",
       "allergens": [],
       "category": "KÖR",
-      "active": true
+      "active": true,
+      "numberOfOrder": 7,
+      "numberOfPaidOrder": 6
     },
     {
       "id": 38,
@@ -4701,7 +4867,9 @@
         "Tojás"
       ],
       "category": "DES",
-      "active": true
+      "active": true,
+      "numberOfOrder": 9,
+      "numberOfPaidOrder": 9
     },
     {
       "id": 39,
@@ -4714,7 +4882,9 @@
         "Földimogyoró"
       ],
       "category": "DES",
-      "active": true
+      "active": true,
+      "numberOfOrder": 12,
+      "numberOfPaidOrder": 11
     },
     {
       "id": 40,
@@ -4726,7 +4896,9 @@
         "Tojás"
       ],
       "category": "DES",
-      "active": true
+      "active": true,
+      "numberOfOrder": 7,
+      "numberOfPaidOrder": 7
     },
     {
       "id": 41,
@@ -4740,7 +4912,9 @@
         "Diófélék"
       ],
       "category": "DES",
-      "active": true
+      "active": true,
+      "numberOfOrder": 12,
+      "numberOfPaidOrder": 11
     },
     {
       "id": 42,
@@ -4748,7 +4922,9 @@
       "menu": "drink",
       "allergens": [],
       "category": "DR",
-      "active": true
+      "active": true,
+      "numberOfOrder": 9,
+      "numberOfPaidOrder": 9
     },
     {
       "id": 43,
@@ -4756,7 +4932,9 @@
       "menu": "drink",
       "allergens": [],
       "category": "DR",
-      "active": true
+      "active": true,
+      "numberOfOrder": 8,
+      "numberOfPaidOrder": 8
     },
     {
       "id": 44,
@@ -4764,7 +4942,9 @@
       "menu": "drink",
       "allergens": [],
       "category": "DR",
-      "active": true
+      "active": true,
+      "numberOfOrder": 12,
+      "numberOfPaidOrder": 12
     },
     {
       "id": 45,
@@ -4772,7 +4952,9 @@
       "menu": "drink",
       "allergens": [],
       "category": "DR",
-      "active": true
+      "active": true,
+      "numberOfOrder": 9,
+      "numberOfPaidOrder": 9
     },
     {
       "id": 46,
@@ -4780,7 +4962,9 @@
       "menu": "drink",
       "allergens": [],
       "category": "DR",
-      "active": true
+      "active": true,
+      "numberOfOrder": 11,
+      "numberOfPaidOrder": 11
     },
     {
       "id": 47,
@@ -4788,7 +4972,9 @@
       "menu": "drink",
       "allergens": [],
       "category": "DR",
-      "active": true
+      "active": true,
+      "numberOfOrder": 5,
+      "numberOfPaidOrder": 5
     },
     {
       "id": 48,
@@ -4796,7 +4982,9 @@
       "menu": "drink",
       "allergens": [],
       "category": "DR",
-      "active": true
+      "active": true,
+      "numberOfOrder": 8,
+      "numberOfPaidOrder": 8
     },
     {
       "id": 49,
@@ -4804,7 +4992,9 @@
       "menu": "drink",
       "allergens": [],
       "category": "DR",
-      "active": true
+      "active": true,
+      "numberOfOrder": 8,
+      "numberOfPaidOrder": 7
     },
     {
       "id": 50,
@@ -4812,7 +5002,9 @@
       "menu": "drink",
       "allergens": [],
       "category": "DR",
-      "active": true
+      "active": true,
+      "numberOfOrder": 6,
+      "numberOfPaidOrder": 6
     },
     {
       "id": 51,
@@ -4820,7 +5012,9 @@
       "menu": "drink",
       "allergens": [],
       "category": "DR",
-      "active": true
+      "active": true,
+      "numberOfOrder": 6,
+      "numberOfPaidOrder": 5
     }
   ],
   "customer": [
@@ -14425,11 +14619,11 @@
       "order": [
         {
           "productID": 5,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 5,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 5780,
@@ -14694,7 +14888,7 @@
         },
         {
           "productID": 8,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 36
@@ -14714,14 +14908,14 @@
         },
         {
           "productID": 7,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 29
         },
         {
           "productID": 12,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 37
@@ -14812,14 +15006,14 @@
         },
         {
           "productID": 8,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 45
         },
         {
           "productID": 7,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 8570,
@@ -15305,7 +15499,7 @@
         },
         {
           "productID": 3,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 3490,
@@ -15546,7 +15740,7 @@
       "order": [
         {
           "productID": 12,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 2890,
@@ -15641,7 +15835,7 @@
         },
         {
           "productID": 13,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 51
@@ -15654,11 +15848,11 @@
         },
         {
           "productID": 4,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 10,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 14110,
@@ -15768,7 +15962,7 @@
         },
         {
           "productID": 7,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 4240,
@@ -16068,7 +16262,7 @@
       "order": [
         {
           "productID": 8,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 2370,
@@ -16082,22 +16276,22 @@
       "order": [
         {
           "productID": 8,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 17,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 35
         },
         {
           "productID": 3,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 12,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 13060,
@@ -16145,7 +16339,7 @@
       "order": [
         {
           "productID": 2,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 2890,
@@ -16321,7 +16515,7 @@
       "order": [
         {
           "productID": 2,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 2890,
@@ -16335,7 +16529,7 @@
       "order": [
         {
           "productID": 11,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 2890,
@@ -16452,11 +16646,11 @@
       "order": [
         {
           "productID": 20,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 19,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 5780,
@@ -16569,11 +16763,11 @@
         },
         {
           "productID": 2,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 4,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 6230,
@@ -16587,7 +16781,7 @@
       "order": [
         {
           "productID": 5,
-          "notes": "családi"
+          "notes": "family"
         },
         {
           "productID": 51
@@ -16691,7 +16885,7 @@
       "order": [
         {
           "productID": 13,
-          "notes": "családi"
+          "notes": "family"
         }
       ],
       "amount": 2890,

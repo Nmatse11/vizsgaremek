@@ -2,4 +2,9 @@
 
 .card {
   background-color: $dashboard-card-backgroundcolor;
+  max-width: 25rem;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+  }
 }

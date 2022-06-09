@@ -1,37 +1,39 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white" routerLink="/">{{ appName }}</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse d-flex flex-row" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item" *ngFor="let item of navbarItems">
-          <a class="nav-link d-flex flex-row align-items-center" [routerLink]="item.link">
-            <i class="material-icons">{{ item.icon }} </i>
-            <p class="nav-text">{{ item.text }}</p>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle d-flex flex-row align-items-center" id="navbarDropdown" role="button"
-            data-toggle="dropdown" aria-expanded="false">
-            <i class="material-icons">{{ adminNavbar.icon }}</i>
-            <p class="nav-text">{{ adminNavbar.text }}</p>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" *ngFor="let item of adminNavbarItems" [routerLink]="item.link">{{ item.text }}</a>
-          </div>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-        <li class="nav-item" *ngFor="let item of loginNavbarItems">
-          <a class="nav-link d-flex flex-row align-items-center" [routerLink]="item.link" *ngIf="login === item.status">
-            <i class="material-icons">{{ item.icon }} </i>
-            <p class="nav-text">{{ item.text }}</p>
-          </a>
-        </li>
-      </ul>
-    </div>
+  <a class="navbar-brand text-white" routerLink="/">{{ appName }}</a>
+  <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+      <li class="nav-item" *ngFor="let item of navbarItems">
+        <a class="nav-link d-flex flex-row align-items-center" [routerLink]="item.link" data-toggle="collapse"
+          data-target=".navbar-collapse.show">
+          <i class="material-icons">{{ item.icon }} </i>
+          <p class="nav-text">{{ item.text }}</p>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle d-flex flex-row align-items-center" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-expanded="false">
+          <i class="material-icons">{{ adminNavbar.icon }}</i>
+          <p class="nav-text">{{ adminNavbar.text }}</p>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" *ngFor="let item of adminNavbarItems" [routerLink]="item.link" data-toggle="collapse"
+            data-target=".navbar-collapse.show">{{ item.text }}</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-lg-auto mb-2 mb-lg-0">
+      <li class="nav-item" *ngFor="let item of loginNavbarItems">
+        <a class="nav-link d-flex flex-row align-items-center" [routerLink]="item.link" *ngIf="login === item.status"
+          data-toggle="collapse" data-target=".navbar-collapse.show">
+          <i class="material-icons">{{ item.icon }} </i>
+          <p class="nav-text">{{ item.text }}</p>
+        </a>
+      </li>
+    </ul>
   </div>
 </nav>

@@ -9,11 +9,11 @@ import { MenuCategoryService } from 'src/app/service/menu-category.service';
 import { MenuOrderService } from 'src/app/service/menu-order.service';
 
 @Component({
-  selector: 'app-base-dashboard-menu-card',
-  templateUrl: './base-dashboard-menu-card.component.html',
-  styleUrls: ['./base-dashboard-menu-card.component.scss']
+  selector: 'app-base-dashboard-stat-card',
+  templateUrl: './base-dashboard-stat-card.component.html',
+  styleUrls: ['./base-dashboard-stat-card.component.scss']
 })
-export class BaseDashboardMenuCardComponent implements OnInit {
+export class BaseDashboardStatCardComponent implements OnInit {
 
   @Input() materialIcon!: string;
   @Input() cardTitle!: string;
@@ -22,11 +22,14 @@ export class BaseDashboardMenuCardComponent implements OnInit {
   @Input() theadTitle2!: string
   @Input() menuCodes: string[] = [];
   @Input() menuNumber: number[] = [];
-  @Input() key!: string
+  @Input() sumOfValue: number = 0
+  @Input() type?: string
 
   columnsArray: string[] = []
 
-  texts = this.config.dashboardMenuCardItems
+  texts = this.config.dashboardTdCardItems
+
+  tfootText = this.config.dashboardCardItems[10].title
 
   constructor(
     private config: ConfigService

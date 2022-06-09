@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ConfigService } from 'src/app/service/config.service';
 import { FastfoodOrderService } from 'src/app/service/fastfood-order.service';
@@ -13,13 +13,12 @@ export class OrderFastfoodCardComponent implements OnInit {
   texts = this.config.dashboardCardItems
 
   materialIcon: string = "shopping_cart";
-  dontPaidOrderNumber$:  Observable<Number> = this.fastfoodOrderService.getNumberOfValueReserve('status', 'paid')
-  allOfOrderNumber$:  Observable<Number> = this.fastfoodOrderService.getNumberOf()
+  @Input() dontPaidOrderNumber$!:  Observable<Number>
+  @Input() allOfOrderNumber$!:  Observable<Number>
   cardTitle: string = this.texts[2].title
   valueType = this.texts[2].valueType
 
   constructor(
-    private fastfoodOrderService: FastfoodOrderService,
     private config: ConfigService
   ) { }
 

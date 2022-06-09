@@ -1,0 +1,34 @@
+<div class="card border-dark text-white mb-3">
+  <div class="card-header text-center">
+    <h5>{{ cardTitle }}</h5>
+  </div>
+  <div class="card-body text-white">
+    <div class="card-icon text-center">
+      <i class="material-icons">{{ materialIcon }}</i>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped text-center mt-4">
+        <thead>
+          <tr>
+            <th class="font-weight-bold">{{ theadTitle1 }}</th>
+            <th class="font-weight-bold">{{ theadTitle2 }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let menu of menuCodes; index as i">
+            <td *ngIf="type !== 'city'">{{ setMenuText(menu) }}</td>
+            <td *ngIf="type === 'city'">{{ menu }}</td>
+            <td *ngIf="type !== 'amount'">{{ menuNumber[i] }} {{ valueType }}</td>
+            <td *ngIf="type === 'amount'">{{ menuNumber[i] | customCurrency }}</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="text-muted">{{ tfootText }}</td>
+            <td *ngIf="type !== 'amount'" class="text-muted">{{ sumOfValue }} {{ valueType }}</td>
+            <td *ngIf="type === 'amount'" class="text-muted">{{ sumOfValue | customCurrency }}</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>

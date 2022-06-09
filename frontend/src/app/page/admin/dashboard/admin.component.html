@@ -5,26 +5,112 @@
     </div>
     <div class="col-12 col-lg-8 offset-lg-2 d-md-flex flex-sm-row">
       <div class="col-12 col-md-6">
-        <app-customer-card></app-customer-card>
+        <app-customer-card [activeCustomerNumber$]="activeCustomerNumber$" [allOfCustomer$]="allOfCustomer$">
+        </app-customer-card>
       </div>
       <div class="col-12 col-md-6">
-        <app-bill-card></app-bill-card>
+        <app-bill-card [dontPaidBillAmount$]="dontPaidBillAmount$" [allOfBillAmount$]="allOfBillAmount$">
+        </app-bill-card>
       </div>
     </div>
+
     <div class="col-lg-8 offset-lg-2 d-flex justify-content-center my-3">
       <h4>{{ titles[1].title }}</h4>
     </div>
     <div class="col-12 col-lg-8 offset-lg-2 d-md-flex flex-sm-row">
       <div class="col-12 col-md-6">
-        <app-order-menu-card></app-order-menu-card>
+        <app-order-menu-card [dontPaidOrderNumber$]="dontPaidOrderNumberMenu$"
+          [allOfOrderNumber$]="allOfOrderNumberMenu$"></app-order-menu-card>
       </div>
       <div class="col-12 col-md-6">
-        <app-order-fastfood-card></app-order-fastfood-card>
+        <app-order-fastfood-card [dontPaidOrderNumber$]="dontPaidOrderNumberFastfood$"
+          [allOfOrderNumber$]="allOfOrderNumberFastfood$">
+        </app-order-fastfood-card>
       </div>
     </div>
-    <div class="col-lg-8 offset-lg-2 d-flex justify-content-center my-3">
-      <h4 class="dashboardTitle">{{ titles[2].title }}</h4>
+
+    <div class="col-12 col-lg-8 offset-lg-2 d-md-flex flex-sm-row justify-content-lg-center mt-4">
+      <div class="col-10 offset-1 col-md-6 mb-5 mb-md-0" *ngIf="ready1 === true">
+        <h4 class="text-center mb-3">{{ billChartTitle }}</h4>
+        <div>
+          <app-pie-chart [dataArray]="billChartData" [labels]="billChartLabels"></app-pie-chart>
+        </div>
+      </div>
+      <div class="col-10 offset-1 col-md-6 mb-5" *ngIf="ready1 === true">
+        <h5 class="text-center mb-3">{{ AmountChartTitle }}</h5>
+        <div>
+          <app-pie-chart [dataArray]="AmountChartData" [labels]="AmountChartLabels"></app-pie-chart>
+        </div>
+      </div>
     </div>
-    <app-menu-cards></app-menu-cards>
+
+    <hr>
+    <hr>
+
+    <div class="col-12 mt-5" *ngIf="ready1 === true">
+      <h4 class="text-center mb-3">{{ cityChartTitle }}</h4>
+      <div class="col-12 mt-3">
+        <h6 class="text-center mb-3">{{ cityChartSecondaryTitleNumber }}</h6>
+        <div class="col-10 offset-1 col-md-4 offset-md-4 mb-2">
+          <h6 class="text-center mb-3 text-muted">{{ cityName[0] }}</h6>
+          <app-pie-chart [dataArray]=" CityNumberChartData" [labels]="CityChartLabels">
+          </app-pie-chart>
+        </div>
+      </div>
+      <div class="col-12">
+        <app-bar-chart [dataArray1]="cityNumberMenu" [dataArray2]="cityNumberFastfood" [labels]="cityName"
+          [dataName]="CityChartLabels">
+        </app-bar-chart>
+      </div>
+    </div>
+    <div class="col-12 my-5" *ngIf="ready1 === true">
+      <h6 class="text-center mb-3">{{ cityChartSecondaryTitleAmount }}</h6>
+      <div class="col-10 offset-1 col-md-4 offset-md-4 mb-2">
+        <h6 class="text-center mb-3 text-muted">{{ cityName[0] }}</h6>
+        <app-pie-chart [dataArray]=" CityAmountChartData" [labels]="CityChartLabels">
+        </app-pie-chart>
+      </div>
+      <div class="col-12">
+        <app-bar-chart [dataArray1]="cityAmountMenu" [dataArray2]="cityAmountFastfood" [labels]="cityName"
+          [dataName]="CityChartLabels">
+        </app-bar-chart>
+      </div>
+    </div>
+
+    <hr>
+    <hr>
+
+    <div class="col-12 mt-5" *ngIf="ready2 === true">
+      <h4 class="text-center mb-4">{{ dateChartTitle }}</h4>
+      <h6 class="text-center mb-3">{{ dateChartSecondaryTitleNumber }}</h6>
+      <div>
+        <app-bar-chart [dataArray1]="dateNumberMenu" [dataArray2]="dateNumberFastfood" [labels]="dateName"
+          [dataName]="DateChartLabels">
+        </app-bar-chart>
+      </div>
+    </div>
+    <div class="col-12 mt-5" *ngIf="ready2 === true">
+      <h6 class="text-center mb-3">{{ dateChartSecondaryTitleAmount }}</h6>
+      <div>
+        <app-bar-chart [dataArray1]="dateAmountMenu" [dataArray2]="dateAmountFastfood" [labels]="dateName"
+          [dataName]="DateChartLabels">
+        </app-bar-chart>
+      </div>
+    </div>
+
+    <div class="col-12 d-flex flex-column justify-content-center my-3"
+      *ngIf="FoodList$ && CategoryMenuList$ &&  OrderMenuList$">
+      <h4 class="dashboardTitle text-center">{{ titles[2].title }}</h4>
+      <app-menu-cards [FoodList$]="FoodList$" [CategoryMenuList$]="CategoryMenuList$" [OrderMenuList$]="OrderMenuList$">
+      </app-menu-cards>
+    </div>
+
+    <div class="col-12 d-flex flex-column justify-content-center my-3"
+      *ngIf="FastfoodList$ && CategoryFastfoodList$ &&  OrderFastfoodList$">
+      <h4 class="dashboardTitle text-center">{{ titles[4].title }}</h4>
+      <app-fastfood-cards [FastfoodList$]="FastfoodList$" [CategoryFastfoodList$]="CategoryFastfoodList$"
+        [OrderFastfoodList$]="OrderFastfoodList$"></app-fastfood-cards>
+    </div>
   </div>
+
 </div>

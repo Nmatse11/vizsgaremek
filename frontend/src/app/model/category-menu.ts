@@ -7,6 +7,7 @@ export class CategoryMenu {
   price: number = 0;
   weight?: number = 0;
   liter?: number = 0;
-  numberOfFood?: number = 0
-  numberOfOrder?: number = 0
+  numberOfFood?: number = 0;
+  numberOfOrder?: number = 0;
+  numberOfPaidOrder?: number = 0
 }
