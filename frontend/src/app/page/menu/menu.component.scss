@@ -1,0 +1,76 @@
+@use '../../../assets/modules/color' as *;
+
+.mat-add {
+  background-color: $edit-button-backgroundcolor;
+  color: $button-color;
+
+  &:hover {
+    background-color: $list-button-backgroundcolor;
+  }
+}
+
+.menu {
+
+  &_tkey {
+    width: 4%;
+    padding: 1rem 0;
+  }
+
+  &_key {
+    width: 4%;
+  }
+
+  &_name {
+    width: 12%;
+  }
+
+  &_card {
+    width: 16.8%;
+  }
+
+  &_thead {
+    background-color: $edit-button-backgroundcolor;
+    color: $button-color;
+    font-weight: bold;
+  }
+
+  &_N {
+    background-color: $n-menu-color;
+  }
+
+  &_ABE {
+    background-color: $a-b-e-menu-color;
+  }
+
+  &_F {
+    background-color: $f-menu-color;
+  }
+
+  &_V {
+    background-color: $v-menu-color;
+  }
+
+  &_Z {
+    background-color: $z-menu-color;
+  }
+
+  &_R {
+    background-color: $r-menu-color;
+  }
+
+  &_D {
+    background-color: $d-menu-color;
+  }
+
+  &_S {
+    background-color: $s-menu-color;
+  }
+
+  &_SA {
+    background-color: $sa-menu-color;
+  }
+
+  &_I {
+    background-color: $i-menu-color;
+  }
+}

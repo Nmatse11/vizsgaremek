@@ -62,6 +62,12 @@ export interface IDateLabelItem {
   shortlabel: string
 }
 
+export interface IMenuCardItem {
+  key: string;
+  name: string;
+  class: string
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -69,6 +75,11 @@ export class ConfigService {
   appName: string = 'Ételrendelés';
 
   adminNavbar: IMenuItem= { text: 'Admin', icon: 'dashboard' };
+
+  weekText: string = 'hét'
+
+  priceOfDayText: string = 'nap'
+  priceOfWeekText: string = 'hét'
 
   navbarItems: IMenuItem[] = [
     { text: 'Főoldal', link: '/', icon: 'home' },
@@ -219,7 +230,7 @@ export class ConfigService {
     {name: 'Következő lap'},
     {name: 'Előző lap'},
     {name: 'Utolsó lap'},
-    {name:  'Első lap'}
+    {name: 'Első lap'}
   ]
 
   dialogItems: IDialogItem[] = [
@@ -324,6 +335,42 @@ export class ConfigService {
     {label: 'November', shortlabel: 'Nov'},
     {label: 'December', shortlabel: 'Dec'}
   ]
+
+  menuCardItems: IMenuCardItem[] = [
+    {key: 'N', name: 'Nyugdíjas menü', class: "menu_N"},
+    {key: 'A', name: 'Alap menü', class: "menu_ABE"},
+    {key: 'B', name: 'Basic menü', class: "menu_ABE"},
+    {key: 'E', name: 'Extra menü', class: "menu_ABE"},
+    {key: 'F', name: 'Fitness menü', class: "menu_F"},
+    {key: 'V', name: 'Vegán menü', class: "menu_V"},
+    {key: 'Z', name: 'Zero menü', class: "menu_Z"},
+    {key: 'R1', name: 'Reggeli', class: "menu_R"},
+    {key: 'R2', name: 'Reggeli', class: "menu_R"},
+    {key: 'D', name: 'Desszert', class: "menu_D"},
+    {key: 'S', name: 'Sütemény', class: "menu_S"},
+    {key: 'SA', name: 'Savanyúság', class: "menu_SA"},
+    {key: 'I', name: 'Üdítő', class: "menu_I"}
+  ];
+
+  menuCardHeaderText: IAddButtonItem[] = [
+    {name: 'Kód'},
+    {name: 'Név és ár'},
+    {name: 'Hétfő'},
+    {name: 'Kedd'},
+    {name: 'Szerda'},
+    {name: 'Csütörtök'},
+    {name: 'Péntek'}
+  ];
+
+  allergensItems: ITextItem[] = [
+    {key: 'Tojás', name: '../../../assets/images/small_icons/egg_small.jpg'},
+    {key: 'Glutén', name: '../../../assets/images/small_icons/gluten_small.jpg'},
+    {key: 'Tej', name: '../../../assets/images/small_icons/milk_small.jpg'},
+    {key: 'Földimogyoró', name: '../../../assets/images/small_icons/peanut_small.jpg'},
+    {key: 'Szója', name: '../../../assets/images/small_icons/soya_small.jpg'},
+    {key: 'Diófélék', name: '../../../assets/images/small_icons/walnut_small.jpg'}
+  ];
+
 
   constructor() {}
 }

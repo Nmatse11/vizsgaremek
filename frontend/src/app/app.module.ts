@@ -62,6 +62,7 @@ import { MenuCardsComponent } from './common/dashboard-cards/menu-cards/menu-car
 import { BaseDashboardStatCardComponent } from './common/dashboard-cards/base-dashboard-stat-card/base-dashboard-stat-card.component';
 import { FastfoodCardsComponent } from './common/dashboard-cards/fastfood-cards/fastfood-cards.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCardModule } from '@angular/material/card';
 
 import { BarChartComponent } from './common/charts/bar-chart/bar-chart.component';
 import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component';
@@ -134,7 +135,8 @@ import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component
       timeOut: 2000,
       positionClass: 'toast-top-right',
     }),
-    NgChartsModule
+    NgChartsModule,
+    MatCardModule
   ],
   providers: [],
   entryComponents: [

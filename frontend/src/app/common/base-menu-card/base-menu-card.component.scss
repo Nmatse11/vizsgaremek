@@ -1,0 +1,36 @@
+@use '../../../assets/modules/color' as *;
+
+.mat-card {
+  background-color: transparent;
+}
+
+.mat-card-content, .mat-card-subtitle {
+  height: 15%;
+}
+
+.allImg {
+  width: 1.5rem
+}
+
+.hoverImg {
+  width: 15rem;
+}
+
+.hoverDrinkImg {
+  width: 8rem;
+}
+
+#parent {
+  cursor:pointer;
+}
+
+#hover-content {
+  display:none;
+}
+
+#parent:hover #hover-content {
+  display:block;
+  position: absolute;
+  z-index: 100;
+  background-color: $button-color;
+}
