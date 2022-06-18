@@ -1,0 +1,134 @@
+<div class="container py-5 min-vh-100">
+  <div *ngIf="order" class="card mt-2">
+    <div class="card-header">
+      <h4 class="card-title" *ngIf="order.id !== 0">{{ editPageItems[5].title }}</h4>
+      <h4 class="card-title" *ngIf="order.id === 0">{{ editPageItems[5].new }}</h4>
+      <p class="card-category">{{ editPageText[0].name }}</p>
+    </div>
+    <div class="card-body">
+      <form #orderForm="ngForm" (ngSubmit)="saveOrder(order)">
+
+        <input [(ngModel)]="order.id" type="hidden" name="id">
+
+        <div class="row mb-2 justify-content-center">
+          <div class="col-lg-5 col-md-12 mb-2">
+            <div class="form-group">
+              <label [for]="orderFastfoodEditItems[0].prop">{{ orderFastfoodEditItems[0].label }} *</label>
+              <input [(ngModel)]="order[orderFastfoodEditItems[0].prop]" class="form-control" type="string"
+                [name]="orderFastfoodEditItems[0].prop" [id]="orderFastfoodEditItems[0].prop" required
+                [pattern]="orderFastfoodEditItems[0].pattern" [placeholder]="orderFastfoodEditItems[0].placeholder">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="orderForm.controls[orderFastfoodEditItems[0].prop]?.valid || orderForm.controls[orderFastfoodEditItems[0].prop]?.pristine">
+                {{ orderFastfoodEditItems[0].message }}
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <div class="form-group" *ngIf="customerKeys && customerValue">
+              <label [for]="orderFastfoodEditItems[1].prop">{{ orderFastfoodEditItems[1].label }} *</label>
+              <select [(ngModel)]="order[orderFastfoodEditItems[1].prop]" class="form-control" required
+                [name]="orderFastfoodEditItems[1].prop" [id]="orderFastfoodEditItems[1].prop">
+                <option *ngFor="let key of customerKeys; index as i" [value]="key">
+                  {{ customerValue[i] }}
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="col-lg-10 offset-1 mt-4 mb-2">{{ editPageText[10].name }}</h4>
+
+          <div class="row col-lg-10 offset-1 justify-content-start"
+            *ngFor="let item of order[orderFastfoodEditItems[2].prop]; index as i">
+            <div class="col-lg-4 col-md-12">
+              <div class="form-group">
+                <label [for]="orderFastfoodEditItems[2].prop+'productID'+[i]">
+                  {{ orderFastfoodEditItems[2].label }} *
+                </label>
+                <select [(ngModel)]="item.productID" class="form-control" type="number"
+                  [name]="orderFastfoodEditItems[2].prop+'productID'+[i]"
+                  [id]="orderFastfoodEditItems[2].prop+'productID'+[i]" (ngModelChange)="item.productID = $event"
+                  (ngModelChange)="dataChanged($event, i)">
+                  <option *ngFor="let key of fastfoodKeys; index as keyIndex" [value]="key">
+                    {{ fastfoodValue[keyIndex] }}
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-2">
+              <div class="form-group" *ngIf="noteBooleanNotes[i] === true">
+                <label [for]="orderFastfoodEditItems[3].prop+'notes'+[i]">
+                  {{ orderFastfoodEditItems[3].label}} *
+                </label>
+                <select [(ngModel)]="item.notes" class="form-control"
+                  [name]="orderFastfoodEditItems[3].prop+'notes'+[i]" [id]="orderFastfoodEditItems[3].prop+'notes'+[i]">
+                  <option *ngFor="let key of notesKeys; index as noteIndex" [value]="key">
+                    {{ notesValue[noteIndex] }}
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="row col-lg-1 mt-4 deleteButton">
+              <button mat-mini-fab color="cancel" (click)="removeRow(order, i)" type="button"
+                [matTooltip]='tooltips[3].name' matTooltipPosition="above" TooltipTouchGestures="auto"
+                matTooltipClass="mat-delete">X</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row col-lg-10 offset-lg-1 mb-5">
+          <button mat-flat-button color="add" type="button" (click)="addNewRow(order)">
+            {{ editPageText[11].name }}
+          </button>
+        </div>
+
+        <div class="row mb-2 justify-content-center">
+          <div class="col-lg-3 col-md-12">
+            <div class="form-group">
+              <label [for]="orderFastfoodEditItems[4].prop">{{ orderFastfoodEditItems[4].label }} *</label>
+              <div class="input-group-prepend">
+                <input [(ngModel)]="order[orderFastfoodEditItems[4].prop]" class="form-control" type="number"
+                  [name]="orderFastfoodEditItems[4].prop" [id]="orderFastfoodEditItems[4].prop" min="1"
+                  [placeholder]="orderFastfoodEditItems[4].placeholder">
+                <div class="input-group-text">Ft</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-2">
+            <div class="form-group">
+              <label [for]="orderFastfoodEditItems[5].prop">{{ orderFastfoodEditItems[5].label }} *</label>
+              <select [(ngModel)]="order[orderFastfoodEditItems[5].prop]" class="form-control"
+                [name]="orderFastfoodEditItems[5].prop" [id]="orderFastfoodEditItems[5].prop">
+                <option *ngFor="let key of shippingKeys; index as i" [value]="key">
+                  {{ shippingValue[i] }}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <div class="form-group">
+              <label [for]="orderFastfoodEditItems[6].prop">{{ orderFastfoodEditItems[6].label }} *</label>
+              <select [(ngModel)]="order[orderFastfoodEditItems[6].prop]" class="form-control"
+                [name]="orderFastfoodEditItems[6].prop" [id]="orderFastfoodEditItems[6].prop">
+                <option *ngFor="let key of statusKeys; index as i" [value]="key">
+                  {{ statusValue[i] }}
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row col-10 offset-1">
+          <button [disabled]="orderForm.invalid" mat-raised-button color="save" class="mr-2" type="submit">{{
+            editPageText[1].name }}</button>
+          <button mat-raised-button color="cancel" routerLink="/order" class="mr-2" type="button">
+            {{ editPageText[3].name }}
+          </button>
+          <button *ngIf="order.id !== 0" mat-raised-button color="delete" (click)="onDelete(order.id)" type="button">
+            {{ editPageText[2].name }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>

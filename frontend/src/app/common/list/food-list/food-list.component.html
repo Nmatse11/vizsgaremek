@@ -14,15 +14,13 @@
 </div>
 
 <app-base-list *ngIf="buttonClick === false" [List$]="List$" [columns]="columns" [componentName]="componentName"
-  [categoryName]="categoryName" [joinObjectOn]="joinObjectOn" (removeById)="onDelete($event)">
+  [joinObjectOn]="joinObjectOn" (removeById)="onDelete($event)">
 </app-base-list>
 
 <app-base-list *ngIf="buttonClick === true && buttonValue === 'menu'" [List$]="List$" [columns]="columns"
-  [componentName]="componentName" [categoryName]="categoryName" [joinObjectOn]="joinObjectOn"
-  (removeById)="onDelete($event)">
+  [componentName]="componentName" [joinObjectOn]="joinObjectOn" (removeById)="onDelete($event)">
 </app-base-list>
 
 <app-base-list *ngIf="buttonClick === true && buttonValue === 'fastfood'" [List$]="List$" [columns]="columns"
-  [componentName]="componentName" [categoryName]="categoryName" [joinObjectOn]="joinObjectOn"
-  (removeById)="onDelete($event)">
+  [componentName]="componentName" [joinObjectOn]="joinObjectOn" (removeById)="onDelete($event)">
 </app-base-list>

@@ -256,4 +256,11 @@ export class AdminComponent implements OnInit {
         }
   }
 
+  scroll(id: string) {
+    let el = document.getElementById(id)
+    if (el) {
+      el.scrollIntoView({behavior: 'smooth'});
+    }
+  }
+
 }

@@ -1,6 +1,6 @@
 export class OrderMenuItem {
     [key: string]: any;
-    week: number = 0;
-    menuCode: string = "";
-    portion: number = 0;
+    week: number = 1;
+    menuCode: string = "A";
+    portion: number = 1;
 }

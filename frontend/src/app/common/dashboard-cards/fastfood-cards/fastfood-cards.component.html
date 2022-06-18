@@ -55,9 +55,11 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr *ngFor="let fastfood of FastFoodList | filter: codes">
+                        <tr *ngFor="let fastfood of FastFoodList | filter: codes : 'category'">
                           <td>{{ fastfood.name }}</td>
-                          <td>{{ fastfood.numberOfOrder }} {{ valueType }}</td>
+                          <td *ngIf="fastfood.category !== 'PIZ'">{{ fastfood.numberOfOrder }} {{ valueType }}</td>
+                          <td *ngIf="fastfood.category === 'PIZ'">{{ fastfood.numberOfOrder +
+                            fastfood.numberOfOrderFamily }} {{ valueType }}</td>
                           <td *ngIf="fastfood.category !== 'PIZ'">{{ (fastfood.numberOfPaidOrder *
                             fastfoodPricesWithoutPizza[i-1] ) | customCurrency }}</td>
                           <td *ngIf="fastfood.category === 'PIZ'">{{ (fastfood.numberOfPaidOrder *

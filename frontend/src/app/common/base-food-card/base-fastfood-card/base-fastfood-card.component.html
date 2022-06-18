@@ -1,0 +1,28 @@
+<h1>{{ title }}</h1>
+<div *ngFor="let fastfood of fastfoodArray" class="d-flex flex-row">
+  <mat-card *ngIf="fastfood" class="col-12 h-100 d-flex flex-column border rounded-0 pb-1" [ngClass]="background">
+    <mat-card-content class="mb-1">
+      <h5>{{ fastfood.name }}</h5>
+      <p *ngIf="!isPizza">{{ fastfood.descripiton }}</p>
+    </mat-card-content>
+    <mat-card-content class="d-flex flex-row mb-0" *ngIf="isPizza">
+      <p class=" col-8 mb-1">{{ fastfood.descripiton }}</p>
+      <h6 class="col-2 text-center text-muted">{{ normalPizza }} - {{ normalPizzaSize }} {{ unit }}</h6>
+      <h6 class="col-2 text-center text-muted">{{ familyPizza}} - {{ familyPizzaSize }} {{ unit }}</h6>
+    </mat-card-content>
+    <mat-card-content class="d-flex flex-row mb-0">
+      <mat-card-footer class="col-8 ml-2 text-muted mt-auto d-flex flex-row mb-0" *ngIf="fastfood.allergens">
+        <p class="small mb-0" *ngFor="let allergen of setAllergen(fastfood.allergens[0])" [matTooltip]='allergen'
+          matTooltipPosition="below" TooltipTouchGestures="auto"> <img class="allImgFastFood"
+            [src]="setAllergenIcon(allergen)" [alt]="allergen">
+        </p>
+      </mat-card-footer>
+      <h5 *ngIf="isPizza" class="col-2 text-center ml-1">{{ price1 | customCurrency }}</h5>
+      <h5 *ngIf="isPizza" class="col-2 text-center">{{ price2 | customCurrency }}</h5>
+    </mat-card-content>
+    <mat-card-content class="d-flex justify-content-end mr-5 mb-1">
+      <h5 *ngIf="fastfood.category === cat3">{{ price3 | customCurrency }}</h5>
+      <h5 *ngIf="fastfood.category === cat1">{{ price1 | customCurrency }}</h5>
+      <h5 *ngIf="fastfood.category === cat2">{{ price2 | customCurrency }}</h5>
+    </mat-card-content>
+  </mat-card>

@@ -1,0 +1,38 @@
+<mat-card class="h-100 d-flex flex-column border rounded-0">
+  <mat-card-content *ngIf="menuName1" class="d-flex flex-row">
+    <p class="col-10 m-0 p-0">{{ menuName1 }}</p>
+    <p class="col-2 m-0 p-0">
+      <i class="material-icons edit_icon" (click)="editItem(1)">edit</i>
+    </p>
+  </mat-card-content>
+  <mat-card-content *ngIf="editItem1 === true && SoupFoods">
+    <mat-form-field class="m-0 p-0">
+      <mat-label>{{ menuFormText[0] }}</mat-label>
+      <mat-select [(ngModel)]="menuName1">
+        <mat-option *ngFor="let food of SoupFoods" [value]="food.name">{{ food.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="button-group">
+      <button mat-raised-button color="save" (click)="saveItem()" class="mr-1">{{ menuFormText[2] }}</button>
+      <button mat-raised-button color="cancel" (click)="editItem(3)">{{ menuFormText[3] }}</button>
+    </div>
+  </mat-card-content>
+  <mat-card-content *ngIf="menuName2" class="mt-2 d-flex flex-row">
+    <p class="col-10 m-0 p-0">{{ menuName2 }}</p>
+    <p class="col-2 m-0 p-0">
+      <i class="material-icons edit_icon" (click)="editItem(2)">edit</i>
+    </p>
+  </mat-card-content>
+  <mat-card-content *ngIf="editItem2 === true && Foods">
+    <mat-form-field class="m-0 p-0">
+      <mat-label>{{ menuFormText[0] }}</mat-label>
+      <mat-select [(ngModel)]="menuName2">
+        <mat-option *ngFor="let food of Foods" [value]="food.name">{{ food.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="button-group">
+      <button mat-raised-button color="save" (click)="saveItem()" class="mr-1">{{ menuFormText[2] }}</button>
+      <button mat-raised-button color="cancel" (click)="editItem(3)">{{ menuFormText[3] }}</button>
+    </div>
+  </mat-card-content>
+</mat-card>

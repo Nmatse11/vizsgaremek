@@ -1,1 +1,66 @@
-<p>menu-editor works!</p>
+<div class="container pt-1 pb-5 min-vh-100">
+  <hr>
+  <hr>
+  <div class=" button-group d-flex flew-row justify-content-center my-4">
+    <mat-form-field class="mr-3 pt-3">
+      <mat-label>{{ menuEditorMenuSelect }}</mat-label>
+      <mat-select [(ngModel)]="selectedMenu">
+        <mat-option *ngFor="let menu of menuSelectArray" [value]="menu">{{ menu }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="pt-3">
+      <mat-label>{{ menuEditorWeekSelect }}</mat-label>
+      <mat-select [(ngModel)]="selectedWeek">
+        <mat-option *ngFor="let week of weekArray" [value]="week">{{ week }}. {{ weekText}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <hr>
+  <hr>
+  <div class="container py-3 d-flex flew-row justify-content-center align-items-center">
+    <h4 class="mr-5">{{ selectedMenu }}</h4>
+    <h4 class="mr-5">{{ selectedWeek }}. {{ weekText}}</h4>
+    <h4 *ngIf="weekArray && selectedWeek !== weekArray[0]">{{ year }}. {{
+      this.weekService.getWeekDays(selectedWeek)[0] }} - {{
+      this.weekService.getWeekDays(selectedWeek)[4]
+      }}</h4>
+    <h4 *ngIf="weekArray && selectedWeek === weekArray[0]">{{ year - 1 }}. {{ this.weekService.getWeekDays(0)[0] }} - {{
+      this.weekService.getWeekDays(0)[4]
+      }}</h4>
+  </div>
+
+  <div class="container d-flex flex-row justify-content-center pb-5 h-100">
+    <div *ngFor="let day of dayIndex" class="menu_card px-0">
+      <mat-card class="h-10 menu_thead border rounded-0">
+        <mat-card-content class="text-center">
+          <h5>{{ menuCardHeaderText[day+2].name }}</h5>
+        </mat-card-content>
+      </mat-card>
+      <app-base-editor-card
+        *ngIf="menu && menuSelectPrimeArray.indexOf(selectedMenu) !== -1 && menuSelectPrimeArray.indexOf(selectedMenu) !== 3"
+        class="h-100"
+        [SoupFoods]="FoodList$ | async | filter:menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2]][day].category:'category' | filter: 'soup':'menu'"
+        [selectedMenuCategory2]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2]][day].category"
+        [menuName1]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2]][day].name"
+        [Foods]="FoodList$ | async | filter:menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2 + 1]][day].category:'category' | filter: 'main_course':'menu'"
+        [selectedMenuCategory1]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2 + 1]][day].category"
+        [menuName2]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2 + 1]][day].name">
+      </app-base-editor-card>
+      <app-base-editor-card
+        *ngIf="menu && menuSelectPrimeArray.indexOf(selectedMenu) !== -1 && menuSelectPrimeArray.indexOf(selectedMenu) === 3"
+        class="h-100" [SoupFoods]="FoodList$ | async | filter: 'soup':'menu' | filter: 'true' : 'fitness'"
+        [selectedMenuCategory2]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2]][day].category"
+        [menuName1]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2]][day].name"
+        [Foods]="FoodList$ | async | filter:menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2 + 1]][day].category:'category' | filter: 'main_course':'menu'"
+        [selectedMenuCategory1]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2 + 1]][day].category"
+        [menuName2]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2 + 1]][day].name">
+      </app-base-editor-card>
+      <app-base-editor-card *ngIf="menu && menuSelectOptionArray.indexOf(selectedMenu) !== -1" class="h-100"
+        [selectedMenuCategory1]="menu[selectedWeek][menuVariable[menuSelectOptionArray.indexOf(selectedMenu) + 12]][day].category"
+        [Foods]="FoodList$ | async | filter:menu[selectedWeek][menuVariable[menuSelectOptionArray.indexOf(selectedMenu) + 12]][day].category:'category'"
+        [menuName2]="menu[selectedWeek][menuVariable[menuSelectOptionArray.indexOf(selectedMenu) + 12]][day].name">
+      </app-base-editor-card>
+    </div>
+  </div>
+
+</div>

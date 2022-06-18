@@ -15,7 +15,7 @@ export class FoodListComponent implements OnInit {
 
   List$: Observable<any[]> = this.foodService.getAll();
   columns = this.config.foodMenuItems;
-  componentName: string = 'product';
+  componentName: string = 'food';
   categoryName: string = 'food'
 
   buttons = this.config.tableItems
@@ -41,38 +41,39 @@ export class FoodListComponent implements OnInit {
     if (type === 'menu') {
       this.List$ = this.foodService.getAll();
       this.columns = this.config.foodMenuItems;
-      this.categoryName = 'food'
+      this.componentName = 'food';
       this.buttonClick = true
       this.buttonValue = 'menu'
     }
     if (type === 'fastfood') {
       this.List$ = this.fastfoodService.getAll();
       this.columns = this.config.fastfoodMenuItems;
-      this.categoryName = 'fastfood'
+      this.componentName = 'fastfood';
       this.buttonClick = true
       this.buttonValue = 'fastfood'
     }
   }
 
   onDelete(id: number): void {
-    if (this.buttonValue === 'menu') {
+    if (this.componentName === 'menu') {
       this.foodService.delete(id).subscribe(
         response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-          this.router.navigate(['/', this.componentName]);
+          this.router.navigate(['/', 'product']);
           this.toastr.error(this.messages[0].message, this.messages[0].title);
           }
         )
       )
     }
-    if (this.buttonValue === 'fastfood') {
+    if (this.componentName === 'fastfood') {
       this.fastfoodService.delete(id).subscribe(
         response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-          this.router.navigate(['/', this.componentName]);
+          this.router.navigate(['/', 'product']);
           this.toastr.error(this.messages[0].message, this.messages[0].title);
           }
         )
       )
     }
+
   }
 
 }

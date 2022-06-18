@@ -3,8 +3,8 @@ export class Bill {
   id: number = 0;
   orderDate: string = new Date().toLocaleDateString('hu');
   billDate: string = new Date().toLocaleDateString('hu');
-  orderID: number = 0;
+  orderID: number = 1;
   type: string = 'menu';
-  amount: number = 0;
+  amount: number = 1000;
   status: string = 'new';
 }

@@ -6,7 +6,6 @@ import { ConfigService } from 'src/app/service/config.service';
 import { FoodService } from 'src/app/service/food.service';
 import { MenuService } from 'src/app/service/menu.service';
 import { WeekService } from 'src/app/service/week.service';
-
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -15,9 +14,8 @@ import { WeekService } from 'src/app/service/week.service';
 export class MenuComponent implements OnInit {
 
   weekNumber = this.weekService.weekNumber
-  weekText = this.config.weekText
-
   week: number = 0
+  weekText = this.config.weekText
 
   menus$ = this.menuService.getAll()
 
@@ -45,17 +43,24 @@ export class MenuComponent implements OnInit {
 
   menuVariable = Object.keys(new Menu()).filter(value => value !== "id" && value !== "week")
 
+  menuPrimeButton = this.config.menuPrimeButtonText
+  menuOptionButton = this.config.menuOptionButtonText
+  menuDrinkButton = this.config.menuDrinkButtonText
+
+  buttonBoolean = [true, false, false]
+
   constructor(
-    private weekService: WeekService,
+    public weekService: WeekService,
     private config: ConfigService,
     private menuService: MenuService,
     private foodService: FoodService,
-    private menuCategoryService: MenuCategoryService
+    private menuCategoryService: MenuCategoryService,
   ) { }
 
   ngOnInit(): void {
     this.getIMenuItem()
     this.setPriceOfMenu()
+    this.week = this.weekNumber
   }
 
   saveMenu(menu: Menu, item: Food[]) {
@@ -73,7 +78,9 @@ export class MenuComponent implements OnInit {
   }
 
   weekButton(value: number) {
-    this.week = value
+    this.buttonBoolean = [false, false, false]
+    this.buttonBoolean[value]= true
+    this.week = value + this.weekNumber
   }
 
   setPriceOfMenu(): void {
@@ -103,8 +110,8 @@ export class MenuComponent implements OnInit {
       let catSoup = categories.filter(item => item.notes === 'prime' && item.menu === 'soup')
       let catNotSoup = categories.filter(item => item.menu !== 'soup')
 
-      catSoup.filter(item => item.categoryCode === code).map(item => this.weightSoupArray.push(item.weight as number))
-      catNotSoup.filter(item => item.categoryCode === code).map(item => this.weightArray.push(item.weight as number))
+      catSoup.filter(item => item.categoryCode === code).map(item => this.weightSoupArray.push(item.weigh as number))
+      catNotSoup.filter(item => item.categoryCode === code).map(item => this.weightArray.push(item.weigh as number))
       this.weightSoupArray.push(400)
       })
     })
@@ -112,6 +119,13 @@ export class MenuComponent implements OnInit {
 
   setAllergensString(array: string[]): string {
     return array.join(', ')
+  }
+
+  scroll(id: string) {
+    let el = document.getElementById(id)
+    if (el) {
+      el.scrollIntoView({behavior: 'smooth'});
+    }
   }
 
 }

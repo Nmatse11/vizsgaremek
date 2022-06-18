@@ -1,0 +1,21 @@
+@use '../../../../assets/modules/color' as *;
+
+.edit_icon {
+  cursor: pointer;
+
+  &:hover {
+    color: $list-button-backgroundcolor;
+  }
+}
+
+.mat {
+  &-cancel {
+    background-color: $edit-button-backgroundcolor;
+    color: $button-color;
+  }
+
+  &-save {
+    background-color: $list-button-backgroundcolor;
+    color: $button-color;
+  }
+}

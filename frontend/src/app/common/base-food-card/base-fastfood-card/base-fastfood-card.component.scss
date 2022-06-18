@@ -1,0 +1,37 @@
+@use '../../../../assets/modules/color' as *;
+
+.allImgFastFood {
+  width: 2rem;
+}
+
+.fastfood-card {
+
+  &-pizza {
+    background-color: $v-menu-color
+  }
+
+  &-hamb {
+    background-color: $r-menu-color
+  }
+
+  &-gyros {
+    background-color: $f-menu-color
+  }
+
+  &-salata {
+    background-color: $n-menu-color
+  }
+
+  &-sidedish {
+    background-color: $s-menu-color
+  }
+
+  &-dessert {
+    background-color: $sa-menu-color
+  }
+
+  &-drink {
+    background-color: $a-b-e-menu-color
+  }
+}
+

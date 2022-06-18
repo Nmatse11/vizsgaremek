@@ -5,7 +5,6 @@ import { ConfigService } from 'src/app/service/config.service';
 import { Router } from '@angular/router';
 import { FastfoodCategoryService } from 'src/app/service/fastfood-category.service';
 import { ToastrService } from 'ngx-toastr';
-import { BoundElementProperty } from '@angular/compiler';
 
 @Component({
   selector: 'app-category-list',
@@ -16,8 +15,7 @@ export class CategoryListComponent implements OnInit {
 
   List$: Observable<any[]> = this.menuCategoryService.getAll();
   columns = this.config.foodCategoryMenuItems;
-  componentName: string = 'category';
-  categoryName: string = 'menu-category'
+  componentName: string = 'menu-category';
 
   buttons = this.config.tableItems
 
@@ -26,7 +24,6 @@ export class CategoryListComponent implements OnInit {
   messages = this.config.toastrItems
 
   buttonClick: boolean  = false
-  buttonValue: string = 'menu'
 
   constructor(
     private menuCategoryService: MenuCategoryService,
@@ -39,36 +36,34 @@ export class CategoryListComponent implements OnInit {
   ngOnInit( ): void { }
 
   setCategoryList(type: string): void {
-    if (type === 'menu') {
+    if (type === 'menu-category') {
       this.List$ = this.menuCategoryService.getAll();
       this.columns = this.config.foodCategoryMenuItems;
-      this.categoryName = 'menu-category'
+      this.componentName = 'menu-category'
       this.buttonClick = true
-      this.buttonValue = 'menu'
     }
-    if (type === 'fastfood') {
+    if (type === 'fastfood-category') {
       this.List$ = this.fastfoodCategoryService.getAll();
       this.columns = this.config.fastfoodCategoryMenuItems;
-      this.categoryName = 'fastfood-category'
+      this.componentName = 'fastfood-category'
       this.buttonClick = true
-      this.buttonValue = 'fastfood'
     }
   }
 
   onDelete(id: number): void {
-    if (this.buttonValue === 'menu') {
+    if (this.componentName === 'menu-category') {
       this.menuCategoryService.delete(id).subscribe(
         response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-          this.router.navigate(['/', this.componentName]);
+          this.router.navigate(['/', 'category']);
           this.toastr.error(this.messages[0].message, this.messages[0].title);
           }
         )
       )
     }
-    if (this.buttonValue === 'fastfood') {
+    if (this.componentName === 'fastfood-category') {
       this.fastfoodCategoryService.delete(id).subscribe(
         response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-          this.router.navigate(['/', this.componentName]);
+          this.router.navigate(['/', 'category']);
           this.toastr.error(this.messages[0].message, this.messages[0].title);
           }
         )

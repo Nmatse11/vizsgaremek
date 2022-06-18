@@ -5,8 +5,9 @@
   <mat-card-subtitle
     class="text-right mr-2 pt-3 mb-2 text-muted mt-auto align-self-end d-flex flex-row justify-content-end"
     *ngIf="allergensSoup">
-    <p class="small" *ngFor="let allergen of allergensSoup" [matTooltip]='allergen' matTooltipPosition="below"
-      TooltipTouchGestures="auto"> <img class="allImg" [src]="setAllergenIcon(allergen)" [alt]="allergen">
+    <p class="small" *ngFor="let allergen of setAllergen(allergensSoup[0])" [matTooltip]='allergen'
+      matTooltipPosition="below" TooltipTouchGestures="auto"> <img class="allImg" [src]="setAllergenIcon(allergen)"
+        [alt]="allergen">
     </p>
   </mat-card-subtitle>
   <mat-card-subtitle *ngIf="menuName2 && allergensSoup" id="parent" class="text-left ml-2 mb-0 text-muted mt-auto">
@@ -14,8 +15,8 @@
     <div id="hover-content" class="border border-dark">
       <h6 class="text-center mt-2">{{ menuName1 }}</h6>
       <img class="hoverImg" [src]="imgLinkSoup" alt="soup">
-      <p *ngIf="weightSoup" class="text-right small mr-2 mb-1">Súly: {{ weightSoup }} {{ unit }}</p>
-      <p class="text-right small mr-2">Allergének:
+      <p *ngIf="weighSoup" class="text-right small mr-2 mb-1">{{ weightText }}: {{ weighSoup }} {{ unit }}</p>
+      <p class="text-right small mr-2">{{ allergenText }}:
         <span *ngIf="allergensSoup.length > 0">
           {{setAllergenText(allergensSoup)}}
         </span>
@@ -28,11 +29,11 @@
   <mat-card-content *ngIf="menuName2" class="mb-0">
     <p>{{ menuName2 }}</p>
   </mat-card-content>
-  <hr>
   <mat-card-footer class="text-right mr-2 mb-1 text-muted mt-auto align-self-end d-flex flex-row justify-content-end"
     *ngIf="allergens">
-    <p class="small" *ngFor="let allergen of allergens" [matTooltip]='allergen' matTooltipPosition="below"
-      TooltipTouchGestures="auto"> <img class="allImg" [src]="setAllergenIcon(allergen)" [alt]="allergen">
+    <p class="small" *ngFor="let allergen of setAllergen(allergens[0])" [matTooltip]='allergen'
+      matTooltipPosition="below" TooltipTouchGestures="auto"> <img class="allImg" [src]="setAllergenIcon(allergen)"
+        [alt]="allergen">
     </p>
   </mat-card-footer>
   <mat-card-footer id="parent" class="text-left ml-2 mb-0 text-muted mt-auto">
@@ -42,8 +43,8 @@
       <h6 *ngIf="menuName2" class="text-center">{{ menuName2 }}</h6>
       <img *ngIf="!isDrink" class="hoverImg" [src]="imgLink" alt="food">
       <img *ngIf="isDrink" class="hoverDrinkImg" [src]="imgLink" alt="food">
-      <p class="text-right small mr-2 mb-1">Súly: {{ weight }} {{ unit }}</p>
-      <p class="text-right small mr-2" *ngIf="!isDrink">Allergének:
+      <p class="text-right small mr-2 mb-1">{{ weightText }}: {{ weigh }} {{ unit }}</p>
+      <p class="text-right small mr-2" *ngIf="!isDrink">{{ allergenText }}:
         <span *ngIf="allergens && allergens.length > 0">
           {{setAllergenText(allergens)}}
         </span>

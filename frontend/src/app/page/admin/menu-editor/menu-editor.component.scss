@@ -1,0 +1,14 @@
+@use '../../../../assets/modules/color' as *;
+
+.menu {
+
+  &_card {
+    width: 20%;
+  }
+
+  &_thead {
+    background-color: $edit-button-backgroundcolor;
+    color: $button-color;
+    font-weight: bold;
+  }
+}

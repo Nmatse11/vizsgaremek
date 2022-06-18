@@ -4,14 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { BillEditComponent } from './common/edit/bill-edit/bill-edit.component';
 import { CustomerEditComponent } from './common/edit/customer-edit/customer-edit.component';
 import { FoodEditComponent } from './common/edit/food-edit/food-edit.component';
-import { OrderEditComponent } from './common/edit/order-edit/order-edit.component';
+import { MenuOrderEditComponent } from './common/edit/menu-order-edit/menu-order-edit.component';
 import { SigninComponent } from './common/login/signin/signin.component';
 import { SignupComponent } from './common/login/signup/signup.component';
 import { BillComponent } from './page/admin/bill/bill.component';
 import { CustomerComponent } from './page/admin/customer/customer.component';
 import { AdminComponent } from './page/admin/dashboard/admin.component';
-import { FastfoodCategoryEditorComponent } from './page/admin/fastfood-category-editor/fastfood-category-editor.component';
-import { MenuCategoryEditorComponent } from './page/admin/menu-category-editor/menu-category-editor.component';
 import { MenuEditorComponent } from './page/admin/menu-editor/menu-editor.component';
 import { OrderComponent } from './page/admin/order/order.component';
 import { FastfoodComponent } from './page/fastfood/fastfood.component';
@@ -19,6 +17,10 @@ import { HomeComponent } from './page/home/home.component';
 import { MenuComponent } from './page/menu/menu.component';
 import { FastfoodEditComponent } from './common/edit/fastfood-edit/fastfood-edit.component';
 import { ProductComponent } from './page/admin/product/product.component';
+import { ForbiddenComponent } from './page/forbidden/forbidden.component';
+import { FastfoodOrderEditComponent } from './common/edit/fastfood-order-edit/fastfood-order-edit.component';
+import { FastfoodCategoryEditComponent } from './common/edit/fastfood-category-edit/fastfood-category-edit.component';
+import { MenuCategoryEditComponent } from './common/edit/menu-category-edit/menu-category-edit.component';
 
 const routes: Routes = [
   {
@@ -38,8 +40,12 @@ const routes: Routes = [
     component: SignupComponent,
   },
   {
-    path: 'signin',
+    path: 'login',
     component: SigninComponent,
+  },
+  {
+    path: 'forbidden',
+    component: ForbiddenComponent,
   },
   {
     path: 'admin',
@@ -55,11 +61,11 @@ const routes: Routes = [
   },
   {
     path: 'menu-category-edit/:id',
-    component: MenuCategoryEditorComponent,
+    component: MenuCategoryEditComponent,
   },
   {
     path: 'fastfood-category-edit/:id',
-    component: FastfoodCategoryEditorComponent,
+    component: FastfoodCategoryEditComponent,
   },
   {
     path: 'menu-editor',
@@ -91,11 +97,11 @@ const routes: Routes = [
   },
   {
     path: 'order-menu-edit/:id',
-    component: OrderEditComponent,
+    component: MenuOrderEditComponent,
   },
   {
     path: 'order-fastfood-edit/:id',
-    component: OrderEditComponent,
+    component: FastfoodOrderEditComponent,
   },
   {
     path: 'bill-edit/:id',

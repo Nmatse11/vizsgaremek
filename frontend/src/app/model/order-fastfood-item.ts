@@ -1,5 +1,5 @@
 export class OrderFastfoodItem {
     [key: string]: any;
-    productID: number = 0;
-    notes?: string = "";
+    productID: number = 1;
+    notes?: string;
 }

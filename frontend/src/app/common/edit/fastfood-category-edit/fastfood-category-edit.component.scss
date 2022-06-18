@@ -1,0 +1,35 @@
+@use '../../../../assets/modules/color' as *;
+
+.mat {
+  &-cancel {
+    background-color: $edit-button-backgroundcolor;
+    color: $button-color;
+
+    &:hover {
+      background-color: $button-color-hover;
+    }
+  }
+
+  &-save {
+    background-color: $list-button-backgroundcolor;
+    color: $button-color;
+
+    &:hover {
+      background-color: $d-menu-color;
+    }
+  }
+
+  &-delete{
+    background-color: $n-menu-color;
+    color: $button-color-hover;
+
+    &:hover {
+      background-color: $list-button-backgroundcolor;
+      color: $button-color;
+    }
+  }
+}
+
+.card-header {
+  background-color: $d-menu-color;
+}

@@ -2,10 +2,10 @@
   <hr>
   <hr>
   <div class="button-group d-flex flew-row justify-content-center">
-    <button mat-raised-button color="add" class="mr-3 pt-2 pb-1 orderButton" (click)="setOrderList('menu')">
+    <button mat-raised-button color="add" class="mr-3 pt-2 pb-1 orderButton" (click)="setOrderList('order-menu')">
       <h2>{{ buttons[5].title }}</h2>
     </button>
-    <button mat-raised-button color="add" class="pt-2 pb-1 orderButton" (click)="setOrderList('fastfood')">
+    <button mat-raised-button color="add" class="pt-2 pb-1 orderButton" (click)="setOrderList('order-fastfood')">
       <h2>{{ buttons[6].title }}</h2>
     </button>
   </div>
@@ -14,16 +14,15 @@
 </div>
 
 <app-base-list *ngIf="buttonClick === false" [List$]="List$" [columns]="columns" [componentName]="componentName"
-  [categoryName]="categoryName" [currencyPipeOn]="currencyPipeOn" [customerIdOn]="customerIdOn"
+  [currencyPipeOn]="currencyPipeOn" [customerIdOn]="customerIdOn" (removeById)="onDelete($event)">
+</app-base-list>
+
+<app-base-list *ngIf="buttonClick === true && componentName === 'order-menu'" [List$]="List$" [columns]="columns"
+  [componentName]="componentName" [currencyPipeOn]="currencyPipeOn" [customerIdOn]="customerIdOn"
   (removeById)="onDelete($event)">
 </app-base-list>
 
-<app-base-list *ngIf="buttonClick === true && buttonValue === 'menu'" [List$]="List$" [columns]="columns"
-  [componentName]="componentName" [categoryName]="categoryName" [currencyPipeOn]="currencyPipeOn"
-  [customerIdOn]="customerIdOn" (removeById)="onDelete($event)">
-</app-base-list>
-
-<app-base-list *ngIf="buttonClick === true && buttonValue === 'fastfood'" [List$]="List$" [columns]="columns"
-  [componentName]="componentName" [categoryName]="categoryName" [currencyPipeOn]="currencyPipeOn"
-  [customerIdOn]="customerIdOn" (removeById)="onDelete($event)">
+<app-base-list *ngIf="buttonClick === true && componentName === 'order-fastfood'" [List$]="List$" [columns]="columns"
+  [componentName]="componentName" [currencyPipeOn]="currencyPipeOn" [customerIdOn]="customerIdOn"
+  (removeById)="onDelete($event)">
 </app-base-list>

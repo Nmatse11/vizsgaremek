@@ -4,8 +4,8 @@ export class CategoryFastfood {
   categoryCode: string = '';
   menu: string = '';
   notes: string = '';
-  price: number = 0;
-  size?: number = 0;
+  price: number = 1000;
+  size?: number;
   numberOfFood?: number = 0;
   sumOfOrder?: number = 0
 }

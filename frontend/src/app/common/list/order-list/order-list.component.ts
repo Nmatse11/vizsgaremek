@@ -15,8 +15,7 @@ export class OrderListComponent implements OnInit {
 
   List$: Observable<any[]> = this.menuOrderService.getAll()
   columns = this.config.orderItems;
-  componentName: string = 'order';
-  categoryName: string = 'order-menu'
+  componentName: string = 'order-menu';
 
   buttons = this.config.tableItems
 
@@ -25,7 +24,6 @@ export class OrderListComponent implements OnInit {
   customerIdOn = 'customerID'
 
   buttonClick: boolean  = false
-  buttonValue: string = 'menu'
 
   messages = this.config.toastrItems
 
@@ -43,34 +41,32 @@ export class OrderListComponent implements OnInit {
   ngOnInit( ): void {}
 
   setOrderList(type: string): void {
-    if (type === 'menu') {
+    if (type === 'order-menu') {
       this.List$ = this.menuOrderService.getAll();
-      this.categoryName = 'oder-menu'
+      this.componentName = 'order-menu'
       this.buttonClick = true
-      this.buttonValue = 'menu'
     }
-    if (type === 'fastfood') {
+    if (type === 'order-fastfood') {
       this.List$ = this.fastfoodOrderService.getAll();
-      this.categoryName = 'oder-fastfood'
+      this.componentName = 'order-fastfood'
       this.buttonClick = true
-      this.buttonValue = 'fastfood'
     }
   }
 
   onDelete(id: number): void {
-    if (this.buttonValue === 'menu') {
+    if (this.componentName === 'order-menu') {
       this.menuOrderService.delete(id).subscribe(
         response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-          this.router.navigate(['/', this.componentName]);
+          this.router.navigate(['/', 'order']);
           this.toastr.error(this.messages[0].message, this.messages[0].title);
           }
         )
       )
     }
-    if (this.buttonValue === 'fastfood') {
+    if (this.componentName === 'order-fastfood') {
       this.fastfoodOrderService.delete(id).subscribe(
         response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-          this.router.navigate(['/', this.componentName]);
+          this.router.navigate(['/', 'order']);
           this.toastr.error(this.messages[0].message, this.messages[0].title);
           }
         )

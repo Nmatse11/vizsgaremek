@@ -1,1 +1,20 @@
-<p>signin works!</p>
+<div *ngIf="user" class="min-vh-100 d-flex justify-content-center">
+  <form #loginForm="ngForm" class="col-3 mt-5 pt-5">
+    <h1 class="h3 mb-3 font-weight-normal mb-4 text-center">{{ loginText[0].name }}</h1>
+    <label for="email" class="sr-only">{{ loginText[1].name }}</label>
+    <input type="email" id="email" name="email" [(ngModel)]="user['email']" class="form-control mb-2"
+      [placeholder]="loginText[1].name" required autofocus [pattern]="patternItems[2].pattern">
+    <div [hidden]="loginForm.controls['email']?.valid || loginForm.controls['email']?.pristine"
+      class="font-italic small mb-2 ml-1">
+      {{ patternItems[2].message }}
+    </div>
+    <label for="password" class="sr-only">{{ loginText[2].name }}</label>
+    <input type="password" id="password" name="password" [(ngModel)]="user['password']" class="form-control"
+      [placeholder]="loginText[2].name" required [pattern]="patternItems[3].pattern">
+    <div [hidden]="loginForm.controls['password']?.valid || loginForm.controls['password']?.pristine"
+      class="font-italic small mb-2 ml-1">
+      {{ patternItems[3].message }}
+    </div>
+    <button class="btn btn-lg login btn-block text-white mt-4" type="submit">{{ loginText[3].name }}</button>
+  </form>
+</div>

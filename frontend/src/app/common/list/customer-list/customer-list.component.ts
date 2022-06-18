@@ -16,6 +16,7 @@ export class CustomerListComponent implements OnInit {
   List$: Observable<Customer[]> = this.customerService.getAll();
   columns = this.config.customerItems;
   componentName: string = 'customer';
+  sortPropIfObject ='city';
 
   getFullOn: string = 'address';
 

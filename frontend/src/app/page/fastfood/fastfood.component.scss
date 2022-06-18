@@ -1,0 +1,48 @@
+@use '../../../assets/modules/color' as *;
+
+.allImg {
+  width: 1.5rem;
+}
+
+.mat {
+
+  &-primary-button {
+    background-color: $list-button-backgroundcolor;
+  }
+
+  &-secondary-button {
+    background-color: $a-b-e-menu-color;
+  }
+
+}
+
+.fastfood-card {
+
+  &-pizza {
+    background-color: $v-menu-color
+  }
+
+  &-hamb {
+    background-color: $r-menu-color
+  }
+
+  &-gyros {
+    background-color: $f-menu-color
+  }
+
+  &-salata {
+    background-color: $n-menu-color
+  }
+
+  &-sidedish {
+    background-color: $s-menu-color
+  }
+
+  &-dessert {
+    background-color: $sa-menu-color
+  }
+
+  &-drink {
+    background-color: $a-b-e-menu-color
+  }
+}

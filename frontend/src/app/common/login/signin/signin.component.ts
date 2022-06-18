@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/model/user';
+import { ConfigService } from 'src/app/service/config.service';
 
 @Component({
   selector: 'app-signin',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigninComponent implements OnInit {
 
-  constructor() { }
+  loginText = this.config.loginText
 
-  ngOnInit(): void {
-  }
+  patternItems = this.config.patternItems
+
+  user: User = new User()
+
+  constructor(
+    private config: ConfigService
+  ) { }
+
+  ngOnInit(): void { }
 
 }

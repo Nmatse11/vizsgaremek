@@ -1,20 +1,45 @@
-<div class="container pt-3">
+<div class="container py-1">
   <hr>
   <hr>
   <div class="button-group d-flex flew-row justify-content-center">
-    <button mat-raised-button color="add" class="mr-3 pt-3 pb-1" (click)="weekButton(0)">
-      <h4>{{ weekNumber }}. {{ weekText }}</h4>
-    </button>
-    <button mat-raised-button color="add" class="mr-3 pt-3 pb-1" (click)="weekButton(1)">
-      <h4>{{ weekNumber + 1 }}. {{ weekText }}</h4>
-    </button>
-    <button mat-raised-button color="add" class="pt-3 pb-1" (click)="weekButton(2)">
-      <h4>{{ weekNumber + 2 }}. {{ weekText }}</h4>
+    <div *ngFor="let button of buttonBoolean; index as i">
+      <button *ngIf="buttonBoolean[i] === false" mat-raised-button color="add" class="mr-3 pt-3 pb-1"
+        (click)="weekButton(i)">
+        <h4>{{ weekNumber + i}}. {{ weekText }}</h4>
+      </button>
+      <button *ngIf="buttonBoolean[i] === true" mat-raised-button color="active" class="mr-3 pt-3 pb-1"
+        (click)="weekButton(i)">
+        <h4>{{ weekNumber + i}}. {{ weekText }}</h4>
+      </button>
+    </div>
+  </div>
+</div>
+
+<hr>
+<hr>
+
+<div class="container py-1">
+  <div class="button-group d-flex flew-row justify-content-center mb-2">
+    <button *ngFor="let button of menuPrimeButton" mat-flat-button color="info-button"
+      class="mr-1 pb-0 text-white col-2" (click)="scroll('scroll'+button.scroll)">
+      <p class="mb-0">{{ button.name }}</p>
     </button>
   </div>
-  <hr>
-  <hr>
+  <div class="button-group d-flex flew-row justify-content-center mb-2">
+    <button *ngFor="let button of menuOptionButton" mat-flat-button color="option-button" class="mr-1 pb-0 col-2"
+      (click)="scroll('scroll'+button.scroll)">
+      <p class="mb-0">{{ button.name }}</p>
+    </button>
+  </div>
+  <div class="button-group d-flex flew-row justify-content-center mb-2">
+    <button mat-flat-button color="drink-button" class="mr-1 pb-0 col-2"
+      (click)="scroll('scroll'+menuDrinkButton[0].scroll)">
+      <p class="mb-0">{{ menuDrinkButton[0].name }}</p>
+    </button>
+  </div>
 </div>
+
+
 
 <div class="spinner d-flex justify-content-center my-5" *ngIf="!menus$">
   <mat-progress-bar mode='indeterminate' class="w-50"></mat-progress-bar>
@@ -22,25 +47,27 @@
 
 <div *ngIf="menus$ | async as menu;" class="container-fluid pb-5 mb-5">
   <div class="row border border-dark d-flex flex-row menu_thead">
-    <mat-card class="menu-card menu_thead menu_tkey h-auto text-center">
+    <mat-card class="menu-card menu_thead menu_tkey h-auto text-center mt-2 border-0 rounded-0">
       <mat-card-content>
         <h5>{{ menuCardHeaderText[0].name }}</h5>
       </mat-card-content>
     </mat-card>
-    <mat-card class="menu-card menu_thead menu_name h-auto text-center">
+    <mat-card class="menu-card menu_thead menu_name h-auto text-center mt-2 border-0 rounded-0">
       <mat-card-content>
         <h5>{{ menuCardHeaderText[1].name }}</h5>
       </mat-card-content>
     </mat-card>
     <div *ngFor="let day of dayIndex" class="menu_card px-0 text-center">
-      <mat-card class="menu-card h-auto menu_thead">
+      <mat-card class="menu-card h-auto menu_thead border-0 rounded-0">
         <mat-card-content>
           <h5>{{ menuCardHeaderText[day+2].name }}</h5>
+          <p class="small">{{ this.weekService.getWeekDays(week)[day] }}</p>
         </mat-card-content>
       </mat-card>
     </div>
   </div>
-  <div *ngFor="let index of primeIndex" class="row border border-dark d-flex flex-row">
+  <div *ngFor="let index of primeIndex" class="row border border-dark d-flex flex-row"
+    [id]="menuCardText[index].scroll">
     <mat-card class="menu-card menu_key h-auto d-flex align-items-center border-0 rounded-0"
       [ngClass]="menuCardText[index].class">
       <mat-card-content>
@@ -53,21 +80,25 @@
         <p>{{ menuCardText[index].name }}</p>
         <p class="text-muted">{{ priceArray[index] | customCurrency }} / {{priceOfDayText}}</p>
         <p class="text-muted">{{ (priceArray[index] * 5) | customCurrency }} / {{priceOfWeekText}}</p>
+        <div class="d-flex justify-content-center">
+          <button mat-flat-button color="info-button" class="text-white" [matTooltip]='menuCardText[index].info'
+            matTooltipPosition="below" matTooltipClass="mat-info" TooltipTouchGestures="auto">Info</button>
+        </div>
       </mat-card-content>
     </mat-card>
     <div *ngFor="let day of dayIndex" class="menu_card px-0">
       <app-base-menu-card *ngIf="index === 0" [menuName1]="menu[week][menuVariable[0]][day].name"
-        [allergensSoup]="menu[week][menuVariable[0]][day].allergens" [weightSoup]="weightSoupArray[index]"
+        [allergensSoup]="menu[week][menuVariable[0]][day].allergens" [weighSoup]="weightSoupArray[index]"
         [imgLinkSoup]="menu[week][menuVariable[0]][day].img" [menuName2]="menu[week][menuVariable[1]][day].name"
-        [allergens]="menu[week][menuVariable[1]][day].allergens" [weight]="weightArray[index]" [unit]="unit[2].name"
+        [allergens]="menu[week][menuVariable[1]][day].allergens" [weigh]="weightArray[index]" [unit]="unit[2].name"
         [imgLink]="menu[week][menuVariable[1]][day].img">
       </app-base-menu-card>
-      <app-base-menu-card *ngIf="index >= 1" [menuName1]="menu[week][menuVariable[index + 1]][day].name"
-        [allergensSoup]="menu[week][menuVariable[index + 1]][day].allergens" [weightSoup]="weightSoupArray[index]"
-        [imgLinkSoup]="menu[week][menuVariable[index + 1]][day].img"
-        [menuName2]="menu[week][menuVariable[index + 2]][day].name"
-        [allergens]="menu[week][menuVariable[index + 2]][day].allergens" [weight]="weightArray[index]"
-        [unit]="unit[2].name" [imgLink]="menu[week][menuVariable[index + 2]][day].img">
+      <app-base-menu-card *ngIf="index >= 1" [menuName1]="menu[week][menuVariable[index * 2 - 2]][day].name"
+        [allergensSoup]="menu[week][menuVariable[index * 2 - 2]][day].allergens" [weighSoup]="weightSoupArray[index]"
+        [imgLinkSoup]="menu[week][menuVariable[index * 2 - 2]][day].img"
+        [menuName2]="menu[week][menuVariable[index * 2 - 1]][day].name"
+        [allergens]="menu[week][menuVariable[index * 2 - 1]][day].allergens" [weigh]="weightArray[index]"
+        [unit]="unit[2].name" [imgLink]="menu[week][menuVariable[index * 2 - 1]][day].img">
       </app-base-menu-card>
     </div>
   </div>
@@ -76,25 +107,26 @@
   <hr>
 
   <div class="row border border-dark d-flex flex-row menu_thead">
-    <mat-card class="menu-card menu_thead menu_tkey h-auto text-center">
+    <mat-card class="menu-card menu_thead menu_tkey h-auto text-center border-0 rounded-0">
       <mat-card-content>
         <h5>{{ menuCardHeaderText[0].name }}</h5>
       </mat-card-content>
     </mat-card>
-    <mat-card class="menu-card menu_thead menu_name h-auto text-center">
+    <mat-card class="menu-card menu_thead menu_name h-auto text-center border-0 rounded-0">
       <mat-card-content>
         <h5>{{ menuCardHeaderText[1].name }}</h5>
       </mat-card-content>
     </mat-card>
     <div *ngFor="let day of dayIndex" class="menu_card px-0 text-center">
-      <mat-card class="menu-card h-auto menu_thead">
+      <mat-card class="menu-card h-auto menu_thead border-0 rounded-0">
         <mat-card-content>
           <h5>{{ menuCardHeaderText[day+2].name }}</h5>
         </mat-card-content>
       </mat-card>
     </div>
   </div>
-  <div *ngFor="let index of optionIndex" class="row border border-dark d-flex flex-row">
+  <div *ngFor="let index of optionIndex" class="row border border-dark d-flex flex-row"
+    [id]="menuCardText[index + 7].scroll">
     <mat-card class="menu-card menu_key h-auto d-flex align-items-center border-0 rounded-0"
       [ngClass]="menuCardText[index + 7].class">
       <mat-card-content>
@@ -111,7 +143,7 @@
     </mat-card>
     <div *ngFor="let day of dayIndex" class="menu_card px-0">
       <app-base-menu-card [menuName1]="menu[week][menuVariable[index + 12]][day].name"
-        [allergens]="menu[week][menuVariable[index + 12]][day].allergens" [weight]="weightArray[index + 7]"
+        [allergens]="menu[week][menuVariable[index + 12]][day].allergens" [weigh]="weightArray[index + 7]"
         [unit]="unit[2].name" [imgLink]="menu[week][menuVariable[index + 12]][day].img">
       </app-base-menu-card>
     </div>
@@ -121,25 +153,26 @@
   <hr>
 
   <div class="row border border-dark d-flex flex-row menu_thead">
-    <mat-card class="menu-card menu_thead menu_tkey h-auto text-center">
+    <mat-card class="menu-card menu_thead menu_tkey h-auto text-center border-0 rounded-0">
       <mat-card-content>
         <h5>{{ menuCardHeaderText[0].name }}</h5>
       </mat-card-content>
     </mat-card>
-    <mat-card class="menu-card menu_thead menu_name h-auto text-center">
+    <mat-card class="menu-card menu_thead menu_name h-auto text-center border-0 rounded-0">
       <mat-card-content>
         <h5>{{ menuCardHeaderText[1].name }}</h5>
       </mat-card-content>
     </mat-card>
     <div *ngFor="let day of dayIndex" class="menu_card px-0 text-center">
-      <mat-card class="menu-card h-auto menu_thead">
+      <mat-card class="menu-card h-auto menu_thead border-0 rounded-0">
         <mat-card-content>
           <h5>{{ menuCardHeaderText[day+2].name }}</h5>
         </mat-card-content>
       </mat-card>
     </div>
   </div>
-  <div *ngFor="let imenu of iMenuItem; index as i" class="row border border-dark d-flex flex-row">
+  <div *ngFor="let imenu of iMenuItem; index as i" class="row border border-dark d-flex flex-row"
+    [id]="menuCardText[12].scroll">
     <mat-card class="menu-card menu_I menu_key h-auto d-flex align-items-center border-0 rounded-0">
       <mat-card-content>
         <p>{{ menuCardText[12].key }}{{i+1}}</p>
@@ -153,14 +186,11 @@
       </mat-card-content>
     </mat-card>
     <div *ngFor="let day of dayIndex" class="menu_card px-0">
-      <app-base-menu-card [menuName1]="imenu.name" [weight]="weightArray[12]" [unit]="unit[1].name"
-        [imgLink]="imenu.img" [isDrink]="true">
+      <app-base-menu-card [menuName1]="imenu.name" [weigh]="weightArray[12]" [unit]="unit[1].name" [imgLink]="imenu.img"
+        [isDrink]="true">
       </app-base-menu-card>
     </div>
   </div>
 </div>
 
-<div class="my-5 py-5">
-  <hr>
-  <hr>
-</div>
+<div class="my-5 py-5"></div>

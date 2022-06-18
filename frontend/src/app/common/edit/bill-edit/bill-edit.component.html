@@ -1,1 +1,108 @@
-<p>bill-edit works!</p>
+<div class="container py-5 min-vh-100">
+  <div *ngIf="bill" class="card mt-2">
+    <div class="card-header">
+      <h4 class="card-title" *ngIf="bill.id !== 0">{{ editPageItems[0].title }}</h4>
+      <h4 class="card-title" *ngIf="bill.id === 0">{{ editPageItems[0].new }}</h4>
+      <p class="card-category">{{ editPageText[0].name }}</p>
+    </div>
+    <div class="card-body">
+      <form #billForm="ngForm" (ngSubmit)="saveBill(bill)">
+
+        <input [(ngModel)]="bill.id" type="hidden" name="id">
+
+        <div class="row mb-2 justify-content-center">
+          <div class="col-lg-5 col-md-12 mb-2">
+            <div class="form-group">
+              <label [for]="billEditItems[0].prop">{{ billEditItems[0].label }} *</label>
+              <input [(ngModel)]="bill[billEditItems[0].prop]" class="form-control" type="string"
+                [name]="billEditItems[0].prop" [disabled]="bill.id !== 0" [id]="billEditItems[0].prop" required
+                [pattern]="billEditItems[0].pattern" [placeholder]="billEditItems[0].placeholder">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="billForm.controls[billEditItems[0].prop]?.valid || billForm.controls[billEditItems[0].prop]?.pristine">
+                {{ billEditItems[0].message }}
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <div class="form-group">
+              <label [for]="billEditItems[1].prop">{{ billEditItems[1].label }} *</label>
+              <input [(ngModel)]="bill[billEditItems[1].prop]" class="form-control" type="string"
+                [name]="billEditItems[1].prop" [disabled]="bill.id !== 0" [id]="billEditItems[1].prop" required
+                [pattern]="billEditItems[1].pattern" [placeholder]="billEditItems[1].placeholder">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="billForm.controls[billEditItems[1].prop]?.valid || billForm.controls[billEditItems[1].prop]?.pristine">
+                {{ billEditItems[1].message }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-2 justify-content-center">
+          <div class="col-lg-5 col-md-12 mb-2">
+            <div class="form-group">
+              <label [for]="billEditItems[2].prop">{{ billEditItems[2].label }} *</label>
+              <input [(ngModel)]="bill[billEditItems[2].prop]" class="form-control" type="number"
+                [name]="billEditItems[2].prop" [disabled]="bill.id !== 0" [id]="billEditItems[2].prop" required
+                [pattern]="billEditItems[2].pattern" min="1" [placeholder]="billEditItems[2].placeholder">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="billForm.controls[billEditItems[2].prop]?.valid || billForm.controls[billEditItems[2].prop]?.pristine">
+                {{ billEditItems[2].message }}
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <div class="form-group">
+              <label [for]="billEditItems[3].prop">{{ billEditItems[3].label }} *</label>
+              <select [(ngModel)]="bill[billEditItems[3].prop]" class="form-control" [name]="billEditItems[3].prop"
+                [id]="billEditItems[3].prop" [disabled]="bill.id !== 0" required>
+                <option *ngFor="let key of typeKeys; index as i" [value]="key">
+                  {{ typeValue[i] }}
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-2 justify-content-center">
+          <div class="col-lg-5 col-md-12 mb-2">
+            <div class="form-group">
+              <label [for]="billEditItems[4].prop">{{ billEditItems[4].label }} *</label>
+              <div class="input-group-prepend">
+                <input [(ngModel)]="bill[billEditItems[4].prop]" class="form-control" type="number"
+                  [name]="billEditItems[4].prop" [disabled]="bill.id !== 0" [id]="billEditItems[4].prop" required
+                  [pattern]="billEditItems[4].pattern" min="1" [placeholder]="billEditItems[4].placeholder">
+                <div class="input-group-text">Ft</div>
+              </div>
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="billForm.controls[billEditItems[4].prop]?.valid || billForm.controls[billEditItems[4].prop]?.pristine">
+                {{ billEditItems[4].message }}
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <div class="form-group">
+              <label [for]="billEditItems[5].prop">{{ billEditItems[5].label }} *</label>
+              <select [(ngModel)]="bill[billEditItems[5].prop]" class="form-control" [name]="billEditItems[5].prop"
+                [id]="billEditItems[5].prop" [disabled]="bill.id !== 0" required>
+                <option *ngFor="let key of statusKeys; index as i" [value]="key">
+                  {{ statusValue[i] }}
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row col-10 offset-1">
+          <button *ngIf="bill.id === 0" [disabled]="billForm.invalid" mat-raised-button color="save" class="mr-2"
+            type="submit">{{
+            editPageText[1].name }}</button>
+          <button *ngIf="bill.id === 0" mat-raised-button color="cancel" routerLink="/bill" type="button">{{
+            editPageText[3].name
+            }}</button>
+          <button *ngIf="bill.id !== 0" mat-raised-button color="cancel" routerLink="/bill" type="button">{{
+            editPageText[12].name
+            }}</button>
+        </div>
+      </form>
+    </div>
+  </div>

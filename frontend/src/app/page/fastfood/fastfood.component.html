@@ -1,1 +1,36 @@
-<p>fastfood works!</p>
+<div class="container py-1">
+  <hr>
+  <hr>
+  <div class=" button-group d-flex flew-row justify-content-center mb-2">
+    <button *ngFor="let button of fastFoodPrimaryTitleItems" mat-flat-button color="primary-button"
+      class="mr-1 pb-0 text-white col-2" (click)="scroll('scroll'+button.key)">
+      <p class="mb-0">{{ button.title }}</p>
+    </button>
+  </div>
+  <div class="button-group d-flex flew-row justify-content-center mb-2">
+    <button *ngFor="let button of fastFoodSecondaryTitleItems" mat-flat-button color="secondary-button"
+      class="mr-1 pb-0 col-2" (click)="scroll('scroll'+button.key)">
+      <p class="mb-0">{{ button.title }}</p>
+    </button>
+  </div>
+  <hr>
+  <hr>
+</div>
+
+<div *ngIf="fastfoodArray && fastfoodArray.length === 7" class="container pb-5 mb-5">
+  <div class="mb-5" *ngFor="let array of fastfoodArray; index as i" [id]="'scroll'+fastfoodCodes[i]">
+    <app-base-fastfood-card *ngIf="i === 0" [background]="fastfoodClass[i]" [title]="fastfoodTitles[i]"
+      [fastfoodArray]="fastfoodArray[i]" [price1]="priceArray[i]" [price2]="priceArray[i + 1]"
+      [normalPizzaSize]="sizeArray[0]" [familyPizzaSize]="sizeArray[1]" [isPizza]="true"></app-base-fastfood-card>
+    <app-base-fastfood-card *ngIf="i === 1" [background]="fastfoodClass[i]" [title]="fastfoodTitles[i]"
+      [fastfoodArray]="array" [price1]="priceArray[i + 1]" [price2]="priceArray[i + 2]" [cat1]="fastfoodCodes[i]+1"
+      [cat2]="fastfoodCodes[i]+2">
+    </app-base-fastfood-card>
+    <app-base-fastfood-card *ngIf="i === 2" [background]="fastfoodClass[i]" [title]="fastfoodTitles[i]"
+      [fastfoodArray]="array" [price1]="priceArray[i + 3]" [price2]="priceArray[i + 4]" [price3]="priceArray[i + 2]"
+      [cat1]="fastfoodCodes[i]+2" [cat2]="fastfoodCodes[i]+3" [cat3]="fastfoodCodes[i]+1">
+    </app-base-fastfood-card>
+    <app-base-fastfood-card *ngIf="i > 2" [background]="fastfoodClass[i]" [title]="fastfoodTitles[i]"
+      [fastfoodArray]="array" [price1]="priceArray[i + 4]" [cat1]="fastfoodCodes[i]"></app-base-fastfood-card>
+  </div>
+</div>

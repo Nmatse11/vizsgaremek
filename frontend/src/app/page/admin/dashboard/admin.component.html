@@ -1,3 +1,18 @@
+<div class="container py-1">
+  <hr>
+  <hr>
+  <div class=" button-group d-flex flew-row justify-content-center mb-2">
+    <button mat-flat-button color="stat-button" class="mr-1 pb-0 text-white col-2" (click)="scroll('statMenu')">
+      <p class="mb-0">{{ titles[2].title }}</p>
+    </button>
+    <button mat-flat-button color="stat-button" class="mr-1 pb-0 text-white col-2" (click)="scroll('statFastfood')">
+      <p class="mb-0">{{ titles[4].title }}</p>
+    </button>
+  </div>
+  <hr>
+  <hr>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="col-lg-8 offset-lg-2 d-flex justify-content-center my-3">
@@ -99,14 +114,14 @@
     </div>
 
     <div class="col-12 d-flex flex-column justify-content-center my-3"
-      *ngIf="FoodList$ && CategoryMenuList$ &&  OrderMenuList$">
+      *ngIf="FoodList$ && CategoryMenuList$ &&  OrderMenuList$" id="statMenu">
       <h4 class="dashboardTitle text-center">{{ titles[2].title }}</h4>
       <app-menu-cards [FoodList$]="FoodList$" [CategoryMenuList$]="CategoryMenuList$" [OrderMenuList$]="OrderMenuList$">
       </app-menu-cards>
     </div>
 
     <div class="col-12 d-flex flex-column justify-content-center my-3"
-      *ngIf="FastfoodList$ && CategoryFastfoodList$ &&  OrderFastfoodList$">
+      *ngIf="FastfoodList$ && CategoryFastfoodList$ &&  OrderFastfoodList$" id="statFastfood">
       <h4 class="dashboardTitle text-center">{{ titles[4].title }}</h4>
       <app-fastfood-cards [FastfoodList$]="FastfoodList$" [CategoryFastfoodList$]="CategoryFastfoodList$"
         [OrderFastfoodList$]="OrderFastfoodList$"></app-fastfood-cards>

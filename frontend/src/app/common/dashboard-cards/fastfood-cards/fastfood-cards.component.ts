@@ -124,7 +124,7 @@ export class FastfoodCardsComponent implements OnInit {
       let paidNumber = 0
       let paidNumberFamily = 0
       orders.map(order => order.order.map(or => {
-        if (!or.notes) {
+        if (!or.notes || or.notes === 'normal') {
           if (or.productID === fastfood.id) {
               array.push(or.productID)
           }
@@ -139,7 +139,7 @@ export class FastfoodCardsComponent implements OnInit {
       numberFamily = arrayFamily.length
 
       orders.filter(order => order.status === 'paid').map(order => order.order.map(or => {
-        if (!or.notes) {
+        if (!or.notes || or.notes === 'normal') {
           if (or.productID === fastfood.id) {
               arrayPaid.push(or.productID)
           }

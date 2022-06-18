@@ -1,104 +1,131 @@
-<div class="container">
+<div class="container min-vh-100">
 
-  <h1 class="text-center mt-3 tabletitle">{{ tableTitle }}</h1>
+  <h1 class=" text-center mt-3 tabletitle">{{ tableTitle }}</h1>
   <div class="d-flex justify-content-center">
-    <button mat-raised-button color="add" [routerLink]="['/', componentName + '-edit','0']" class="btn h5 mt-3">
+    <button mat-raised-button color="add" [routerLink]="['/', componentName + '-edit', '0']" class="btn h5 mt-3">
       {{ addButton }}
     </button>
   </div>
 
 
-  <div class="d-flex justify-content-end">
-    <mat-paginator [hidden]="!List" showFirstLastButtons [pageSize]="10" [pageSizeOptions]="[10, 20, 30, 40, 50, 100]"
-      [length]="List?.data?.length" class="sticky-top">
-    </mat-paginator>
-  </div>
 
-  <div class="spinner d-flex justify-content-center my-5" *ngIf="!List">
-    <mat-progress-bar mode='indeterminate' class="w-50"></mat-progress-bar>
-  </div>
+  <div>
+    <div *ngIf="columnsArray">
+      <mat-form-field appearance="standard" class="float-left ml-4">
+        <mat-label>Keresés</mat-label>
+        <input matInput (keyup)="applyFilter()" [(ngModel)]="phrase" placeholder="Kifejezés..." #input>
+      </mat-form-field>
 
-  <div class="table-responsive">
-    <table *ngIf="List" mat-table [dataSource]="List" class="mat-elevation-z8 admintable">
+      <mat-form-field appearance="standard" class="ml-4">
+        <mat-label>oszlopok szerint</mat-label>
+        <mat-select [(value)]="filterKey" (selectionChange)="applyFilter()">
+          <mat-option value="">Bármilyen egyezés</mat-option>
+          <mat-option *ngFor="let key of columnsArray" [value]="key">
+            {{ key }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
 
-      <ng-container [matColumnDef]="col.title" *ngFor="let col of columns">
-        <th mat-header-cell *matHeaderCellDef class="admintd text-center"> {{ col.title }} </th>
-        <td mat-cell *matCellDef="let item" class="text-center">
-          <ng-container *ngIf="isBoolean(item[col.key]); else booleanFalse">
-            <mat-slide-toggle [checked]="item[col.key] === true" disabled="true"
-              [matTooltip]="item[col.key] ? setTooltipTrue(col.key) : setTooltipFalse(col.key)"
-              matTooltipPosition="before" matTooltipClass="mat-boolean">
-            </mat-slide-toggle>
-          </ng-container>
-          <ng-template #booleanFalse>
-            <ng-container *ngIf="useGetter(col.key); else noSetObject">
-              {{ setObject(item[col.key][0]).join(' ') }}
-            </ng-container>
-          </ng-template>
-          <ng-template #noSetObject>
-            <ng-container *ngIf="col.key === joinObjectOn; else noObject">
-              {{ item[col.key].join(', ') }}
-            </ng-container>
-          </ng-template>
-          <ng-template #noObject>
-            <ng-container *ngIf="col.key === currencyPipeOn; else noPipe">
-              {{ item[col.key] | customCurrency }}
-            </ng-container>
-          </ng-template>
-          <ng-template #noPipe>
-            <ng-container *ngIf="isFoodType(item[col.key]); else noFoodType">
-              {{ setFoodType(item[col.key]) }}
-            </ng-container>
-          </ng-template>
-          <ng-template #noFoodType>
-            <ng-container *ngIf="isDrink(item.menu) && item[col.key]; else noDrink">
-              {{ item[col.key] + ' ' + setDrink(col.key, item.menu)}}
-            </ng-container>
-          </ng-template>
-          <ng-template #noDrink>
-            <ng-container *ngIf="isUnit(col.key) && item[col.key] && !isDrink(item.menu); else noUnit">
-              {{ item[col.key] + ' ' + setUnit(col.key)}}
-            </ng-container>
-          </ng-template>
-          <ng-template #noUnit>
-            <ng-container *ngIf="isStatus(item[col.key]); else noStatus">
-              {{ setStatusValue(item[col.key]) }}
-            </ng-container>
-          </ng-template>
-          <ng-template #noStatus>
-            {{ item[col.key] }}
-          </ng-template>
-        </td>
-        <td mat-footer-cell *matFooterCellDef></td>
-      </ng-container>
+    <div class="d-flex justify-content-end">
+      <mat-paginator [hidden]="!List" showFirstLastButtons [pageSize]="10" [pageSizeOptions]="[10, 20, 30, 40, 50, 100]"
+        [length]="List?.data?.length" class="sticky-top">
+      </mat-paginator>
+    </div>
 
-      <ng-container matColumnDef="option">
-        <th mat-header-cell *matHeaderCellDef></th>
-        <td mat-cell *matCellDef="let item" class="admintd d-flex flex-row m-3">
-          <button mat-raised-button [routerLink]="['/', componentName + '-edit', item.id]" color="edit"
-            [matTooltip]='tooltips[2].name' matTooltipPosition="above" TooltipTouchGestures="auto"
-            matTooltipClass="mat-edit" class="mr-2" *ngIf="componentName !== 'bill'">
-            <span class="material-icons">edit</span>
-          </button>
-          <button mat-raised-button [routerLink]="['/', componentName + '-edit', item.id]" color="edit"
-            [matTooltip]='tooltips[4].name' matTooltipPosition="above" TooltipTouchGestures="auto"
-            matTooltipClass="mat-edit" class="mr-2" *ngIf="componentName === 'bill'">
-            <span class="material-icons">visibility</span>
-          </button>
-          <button mat-raised-button (click)="onDelete(item.id)" color="delete" [matTooltip]='tooltips[3].name'
-            matTooltipPosition="above" TooltipTouchGestures="auto" matTooltipClass="mat-delete"
-            *ngIf="componentName !== 'bill'">
-            <span class="material-icons">delete</span>
-          </button>
-        </td>
-        <td mat-footer-cell *matFooterCellDef></td>
-      </ng-container>
+    <div class="spinner d-flex justify-content-center my-5" *ngIf="!List">
+      <mat-progress-bar mode='indeterminate' class="w-50"></mat-progress-bar>
+    </div>
 
-      <tr mat-header-row *matHeaderRowDef="columnsArray; sticky:true"></tr>
-      <tr mat-row *matRowDef="let row; columns: columnsArray;"></tr>
-      <tr mat-footer-row *matFooterRowDef="columnsArray; sticky:true"></tr>
 
-    </table>
+    <div class="table-responsive">
+      <table *ngIf="List && customerKeys && customerValue" mat-table matSort [dataSource]="List"
+        class="mat-elevation-z8 admintable">
+
+        <ng-container [matColumnDef]="col.title" *ngFor="let col of columns">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header class="admintd"> {{ col.title }} </th>
+          <td mat-cell *matCellDef="let item" class="admintd">
+            <ng-container *ngIf="isBoolean(item[col.key]); else booleanFalse">
+              <mat-slide-toggle [checked]="item[col.key] === true" disabled="true"
+                [matTooltip]="item[col.key] ? setTooltipTrue(col.key) : setTooltipFalse(col.key)"
+                matTooltipPosition="before" matTooltipClass="mat-boolean">
+              </mat-slide-toggle>
+            </ng-container>
+            <ng-template #booleanFalse>
+              <ng-container *ngIf="useGetter(col.key); else noSetObject">
+                {{ setObject(item[col.key][0]).join(' ') }}
+              </ng-container>
+            </ng-template>
+            <ng-template #noSetObject>
+              <ng-container *ngIf="col.key === joinObjectOn; else noObject">
+                {{ setAllergen(item[col.key][0]).join(', ') }}
+              </ng-container>
+            </ng-template>
+            <ng-template #noObject>
+              <ng-container *ngIf="col.key === customerIdOn; else noID">
+                {{ setCustomerName(item[col.key]) }}
+              </ng-container>
+            </ng-template>
+            <ng-template #noID>
+              <ng-container *ngIf="col.key === currencyPipeOn; else noPipe">
+                {{ item[col.key] | customCurrency }}
+              </ng-container>
+            </ng-template>
+            <ng-template #noPipe>
+              <ng-container *ngIf="isFoodType(item[col.key]); else noFoodType">
+                {{ setFoodType(item[col.key]) }}
+              </ng-container>
+            </ng-template>
+            <ng-template #noFoodType>
+              <ng-container *ngIf="isDrink(item.menu) && item[col.key]; else noDrink">
+                {{ item[col.key] + ' ' + setDrink(col.key, item.menu)}}
+              </ng-container>
+            </ng-template>
+            <ng-template #noDrink>
+              <ng-container *ngIf="isUnit(col.key) && item[col.key] && !isDrink(item.menu); else noUnit">
+                {{ item[col.key] + ' ' + setUnit(col.key)}}
+              </ng-container>
+            </ng-template>
+            <ng-template #noUnit>
+              <ng-container *ngIf="isStatus(item[col.key]); else noStatus">
+                {{ setStatusValue(item[col.key]) }}
+              </ng-container>
+            </ng-template>
+            <ng-template #noStatus>
+              {{ item[col.key] }}
+            </ng-template>
+          </td>
+          <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+
+        <ng-container matColumnDef="option">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let item" class="admintd d-flex flex-row m-3">
+            <button mat-raised-button [routerLink]="['/', componentName + '-edit', item.id]" color="edit"
+              [matTooltip]='tooltips[2].name' matTooltipPosition="before" TooltipTouchGestures="auto"
+              matTooltipClass="mat-edit" class="mr-2" *ngIf="componentName !== 'bill'">
+              <span class="material-icons">edit</span>
+            </button>
+            <button mat-raised-button [routerLink]="['/', componentName + '-edit', item.id]" color="edit"
+              [matTooltip]='tooltips[4].name' matTooltipPosition="before" TooltipTouchGestures="auto"
+              matTooltipClass="mat-edit" class="mr-2" *ngIf="componentName === 'bill'">
+              <span class="material-icons">visibility</span>
+            </button>
+            <button mat-raised-button (click)="onDelete(item.id)" color="delete" [matTooltip]='tooltips[3].name'
+              matTooltipPosition="after" TooltipTouchGestures="auto" matTooltipClass="mat-delete"
+              *ngIf="componentName !== 'bill'">
+              <span class="material-icons">delete</span>
+            </button>
+          </td>
+          <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columnsArray; sticky:true"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnsArray;"></tr>
+        <tr mat-footer-row *matFooterRowDef="columnsArray; sticky:true"></tr>
+
+      </table>
+    </div>
   </div>
 
 </div>

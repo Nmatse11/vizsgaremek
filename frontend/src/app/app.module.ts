@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { NgChartsModule } from 'ng2-charts';
+import { NgxScrollTopModule } from 'ngx-scrolltop';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,16 +16,17 @@ import { CustomerListComponent } from './common/list/customer-list/customer-list
 import { FoodListComponent } from './common/list/food-list/food-list.component';
 import { CategoryListComponent } from './common/list/category-list/category-list.component';
 import { OrderListComponent } from './common/list/order-list/order-list.component';
-import { BaseEditComponent } from './common/edit/base-edit/base-edit.component';
-import { OrderEditComponent } from './common/edit/order-edit/order-edit.component';
+import { MenuOrderEditComponent } from './common/edit/menu-order-edit/menu-order-edit.component';
+import { FastfoodOrderEditComponent } from './common/edit/fastfood-order-edit/fastfood-order-edit.component';
 import { BillEditComponent } from './common/edit/bill-edit/bill-edit.component';
 import { CustomerEditComponent } from './common/edit/customer-edit/customer-edit.component';
 import { FastfoodEditComponent } from './common/edit/fastfood-edit/fastfood-edit.component';
 import { FoodEditComponent } from './common/edit/food-edit/food-edit.component';
 import { FastfoodCategoryEditComponent } from './common/edit/fastfood-category-edit/fastfood-category-edit.component';
 import { MenuCategoryEditComponent } from './common/edit/menu-category-edit/menu-category-edit.component';
-import { BaseMenuCardComponent } from './common/base-menu-card/base-menu-card.component';
-import { MenuEditorComponent } from './common/menu-editor/menu-editor.component';
+import { BaseMenuCardComponent } from './common/base-food-card/base-menu-card/base-menu-card.component';
+import { BaseFastfoodCardComponent } from './common/base-food-card/base-fastfood-card/base-fastfood-card.component';
+import { MenuEditorComponent } from './page/admin/menu-editor/menu-editor.component';
 import { HomeComponent } from './page/home/home.component';
 import { MenuComponent } from './page/menu/menu.component';
 import { FastfoodComponent } from './page/fastfood/fastfood.component';
@@ -35,8 +37,6 @@ import { BillComponent } from './page/admin/bill/bill.component';
 import { OrderComponent } from './page/admin/order/order.component';
 import { CustomerComponent } from './page/admin/customer/customer.component';
 import { ProductComponent } from './page/admin/product/product.component';
-import { FastfoodCategoryEditorComponent } from './page/admin/fastfood-category-editor/fastfood-category-editor.component';
-import { MenuCategoryEditorComponent } from './page/admin/menu-category-editor/menu-category-editor.component';
 import { TextoverflowPipe } from './pipe/textoverflow.pipe';
 import { CustomCurrencyPipe } from './pipe/custom-currency.pipe';
 import { CustomNumberPipe } from './pipe/custom-number.pipe';
@@ -45,27 +45,34 @@ import { DeleteDialogComponent } from './common/dialog/delete-dialog/delete-dial
 import { BaseDashboardCardComponent } from './common/dashboard-cards/base-dashboard-card/base-dashboard-card.component';
 import { CustomerCardComponent } from './common/dashboard-cards/customer-card/customer-card.component';
 import { OrderMenuCardComponent } from './common/dashboard-cards/order-menu-card/order-menu-card.component';
+import { OrderFastfoodCardComponent } from './common/dashboard-cards/order-fastfood-card/order-fastfood-card.component';
+import { BillCardComponent } from './common/dashboard-cards/bill-card/bill-card.component';
+import { MenuCardsComponent } from './common/dashboard-cards/menu-cards/menu-cards.component';
+import { BaseDashboardStatCardComponent } from './common/dashboard-cards/base-dashboard-stat-card/base-dashboard-stat-card.component';
+import { FastfoodCardsComponent } from './common/dashboard-cards/fastfood-cards/fastfood-cards.component';
+import { BaseEditorCardComponent } from './common/base-food-card/base-editor-card/base-editor-card.component';
+import { ForbiddenComponent } from './page/forbidden/forbidden.component';
 import { FilterPipe } from './pipe/filter.pipe';
 
 import { MatMenuModule } from '@angular/material/menu'
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { OrderFastfoodCardComponent } from './common/dashboard-cards/order-fastfood-card/order-fastfood-card.component';
-import { BillCardComponent } from './common/dashboard-cards/bill-card/bill-card.component';
-import { MenuCardsComponent } from './common/dashboard-cards/menu-cards/menu-cards.component';
-import { BaseDashboardStatCardComponent } from './common/dashboard-cards/base-dashboard-stat-card/base-dashboard-stat-card.component';
-import { FastfoodCardsComponent } from './common/dashboard-cards/fastfood-cards/fastfood-cards.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input';
 
 import { BarChartComponent } from './common/charts/bar-chart/bar-chart.component';
 import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,8 +82,8 @@ import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component
     FoodListComponent,
     CategoryListComponent,
     OrderListComponent,
-    BaseEditComponent,
-    OrderEditComponent,
+    MenuOrderEditComponent,
+    FastfoodOrderEditComponent,
     BillEditComponent,
     CustomerEditComponent,
     FastfoodEditComponent,
@@ -84,6 +91,7 @@ import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component
     FastfoodCategoryEditComponent,
     MenuCategoryEditComponent,
     BaseMenuCardComponent,
+    BaseFastfoodCardComponent,
     MenuEditorComponent,
     HomeComponent,
     MenuComponent,
@@ -95,8 +103,6 @@ import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component
     OrderComponent,
     CustomerComponent,
     ProductComponent,
-    FastfoodCategoryEditorComponent,
-    MenuCategoryEditorComponent,
     TextoverflowPipe,
     CustomCurrencyPipe,
     CustomNumberPipe,
@@ -112,7 +118,9 @@ import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component
     FastfoodCardsComponent,
     FilterPipe,
     BarChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    BaseEditorCardComponent,
+    ForbiddenComponent,
   ],
   imports: [
     BrowserModule,
@@ -123,6 +131,7 @@ import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component
     MatMenuModule,
     MatTableModule,
     MatPaginatorModule,
+    MatSortModule,
     MatProgressSpinnerModule,
     MatSlideToggleModule,
     MatTooltipModule,
@@ -136,7 +145,11 @@ import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component
       positionClass: 'toast-top-right',
     }),
     NgChartsModule,
-    MatCardModule
+    MatCardModule,
+    NgxScrollTopModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   entryComponents: [

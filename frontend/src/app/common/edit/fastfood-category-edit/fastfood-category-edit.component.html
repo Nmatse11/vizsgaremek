@@ -1,1 +1,118 @@
-<p>fastfood-category-edit works!</p>
+<div class="container py-5 min-vh-100">
+  <div *ngIf="category" class="card mt-2">
+    <div class="card-header">
+      <h4 class="card-title" *ngIf="category.id !== 0">{{ editPageItems[4].title }}</h4>
+      <h4 class="card-title" *ngIf="category.id === 0">{{ editPageItems[4].new }}</h4>
+      <p class="card-category">{{ editPageText[0].name }}</p>
+    </div>
+    <div class="card-body">
+      <form #categoryForm="ngForm" (ngSubmit)="saveCategory(category)">
+
+        <input [(ngModel)]="category.id" type="hidden" name="id">
+
+        <div class="row mb-2 justify-content-center">
+          <div class="col-lg-3 col-md-12 mb-2">
+            <div class="form-group">
+              <label [for]="categoryFastfoodEditItems[0].prop">{{ categoryFastfoodEditItems[0].label }} *</label>
+              <input [(ngModel)]="category[categoryFastfoodEditItems[0].prop]" class="form-control" type="string"
+                [name]="categoryFastfoodEditItems[0].prop" [id]="categoryFastfoodEditItems[0].prop" required
+                [pattern]="categoryFastfoodEditItems[0].pattern"
+                [placeholder]="categoryFastfoodEditItems[0].placeholder"
+                (ngModelChange)="category[categoryFastfoodEditItems[0].prop] = $event"
+                (ngModelChange)="dataChanged($event)">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="categoryForm.controls[categoryFastfoodEditItems[0].prop]?.valid || categoryForm.controls[categoryFastfoodEditItems[0].prop]?.pristine">
+                {{ categoryFastfoodEditItems[0].message }}
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="form-group">
+              <label [for]="categoryFastfoodEditItems[1].prop">{{ categoryFastfoodEditItems[1].label }} *</label>
+              <select [(ngModel)]="category[categoryFastfoodEditItems[1].prop]" class="form-control"
+                [name]="categoryFastfoodEditItems[1].prop" [id]="categoryFastfoodEditItems[1].prop">
+                <option *ngFor="let key of fastfoodItemKeys; index as i" [value]="key">
+                  {{ fastfoodItemValue[i] }}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 mb-2">
+            <div class="form-group" *ngIf="category.id !== 0">
+              <label [for]="'category'">{{ categoryLabel }}</label>
+              <input [(ngModel)]="selected" class="form-control" type="string" disabled [name]="'category'"
+                [id]="'category'">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-2 justify-content-center">
+          <div class="col-lg-3 col-md-12 mb-2">
+            <div class="form-group">
+              <label [for]="categoryFastfoodEditItems[2].prop">{{ categoryFastfoodEditItems[2].label }} *</label>
+              <select [(ngModel)]="category[categoryFastfoodEditItems[2].prop]" class="form-control"
+                [name]="categoryFastfoodEditItems[2].prop" [id]="categoryFastfoodEditItems[2].prop">
+                <option *ngFor="let key of notesKeys; index as i" [value]="key">
+                  {{ notesValue[i] }}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="form-group">
+              <label [for]="categoryFastfoodEditItems[3].prop">{{ categoryFastfoodEditItems[3].label }} *</label>
+              <div class="input-group-prepend">
+                <input [(ngModel)]="category[categoryFastfoodEditItems[3].prop]" class="form-control" type="number"
+                  [name]="categoryFastfoodEditItems[3].prop" [id]="categoryFastfoodEditItems[3].prop"
+                  [pattern]="categoryFastfoodEditItems[3].pattern" min="1"
+                  [placeholder]="categoryFastfoodEditItems[3].placeholder">
+                <div class="input-group-text">Ft</div>
+              </div>
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="categoryForm.controls[categoryFastfoodEditItems[3].prop]?.valid || categoryForm.controls[categoryFastfoodEditItems[3].prop]?.pristine">
+                {{ categoryFastfoodEditItems[3].message }}
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <div class="form-group" *ngIf="category[categoryFastfoodEditItems[4].prop]">
+              <label [for]="categoryFastfoodEditItems[4].prop">{{ categoryFastfoodEditItems[4].label }} *</label>
+              <div class="input-group-prepend">
+                <input [(ngModel)]="category[categoryFastfoodEditItems[4].prop]" class="form-control" type="number"
+                  [name]="categoryFastfoodEditItems[4].prop" [id]="categoryFastfoodEditItems[4].prop"
+                  [pattern]="categoryFastfoodEditItems[4].pattern" min="1"
+                  [placeholder]="categoryFastfoodEditItems[4].placeholder">
+                <div *ngIf="category.categoryCode !== 'I'" class="input-group-text">{{ sizeUnit }}</div>
+              </div>
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="categoryForm.controls[categoryFastfoodEditItems[4].prop]?.valid || categoryForm.controls[categoryFastfoodEditItems[4].prop]?.pristine">
+                {{ categoryFastfoodEditItems[4].message }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-2 justify-content-center">
+          <div class="col-lg-10 col-md-12 mb-2" *ngIf="category.id !== 0">
+            <h6>{{ editPageText[13].name }}: {{category.numberOfFood }} {{ editPageText[7].name }}
+            </h6>
+            <h6>{{ editPageText[14].name }}: {{category.sumOfOrder }} {{ editPageText[7].name }}
+            </h6>
+          </div>
+
+        </div>
+
+        <div class="row col-10 offset-1">
+          <button [disabled]="categoryForm.invalid" mat-raised-button color="save" class="mr-2" type="submit">{{
+            editPageText[1].name }}</button>
+          <button mat-raised-button color="cancel" routerLink="/category" class="mr-2" type="button">
+            {{ editPageText[3].name }}
+          </button>
+          <button *ngIf="category.id !== 0" mat-raised-button color="delete" (click)="onDelete(category.id)"
+            type="button">
+            {{ editPageText[2].name }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>

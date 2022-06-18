@@ -13,14 +13,17 @@ export class BaseMenuCardComponent implements OnInit {
   @Input() menuName2?: string;
   @Input() allergens?: string[];
   @Input() allergensSoup?: string[];
-  @Input() weightSoup?: number;
-  @Input() weight!: number;
+  @Input() weighSoup?: number;
+  @Input() weigh!: number;
   @Input() unit!: string;
   @Input() imgLink!: string;
   @Input() imgLinkSoup!: string;
   @Input() isDrink: boolean = false;
 
   allergensItems = this.config.allergensItems
+
+  weightText = this.config.weightText
+  allergenText = this.config.allergenText
 
   constructor(
     private config: ConfigService
@@ -29,11 +32,16 @@ export class BaseMenuCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  setAllergen(obj: any): string[] {
+    let filtered = Object.keys(obj).filter(item => obj[item] === true)
+    return filtered
+  }
+
   setAllergenIcon(value: string): string {
     let img = ''
     this.allergensItems.filter(item => {
       if (item.key === value) {
-        img = item.name
+        img = item.img
       }
     });
     return img

@@ -7,7 +7,7 @@ export class Customer {
   lastName: string = '';
   email: string = '';
   phonenumber: string = '';
-  address: Address = new Address();
-  shipAddress: Address = new Address();
+  address: Address[] = [new Address()];
+  shipAddress: Address[] = [new Address()];
   active: boolean = true;
 }

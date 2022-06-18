@@ -1,14 +1,5 @@
 @use '../../../assets/modules/color' as *;
 
-.mat-add {
-  background-color: $edit-button-backgroundcolor;
-  color: $button-color;
-
-  &:hover {
-    background-color: $list-button-backgroundcolor;
-  }
-}
-
 .menu {
 
   &_tkey {
@@ -73,4 +64,43 @@
   &_I {
     background-color: $i-menu-color;
   }
+
 }
+
+::ng-deep mat-tooltip-component{
+  & .mat-info {
+    text-align: center;
+    font-size: 1rem;
+    }
+}
+
+.mat {
+
+  &-add {
+    background-color: $edit-button-backgroundcolor;
+    color: $button-color;
+
+    &:hover {
+      background-color: $list-button-backgroundcolor;
+    }
+  }
+
+  &-info-button {
+    background-color: $list-button-backgroundcolor;
+  }
+
+  &-option-button {
+    background-color: $a-b-e-menu-color;
+  }
+
+  &-drink-button {
+    background-color: $f-menu-color;;
+  }
+
+  &-active {
+      background-color: $list-button-backgroundcolor;
+      color: $button-color;
+    }
+
+}
+

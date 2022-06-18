@@ -1,0 +1,13 @@
+@use '../../../assets/modules/color' as *;
+
+.login {
+  background-color: $list-button-backgroundcolor;
+
+  &:hover {
+    background-color: $edit-button-backgroundcolor;
+  }
+}
+
+.forbidden {
+  background-color: $d-menu-color;
+}
