@@ -1,8 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { ConfigService } from 'src/app/service/config.service';
 import { FoodService } from 'src/app/service/food.service';
-import { Food } from 'src/app/model/food';
-import { Observable } from 'rxjs';
+import { MenuService } from 'src/app/service/menu.service';
 
 @Component({
   selector: 'app-base-editor-card',
@@ -11,12 +12,14 @@ import { Observable } from 'rxjs';
 })
 export class BaseEditorCardComponent implements OnInit {
 
-  @Input() Foods!: any[]
-  @Input() SoupFoods!: any[]
+  @Input() Foods?: any[]
+  @Input() SoupFoods?: any[]
   @Input() menuName1?: string[];
   @Input() menuName2!: string[];
-  @Input() selectedMenuCategory1!: string
-  @Input() selectedMenuCategory2!: string
+  @Input() random: boolean = false
+  @Input() day!: number
+  @Input() selectedMenuKey!: string
+  @Input() selectedWeek!: number
 
   menuSelectArray: string[] = this.config.menuCardItems.map(item => item.key)
 
@@ -25,8 +28,17 @@ export class BaseEditorCardComponent implements OnInit {
 
   menuFormText: string[] = this.config.menuEditorFormText.map(item => item.name)
 
+  newMenuName1!: string
+  newMenuName2!: string
+
+  messages = this.config.toastrItems
+
   constructor(
-    private config: ConfigService
+    private config: ConfigService,
+    private menuService: MenuService,
+    private foodService: FoodService,
+    private router: Router,
+    private toastr: ToastrService,
   ) { }
 
   ngOnInit(): void {
@@ -50,8 +62,28 @@ export class BaseEditorCardComponent implements OnInit {
     }
   }
 
-  saveItem() {
-    console.log('Save')
+  saveItem(day: number, selectedMenuKey: string, selectedWeek: number, newMenuName: string, number: number) {
+    this.menuService.getOne(selectedWeek + 1).subscribe(menu => {
+      this.foodService.getAll().subscribe(foods => {
+        let selectedFood = foods.filter(food => food.name === newMenuName)
+        let notes = selectedFood[0].menu
+      if (number === 1) {
+        menu[`${selectedMenuKey}MenuFoodSoup`][day] = selectedFood[0]
+      }
+      if (number === 2 && notes === 'main_course') {
+        menu[`${selectedMenuKey}MenuFoodMain`][day] = selectedFood[0]
+      }
+      if (number === 2 && notes !== 'main_course') {
+        menu[`${selectedMenuKey}MenuFood`][day] = selectedFood[0]
+      }
+
+      this.menuService.update(menu).subscribe(
+        next => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+          this.router.navigate(['/', 'menu-editor' ]);
+          this.toastr.success(this.messages[4].message, this.messages[4].title)}),
+        err => console.error(err))
+      })
+    })
   }
 
 

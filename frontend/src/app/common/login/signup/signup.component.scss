@@ -2,17 +2,17 @@
 
 .mat {
   &-cancel {
-    background-color: $edit-button-backgroundcolor;
-    color: $button-color;
+    background-color: $secondary;
+    color: $light;
 
     &:hover {
-      background-color: $button-color-hover;
+      background-color: $dark;
     }
   }
 
   &-save {
-    background-color: $list-button-backgroundcolor;
-    color: $button-color;
+    background-color: $primary;
+    color: $light;
 
     &:hover {
       background-color: $d-menu-color;

@@ -11,4 +11,6 @@ export class Food {
   vegan: boolean = false;
   fitness: boolean = false;
   active: boolean = true;
+  numberInMenu: number = 0
+  weekOfYear: number[] = []
 }

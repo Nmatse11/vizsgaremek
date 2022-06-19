@@ -24,28 +24,28 @@ button, .nav-link, mat-paginator, mat-checkbox, mat-icon-button  {
 .mat {
 
   &-add {
-    background-color: $list-button-backgroundcolor;
-    color: $button-color;
+    background-color: $primary;
+    color: $light;
   }
 
   &-edit {
-    background-color: $edit-button-backgroundcolor;
-    color: $button-color;
+    background-color: $secondary;
+    color: $light;
   }
 
   &-delete {
-    background-color: $list-button-backgroundcolor;
-    color: $button-color;
+    background-color: $primary;
+    color: $light;
   }
 }
 
 ::ng-deep mat-tooltip-component{
   & .mat-edit, .mat-boolean {
-    background-color: $edit-button-backgroundcolor;
+    background-color: $secondary;
   }
 
   & .mat-delete{
-    background-color: $list-button-backgroundcolor;
+    background-color: $primary;
 }
 
 }

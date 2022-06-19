@@ -90,11 +90,11 @@ export class MenuOrderEditComponent implements OnInit {
   saveOrder(order: OrderMenu): void {
     if (this.activatedRoute.snapshot.params['id'] === '0') {
       this.menuOrderService.create(order).subscribe(
-        response => this.router.navigate(['/', 'order']));
+        response => this.router.navigate(['/', 'menu', 'order' ]));
         this.toastr.success(this.messages[1].message, this.messages[1].title);
     } else {
       this.menuOrderService.update(order).subscribe(
-        response => this.router.navigate(['/', 'order']));
+        response => this.router.navigate(['/', 'menu', 'order' ]));
         this.toastr.success(this.messages[2].message, this.messages[2].title);
     }
   }
@@ -112,7 +112,7 @@ export class MenuOrderEditComponent implements OnInit {
       if (result === true) {
         this.menuOrderService.delete(id).subscribe(
           response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-            this.router.navigate(['/', 'order' ]);
+            this.router.navigate(['/', 'menu', 'order' ]);
             this.toastr.error(this.messages[0].message, this.messages[0].title);
             }
           )

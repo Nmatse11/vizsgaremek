@@ -141,6 +141,10 @@ export class ConfigService {
 
   orderEditErrorText: string = 'A vásárló nem található'
 
+  generationText: string = 'FONTOS! Csak olyan hét menüjét lehet random összeállítani, ami aktuálisan nem rendelhető meg!'
+  generationButtonText: string = 'Új menü generálása'
+  menuSaveButtonText: string = 'FONTOS! A mentés után már nem vonható vissza a változtatás!'
+
   navbarItems: IMenuItem[] = [
     { text: 'Főoldal', link: '/', icon: 'home' },
     { text: 'Menük', link: '/menu', icon: 'restaurant_menu' },
@@ -150,10 +154,10 @@ export class ConfigService {
   adminNavbarItems: IMenuItem[] = [
     { text: 'Statisztika', link: '/admin' },
     { text: 'Menü szerkesztő', link: '/menu-editor' },
-    { text: 'Termékek', link: '/product' },
-    { text: 'Kategóriák', link: '/category' },
+    { text: 'Termékek', link: '/menu/product' },
+    { text: 'Kategóriák', link: '/menu/category' },
     { text: 'Vásárlók', link: '/customer' },
-    { text: 'Rendelések', link: '/order' },
+    { text: 'Rendelések', link: '/menu/order' },
     { text: 'Számlák', link: '/bill' }
   ];
 
@@ -165,13 +169,13 @@ export class ConfigService {
   ];
 
   tableItems: ITableItem[] = [
-    {key: 'food', name: "étel", title: 'Ételek'},
-    {key: 'menu-category', name: "menü kategória", title: 'Menü kategóriák'},
-    {key: 'fastfood', name: "gyorskaja", title: 'Gyorskaják'},
-    {key: 'fastfood-category', name: "gyorskaja kategória", title: 'Gyorskaja kategóriák'},
+    {key: 'menu/product', name: "étel", title: 'Ételek'},
+    {key: 'fastfood/product', name: "gyorskaja", title: 'Gyorskaják'},
+    {key: 'menu/category', name: "menü kategória", title: 'Menü kategóriák'},
+    {key: 'fastfood/category', name: "gyorskaja kategória", title: 'Gyorskaja kategóriák'},
     {key: 'customer', name: "vásárló", title: 'Vásárlók'},
-    {key: 'order-menu', name: "menü rendelés", title: 'Menü rendelések'},
-    {key: 'order-fastfood', name: "gyorskaja rendelés", title: 'Gyorskaja rendelések'},
+    {key: 'menu/order', name: "menü rendelés", title: 'Menü rendelések'},
+    {key: 'fastfood/order', name: "gyorskaja rendelés", title: 'Gyorskaja rendelések'},
     {key: 'bill', name: "számla", title: 'Számlák'},
   ]
 
@@ -303,7 +307,8 @@ export class ConfigService {
     {title: 'Törlés', message: 'A törlés megtörtént!'},
     {title: 'Hozzáadás', message: 'A hozzáadás sikeres!'},
     {title: 'Módosítás', message: 'A módosítás sikeres!'},
-    {title: 'Regisztráció', message: 'A regisztráció sikeres!'}
+    {title: 'Regisztráció', message: 'A regisztráció sikeres!'},
+    {title: 'Mentés', message: 'A mentés sikeres!'}
   ]
 
   dashboardCardItems: IDashboardCardItem[] = [
@@ -538,7 +543,9 @@ export class ConfigService {
     {name: 'Új elem hozzáadása'},
     {name: 'Vissza'},
     {name: 'Ételek száma ebben a kategóriában'},
-    {name: 'Összes rendelés ebből a kategóriából'}
+    {name: 'Összes rendelés ebből a kategóriából'},
+    {name: 'Ennyiszer szerepel a heti menükben összesen'},
+    {name: 'Hetek, amikor megrendelhető'}
   ];
 
   editPageItems: IEditPageItem[] = [

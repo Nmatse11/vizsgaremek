@@ -26,6 +26,7 @@ export class BaseListComponent implements OnInit, AfterViewInit {
   columnsArray!: string[]
 
   @Input() componentName!: string;
+  @Input() categoryName?: string;
 
   @Input() sortPropIfObject!: string;
 
@@ -84,7 +85,7 @@ export class BaseListComponent implements OnInit, AfterViewInit {
           this.paginator._intl.lastPageLabel = this.paginatorTexts[3].name;
           this.paginator._intl.firstPageLabel = this.paginatorTexts[4].name;
 
-          this.setTableHeader(this.componentName)
+          (this.categoryName) ? this.setTableHeader(`${this.categoryName}/${this.componentName}`) : this.setTableHeader(this.componentName)
 
           this.addButton = `${this.addButtonTexts[0].name} ${this.buttonText} ${this.addButtonTexts[1].name}`
 

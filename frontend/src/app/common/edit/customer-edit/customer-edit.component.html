@@ -14,7 +14,7 @@
           <div class="col-lg-4 col-md-12 mb-2">
             <div class="form-group">
               <label [for]="customerEditItems[0].prop">{{ customerEditItems[0].label }} *</label>
-              <input [(ngModel)]="customer[customerEditItems[0].prop]" class="form-control" type="string"
+              <input [(ngModel)]="customer[customerEditItems[0].prop]" class="form-control" type="text"
                 [name]="customerEditItems[0].prop" [id]="customerEditItems[0].prop" required
                 [pattern]="customerEditItems[0].pattern" [placeholder]="customerEditItems[0].placeholder">
               <div class="font-italic small ml-2 mt-1"
@@ -26,7 +26,7 @@
           <div class="col-lg-4 col-md-12">
             <div class="form-group">
               <label [for]="customerEditItems[1].prop">{{ customerEditItems[1].label }} *</label>
-              <input [(ngModel)]="customer[customerEditItems[1].prop]" class="form-control" type="string"
+              <input [(ngModel)]="customer[customerEditItems[1].prop]" class="form-control" type="text"
                 [name]="customerEditItems[1].prop" [id]="customerEditItems[1].prop" required
                 [pattern]="customerEditItems[1].pattern" [placeholder]="customerEditItems[1].placeholder">
               <div class="font-italic small ml-2 mt-1"
@@ -64,7 +64,7 @@
           <div class="col-lg-5 col-md-12">
             <div class="form-group">
               <label [for]="customerEditItems[3].prop">{{ customerEditItems[3].label }} *</label>
-              <input [(ngModel)]="customer[customerEditItems[3].prop]" class="form-control" type="string"
+              <input [(ngModel)]="customer[customerEditItems[3].prop]" class="form-control" type="text"
                 [name]="customerEditItems[3].prop" [id]="customerEditItems[3].prop" required
                 [pattern]="customerEditItems[3].pattern" [placeholder]="customerEditItems[3].placeholder">
               <div class="font-italic small ml-2 mt-1"
@@ -81,7 +81,7 @@
           <div class="form-group col-lg-5 col-md-6 mb-2">
             <label [for]="customerEditItems[4].prop+'zip'">{{ customerEditItems[4].label }} *</label>
             <input class="form-control" [(ngModel)]="customer[customerEditItems[4].prop][0].zip" class="form-control"
-              type="string" [name]="customerEditItems[4].prop+'zip'" [id]="customerEditItems[4].prop+'zip'" required
+              type="text" [name]="customerEditItems[4].prop+'zip'" [id]="customerEditItems[4].prop+'zip'" required
               [pattern]="customerEditItems[4].pattern" [placeholder]="customerEditItems[4].placeholder">
             <div class="font-italic small ml-2 mt-1"
               [hidden]="customerForm.controls[customerEditItems[4].prop+'zip']?.valid || customerForm.controls[customerEditItems[4].prop+'zip']?.pristine">
@@ -91,7 +91,7 @@
           <div class="form-group col-lg-5 col-md-6 mb-2">
             <label [for]="customerEditItems[5].prop+'city'">{{ customerEditItems[5].label }} *</label>
             <input class="form-control" [(ngModel)]="customer[customerEditItems[5].prop][0].city" class="form-control"
-              type="string" [name]="customerEditItems[5].prop+'city'" [id]="customerEditItems[5].prop+'city'" required
+              type="text" [name]="customerEditItems[5].prop+'city'" [id]="customerEditItems[5].prop+'city'" required
               [pattern]="customerEditItems[5].pattern" [placeholder]="customerEditItems[5].placeholder">
             <div class="font-italic small ml-2 mt-1"
               [hidden]="customerForm.controls[customerEditItems[5].prop+'city']?.valid || customerForm.controls[customerEditItems[5].prop+'city']?.pristine">
@@ -103,8 +103,8 @@
           <div class="form-group col-lg-4 col-md-6 mb-2">
             <label [for]="customerEditItems[6].prop+'street'">{{ customerEditItems[6].label }} *</label>
             <input class="form-control" [(ngModel)]="customer[customerEditItems[6].prop][0].street" class="form-control"
-              type="string" [name]="customerEditItems[6].prop+'street'" [id]="customerEditItems[6].prop+'street'"
-              required [pattern]="customerEditItems[6].pattern" [placeholder]="customerEditItems[6].placeholder">
+              type="text" [name]="customerEditItems[6].prop+'street'" [id]="customerEditItems[6].prop+'street'" required
+              [pattern]="customerEditItems[6].pattern" [placeholder]="customerEditItems[6].placeholder">
             <div class="font-italic small ml-2 mt-1"
               [hidden]="customerForm.controls[customerEditItems[6].prop+'street']?.valid || customerForm.controls[customerEditItems[6].prop+'street']?.pristine">
               {{ customerEditItems[6].message }}
@@ -124,7 +124,7 @@
           <div class="form-group col-lg-3 col-md-6">
             <label [for]="customerEditItems[8].prop+'notes'">{{ customerEditItems[8].label }}</label>
             <input class="form-control" [(ngModel)]="customer[customerEditItems[8].prop][0].notes" class="form-control"
-              type="string" [name]="customerEditItems[8].prop+'notes'" [id]="customerEditItems[8].prop+'notes'"
+              type="text" [name]="customerEditItems[8].prop+'notes'" [id]="customerEditItems[8].prop+'notes'"
               [pattern]="customerEditItems[8].pattern" [placeholder]="customerEditItems[8].placeholder">
             <div class="font-italic small ml-2 mt-1"
               [hidden]="customerForm.controls[customerEditItems[8].prop+'notes']?.valid || customerForm.controls[customerEditItems[8].prop+'notes']?.pristine">
@@ -139,7 +139,7 @@
           <div class="form-group col-lg-5 col-md-6 mb-2">
             <label [for]="customerEditItems[9].prop+'zip'">{{ customerEditItems[9].label }} *</label>
             <input class="form-control" [(ngModel)]="customer[customerEditItems[9].prop][0].zip" class="form-control"
-              type="string" [name]="customerEditItems[9].prop+'zip'" [id]="customerEditItems[9].prop+'zip'" required
+              type="text" [name]="customerEditItems[9].prop+'zip'" [id]="customerEditItems[9].prop+'zip'" required
               [pattern]="customerEditItems[9].pattern" [placeholder]="customerEditItems[9].placeholder">
             <div class="font-italic small ml-2 mt-1"
               [hidden]="customerForm.controls[customerEditItems[9].prop+'zip']?.valid || customerForm.controls[customerEditItems[9].prop+'zip']?.pristine">
@@ -149,7 +149,7 @@
           <div class="form-group col-lg-5 col-md-6 mb-2">
             <label [for]="customerEditItems[10].prop+'city'">{{ customerEditItems[10].label }} *</label>
             <input class="form-control" [(ngModel)]="customer[customerEditItems[10].prop][0].city" class="form-control"
-              type="string" [name]="customerEditItems[10].prop+'city'" [id]="customerEditItems[10].prop+'city'" required
+              type="text" [name]="customerEditItems[10].prop+'city'" [id]="customerEditItems[10].prop+'city'" required
               [pattern]="customerEditItems[10].pattern" [placeholder]="customerEditItems[10].placeholder">
             <div class="font-italic small ml-2 mt-1"
               [hidden]="customerForm.controls[customerEditItems[10].prop+'city']?.valid || customerForm.controls[customerEditItems[10].prop+'city']?.pristine">
@@ -161,7 +161,7 @@
           <div class="form-group col-lg-4 col-md-6 mb-2">
             <label [for]="customerEditItems[11].prop+'street'">{{ customerEditItems[11].label }} *</label>
             <input class="form-control" [(ngModel)]="customer[customerEditItems[11].prop][0].street"
-              class="form-control" type="string" [name]="customerEditItems[11].prop+'street'"
+              class="form-control" type="text" [name]="customerEditItems[11].prop+'street'"
               [id]="customerEditItems[11].prop+'street'" required [pattern]="customerEditItems[11].pattern"
               [placeholder]="customerEditItems[11].placeholder">
             <div class="font-italic small ml-2 mt-1"
@@ -183,7 +183,7 @@
           <div class="form-group col-lg-3 col-md-6">
             <label [for]="customerEditItems[13].prop+'notes'">{{ customerEditItems[13].label }}</label>
             <input class="form-control" [(ngModel)]="customer[customerEditItems[13].prop][0].notes" class="form-control"
-              type="string" [name]="customerEditItems[13].prop+'notes'" [id]="customerEditItems[13].prop+'notes'"
+              type="text" [name]="customerEditItems[13].prop+'notes'" [id]="customerEditItems[13].prop+'notes'"
               [pattern]="customerEditItems[13].pattern" [placeholder]="customerEditItems[13].placeholder">
             <div class="font-italic small ml-2 mt-1"
               [hidden]="customerForm.controls[customerEditItems[13].prop+'notes']?.valid || customerForm.controls[customerEditItems[13].prop+'notes']?.pristine">

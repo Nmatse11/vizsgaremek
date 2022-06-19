@@ -14,7 +14,7 @@
           <div class="col-lg-5 col-md-12 mb-2">
             <div class="form-group">
               <label [for]="billEditItems[0].prop">{{ billEditItems[0].label }} *</label>
-              <input [(ngModel)]="bill[billEditItems[0].prop]" class="form-control" type="string"
+              <input [(ngModel)]="bill[billEditItems[0].prop]" class="form-control" type="text"
                 [name]="billEditItems[0].prop" [disabled]="bill.id !== 0" [id]="billEditItems[0].prop" required
                 [pattern]="billEditItems[0].pattern" [placeholder]="billEditItems[0].placeholder">
               <div class="font-italic small ml-2 mt-1"
@@ -26,7 +26,7 @@
           <div class="col-lg-5 col-md-12">
             <div class="form-group">
               <label [for]="billEditItems[1].prop">{{ billEditItems[1].label }} *</label>
-              <input [(ngModel)]="bill[billEditItems[1].prop]" class="form-control" type="string"
+              <input [(ngModel)]="bill[billEditItems[1].prop]" class="form-control" type="text"
                 [name]="billEditItems[1].prop" [disabled]="bill.id !== 0" [id]="billEditItems[1].prop" required
                 [pattern]="billEditItems[1].pattern" [placeholder]="billEditItems[1].placeholder">
               <div class="font-italic small ml-2 mt-1"

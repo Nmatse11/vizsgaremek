@@ -7,6 +7,11 @@ import { MenuCategoryService } from 'src/app/service/menu-category.service';
 import { switchMap } from 'rxjs';
 import { DeleteDialogComponent } from '../../dialog/delete-dialog/delete-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
+import { OrderMenu } from 'src/app/model/order-menu';
+import { MenuService } from 'src/app/service/menu.service';
+import { FoodService } from 'src/app/service/food.service';
+import { Food } from 'src/app/model/food';
+import { MenuOrderService } from 'src/app/service/menu-order.service';
 
 @Component({
   selector: 'app-menu-category-edit',
@@ -51,6 +56,8 @@ export class MenuCategoryEditComponent implements OnInit {
     private router: Router,
     private toastr: ToastrService,
     private dialog: MatDialog,
+    private foodService: FoodService,
+    private menuOrderService: MenuOrderService
   ) { }
 
   ngOnInit(): void {
@@ -63,8 +70,78 @@ export class MenuCategoryEditComponent implements OnInit {
         ).subscribe(category => {
           this.category = category
           this.selected = this.categoryValue[this.categoryKeys.indexOf(category.categoryCode)]
+          this.foodService.getAll().subscribe(foods => {
+            this.menuOrderService.getAll().subscribe(orders => {
+                this.setNumberOfFood(category, foods)
+                this.setNumberOfOrder(category, orders)
+            })
+          })
         })
     }
+
+  }
+
+  setNumberOfFood(category: CategoryMenu, foods: Food[]): void {
+    let value = category.categoryCode
+    let number = 0
+    if (category.menu === 'soup') {
+      number = foods.filter(food => food.category === value && food.menu === 'soup').length
+    }
+    else if (category.menu === 'main_course') {
+      number = foods.filter(food => food.category === value && food.menu === 'main_course').length
+    } else {
+      number = foods.filter(food => food.category === value).length
+    }
+    if (number!== 0 && category.numberOfFood !== number ) {
+      category.numberOfFood = number
+      this.saveCategoryFood(category, category.numberOfFood)
+    }
+  }
+
+  saveCategoryFood(category: CategoryMenu, item: number) {
+    category.numberOfFood = item
+    this.menuCategoryService.update(category).subscribe(
+      category => category,
+      err => console.error(err))
+  }
+
+
+setNumberOfOrder(category: CategoryMenu, orders: OrderMenu[]): void {
+    let array: any = []
+    let arrayPaid: any = []
+    let number = 0
+    let paidNumber = 0
+    orders.map(order => order.order.map(or => {
+      if (or.menuCode === category.categoryCode) {
+        for (let i = 0; i < or.portion; i++) {
+          array.push(or.menuCode)
+        }
+      }
+    }))
+    number = array.length
+
+    orders.filter(order => order.status === 'paid').map(order => order.order.map(or => {
+      if (or.menuCode === category.categoryCode) {
+        for (let i = 0; i < or.portion; i++) {
+          arrayPaid.push(or.menuCode)
+        }
+      }
+    }))
+    paidNumber = arrayPaid.length
+
+    if (number !== 0 && category.numberOfOrder !== number || paidNumber !== 0 && category.numberOfPaidOrder !== paidNumber ) {
+      category.numberOfOrder = number
+      category.numberOfPaidOrder = paidNumber
+      this.saveCategoryOrder(category, category.numberOfOrder, category.numberOfPaidOrder)
+    }
+  }
+
+  saveCategoryOrder(category: CategoryMenu, item: number, item2: number) {
+    category.numberOfOrder = item
+    category.numberOfPaidOrder = item2
+    this.menuCategoryService.update(category).subscribe(
+      category => category,
+      err => console.error(err))
   }
 
   dataChanged(value: string): void {
@@ -75,11 +152,11 @@ export class MenuCategoryEditComponent implements OnInit {
   saveCategory(category: CategoryMenu): void {
     if (this.activatedRoute.snapshot.params['id'] === '0') {
       this.menuCategoryService.create(category).subscribe(
-        response => this.router.navigate(['/', 'category']));
+        response => this.router.navigate(['/', 'menu', 'category']));
         this.toastr.success(this.messages[1].message, this.messages[1].title);
     } else {
       this.menuCategoryService.update(category).subscribe(
-        response => this.router.navigate(['/', 'category']));
+        response => this.router.navigate(['/', 'menu', 'category']));
         this.toastr.success(this.messages[2].message, this.messages[2].title);
     }
   }
@@ -97,7 +174,7 @@ export class MenuCategoryEditComponent implements OnInit {
       if (result === true) {
         this.menuCategoryService.delete(id).subscribe(
           response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-            this.router.navigate(['/', 'category' ]);
+            this.router.navigate(['/', 'menu', 'category' ]);
             this.toastr.error(this.messages[0].message, this.messages[0].title);
             }
           )

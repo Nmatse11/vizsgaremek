@@ -61,7 +61,7 @@
       <mat-card class="menu-card h-auto menu_thead border-0 rounded-0">
         <mat-card-content>
           <h5>{{ menuCardHeaderText[day+2].name }}</h5>
-          <p class="small">{{ this.weekService.getWeekDays(week)[day] }}</p>
+          <p class="small">{{ customDateFormats(this.weekService.getWeekDays(week)[day]) }}</p>
         </mat-card-content>
       </mat-card>
     </div>

@@ -1,35 +1,54 @@
-<div class="container pt-1 pb-5 min-vh-100">
+<div class="container pt-4 pb-5 min-vh-100">
   <hr>
   <hr>
   <div class=" button-group d-flex flew-row justify-content-center my-4">
     <mat-form-field class="mr-3 pt-3">
       <mat-label>{{ menuEditorMenuSelect }}</mat-label>
-      <mat-select [(ngModel)]="selectedMenu">
-        <mat-option *ngFor="let menu of menuSelectArray" [value]="menu">{{ menu }}</mat-option>
+      <mat-select [(ngModel)]="selectedMenuKey">
+        <mat-option *ngFor="let menu of menuSelectArrayKey; index as i" [value]="menu">{{ menuSelectArrayName[i] }}
+        </mat-option>
       </mat-select>
     </mat-form-field>
     <mat-form-field class="pt-3">
       <mat-label>{{ menuEditorWeekSelect }}</mat-label>
       <mat-select [(ngModel)]="selectedWeek">
-        <mat-option *ngFor="let week of weekArray" [value]="week">{{ week }}. {{ weekText}}</mat-option>
+        <mat-option *ngFor="let week of weekArray" [value]="week">
+          <span *ngIf="week !== weekArray[0]">{{ week }}. {{ weekText}}</span>
+          <span *ngIf="week === weekArray[0]">52. {{ weekText}}</span>
+        </mat-option>
       </mat-select>
     </mat-form-field>
   </div>
   <hr>
   <hr>
   <div class="container py-3 d-flex flew-row justify-content-center align-items-center">
-    <h4 class="mr-5">{{ selectedMenu }}</h4>
-    <h4 class="mr-5">{{ selectedWeek }}. {{ weekText}}</h4>
-    <h4 *ngIf="weekArray && selectedWeek !== weekArray[0]">{{ year }}. {{
-      this.weekService.getWeekDays(selectedWeek)[0] }} - {{
-      this.weekService.getWeekDays(selectedWeek)[4]
-      }}</h4>
-    <h4 *ngIf="weekArray && selectedWeek === weekArray[0]">{{ year - 1 }}. {{ this.weekService.getWeekDays(0)[0] }} - {{
-      this.weekService.getWeekDays(0)[4]
-      }}</h4>
+    <h4 class="mr-5">{{ menuSelectArrayName[menuSelectArrayKey.indexOf(selectedMenuKey)] }}</h4>
+    <h4 *ngIf="selectedWeek !== 0" class="mr-5">{{ selectedWeek }}. {{ weekText}}</h4>
+    <h4 *ngIf="selectedWeek === 0" class="mr-5">52. {{ weekText}}</h4>
+    <h4
+      *ngIf="weekArray && getYear(this.weekService.getWeekDays(selectedWeek)[0]) && getYear(this.weekService.getWeekDays(selectedWeek)[4])
+    || weekArray && !getYear(this.weekService.getWeekDays(selectedWeek)[0]) && !getYear(this.weekService.getWeekDays(selectedWeek)[4])">
+      {{ this.weekService.getWeekDays(selectedWeek)[0].getFullYear() }}. {{
+      customDateFormats(this.weekService.getWeekDays(selectedWeek)[0]) }} -
+      {{ customDateFormats(this.weekService.getWeekDays(selectedWeek)[4]) }}
+    </h4>
+    <h4
+      *ngIf="weekArray && !getYear(this.weekService.getWeekDays(selectedWeek)[0]) && getYear(this.weekService.getWeekDays(selectedWeek)[4])">
+      {{ this.weekService.getWeekDays(selectedWeek)[0].getFullYear() }}. {{
+      customDateFormats(this.weekService.getWeekDays(selectedWeek)[0]) }} -
+      {{ this.weekService.getWeekDays(selectedWeek)[4].getFullYear() }}. {{
+      customDateFormats(this.weekService.getWeekDays(selectedWeek)[4]) }}
+    </h4>
+    <h4
+      *ngIf="weekArray && getYear(this.weekService.getWeekDays(selectedWeek)[0]) && !getYear(this.weekService.getWeekDays(selectedWeek)[4])">
+      {{ this.weekService.getWeekDays(selectedWeek)[0].getFullYear() }}. {{
+      customDateFormats(this.weekService.getWeekDays(selectedWeek)[0]) }} -
+      {{ this.weekService.getWeekDays(selectedWeek)[4].getFullYear() }}. {{
+      customDateFormats(this.weekService.getWeekDays(selectedWeek)[4]) }}
+    </h4>
   </div>
 
-  <div class="container d-flex flex-row justify-content-center pb-5 h-100">
+  <div *ngIf="!randomMenu" class="container d-flex flex-row justify-content-center pb-5 h-100">
     <div *ngFor="let day of dayIndex" class="menu_card px-0">
       <mat-card class="h-10 menu_thead border rounded-0">
         <mat-card-content class="text-center">
@@ -37,30 +56,73 @@
         </mat-card-content>
       </mat-card>
       <app-base-editor-card
-        *ngIf="menu && menuSelectPrimeArray.indexOf(selectedMenu) !== -1 && menuSelectPrimeArray.indexOf(selectedMenu) !== 3"
-        class="h-100"
-        [SoupFoods]="FoodList$ | async | filter:menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2]][day].category:'category' | filter: 'soup':'menu'"
-        [selectedMenuCategory2]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2]][day].category"
-        [menuName1]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2]][day].name"
-        [Foods]="FoodList$ | async | filter:menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2 + 1]][day].category:'category' | filter: 'main_course':'menu'"
-        [selectedMenuCategory1]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2 + 1]][day].category"
-        [menuName2]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2 + 1]][day].name">
+        *ngIf="menu && menuSelectPrimeArray.indexOf(selectedMenuKey) !== -1 && menuSelectPrimeArray.indexOf(selectedMenuKey) !== 3"
+        class="h-100" [SoupFoods]="FoodList$ | async | filter: selectedMenuKey :'category' | filter: 'soup':'menu'"
+        [menuName1]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenuKey) * 2]][day]?.name"
+        [Foods]="FoodList$ | async | filter: selectedMenuKey :'category' | filter: 'main_course':'menu'"
+        [menuName2]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenuKey) * 2 + 1]][day]?.name"
+        [day]="day" [selectedMenuKey]="selectedMenuKey" [selectedWeek]="selectedWeek">
       </app-base-editor-card>
       <app-base-editor-card
-        *ngIf="menu && menuSelectPrimeArray.indexOf(selectedMenu) !== -1 && menuSelectPrimeArray.indexOf(selectedMenu) === 3"
+        *ngIf="menu && menuSelectPrimeArray.indexOf(selectedMenuKey) !== -1 && menuSelectPrimeArray.indexOf(selectedMenuKey) === 3"
         class="h-100" [SoupFoods]="FoodList$ | async | filter: 'soup':'menu' | filter: 'true' : 'fitness'"
-        [selectedMenuCategory2]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2]][day].category"
-        [menuName1]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2]][day].name"
-        [Foods]="FoodList$ | async | filter:menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2 + 1]][day].category:'category' | filter: 'main_course':'menu'"
-        [selectedMenuCategory1]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2 + 1]][day].category"
-        [menuName2]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenu) * 2 + 1]][day].name">
+        [menuName1]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenuKey) * 2]][day]?.name"
+        [Foods]="FoodList$ | async | filter: selectedMenuKey :'category' | filter: 'main_course':'menu'"
+        [menuName2]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenuKey) * 2 + 1]][day]?.name"
+        [day]="day" [selectedMenuKey]="selectedMenuKey" [selectedWeek]="selectedWeek">
       </app-base-editor-card>
-      <app-base-editor-card *ngIf="menu && menuSelectOptionArray.indexOf(selectedMenu) !== -1" class="h-100"
-        [selectedMenuCategory1]="menu[selectedWeek][menuVariable[menuSelectOptionArray.indexOf(selectedMenu) + 12]][day].category"
-        [Foods]="FoodList$ | async | filter:menu[selectedWeek][menuVariable[menuSelectOptionArray.indexOf(selectedMenu) + 12]][day].category:'category'"
-        [menuName2]="menu[selectedWeek][menuVariable[menuSelectOptionArray.indexOf(selectedMenu) + 12]][day].name">
+      <app-base-editor-card *ngIf="menu && menuSelectOptionArray.indexOf(selectedMenuKey) !== -1" class="h-100"
+        [Foods]="FoodList$ | async | filter: selectedMenuKey :'category'"
+        [menuName2]="menu[selectedWeek][menuVariable[menuSelectOptionArray.indexOf(selectedMenuKey) + 12]][day]?.name"
+        [day]="day" [selectedMenuKey]="selectedMenuKey" [selectedWeek]="selectedWeek">
       </app-base-editor-card>
     </div>
   </div>
+
+  <div *ngIf="randomMenu" class="container d-flex flex-row justify-content-center pb-5 h-100">
+    <div *ngFor="let day of dayIndex" class="menu_card px-0">
+      <mat-card class="h-10 menu_thead border rounded-0">
+        <mat-card-content class="text-center">
+          <h5>{{ menuCardHeaderText[day+2].name }}</h5>
+        </mat-card-content>
+      </mat-card>
+      <app-base-editor-card
+        *ngIf="randomMenu && menuSelectPrimeArray.indexOf(selectedMenuKey) !== -1 && menuSelectPrimeArray.indexOf(selectedMenuKey) !== 3"
+        class="h-100"
+        [menuName1]="randomMenu[menuVariable[menuSelectPrimeArray.indexOf(selectedMenuKey) * 2]][day]?.name"
+        [menuName2]="randomMenu[menuVariable[menuSelectPrimeArray.indexOf(selectedMenuKey) * 2 + 1]][day]?.name"
+        [random]="true">
+      </app-base-editor-card>
+      <app-base-editor-card
+        *ngIf="randomMenu && menuSelectPrimeArray.indexOf(selectedMenuKey) !== -1 && menuSelectPrimeArray.indexOf(selectedMenuKey) === 3"
+        class="h-100"
+        [menuName1]="randomMenu[menuVariable[menuSelectPrimeArray.indexOf(selectedMenuKey) * 2]][day]?.name"
+        [menuName2]="randomMenu[menuVariable[menuSelectPrimeArray.indexOf(selectedMenuKey) * 2 + 1]][day]?.name"
+        [random]="true">
+      </app-base-editor-card>
+      <app-base-editor-card *ngIf="randomMenu && menuSelectOptionArray.indexOf(selectedMenuKey) !== -1" class="h-100"
+        [menuName2]="randomMenu[menuVariable[menuSelectOptionArray.indexOf(selectedMenuKey) + 12]][day]?.name"
+        [random]="true">
+      </app-base-editor-card>
+    </div>
+  </div>
+
+  <div class="container col-6 offset-3 py-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="font-weight-bold mb-2 text-center">{{ generationText }}</div>
+    <div class="button-group d-flex flex-column justify-content-center align-items-center">
+      <button
+        [disabled]="selectedWeek === weekNumber || selectedWeek === weekNumber + 1 || selectedWeek === weekNumber + 2"
+        mat-raised-button color="add" type="button" (click)="setMenuOfWeek(selectedMenuKey)" class="mb-2">
+        {{ generationButtonText }} ( {{ selectedWeek }}. {{ weekText }} -
+        {{ menuSelectArrayName[menuSelectArrayKey.indexOf(selectedMenuKey)] }} )
+      </button>
+      <button *ngIf="randomMenu" mat-raised-button color="save" type="button" class="mt-5"
+        [matTooltip]='menuSaveButtonText' TooltipTouchGestures="auto" matTooltipPosition="below"
+        matTooltipClass="mat-save" (click)="saveMenu(selectedWeek, selectedMenuKey)">
+        {{ editPageText[1].name }}
+      </button>
+    </div>
+  </div>
+
 
 </div>

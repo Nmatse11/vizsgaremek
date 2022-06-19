@@ -13,7 +13,7 @@ import { WeekService } from 'src/app/service/week.service';
 })
 export class MenuComponent implements OnInit {
 
-  weekNumber = this.weekService.weekNumber
+  weekNumber: number = 0
   week: number = 0
   weekText = this.config.weekText
 
@@ -60,7 +60,14 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.getIMenuItem()
     this.setPriceOfMenu()
-    this.week = this.weekNumber
+    if (new Date().getDay() !== 6 || new Date().getDay() !== 0) {
+      this.weekNumber = this.weekService.weekNumber
+      this.week = this.weekNumber
+    }
+    if (new Date().getDay() === 6 || new Date().getDay() === 0) {
+      this.weekNumber = this.weekService.weekNumber + 1
+      this.week = this.weekNumber + 1
+    }
   }
 
   saveMenu(menu: Menu, item: Food[]) {
@@ -126,6 +133,10 @@ export class MenuComponent implements OnInit {
     if (el) {
       el.scrollIntoView({behavior: 'smooth'});
     }
+  }
+
+    customDateFormats(date: Date): string {
+    return date.toLocaleDateString('hu', { month: '2-digit', day: '2-digit', })
   }
 
 }

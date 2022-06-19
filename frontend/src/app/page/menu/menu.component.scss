@@ -20,8 +20,8 @@
   }
 
   &_thead {
-    background-color: $edit-button-backgroundcolor;
-    color: $button-color;
+    background-color: $secondary;
+    color: $light;
     font-weight: bold;
   }
 
@@ -77,16 +77,16 @@
 .mat {
 
   &-add {
-    background-color: $edit-button-backgroundcolor;
-    color: $button-color;
+    background-color: $secondary;
+    color: $light;
 
     &:hover {
-      background-color: $list-button-backgroundcolor;
+      background-color: $primary;
     }
   }
 
   &-info-button {
-    background-color: $list-button-backgroundcolor;
+    background-color: $primary;
   }
 
   &-option-button {
@@ -98,8 +98,8 @@
   }
 
   &-active {
-      background-color: $list-button-backgroundcolor;
-      color: $button-color;
+      background-color: $primary;
+      color: $light;
     }
 
 }

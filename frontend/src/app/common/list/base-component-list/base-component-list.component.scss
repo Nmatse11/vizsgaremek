@@ -1,0 +1,16 @@
+@use '../../../../assets/modules/color' as *;
+
+.mat-add {
+  background-color: $secondary;
+  color: $light;
+  width: 25rem;
+
+  &:hover {
+    background-color: $primary;
+  }
+
+  &.active {
+    background-color: $primary;
+    color: $light;
+  }
+}

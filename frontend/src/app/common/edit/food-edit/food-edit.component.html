@@ -14,7 +14,7 @@
           <div class="col-lg-5 col-md-12 mb-2">
             <div class="form-group">
               <label [for]="foodEditItems[0].prop">{{ foodEditItems[0].label }} *</label>
-              <input [(ngModel)]="food[foodEditItems[0].prop]" class="form-control" type="string"
+              <input [(ngModel)]="food[foodEditItems[0].prop]" class="form-control" type="text"
                 [name]="foodEditItems[0].prop" [id]="foodEditItems[0].prop" required
                 [pattern]="foodEditItems[0].pattern" [placeholder]="foodEditItems[0].placeholder">
               <div class="font-italic small ml-2 mt-1"
@@ -66,12 +66,12 @@
           <div class="col-lg-5 col-md-12">
             <div class="form-group" *ngIf="!selected && !selectedArray">
               <label [for]="foodEditItems[1].prop">{{ foodEditItems[1].label }} *</label>
-              <input [(ngModel)]="selected" class="form-control" type="string" [name]="foodEditItems[1].prop"
+              <input [(ngModel)]="selected" class="form-control" type="text" [name]="foodEditItems[1].prop"
                 [id]="foodEditItems[1].prop" required [disabled]="true">
             </div>
             <div class="form-group" *ngIf="selected">
               <label [for]="foodEditItems[1].prop">{{ foodEditItems[1].label }} *</label>
-              <input [(ngModel)]="selected" class="form-control" type="string" [name]="foodEditItems[1].prop"
+              <input [(ngModel)]="selected" class="form-control" type="text" [name]="foodEditItems[1].prop"
                 [id]="foodEditItems[1].prop" required [disabled]="true">
             </div>
             <div class="form-group" *ngIf="selectedArray && !selected">
@@ -89,12 +89,6 @@
 
         <div class="row mb-2 justify-content-center">
           <div class="col-lg-10 col-md-12 mb-5 d-flex">
-            <div class="col-lg-4 col-md-12 mb-2" *ngIf="yet === true">
-              <h6>{{ editPageText[4].name }} <span class="font-weight-bold">({{ editPageText[5].name }})</span>:
-                {{ editPageText[7].name }}</h6>
-              <h6>{{ editPageText[4].name }} <span class="font-weight-bold">({{ editPageText[6].name }})</span>:
-                {{ editPageText[7].name }}</h6>
-            </div>
             <div class="d-flex flex-column">
               <p>{{ foodEditItems[3].label }}</p>
               <div class="d-flex flex-row">
@@ -110,11 +104,25 @@
           </div>
         </div>
 
+        <div class="row mb-2 justify-content-center">
+          <div class="col-lg-10 col-md-12 d-flex flex-column" *ngIf="food.numberInMenu">
+            <h6>{{ editPageText[15].name }}:
+              {{ food.numberInMenu }} {{ editPageText[7].name }}</h6>
+            <h6>{{ editPageText[16].name }}:</h6>
+          </div>
+          <div class="col-lg-10 col-md-12 mb-5 d-flex flex-row" *ngIf="food.weekOfYear">
+            <span *ngFor="let week of food.weekOfYear" class="mr-2 text-center">
+              <span *ngIf="week === 0">52. {{ weekText }}</span>
+              <span *ngIf="week !== 0">{{ week }}. {{ weekText }}</span>
+            </span>
+          </div>
+        </div>
+
 
         <div class="row col-10 offset-1">
           <button [disabled]="foodForm.invalid" mat-raised-button color="save" class="mr-2" type="submit">{{
             editPageText[1].name }}</button>
-          <button mat-raised-button color="cancel" routerLink="/product" class="mr-2" type="button">
+          <button mat-raised-button color="cancel" [routerLink]="['/', 'menu', 'product']" class="mr-2" type="button">
             {{ editPageText[3].name }}
           </button>
           <button *ngIf="food.id !== 0" mat-raised-button color="delete" (click)="onDelete(food.id)" type="button">

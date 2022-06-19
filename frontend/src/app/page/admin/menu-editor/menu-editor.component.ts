@@ -6,6 +6,8 @@ import { ConfigService } from 'src/app/service/config.service';
 import { FoodService } from 'src/app/service/food.service';
 import { MenuService } from 'src/app/service/menu.service';
 import { WeekService } from 'src/app/service/week.service';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-menu-editor',
@@ -19,9 +21,10 @@ export class MenuEditorComponent implements OnInit {
   menuEditorMenuSelect = this.config.menuEditorMenuSelect
   menuEditorWeekSelect = this.config.menuEditorWeekSelect
 
-  menuSelectArray: string[] = this.config.menuEditorSelectItems.map(item => item.name)
-  menuSelectPrimeArray: string[] = this.config.menuEditorSelectItems.filter(item => this.config.menuEditorSelectItems.indexOf(item) < 6).map(item => item.name)
-  menuSelectOptionArray: string[] = this.config.menuEditorSelectItems.filter(item => this.config.menuEditorSelectItems.indexOf(item) > 5).map(item => item.name)
+  menuSelectArrayKey: string[] = this.config.menuEditorSelectItems.map(item => item.key)
+  menuSelectArrayName: string[] = this.config.menuEditorSelectItems.map(item => item.name)
+  menuSelectPrimeArray: string[] = this.config.menuEditorSelectItems.filter(item => this.config.menuEditorSelectItems.indexOf(item) < 6).map(item => item.key)
+  menuSelectOptionArray: string[] = this.config.menuEditorSelectItems.filter(item => this.config.menuEditorSelectItems.indexOf(item) > 5).map(item => item.key)
 
   Foods!: Food[]
   SoupFoods?: Food[]
@@ -29,62 +32,94 @@ export class MenuEditorComponent implements OnInit {
   weekNumber!: number
   weekArray!: number[]
   weekText = this.config.weekText
-  year = new Date().getFullYear()
 
   dayIndex = Array(5).fill(1).map((item, index) => index-1 + 1);
 
-  selectedMenu!: string;
+  selectedMenuKey!: string;
   selectedWeek!: number;
 
   menu!: Menu[]
   menuVariable = Object.keys(new Menu()).filter(value => value !== "id" && value !== "week")
 
   menuCardHeaderText = this.config.menuCardHeaderText
+  generationText = this.config.generationText
+  generationButtonText = this.config.generationButtonText
+  editPageText = this.config.editPageText
+  menuSaveButtonText = this.config.menuSaveButtonText
+
+  randomMenu!: Menu
+
+  messages = this.config.toastrItems
 
   constructor(
     private config: ConfigService,
     public weekService: WeekService,
     private menuService: MenuService,
-    private foodService: FoodService
+    private foodService: FoodService,
+    private router: Router,
+    private toastr: ToastrService,
   ) { }
 
   ngOnInit(): void {
       this.menuService.getAll().subscribe(menus => {
         this.menu = menus
         this.weekArray = Array(this.menu.length - 1).fill(1).map((item, index) => index + 1);
-        this.weekArray.unshift(52)
+        this.weekArray.unshift(0)
       })
-      this.weekNumber = this.weekService.weekNumber
-      this.selectedMenu = this.menuSelectArray[0]
+      if (new Date().getDay() !== 6 || new Date().getDay() !== 0) {
+        this.weekNumber = this.weekService.weekNumber
+      }
+      if (new Date().getDay() === 6 || new Date().getDay() === 0) {
+        this.weekNumber = this.weekService.weekNumber + 1
+      }
+      this.selectedMenuKey = this.menuSelectArrayKey[0]
       this.selectedWeek = this.weekNumber
-      //this.setMenuOfWeek()
   }
 
-  setMenuOfWeek() {
-    this.menuService.getAll().subscribe(menus => {
-      menus.filter(element => element.id < 33).map(menu => {
-        this.foodService.getAll().subscribe(foods => {
-          let array = foods.filter(item => item.category === 'A' && item.menu === 'soup')
-            //item.fitness === true && item.menu === 'soup')
-            //item.category === 'A' && item.menu === 'main_course')
-          if (menu.AMenuFoodSoup === [] || menu.AMenuFoodSoup.length !== 5) {
-            menu.AMenuFoodSoup = array.sort((a, b) => 0.5 - Math.random()).slice(0, 5)
-            this.menuService.update(menu).subscribe(
-              category => category,
-              err => console.error(err))
-          }
-        }
-          )
+  customDateFormats(date: Date): string {
+    return date.toLocaleDateString('hu', { month: '2-digit', day: '2-digit', })
+  }
 
-      })
+  getYear(date: Date): boolean {
+    return date.getFullYear() === new Date().getFullYear()
+  }
+
+  setMenuOfWeek(menuKey: string) {
+      this.foodService.getAll().subscribe(foods => {
+        this.randomMenu = new Menu()
+
+      if (this.menuSelectPrimeArray.indexOf(menuKey) !== -1) {
+        if (menuKey !== 'F') {
+          this.randomMenu[`${menuKey}MenuFoodSoup`] = foods.filter(item => item.category === menuKey && item.menu === 'soup').sort((a, b) => 0.5 - Math.random()).slice(0, 5)
+          this.randomMenu[`${menuKey}MenuFoodMain`] = foods.filter(item => item.category === menuKey && item.menu === 'main_course').sort((a, b) => 0.5 - Math.random()).slice(0, 5)
+        }
+        if (menuKey === 'F') {
+          this.randomMenu[`${menuKey}MenuFoodSoup`] = foods.filter(item => item.fitness === true && item.menu === 'soup').sort((a, b) => 0.5 - Math.random()).slice(0, 5)
+          this.randomMenu[`${menuKey}MenuFoodMain`] = foods.filter(item => item.category === menuKey && item.menu === 'main_course').sort((a, b) => 0.5 - Math.random()).slice(0, 5)
+        }
+      }
+      if (this.menuSelectOptionArray.indexOf(menuKey) !== -1) {
+          this.randomMenu[`${menuKey}MenuFood`] = foods.filter(item => item.category === menuKey).sort((a, b) => 0.5 - Math.random()).slice(0, 5)
+      }
     })
   }
 
-  saveFastfoodCategoryOrder(menu: Menu, array: []) {
-    menu.AMenuFoodMain = array
-    this.menuService.update(menu).subscribe(
-      category => category,
-      err => console.error(err))
+  saveMenu(week: number, menuKey: string) {
+     this.menuService.getOne(week + 1).subscribe(menu => {
+      if (this.menuSelectPrimeArray.indexOf(menuKey) !== -1) {
+        menu[`${menuKey}MenuFoodSoup`] = this.randomMenu[`${menuKey}MenuFoodSoup`]
+        menu[`${menuKey}MenuFoodMain`] = this.randomMenu[`${menuKey}MenuFoodMain`]
+      }
+      if (this.menuSelectOptionArray.indexOf(menuKey) !== -1) {
+        menu[`${menuKey}MenuFood`] = this.randomMenu[`${menuKey}MenuFood`]
+      }
+
+      this.menuService.update(menu).subscribe(
+        next => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+          this.router.navigate(['/', 'menu-editor' ]);
+          this.toastr.success(this.messages[4].message, this.messages[4].title)}),
+        err => console.error(err))
+      })
   }
 
 }

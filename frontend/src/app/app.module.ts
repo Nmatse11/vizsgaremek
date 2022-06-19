@@ -13,9 +13,6 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { BaseListComponent } from './common/list/base-list/base-list.component';
 import { BillListComponent } from './common/list/bill-list/bill-list.component';
 import { CustomerListComponent } from './common/list/customer-list/customer-list.component';
-import { FoodListComponent } from './common/list/food-list/food-list.component';
-import { CategoryListComponent } from './common/list/category-list/category-list.component';
-import { OrderListComponent } from './common/list/order-list/order-list.component';
 import { MenuOrderEditComponent } from './common/edit/menu-order-edit/menu-order-edit.component';
 import { FastfoodOrderEditComponent } from './common/edit/fastfood-order-edit/fastfood-order-edit.component';
 import { BillEditComponent } from './common/edit/bill-edit/bill-edit.component';
@@ -34,9 +31,7 @@ import { AdminComponent } from './page/admin/dashboard/admin.component';
 import { SigninComponent } from './common/login/signin/signin.component';
 import { SignupComponent } from './common/login/signup/signup.component';
 import { BillComponent } from './page/admin/bill/bill.component';
-import { OrderComponent } from './page/admin/order/order.component';
 import { CustomerComponent } from './page/admin/customer/customer.component';
-import { ProductComponent } from './page/admin/product/product.component';
 import { TextoverflowPipe } from './pipe/textoverflow.pipe';
 import { CustomCurrencyPipe } from './pipe/custom-currency.pipe';
 import { CustomNumberPipe } from './pipe/custom-number.pipe';
@@ -53,6 +48,13 @@ import { FastfoodCardsComponent } from './common/dashboard-cards/fastfood-cards/
 import { BaseEditorCardComponent } from './common/base-food-card/base-editor-card/base-editor-card.component';
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
 import { FilterPipe } from './pipe/filter.pipe';
+import { MenuProductComponent } from './common/list/product-list/menu-product/menu-product.component';
+import { FastfoodProductComponent } from './common/list/product-list/fastfood-product/fastfood-product.component';
+import { FastfoodOrderComponent } from './common/list/order-list/fastfood-order/fastfood-order.component';
+import { MenuOrderComponent } from './common/list/order-list/menu-order/menu-order.component';
+import { MenuCategoryComponent } from './common/list/category-list/menu-category/menu-category.component';
+import { FastfoodCategoryComponent } from './common/list/category-list/fastfood-category/fastfood-category.component';
+import { BaseComponentListComponent } from './common/list/base-component-list/base-component-list.component';
 
 import { MatMenuModule } from '@angular/material/menu'
 import { MatTableModule } from '@angular/material/table';
@@ -79,9 +81,6 @@ import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component
     BaseListComponent,
     BillListComponent,
     CustomerListComponent,
-    FoodListComponent,
-    CategoryListComponent,
-    OrderListComponent,
     MenuOrderEditComponent,
     FastfoodOrderEditComponent,
     BillEditComponent,
@@ -100,9 +99,7 @@ import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component
     SigninComponent,
     SignupComponent,
     BillComponent,
-    OrderComponent,
     CustomerComponent,
-    ProductComponent,
     TextoverflowPipe,
     CustomCurrencyPipe,
     CustomNumberPipe,
@@ -121,6 +118,13 @@ import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component
     PieChartComponent,
     BaseEditorCardComponent,
     ForbiddenComponent,
+    MenuProductComponent,
+    FastfoodProductComponent,
+    FastfoodOrderComponent,
+    MenuOrderComponent,
+    MenuCategoryComponent,
+    FastfoodCategoryComponent,
+    BaseComponentListComponent
   ],
   imports: [
     BrowserModule,

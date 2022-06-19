@@ -1,4 +1,3 @@
-
 import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CategoryMenu } from 'src/app/model/category-menu';
@@ -6,6 +5,7 @@ import { Food } from 'src/app/model/food';
 import { OrderMenu } from 'src/app/model/order-menu';
 import { ConfigService } from 'src/app/service/config.service';
 import { MenuCategoryService } from 'src/app/service/menu-category.service';
+
 @Component({
   selector: 'app-menu-cards',
   templateUrl: './menu-cards.component.html',
@@ -64,10 +64,10 @@ export class MenuCardsComponent implements OnInit {
       this.FoodList$.subscribe(foods => {
         this.OrderMenuList$!.subscribe(orders => {
           this.CategoryMenuList$.subscribe(categories => {
-            this.setNumberOfFood(categories, foods)
-            this.setNumberOfOrder(categories, orders)
-            this.setValueOfStat(categories)
-            this.loading = true
+                this.setNumberOfFood(categories, foods)
+                this.setNumberOfOrder(categories, orders)
+                this.setValueOfStat(categories)
+                this.loading = true
             })
           })
         })

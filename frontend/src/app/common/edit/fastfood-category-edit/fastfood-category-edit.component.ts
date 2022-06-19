@@ -8,6 +8,10 @@ import { DeleteDialogComponent } from '../../dialog/delete-dialog/delete-dialog.
 import { MatDialog } from '@angular/material/dialog';
 import { CategoryFastfood } from 'src/app/model/category-fastfood';
 import { FastfoodCategoryService } from 'src/app/service/fastfood-category.service';
+import { FastfoodService } from 'src/app/service/fastfood.service';
+import { FastfoodOrderService } from 'src/app/service/fastfood-order.service';
+import { Fastfood } from 'src/app/model/fastfood';
+import { OrderFastfood } from 'src/app/model/order-fastfood';
 
 @Component({
   selector: 'app-fastfood-category-edit',
@@ -51,6 +55,7 @@ export class FastfoodCategoryEditComponent implements OnInit {
     private router: Router,
     private toastr: ToastrService,
     private dialog: MatDialog,
+    private fastfoodService: FastfoodService
   ) { }
 
   ngOnInit(): void {
@@ -63,8 +68,63 @@ export class FastfoodCategoryEditComponent implements OnInit {
         ).subscribe(category => {
           this.category = category
           this.selected = this.categoryValue[this.categoryKeys.indexOf(category.categoryCode)]
+          this.fastfoodService.getAll().subscribe(fastfoods => {
+              this.setNumberOfFastfood(category, fastfoods)
+              this.setFastfoodCategoryOrder(category, fastfoods)
+          })
         })
     }
+  }
+
+  setNumberOfFastfood(category: CategoryFastfood, fastfoods: Fastfood[]): void {
+    let number = 0
+    number = fastfoods.filter(fastfood => fastfood.category === category.categoryCode).length
+
+    if (number !== 0 && category.numberOfFood !== number ) {
+      category.numberOfFood = number
+      this.saveCategoryFastfood(category, category.numberOfFood)
+    }
+  }
+
+  saveCategoryFastfood(category: CategoryFastfood, item: number) {
+    category.numberOfFood = item
+    this.fastfoodCategoryService.update(category).subscribe(
+      category => category,
+      err => console.error(err))
+  }
+
+  setFastfoodCategoryOrder(category: CategoryFastfood, fastfoods: Fastfood[]) {
+      let arrayOrder: any[] = []
+      let numberSum = 0
+
+      fastfoods.map(fastfood => {
+        if (fastfood.category !== "PIZ") {
+          if (fastfood.category === category.categoryCode) {
+                arrayOrder.push(fastfood.numberOfOrder)
+          }
+        }
+
+        if (fastfood.category === "PIZ") {
+          if (fastfood.category === category.categoryCode) {
+              arrayOrder.push(fastfood.numberOfOrder)
+              arrayOrder.push(fastfood.numberOfOrderFamily)
+          }
+        }
+      })
+      numberSum = arrayOrder.reduce((prev, next) => (prev as number) + (next as number), 0)
+
+        if (numberSum !== 0 && category.sumOfOrder !== numberSum ) {
+          category.sumOfOrder = numberSum
+          this.saveFastfoodCategoryOrder(category, category.sumOfOrder)
+        }
+
+  }
+
+  saveFastfoodCategoryOrder(category: CategoryFastfood, item: number) {
+    category.sumOfOrder = item
+    this.fastfoodCategoryService.update(category).subscribe(
+      category => category,
+      err => console.error(err))
   }
 
   dataChanged(value: string): void {
@@ -75,11 +135,11 @@ export class FastfoodCategoryEditComponent implements OnInit {
   saveCategory(category: CategoryMenu): void {
     if (this.activatedRoute.snapshot.params['id'] === '0') {
       this.fastfoodCategoryService.create(category).subscribe(
-        response => this.router.navigate(['/', 'category']));
+        response => this.router.navigate(['/', 'fastfood', 'category']));
         this.toastr.success(this.messages[1].message, this.messages[1].title);
     } else {
       this.fastfoodCategoryService.update(category).subscribe(
-        response => this.router.navigate(['/', 'category']));
+        response => this.router.navigate(['/', 'fastfood', 'category']));
         this.toastr.success(this.messages[2].message, this.messages[2].title);
     }
   }
@@ -97,7 +157,7 @@ export class FastfoodCategoryEditComponent implements OnInit {
       if (result === true) {
         this.fastfoodCategoryService.delete(id).subscribe(
           response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-            this.router.navigate(['/', 'category' ]);
+            this.router.navigate(['/', 'fastfood', 'category' ]);
             this.toastr.error(this.messages[0].message, this.messages[0].title);
             }
           )

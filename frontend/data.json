@@ -1166,7 +1166,27 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 17,
+      "weekOfYear": [
+        0,
+        3,
+        4,
+        5,
+        8,
+        9,
+        12,
+        16,
+        17,
+        18,
+        20,
+        21,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
     },
     {
       "id": 2,
@@ -1186,7 +1206,19 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        0,
+        3,
+        4,
+        6,
+        8,
+        10,
+        20,
+        22,
+        30
+      ]
     },
     {
       "id": 3,
@@ -1206,7 +1238,25 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 15,
+      "weekOfYear": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        10,
+        14,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31
+      ]
     },
     {
       "id": 4,
@@ -1226,7 +1276,20 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        2,
+        7,
+        10,
+        12,
+        14,
+        19,
+        21,
+        22,
+        28,
+        30
+      ]
     },
     {
       "id": 5,
@@ -1246,7 +1309,17 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        9,
+        11,
+        14,
+        16,
+        20,
+        21,
+        30
+      ]
     },
     {
       "id": 6,
@@ -1266,7 +1339,24 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 14,
+      "weekOfYear": [
+        0,
+        1,
+        3,
+        6,
+        7,
+        8,
+        11,
+        13,
+        15,
+        19,
+        21,
+        22,
+        24,
+        28
+      ]
     },
     {
       "id": 7,
@@ -1286,7 +1376,20 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        5,
+        8,
+        9,
+        11,
+        15,
+        21,
+        24,
+        25,
+        26,
+        31
+      ]
     },
     {
       "id": 8,
@@ -1306,7 +1409,25 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 15,
+      "weekOfYear": [
+        0,
+        2,
+        7,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        18,
+        20,
+        22,
+        23,
+        24,
+        25
+      ]
     },
     {
       "id": 9,
@@ -1326,7 +1447,17 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        5,
+        10,
+        15,
+        22,
+        25,
+        26,
+        31
+      ]
     },
     {
       "id": 10,
@@ -1346,7 +1477,25 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 15,
+      "weekOfYear": [
+        1,
+        2,
+        4,
+        6,
+        9,
+        12,
+        14,
+        16,
+        17,
+        20,
+        23,
+        25,
+        26,
+        27,
+        28
+      ]
     },
     {
       "id": 11,
@@ -1366,7 +1515,17 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        2,
+        3,
+        13,
+        15,
+        26,
+        29,
+        30
+      ]
     },
     {
       "id": 12,
@@ -1386,7 +1545,22 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 12,
+      "weekOfYear": [
+        4,
+        6,
+        7,
+        9,
+        13,
+        18,
+        19,
+        23,
+        24,
+        27,
+        29,
+        31
+      ]
     },
     {
       "id": 13,
@@ -1406,7 +1580,21 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        1,
+        5,
+        8,
+        11,
+        12,
+        16,
+        17,
+        18,
+        19,
+        23,
+        27
+      ]
     },
     {
       "id": 14,
@@ -1426,7 +1614,21 @@
       "category": "R1",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        0,
+        1,
+        4,
+        6,
+        12,
+        13,
+        17,
+        18,
+        19,
+        23,
+        29
+      ]
     },
     {
       "id": 15,
@@ -1446,7 +1648,29 @@
       "category": "R2",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 19,
+      "weekOfYear": [
+        2,
+        4,
+        5,
+        8,
+        10,
+        11,
+        12,
+        13,
+        15,
+        18,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
     },
     {
       "id": 16,
@@ -1466,7 +1690,30 @@
       "category": "R2",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 20,
+      "weekOfYear": [
+        0,
+        3,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        24,
+        25,
+        26,
+        27,
+        28,
+        31
+      ]
     },
     {
       "id": 17,
@@ -1486,7 +1733,22 @@
       "category": "R2",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 12,
+      "weekOfYear": [
+        0,
+        2,
+        9,
+        10,
+        12,
+        15,
+        16,
+        17,
+        18,
+        19,
+        28,
+        30
+      ]
     },
     {
       "id": 18,
@@ -1506,7 +1768,27 @@
       "category": "R2",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 17,
+      "weekOfYear": [
+        1,
+        2,
+        5,
+        6,
+        10,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        25,
+        31
+      ]
     },
     {
       "id": 19,
@@ -1526,7 +1808,26 @@
       "category": "R2",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 16,
+      "weekOfYear": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        17,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        27,
+        28
+      ]
     },
     {
       "id": 20,
@@ -1546,7 +1847,23 @@
       "category": "R2",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 13,
+      "weekOfYear": [
+        1,
+        4,
+        6,
+        7,
+        9,
+        14,
+        16,
+        19,
+        21,
+        22,
+        23,
+        26,
+        29
+      ]
     },
     {
       "id": 21,
@@ -1566,7 +1883,31 @@
       "category": "R2",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 21,
+      "weekOfYear": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        10,
+        11,
+        13,
+        15,
+        19,
+        20,
+        21,
+        22,
+        23,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
     },
     {
       "id": 22,
@@ -1586,7 +1927,29 @@
       "category": "R2",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 19,
+      "weekOfYear": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        13,
+        14,
+        17,
+        18,
+        20,
+        23,
+        24,
+        25,
+        26,
+        29,
+        30,
+        31
+      ]
     },
     {
       "id": 23,
@@ -1606,7 +1969,24 @@
       "category": "R2",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 14,
+      "weekOfYear": [
+        0,
+        4,
+        6,
+        8,
+        9,
+        12,
+        14,
+        16,
+        20,
+        23,
+        24,
+        27,
+        29,
+        31
+      ]
     },
     {
       "id": 24,
@@ -1626,7 +2006,19 @@
       "category": "R2",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        1,
+        3,
+        4,
+        7,
+        11,
+        15,
+        16,
+        21,
+        30
+      ]
     },
     {
       "id": 25,
@@ -1646,7 +2038,22 @@
       "category": "A",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 12,
+      "weekOfYear": [
+        0,
+        2,
+        5,
+        7,
+        8,
+        10,
+        12,
+        14,
+        19,
+        20,
+        21,
+        29
+      ]
     },
     {
       "id": 26,
@@ -1666,7 +2073,19 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        0,
+        1,
+        5,
+        17,
+        18,
+        22,
+        24,
+        26,
+        28
+      ]
     },
     {
       "id": 27,
@@ -1686,7 +2105,14 @@
       "category": "A",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        0,
+        5,
+        6,
+        10
+      ]
     },
     {
       "id": 28,
@@ -1706,7 +2132,19 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        0,
+        6,
+        11,
+        13,
+        15,
+        18,
+        23,
+        29,
+        30
+      ]
     },
     {
       "id": 29,
@@ -1726,7 +2164,16 @@
       "category": "A",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        7,
+        11,
+        13,
+        18,
+        23,
+        28
+      ]
     },
     {
       "id": 30,
@@ -1746,7 +2193,14 @@
       "category": "A",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        0,
+        4,
+        5,
+        21
+      ]
     },
     {
       "id": 31,
@@ -1766,7 +2220,20 @@
       "category": "A",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        3,
+        9,
+        15,
+        16,
+        17,
+        18,
+        20,
+        25,
+        26,
+        28
+      ]
     },
     {
       "id": 32,
@@ -1786,7 +2253,19 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        7,
+        10,
+        14,
+        15,
+        16,
+        17,
+        20,
+        23,
+        28
+      ]
     },
     {
       "id": 33,
@@ -1806,7 +2285,16 @@
       "category": "A",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        9,
+        14,
+        16,
+        24,
+        25,
+        26
+      ]
     },
     {
       "id": 34,
@@ -1826,7 +2314,15 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        4,
+        10,
+        11,
+        20,
+        30
+      ]
     },
     {
       "id": 35,
@@ -1846,7 +2342,20 @@
       "category": "A",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        0,
+        7,
+        10,
+        15,
+        16,
+        18,
+        24,
+        25,
+        29,
+        30
+      ]
     },
     {
       "id": 36,
@@ -1866,7 +2375,20 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        3,
+        7,
+        8,
+        9,
+        12,
+        14,
+        17,
+        25,
+        27,
+        30
+      ]
     },
     {
       "id": 37,
@@ -1886,7 +2408,20 @@
       "category": "A",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        1,
+        3,
+        5,
+        6,
+        14,
+        17,
+        25,
+        26,
+        27,
+        31
+      ]
     },
     {
       "id": 38,
@@ -1906,7 +2441,18 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        2,
+        6,
+        8,
+        11,
+        12,
+        16,
+        27,
+        31
+      ]
     },
     {
       "id": 39,
@@ -1926,7 +2472,17 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        2,
+        4,
+        12,
+        15,
+        17,
+        22,
+        29
+      ]
     },
     {
       "id": 40,
@@ -1946,7 +2502,22 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 12,
+      "weekOfYear": [
+        2,
+        8,
+        11,
+        12,
+        13,
+        16,
+        19,
+        21,
+        25,
+        26,
+        28,
+        29
+      ]
     },
     {
       "id": 41,
@@ -1966,7 +2537,19 @@
       "category": "A",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        2,
+        4,
+        9,
+        10,
+        19,
+        21,
+        29,
+        30,
+        31
+      ]
     },
     {
       "id": 42,
@@ -1986,7 +2569,16 @@
       "category": "A",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        8,
+        9,
+        13,
+        19,
+        21,
+        23
+      ]
     },
     {
       "id": 43,
@@ -2006,7 +2598,14 @@
       "category": "A",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        9,
+        16,
+        22,
+        31
+      ]
     },
     {
       "id": 44,
@@ -2026,7 +2625,19 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        1,
+        3,
+        9,
+        16,
+        22,
+        24,
+        25,
+        26,
+        29
+      ]
     },
     {
       "id": 45,
@@ -2046,7 +2657,17 @@
       "category": "A",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        0,
+        1,
+        7,
+        9,
+        15,
+        19,
+        22
+      ]
     },
     {
       "id": 46,
@@ -2066,7 +2687,20 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        3,
+        10,
+        14,
+        15,
+        19,
+        20,
+        25,
+        27,
+        28,
+        31
+      ]
     },
     {
       "id": 47,
@@ -2086,7 +2720,20 @@
       "category": "A",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        0,
+        6,
+        12,
+        13,
+        17,
+        20,
+        21,
+        23,
+        26,
+        30
+      ]
     },
     {
       "id": 48,
@@ -2106,7 +2753,20 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        1,
+        2,
+        9,
+        10,
+        14,
+        18,
+        21,
+        26,
+        27,
+        30
+      ]
     },
     {
       "id": 49,
@@ -2126,7 +2786,12 @@
       "category": "A",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 2,
+      "weekOfYear": [
+        5,
+        6
+      ]
     },
     {
       "id": 50,
@@ -2146,7 +2811,17 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        0,
+        4,
+        6,
+        7,
+        10,
+        29,
+        31
+      ]
     },
     {
       "id": 51,
@@ -2166,7 +2841,17 @@
       "category": "A",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        1,
+        8,
+        10,
+        11,
+        18,
+        27,
+        31
+      ]
     },
     {
       "id": 52,
@@ -2185,7 +2870,18 @@
       ],
       "category": "A",
       "vegan": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        1,
+        4,
+        5,
+        18,
+        19,
+        24,
+        27,
+        30
+      ]
     },
     {
       "id": 53,
@@ -2205,7 +2901,20 @@
       "category": "A",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        2,
+        3,
+        7,
+        13,
+        20,
+        22,
+        24,
+        26,
+        27,
+        30
+      ]
     },
     {
       "id": 54,
@@ -2224,7 +2933,19 @@
       ],
       "category": "A",
       "vegan": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        2,
+        3,
+        11,
+        12,
+        14,
+        16,
+        22,
+        25,
+        31
+      ]
     },
     {
       "id": 55,
@@ -2244,7 +2965,18 @@
       "category": "A",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        1,
+        4,
+        8,
+        11,
+        21,
+        24,
+        25,
+        29
+      ]
     },
     {
       "id": 56,
@@ -2264,7 +2996,21 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        2,
+        4,
+        6,
+        7,
+        8,
+        15,
+        17,
+        20,
+        22,
+        26,
+        28
+      ]
     },
     {
       "id": 57,
@@ -2284,7 +3030,17 @@
       "category": "A",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        1,
+        5,
+        6,
+        13,
+        23,
+        24,
+        28
+      ]
     },
     {
       "id": 58,
@@ -2304,7 +3060,14 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        7,
+        13,
+        23,
+        31
+      ]
     },
     {
       "id": 59,
@@ -2324,7 +3087,19 @@
       "category": "A",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        3,
+        11,
+        12,
+        14,
+        15,
+        21,
+        27,
+        28,
+        31
+      ]
     },
     {
       "id": 60,
@@ -2344,7 +3119,16 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        6,
+        15,
+        17,
+        19,
+        20,
+        23
+      ]
     },
     {
       "id": 61,
@@ -2364,7 +3148,21 @@
       "category": "A",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        2,
+        4,
+        8,
+        11,
+        12,
+        13,
+        14,
+        17,
+        19,
+        23,
+        27
+      ]
     },
     {
       "id": 62,
@@ -2384,7 +3182,18 @@
       "category": "A",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        3,
+        5,
+        9,
+        12,
+        13,
+        18,
+        22,
+        24
+      ]
     },
     {
       "id": 63,
@@ -2404,7 +3213,21 @@
       "category": "A",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        3,
+        4,
+        8,
+        16,
+        18,
+        19,
+        20,
+        22,
+        23,
+        28,
+        30
+      ]
     },
     {
       "id": 64,
@@ -2424,7 +3247,16 @@
       "category": "A",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        0,
+        1,
+        5,
+        21,
+        24,
+        29
+      ]
     },
     {
       "id": 65,
@@ -2444,7 +3276,21 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        1,
+        2,
+        3,
+        8,
+        9,
+        11,
+        13,
+        14,
+        16,
+        17,
+        28
+      ]
     },
     {
       "id": 66,
@@ -2464,7 +3310,21 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        0,
+        1,
+        5,
+        6,
+        8,
+        16,
+        17,
+        18,
+        23,
+        26,
+        27
+      ]
     },
     {
       "id": 67,
@@ -2484,7 +3344,17 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        1,
+        3,
+        6,
+        13,
+        21,
+        24,
+        27
+      ]
     },
     {
       "id": 68,
@@ -2504,7 +3374,16 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        3,
+        6,
+        14,
+        23,
+        27,
+        28
+      ]
     },
     {
       "id": 69,
@@ -2524,7 +3403,17 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        0,
+        3,
+        15,
+        18,
+        26,
+        27,
+        30
+      ]
     },
     {
       "id": 70,
@@ -2544,7 +3433,20 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        6,
+        9,
+        11,
+        13,
+        14,
+        16,
+        18,
+        21,
+        28,
+        31
+      ]
     },
     {
       "id": 71,
@@ -2564,7 +3466,26 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 16,
+      "weekOfYear": [
+        0,
+        2,
+        5,
+        6,
+        8,
+        9,
+        10,
+        16,
+        20,
+        21,
+        24,
+        25,
+        26,
+        28,
+        29,
+        31
+      ]
     },
     {
       "id": 72,
@@ -2584,7 +3505,21 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        3,
+        7,
+        15,
+        20,
+        21,
+        23,
+        24,
+        26,
+        29,
+        30,
+        31
+      ]
     },
     {
       "id": 73,
@@ -2604,7 +3539,20 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        0,
+        3,
+        4,
+        10,
+        11,
+        13,
+        15,
+        22,
+        25,
+        29
+      ]
     },
     {
       "id": 74,
@@ -2624,7 +3572,17 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        0,
+        10,
+        11,
+        12,
+        17,
+        19,
+        30
+      ]
     },
     {
       "id": 75,
@@ -2644,7 +3602,17 @@
       "category": "B",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        1,
+        12,
+        13,
+        22,
+        24,
+        25,
+        31
+      ]
     },
     {
       "id": 76,
@@ -2664,7 +3632,18 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        2,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        28
+      ]
     },
     {
       "id": 77,
@@ -2684,7 +3663,18 @@
       "category": "B",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        4,
+        7,
+        12,
+        14,
+        17,
+        19,
+        23,
+        27
+      ]
     },
     {
       "id": 78,
@@ -2704,7 +3694,20 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        3,
+        8,
+        10,
+        11,
+        13,
+        16,
+        18,
+        21,
+        25,
+        29
+      ]
     },
     {
       "id": 79,
@@ -2724,7 +3727,20 @@
       "category": "B",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        1,
+        3,
+        9,
+        10,
+        11,
+        12,
+        22,
+        28,
+        29,
+        31
+      ]
     },
     {
       "id": 80,
@@ -2744,7 +3760,17 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        1,
+        5,
+        6,
+        12,
+        14,
+        20,
+        22
+      ]
     },
     {
       "id": 81,
@@ -2764,7 +3790,19 @@
       "category": "B",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        5,
+        7,
+        14,
+        18,
+        19,
+        20,
+        26,
+        27,
+        28
+      ]
     },
     {
       "id": 82,
@@ -2784,7 +3822,18 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        7,
+        12,
+        13,
+        17,
+        20,
+        22,
+        25,
+        27
+      ]
     },
     {
       "id": 83,
@@ -2804,7 +3853,19 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        4,
+        5,
+        10,
+        11,
+        14,
+        17,
+        20,
+        23,
+        24
+      ]
     },
     {
       "id": 84,
@@ -2824,7 +3885,20 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        4,
+        7,
+        10,
+        12,
+        18,
+        22,
+        25,
+        27,
+        29,
+        31
+      ]
     },
     {
       "id": 85,
@@ -2844,7 +3918,19 @@
       "category": "B",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        5,
+        6,
+        7,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
     },
     {
       "id": 86,
@@ -2864,7 +3950,18 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        1,
+        4,
+        10,
+        13,
+        15,
+        17,
+        26,
+        28
+      ]
     },
     {
       "id": 87,
@@ -2884,7 +3981,18 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        2,
+        6,
+        8,
+        9,
+        13,
+        18,
+        29,
+        31
+      ]
     },
     {
       "id": 88,
@@ -2904,7 +4012,17 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        2,
+        8,
+        10,
+        12,
+        19,
+        20,
+        30
+      ]
     },
     {
       "id": 89,
@@ -2924,7 +4042,14 @@
       "category": "B",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        1,
+        15,
+        22,
+        28
+      ]
     },
     {
       "id": 90,
@@ -2944,7 +4069,16 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        0,
+        5,
+        9,
+        15,
+        21,
+        30
+      ]
     },
     {
       "id": 91,
@@ -2964,7 +4098,16 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        5,
+        6,
+        7,
+        18,
+        23,
+        30
+      ]
     },
     {
       "id": 92,
@@ -2984,7 +4127,21 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        4,
+        6,
+        8,
+        9,
+        13,
+        14,
+        25,
+        26,
+        28,
+        29,
+        31
+      ]
     },
     {
       "id": 93,
@@ -3004,7 +4161,18 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        8,
+        11,
+        17,
+        19,
+        21,
+        23,
+        30,
+        31
+      ]
     },
     {
       "id": 94,
@@ -3024,7 +4192,18 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        0,
+        2,
+        15,
+        19,
+        21,
+        22,
+        23,
+        29
+      ]
     },
     {
       "id": 95,
@@ -3044,7 +4223,18 @@
       "category": "B",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        0,
+        2,
+        8,
+        12,
+        14,
+        20,
+        25,
+        30
+      ]
     },
     {
       "id": 96,
@@ -3064,7 +4254,16 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        1,
+        3,
+        9,
+        11,
+        16,
+        24
+      ]
     },
     {
       "id": 97,
@@ -3084,7 +4283,12 @@
       "category": "B",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 2,
+      "weekOfYear": [
+        4,
+        16
+      ]
     },
     {
       "id": 98,
@@ -3104,7 +4308,15 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        4,
+        22,
+        24,
+        27,
+        31
+      ]
     },
     {
       "id": 99,
@@ -3124,7 +4336,15 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        4,
+        9,
+        17,
+        25,
+        26
+      ]
     },
     {
       "id": 100,
@@ -3144,7 +4364,20 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        0,
+        3,
+        5,
+        7,
+        8,
+        11,
+        19,
+        20,
+        23,
+        25
+      ]
     },
     {
       "id": 101,
@@ -3164,7 +4397,15 @@
       "category": "B",
       "vegan": true,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        15,
+        21,
+        24,
+        27,
+        30
+      ]
     },
     {
       "id": 102,
@@ -3184,7 +4425,15 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        2,
+        4,
+        5,
+        7,
+        24
+      ]
     },
     {
       "id": 103,
@@ -3204,7 +4453,21 @@
       "category": "B",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        0,
+        2,
+        7,
+        10,
+        12,
+        15,
+        16,
+        19,
+        23,
+        26,
+        29
+      ]
     },
     {
       "id": 104,
@@ -3224,7 +4487,16 @@
       "category": "B",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        1,
+        2,
+        9,
+        24,
+        26,
+        30
+      ]
     },
     {
       "id": 105,
@@ -3244,7 +4516,26 @@
       "category": "E",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 16,
+      "weekOfYear": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        9,
+        11,
+        13,
+        15,
+        16,
+        17,
+        19,
+        23,
+        24,
+        25,
+        26
+      ]
     },
     {
       "id": 106,
@@ -3264,7 +4555,21 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        2,
+        6,
+        8,
+        14,
+        17,
+        18,
+        21,
+        22,
+        26,
+        28,
+        31
+      ]
     },
     {
       "id": 107,
@@ -3284,7 +4589,19 @@
       "category": "E",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        0,
+        3,
+        6,
+        9,
+        14,
+        17,
+        22,
+        24,
+        27
+      ]
     },
     {
       "id": 108,
@@ -3304,7 +4621,18 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        0,
+        6,
+        8,
+        16,
+        17,
+        18,
+        27,
+        28
+      ]
     },
     {
       "id": 109,
@@ -3324,7 +4652,14 @@
       "category": "E",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        14,
+        26,
+        27,
+        30
+      ]
     },
     {
       "id": 110,
@@ -3344,7 +4679,15 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        8,
+        10,
+        13,
+        24,
+        30
+      ]
     },
     {
       "id": 111,
@@ -3364,7 +4707,19 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        1,
+        2,
+        8,
+        12,
+        16,
+        18,
+        21,
+        23,
+        29
+      ]
     },
     {
       "id": 112,
@@ -3384,7 +4739,24 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 14,
+      "weekOfYear": [
+        1,
+        3,
+        6,
+        7,
+        8,
+        10,
+        12,
+        14,
+        16,
+        20,
+        22,
+        23,
+        25,
+        29
+      ]
     },
     {
       "id": 113,
@@ -3404,7 +4776,18 @@
       "category": "E",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        0,
+        3,
+        14,
+        15,
+        16,
+        20,
+        21,
+        23
+      ]
     },
     {
       "id": 114,
@@ -3424,7 +4807,21 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        1,
+        3,
+        7,
+        10,
+        11,
+        12,
+        15,
+        16,
+        23,
+        25,
+        30
+      ]
     },
     {
       "id": 115,
@@ -3444,7 +4841,17 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        6,
+        11,
+        15,
+        20,
+        22,
+        23,
+        31
+      ]
     },
     {
       "id": 116,
@@ -3464,7 +4871,16 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        0,
+        9,
+        17,
+        19,
+        20,
+        21
+      ]
     },
     {
       "id": 117,
@@ -3484,7 +4900,21 @@
       "category": "E",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        8,
+        10,
+        11,
+        16,
+        17,
+        19,
+        24,
+        25,
+        28,
+        29,
+        30
+      ]
     },
     {
       "id": 118,
@@ -3504,7 +4934,16 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        3,
+        14,
+        21,
+        24,
+        28,
+        29
+      ]
     },
     {
       "id": 119,
@@ -3524,7 +4963,20 @@
       "category": "E",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        4,
+        9,
+        10,
+        13,
+        16,
+        19,
+        22,
+        24,
+        27,
+        29
+      ]
     },
     {
       "id": 120,
@@ -3544,7 +4996,20 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        24
+      ]
     },
     {
       "id": 121,
@@ -3564,7 +5029,17 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        1,
+        2,
+        5,
+        7,
+        13,
+        28,
+        31
+      ]
     },
     {
       "id": 122,
@@ -3584,7 +5059,15 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        6,
+        21,
+        24,
+        27,
+        30
+      ]
     },
     {
       "id": 123,
@@ -3604,7 +5087,17 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        2,
+        3,
+        5,
+        11,
+        14,
+        20,
+        31
+      ]
     },
     {
       "id": 124,
@@ -3624,7 +5117,14 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        2,
+        5,
+        11,
+        21
+      ]
     },
     {
       "id": 125,
@@ -3644,7 +5144,18 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        6,
+        11,
+        18,
+        19,
+        21,
+        22,
+        26,
+        30
+      ]
     },
     {
       "id": 126,
@@ -3664,7 +5175,16 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        0,
+        1,
+        17,
+        23,
+        27,
+        29
+      ]
     },
     {
       "id": 127,
@@ -3684,7 +5204,18 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        7,
+        9,
+        12,
+        20,
+        21,
+        23,
+        25,
+        26
+      ]
     },
     {
       "id": 128,
@@ -3704,7 +5235,20 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        2,
+        4,
+        6,
+        7,
+        9,
+        16,
+        20,
+        22,
+        25,
+        29
+      ]
     },
     {
       "id": 129,
@@ -3724,7 +5268,13 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 3,
+      "weekOfYear": [
+        12,
+        13,
+        17
+      ]
     },
     {
       "id": 130,
@@ -3744,7 +5294,14 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        13,
+        18,
+        22,
+        25
+      ]
     },
     {
       "id": 131,
@@ -3764,7 +5321,18 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        2,
+        4,
+        7,
+        15,
+        26,
+        27,
+        28,
+        30
+      ]
     },
     {
       "id": 132,
@@ -3784,7 +5352,15 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        0,
+        11,
+        15,
+        20,
+        31
+      ]
     },
     {
       "id": 133,
@@ -3804,7 +5380,21 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        0,
+        5,
+        7,
+        8,
+        12,
+        15,
+        17,
+        18,
+        24,
+        28,
+        30
+      ]
     },
     {
       "id": 134,
@@ -3824,7 +5414,19 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        4,
+        9,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20,
+        26
+      ]
     },
     {
       "id": 135,
@@ -3844,7 +5446,15 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        4,
+        10,
+        12,
+        20,
+        29
+      ]
     },
     {
       "id": 136,
@@ -3864,7 +5474,14 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        1,
+        26,
+        27,
+        28
+      ]
     },
     {
       "id": 137,
@@ -3884,7 +5501,16 @@
       "category": "E",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        1,
+        14,
+        18,
+        28,
+        29,
+        31
+      ]
     },
     {
       "id": 138,
@@ -3904,7 +5530,17 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        2,
+        4,
+        14,
+        18,
+        23,
+        26,
+        31
+      ]
     },
     {
       "id": 139,
@@ -3924,7 +5560,21 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        1,
+        2,
+        5,
+        6,
+        8,
+        9,
+        10,
+        21,
+        22,
+        25,
+        31
+      ]
     },
     {
       "id": 140,
@@ -3944,7 +5594,19 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        3,
+        5,
+        7,
+        8,
+        12,
+        23,
+        25,
+        27,
+        29
+      ]
     },
     {
       "id": 141,
@@ -3964,7 +5626,16 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        0,
+        4,
+        7,
+        8,
+        19,
+        27
+      ]
     },
     {
       "id": 142,
@@ -3984,7 +5655,22 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 12,
+      "weekOfYear": [
+        2,
+        4,
+        5,
+        9,
+        10,
+        12,
+        15,
+        19,
+        24,
+        26,
+        30,
+        31
+      ]
     },
     {
       "id": 143,
@@ -4004,7 +5690,16 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        3,
+        4,
+        10,
+        13,
+        18,
+        25
+      ]
     },
     {
       "id": 144,
@@ -4024,7 +5719,24 @@
       "category": "E",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 14,
+      "weekOfYear": [
+        4,
+        5,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        19,
+        22,
+        28,
+        30,
+        31
+      ]
     },
     {
       "id": 145,
@@ -4044,7 +5756,15 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        3,
+        11,
+        23,
+        25,
+        29
+      ]
     },
     {
       "id": 146,
@@ -4064,7 +5784,18 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        0,
+        6,
+        7,
+        9,
+        13,
+        17,
+        22,
+        23
+      ]
     },
     {
       "id": 147,
@@ -4084,7 +5815,18 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        1,
+        6,
+        15,
+        18,
+        21,
+        25,
+        28,
+        30
+      ]
     },
     {
       "id": 148,
@@ -4104,7 +5846,27 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 17,
+      "weekOfYear": [
+        4,
+        6,
+        8,
+        9,
+        11,
+        15,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        28,
+        29
+      ]
     },
     {
       "id": 149,
@@ -4124,7 +5886,17 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        2,
+        5,
+        10,
+        12,
+        20,
+        26,
+        29
+      ]
     },
     {
       "id": 150,
@@ -4144,7 +5916,18 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        1,
+        2,
+        5,
+        9,
+        16,
+        18,
+        19,
+        31
+      ]
     },
     {
       "id": 151,
@@ -4164,7 +5947,16 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        3,
+        12,
+        14,
+        15,
+        16,
+        20
+      ]
     },
     {
       "id": 152,
@@ -4184,7 +5976,16 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        0,
+        3,
+        10,
+        19,
+        27,
+        28
+      ]
     },
     {
       "id": 153,
@@ -4204,7 +6005,13 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 3,
+      "weekOfYear": [
+        0,
+        4,
+        24
+      ]
     },
     {
       "id": 154,
@@ -4224,7 +6031,17 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        1,
+        10,
+        20,
+        22,
+        25,
+        29,
+        30
+      ]
     },
     {
       "id": 155,
@@ -4244,7 +6061,19 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        2,
+        5,
+        8,
+        9,
+        14,
+        18,
+        19,
+        26,
+        30
+      ]
     },
     {
       "id": 156,
@@ -4264,7 +6093,17 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        0,
+        6,
+        16,
+        19,
+        24,
+        26,
+        28
+      ]
     },
     {
       "id": 157,
@@ -4284,7 +6123,17 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        5,
+        11,
+        13,
+        16,
+        22,
+        23,
+        31
+      ]
     },
     {
       "id": 158,
@@ -4304,7 +6153,18 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        3,
+        5,
+        10,
+        16,
+        18,
+        21,
+        30,
+        31
+      ]
     },
     {
       "id": 159,
@@ -4324,7 +6184,18 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        4,
+        6,
+        8,
+        9,
+        12,
+        13,
+        24,
+        27
+      ]
     },
     {
       "id": 160,
@@ -4344,7 +6215,18 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        7,
+        12,
+        13,
+        14,
+        15,
+        20,
+        21,
+        25
+      ]
     },
     {
       "id": 161,
@@ -4364,7 +6246,17 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        0,
+        7,
+        8,
+        10,
+        11,
+        17,
+        20
+      ]
     },
     {
       "id": 162,
@@ -4384,7 +6276,20 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        1,
+        2,
+        7,
+        11,
+        12,
+        14,
+        17,
+        29,
+        30,
+        31
+      ]
     },
     {
       "id": 163,
@@ -4404,7 +6309,19 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        1,
+        4,
+        7,
+        8,
+        17,
+        21,
+        22,
+        26,
+        31
+      ]
     },
     {
       "id": 164,
@@ -4424,7 +6341,21 @@
       "category": "F",
       "vegan": false,
       "fitness": true,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        2,
+        3,
+        4,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25,
+        27,
+        28
+      ]
     },
     {
       "id": 165,
@@ -4444,7 +6375,21 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        14,
+        17,
+        19,
+        23,
+        26,
+        31
+      ]
     },
     {
       "id": 166,
@@ -4464,7 +6409,21 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        5,
+        7,
+        10,
+        11,
+        15,
+        18,
+        20,
+        21,
+        22,
+        28,
+        31
+      ]
     },
     {
       "id": 167,
@@ -4484,7 +6443,22 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 12,
+      "weekOfYear": [
+        0,
+        2,
+        3,
+        6,
+        13,
+        17,
+        18,
+        19,
+        24,
+        26,
+        30,
+        31
+      ]
     },
     {
       "id": 168,
@@ -4504,7 +6478,18 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        6,
+        7,
+        17,
+        18,
+        22,
+        23,
+        24,
+        26
+      ]
     },
     {
       "id": 169,
@@ -4524,7 +6509,18 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        0,
+        6,
+        9,
+        16,
+        18,
+        24,
+        27,
+        31
+      ]
     },
     {
       "id": 170,
@@ -4544,7 +6540,19 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        1,
+        3,
+        7,
+        8,
+        16,
+        17,
+        22,
+        25,
+        29
+      ]
     },
     {
       "id": 171,
@@ -4564,7 +6572,21 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        9,
+        13,
+        15,
+        16,
+        21,
+        22,
+        23,
+        25,
+        27,
+        29,
+        30
+      ]
     },
     {
       "id": 172,
@@ -4584,7 +6606,20 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        0,
+        2,
+        3,
+        11,
+        13,
+        16,
+        23,
+        24,
+        25,
+        30
+      ]
     },
     {
       "id": 173,
@@ -4604,7 +6639,18 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        0,
+        6,
+        8,
+        11,
+        12,
+        22,
+        27,
+        29
+      ]
     },
     {
       "id": 174,
@@ -4624,7 +6670,19 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        2,
+        4,
+        5,
+        7,
+        9,
+        15,
+        25,
+        29,
+        31
+      ]
     },
     {
       "id": 175,
@@ -4644,7 +6702,20 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        1,
+        3,
+        4,
+        6,
+        8,
+        12,
+        13,
+        16,
+        21,
+        26
+      ]
     },
     {
       "id": 176,
@@ -4664,7 +6735,20 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        1,
+        2,
+        6,
+        8,
+        16,
+        18,
+        24,
+        27,
+        29,
+        30
+      ]
     },
     {
       "id": 177,
@@ -4684,7 +6768,19 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        1,
+        5,
+        8,
+        9,
+        13,
+        14,
+        19,
+        25,
+        30
+      ]
     },
     {
       "id": 178,
@@ -4704,7 +6800,19 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        0,
+        2,
+        5,
+        7,
+        8,
+        13,
+        14,
+        17,
+        27
+      ]
     },
     {
       "id": 179,
@@ -4724,7 +6832,15 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        0,
+        4,
+        7,
+        10,
+        14
+      ]
     },
     {
       "id": 180,
@@ -4744,7 +6860,18 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        3,
+        9,
+        10,
+        13,
+        19,
+        20,
+        21,
+        28
+      ]
     },
     {
       "id": 181,
@@ -4764,7 +6891,16 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        1,
+        7,
+        8,
+        20,
+        27,
+        31
+      ]
     },
     {
       "id": 182,
@@ -4784,7 +6920,18 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        4,
+        11,
+        15,
+        18,
+        24,
+        26,
+        27,
+        29
+      ]
     },
     {
       "id": 183,
@@ -4804,7 +6951,14 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        5,
+        14,
+        15,
+        16
+      ]
     },
     {
       "id": 184,
@@ -4824,7 +6978,16 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        5,
+        9,
+        14,
+        21,
+        23,
+        27
+      ]
     },
     {
       "id": 185,
@@ -4844,7 +7007,19 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        4,
+        10,
+        12,
+        13,
+        17,
+        21,
+        22,
+        26,
+        29
+      ]
     },
     {
       "id": 186,
@@ -4864,7 +7039,17 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        9,
+        12,
+        17,
+        20,
+        21,
+        26,
+        28
+      ]
     },
     {
       "id": 187,
@@ -4884,7 +7069,18 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        2,
+        5,
+        9,
+        15,
+        19,
+        20,
+        21,
+        25
+      ]
     },
     {
       "id": 188,
@@ -4904,7 +7100,16 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        0,
+        12,
+        18,
+        22,
+        28,
+        31
+      ]
     },
     {
       "id": 189,
@@ -4924,7 +7129,20 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        0,
+        2,
+        12,
+        15,
+        18,
+        20,
+        21,
+        25,
+        28,
+        31
+      ]
     },
     {
       "id": 190,
@@ -4944,7 +7162,17 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        2,
+        4,
+        5,
+        8,
+        12,
+        14,
+        15
+      ]
     },
     {
       "id": 191,
@@ -4964,7 +7192,17 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        3,
+        5,
+        10,
+        11,
+        18,
+        29,
+        30
+      ]
     },
     {
       "id": 192,
@@ -4984,7 +7222,16 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        1,
+        13,
+        16,
+        19,
+        28,
+        29
+      ]
     },
     {
       "id": 193,
@@ -5004,7 +7251,18 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        1,
+        7,
+        10,
+        11,
+        15,
+        17,
+        24,
+        29
+      ]
     },
     {
       "id": 194,
@@ -5024,7 +7282,18 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        0,
+        1,
+        4,
+        11,
+        14,
+        25,
+        26,
+        31
+      ]
     },
     {
       "id": 195,
@@ -5044,7 +7313,21 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        3,
+        4,
+        6,
+        9,
+        17,
+        19,
+        20,
+        23,
+        27,
+        28,
+        30
+      ]
     },
     {
       "id": 196,
@@ -5064,7 +7347,19 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        1,
+        4,
+        10,
+        13,
+        14,
+        19,
+        26,
+        30,
+        31
+      ]
     },
     {
       "id": 197,
@@ -5084,7 +7379,17 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        11,
+        12,
+        16,
+        22,
+        24,
+        25,
+        28
+      ]
     },
     {
       "id": 198,
@@ -5104,7 +7409,17 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        12,
+        17,
+        20,
+        21,
+        22,
+        23,
+        30
+      ]
     },
     {
       "id": 199,
@@ -5124,7 +7439,14 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        1,
+        2,
+        8,
+        10
+      ]
     },
     {
       "id": 200,
@@ -5144,7 +7466,18 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        23,
+        24,
+        27
+      ]
     },
     {
       "id": 201,
@@ -5164,7 +7497,16 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        7,
+        14,
+        23,
+        24,
+        26,
+        28
+      ]
     },
     {
       "id": 202,
@@ -5184,7 +7526,18 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        3,
+        6,
+        10,
+        11,
+        15,
+        16,
+        19,
+        30
+      ]
     },
     {
       "id": 203,
@@ -5204,7 +7557,16 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        4,
+        18,
+        20,
+        22,
+        23,
+        28
+      ]
     },
     {
       "id": 204,
@@ -5224,7 +7586,16 @@
       "category": "V",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        6,
+        8,
+        10,
+        19,
+        20,
+        25
+      ]
     },
     {
       "id": 205,
@@ -5244,7 +7615,21 @@
       "category": "Z",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        0,
+        1,
+        4,
+        6,
+        9,
+        17,
+        18,
+        23,
+        26,
+        27,
+        28
+      ]
     },
     {
       "id": 206,
@@ -5264,7 +7649,18 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        10,
+        12,
+        14,
+        18,
+        22,
+        23,
+        27,
+        28
+      ]
     },
     {
       "id": 207,
@@ -5284,7 +7680,15 @@
       "category": "Z",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        4,
+        9,
+        16,
+        22,
+        26
+      ]
     },
     {
       "id": 208,
@@ -5304,7 +7708,17 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        6,
+        9,
+        12,
+        14,
+        20,
+        28,
+        31
+      ]
     },
     {
       "id": 209,
@@ -5324,7 +7738,18 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        3,
+        13,
+        19,
+        20,
+        25,
+        28,
+        29,
+        30
+      ]
     },
     {
       "id": 210,
@@ -5344,7 +7769,17 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        1,
+        2,
+        8,
+        14,
+        15,
+        21,
+        29
+      ]
     },
     {
       "id": 211,
@@ -5364,7 +7799,29 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 19,
+      "weekOfYear": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        20,
+        22,
+        24,
+        25,
+        27,
+        29,
+        30
+      ]
     },
     {
       "id": 212,
@@ -5384,7 +7841,18 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        1,
+        2,
+        5,
+        9,
+        19,
+        21,
+        22,
+        24
+      ]
     },
     {
       "id": 213,
@@ -5404,7 +7872,17 @@
       "category": "Z",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        1,
+        7,
+        8,
+        11,
+        18,
+        27,
+        31
+      ]
     },
     {
       "id": 214,
@@ -5424,7 +7902,18 @@
       "category": "Z",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        5,
+        13,
+        16,
+        22,
+        23,
+        24,
+        25,
+        30
+      ]
     },
     {
       "id": 215,
@@ -5444,7 +7933,13 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 3,
+      "weekOfYear": [
+        0,
+        4,
+        12
+      ]
     },
     {
       "id": 216,
@@ -5464,7 +7959,16 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        3,
+        5,
+        6,
+        7,
+        13,
+        26
+      ]
     },
     {
       "id": 217,
@@ -5484,7 +7988,15 @@
       "category": "Z",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        2,
+        7,
+        15,
+        19,
+        29
+      ]
     },
     {
       "id": 218,
@@ -5504,7 +8016,16 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        0,
+        2,
+        3,
+        7,
+        8,
+        25
+      ]
     },
     {
       "id": 219,
@@ -5524,7 +8045,18 @@
       "category": "Z",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        2,
+        10,
+        15,
+        16,
+        21,
+        22,
+        24,
+        30
+      ]
     },
     {
       "id": 220,
@@ -5544,7 +8076,19 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        0,
+        1,
+        3,
+        8,
+        11,
+        16,
+        18,
+        19,
+        26
+      ]
     },
     {
       "id": 221,
@@ -5564,7 +8108,17 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        5,
+        8,
+        13,
+        15,
+        22,
+        27,
+        30
+      ]
     },
     {
       "id": 222,
@@ -5584,7 +8138,17 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        10,
+        11,
+        14,
+        15,
+        16,
+        25,
+        29
+      ]
     },
     {
       "id": 223,
@@ -5604,7 +8168,19 @@
       "category": "Z",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        8,
+        9,
+        14,
+        15,
+        16,
+        17,
+        19,
+        26,
+        31
+      ]
     },
     {
       "id": 224,
@@ -5624,7 +8200,14 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        6,
+        8,
+        9,
+        21
+      ]
     },
     {
       "id": 225,
@@ -5644,7 +8227,14 @@
       "category": "Z",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        0,
+        13,
+        22,
+        23
+      ]
     },
     {
       "id": 226,
@@ -5664,7 +8254,14 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        5,
+        19,
+        20,
+        30
+      ]
     },
     {
       "id": 227,
@@ -5684,7 +8281,18 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        3,
+        4,
+        7,
+        11,
+        18,
+        23,
+        24,
+        26
+      ]
     },
     {
       "id": 228,
@@ -5704,7 +8312,23 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 13,
+      "weekOfYear": [
+        1,
+        2,
+        3,
+        10,
+        18,
+        21,
+        22,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30
+      ]
     },
     {
       "id": 229,
@@ -5724,7 +8348,16 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        2,
+        6,
+        9,
+        15,
+        21,
+        26
+      ]
     },
     {
       "id": 230,
@@ -5744,7 +8377,17 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        4,
+        5,
+        7,
+        16,
+        17,
+        21,
+        28
+      ]
     },
     {
       "id": 231,
@@ -5764,7 +8407,19 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        11,
+        20,
+        23,
+        30
+      ]
     },
     {
       "id": 232,
@@ -5784,7 +8439,16 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        4,
+        17,
+        19,
+        23,
+        30,
+        31
+      ]
     },
     {
       "id": 233,
@@ -5804,7 +8468,20 @@
       "category": "Z",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        1,
+        6,
+        9,
+        14,
+        17,
+        19,
+        21,
+        28,
+        29,
+        31
+      ]
     },
     {
       "id": 234,
@@ -5824,7 +8501,18 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        4,
+        6,
+        7,
+        9,
+        11,
+        19,
+        20,
+        26
+      ]
     },
     {
       "id": 235,
@@ -5844,7 +8532,20 @@
       "category": "Z",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        0,
+        7,
+        12,
+        16,
+        18,
+        20,
+        21,
+        27,
+        28,
+        31
+      ]
     },
     {
       "id": 236,
@@ -5864,7 +8565,23 @@
       "category": "Z",
       "vegan": true,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 13,
+      "weekOfYear": [
+        2,
+        3,
+        4,
+        11,
+        12,
+        13,
+        17,
+        20,
+        23,
+        24,
+        27,
+        28,
+        31
+      ]
     },
     {
       "id": 237,
@@ -5884,7 +8601,15 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 5,
+      "weekOfYear": [
+        5,
+        10,
+        14,
+        18,
+        25
+      ]
     },
     {
       "id": 238,
@@ -5904,7 +8629,20 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        0,
+        4,
+        7,
+        9,
+        10,
+        14,
+        15,
+        22,
+        27,
+        29
+      ]
     },
     {
       "id": 239,
@@ -5924,7 +8662,17 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        11,
+        12,
+        13,
+        17,
+        20,
+        28,
+        31
+      ]
     },
     {
       "id": 240,
@@ -5944,7 +8692,17 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        0,
+        12,
+        13,
+        15,
+        18,
+        26,
+        30
+      ]
     },
     {
       "id": 241,
@@ -5964,7 +8722,17 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        0,
+        4,
+        5,
+        6,
+        10,
+        21,
+        24
+      ]
     },
     {
       "id": 242,
@@ -5984,7 +8752,22 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 12,
+      "weekOfYear": [
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        23,
+        27,
+        29,
+        31
+      ]
     },
     {
       "id": 243,
@@ -6004,7 +8787,21 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 11,
+      "weekOfYear": [
+        3,
+        5,
+        7,
+        10,
+        12,
+        14,
+        19,
+        23,
+        24,
+        25,
+        29
+      ]
     },
     {
       "id": 244,
@@ -6024,7 +8821,20 @@
       "category": "Z",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        0,
+        1,
+        6,
+        8,
+        17,
+        20,
+        24,
+        25,
+        27,
+        31
+      ]
     },
     {
       "id": 245,
@@ -6044,7 +8854,19 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        3,
+        4,
+        11,
+        13,
+        17,
+        21,
+        23,
+        25,
+        31
+      ]
     },
     {
       "id": 246,
@@ -6064,7 +8886,20 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        1,
+        11,
+        13,
+        14,
+        18,
+        22,
+        24,
+        25,
+        29,
+        31
+      ]
     },
     {
       "id": 247,
@@ -6084,7 +8919,20 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 10,
+      "weekOfYear": [
+        0,
+        1,
+        6,
+        13,
+        17,
+        21,
+        26,
+        28,
+        29,
+        30
+      ]
     },
     {
       "id": 248,
@@ -6104,7 +8952,22 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 12,
+      "weekOfYear": [
+        1,
+        7,
+        8,
+        9,
+        11,
+        16,
+        19,
+        20,
+        22,
+        26,
+        27,
+        30
+      ]
     },
     {
       "id": 249,
@@ -6124,7 +8987,16 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        10,
+        12,
+        21,
+        27,
+        29,
+        31
+      ]
     },
     {
       "id": 250,
@@ -6144,7 +9016,16 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        2,
+        6,
+        10,
+        26,
+        27,
+        29
+      ]
     },
     {
       "id": 251,
@@ -6164,7 +9045,18 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        2,
+        4,
+        5,
+        9,
+        14,
+        15,
+        22,
+        28
+      ]
     },
     {
       "id": 252,
@@ -6184,7 +9076,19 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        3,
+        4,
+        8,
+        15,
+        16,
+        23,
+        24,
+        28,
+        31
+      ]
     },
     {
       "id": 253,
@@ -6204,7 +9108,16 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        2,
+        6,
+        10,
+        12,
+        14,
+        17
+      ]
     },
     {
       "id": 254,
@@ -6224,7 +9137,17 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        3,
+        4,
+        6,
+        11,
+        17,
+        24,
+        31
+      ]
     },
     {
       "id": 255,
@@ -6244,7 +9167,19 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        7,
+        11,
+        12,
+        13,
+        16,
+        19,
+        23,
+        26,
+        30
+      ]
     },
     {
       "id": 256,
@@ -6264,7 +9199,17 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 7,
+      "weekOfYear": [
+        0,
+        5,
+        9,
+        12,
+        26,
+        29,
+        30
+      ]
     },
     {
       "id": 257,
@@ -6284,7 +9229,19 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 9,
+      "weekOfYear": [
+        0,
+        1,
+        5,
+        16,
+        18,
+        19,
+        20,
+        28,
+        30
+      ]
     },
     {
       "id": 258,
@@ -6304,7 +9261,16 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        5,
+        19,
+        21,
+        22,
+        25,
+        27
+      ]
     },
     {
       "id": 259,
@@ -6324,7 +9290,22 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 12,
+      "weekOfYear": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        12,
+        15,
+        22,
+        24,
+        27,
+        28
+      ]
     },
     {
       "id": 260,
@@ -6344,7 +9325,18 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        0,
+        8,
+        10,
+        17,
+        19,
+        21,
+        23,
+        24
+      ]
     },
     {
       "id": 261,
@@ -6364,7 +9356,16 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        6,
+        9,
+        14,
+        18,
+        20,
+        25
+      ]
     },
     {
       "id": 262,
@@ -6384,7 +9385,18 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        3,
+        7,
+        8,
+        9,
+        13,
+        14,
+        15,
+        25
+      ]
     },
     {
       "id": 263,
@@ -6404,7 +9416,14 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 4,
+      "weekOfYear": [
+        7,
+        10,
+        18,
+        20
+      ]
     },
     {
       "id": 264,
@@ -6424,7 +9443,18 @@
       "category": "D",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 8,
+      "weekOfYear": [
+        2,
+        3,
+        8,
+        15,
+        16,
+        18,
+        20,
+        23
+      ]
     },
     {
       "id": 265,
@@ -6584,7 +9614,16 @@
       "category": "S",
       "vegan": false,
       "fitness": false,
-      "active": true
+      "active": true,
+      "numberInMenu": 6,
+      "weekOfYear": [
+        7,
+        9,
+        15,
+        18,
+        23,
+        29
+      ]
     },
     {
       "id": 273,
@@ -68166,22 +71205,22 @@
       "week": 26,
       "AMenuFoodSoup": [
         {
-          "id": 43,
-          "name": "Tojásleves",
+          "id": 47,
+          "name": "Májgaluskaleves",
           "menu": "soup",
-          "img": "../../../assets/images/foods/soup/tojasleves.jpg",
+          "img": "../../../assets/images/foods/soup/majgaluskaleves.jpg",
           "allergens": [
             {
               "gluten": true,
               "milk": false,
-              "soya": false,
+              "soya": true,
               "egg": true,
               "peanut": false,
               "walnut": false
             }
           ],
           "category": "A",
-          "vegan": true,
+          "vegan": false,
           "fitness": true,
           "active": true
         },
@@ -73249,30 +76288,10 @@
       ],
       "DMenuFood": [
         {
-          "id": 245,
-          "name": "Szilvás máglyarakás",
+          "id": 259,
+          "name": "Gyümölcsrizs",
           "menu": "dessert",
-          "img": "../../../assets/images/foods/dessert/szilvas_maglyarakas.jpg",
-          "allergens": [
-            {
-              "gluten": true,
-              "milk": true,
-              "soya": true,
-              "egg": true,
-              "peanut": false,
-              "walnut": true
-            }
-          ],
-          "category": "D",
-          "vegan": false,
-          "fitness": false,
-          "active": true
-        },
-        {
-          "id": 254,
-          "name": "Gyümölcsrizs ananásszal és őszibarackkal",
-          "menu": "dessert",
-          "img": "../../../assets/images/foods/dessert/gyumolcsrizs_ananasszal_es_oszibarackkal_desszert.jpg",
+          "img": "../../../assets/images/foods/dessert/gyumolcsrizs.jpg",
           "allergens": [
             {
               "gluten": false,
@@ -73289,16 +76308,56 @@
           "active": true
         },
         {
-          "id": 255,
-          "name": "Máglyarakás",
+          "id": 257,
+          "name": "Trópusi gyümölcsrizs",
           "menu": "dessert",
-          "img": "../../../assets/images/foods/dessert/maglyarakas.jpg",
+          "img": "../../../assets/images/foods/dessert/tropusi_gyumolcsrizs.jpg",
+          "allergens": [
+            {
+              "gluten": false,
+              "milk": true,
+              "soya": false,
+              "egg": false,
+              "peanut": false,
+              "walnut": false
+            }
+          ],
+          "category": "D",
+          "vegan": false,
+          "fitness": false,
+          "active": true
+        },
+        {
+          "id": 247,
+          "name": "Vargabéles",
+          "menu": "dessert",
+          "img": "../../../assets/images/foods/dessert/vargabeles.jpg",
           "allergens": [
             {
               "gluten": true,
               "milk": true,
               "soya": true,
-              "egg": true,
+              "egg": false,
+              "peanut": false,
+              "walnut": false
+            }
+          ],
+          "category": "D",
+          "vegan": false,
+          "fitness": false,
+          "active": true
+        },
+        {
+          "id": 252,
+          "name": "Gundel palacsinta",
+          "menu": "dessert",
+          "img": "../../../assets/images/foods/dessert/gundel_palacsinta.jpg",
+          "allergens": [
+            {
+              "gluten": true,
+              "milk": true,
+              "soya": true,
+              "egg": false,
               "peanut": false,
               "walnut": true
             }
@@ -73309,38 +76368,18 @@
           "active": true
         },
         {
-          "id": 263,
-          "name": "Mákos guba narancsos vaníliaöntettel",
+          "id": 251,
+          "name": "Répatorta mascarpone krémmel",
           "menu": "dessert",
-          "img": "../../../assets/images/foods/dessert/makos_guba_narancsos_vaniliaontettel.jpg",
+          "img": "../../../assets/images/foods/dessert/repatorta_mascarpone_kremmel.jpg",
           "allergens": [
             {
               "gluten": true,
               "milk": true,
               "soya": true,
-              "egg": false,
+              "egg": true,
               "peanut": false,
-              "walnut": false
-            }
-          ],
-          "category": "D",
-          "vegan": false,
-          "fitness": false,
-          "active": true
-        },
-        {
-          "id": 250,
-          "name": "Mangós kókusztejes tápiókapuding őszibarackkal",
-          "menu": "dessert",
-          "img": "../../../assets/images/foods/dessert/indiai_kokusztejes_tapiokapuding_oszibarackkal.jpg",
-          "allergens": [
-            {
-              "gluten": false,
-              "milk": false,
-              "soya": false,
-              "egg": false,
-              "peanut": false,
-              "walnut": false
+              "walnut": true
             }
           ],
           "category": "D",
@@ -78561,6 +81600,447 @@
           "active": true
         }
       ]
+    },
+    {
+      "id": 33,
+      "week": 32,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 34,
+      "week": 33,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 35,
+      "week": 34,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 36,
+      "week": 35,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 37,
+      "week": 36,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 38,
+      "week": 37,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 39,
+      "week": 38,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 40,
+      "week": 39,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 41,
+      "week": 40,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 42,
+      "week": 41,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 43,
+      "week": 42,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 44,
+      "week": 43,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 45,
+      "week": 44,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 46,
+      "week": 45,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 47,
+      "week": 46,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 48,
+      "week": 47,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 49,
+      "week": 48,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 50,
+      "week": 49,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 51,
+      "week": 50,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 52,
+      "week": 51,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
+    },
+    {
+      "id": 53,
+      "week": 52,
+      "AMenuFoodSoup": [],
+      "AMenuFoodMain": [],
+      "BMenuFoodSoup": [],
+      "BMenuFoodMain": [],
+      "EMenuFoodSoup": [],
+      "EMenuFoodMain": [],
+      "FMenuFoodSoup": [],
+      "FMenuFoodMain": [],
+      "VMenuFoodSoup": [],
+      "VMenuFoodMain": [],
+      "ZMenuFoodSoup": [],
+      "ZMenuFoodMain": [],
+      "R1MenuFood": [],
+      "R2MenuFood": [],
+      "DMenuFood": [],
+      "SMenuFood": [],
+      "SAMenuFood": []
     }
   ]
 }

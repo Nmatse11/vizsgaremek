@@ -1,10 +1,10 @@
 @use '../../../assets/modules/color' as *;
 
 .login {
-  background-color: $list-button-backgroundcolor;
+  background-color: $primary;
 
   &:hover {
-    background-color: $edit-button-backgroundcolor;
+    background-color: $secondary;
   }
 }
 

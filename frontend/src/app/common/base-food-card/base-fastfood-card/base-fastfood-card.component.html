@@ -1,6 +1,7 @@
 <h1>{{ title }}</h1>
 <div *ngFor="let fastfood of fastfoodArray" class="d-flex flex-row">
-  <mat-card *ngIf="fastfood" class="col-12 h-100 d-flex flex-column border rounded-0 pb-1" [ngClass]="background">
+  <mat-card *ngIf="fastfood" class="col-12 h-100 d-flex flex-column border rounded-0 pb-1 mat-elevation-z4"
+    [ngClass]="background">
     <mat-card-content class="mb-1">
       <h5>{{ fastfood.name }}</h5>
       <p *ngIf="!isPizza">{{ fastfood.descripiton }}</p>

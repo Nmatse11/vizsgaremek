@@ -1,12 +1,14 @@
+import { Menu } from './../../../model/menu';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Food } from 'src/app/model/food';
-import { switchMap } from 'rxjs';
+import { filter, switchMap } from 'rxjs';
 import { ConfigService } from 'src/app/service/config.service';
 import { FoodService } from 'src/app/service/food.service';
 import { DeleteDialogComponent } from '../../dialog/delete-dialog/delete-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
+import { MenuService } from 'src/app/service/menu.service';
 
 @Component({
   selector: 'app-food-edit',
@@ -17,8 +19,6 @@ export class FoodEditComponent implements OnInit {
 
   newFood: Food = new Food();
   food!: Food;
-
-  yet = false
 
   editPageText = this.config.editPageText
   editPageItems = this.config.editPageItems
@@ -38,6 +38,7 @@ export class FoodEditComponent implements OnInit {
   categoryValue = this.config.menuCardItems.filter(item => item.key !== 'N').map(item => item.name)
 
   messages = this.config.toastrItems
+  weekText = this.config.weekText
 
   deleteDialog = this.config.dialogItems
 
@@ -48,6 +49,7 @@ export class FoodEditComponent implements OnInit {
     private router: Router,
     private toastr: ToastrService,
     private dialog: MatDialog,
+    private menuService: MenuService
   ) { }
 
   ngOnInit(): void {
@@ -61,9 +63,57 @@ export class FoodEditComponent implements OnInit {
         ).subscribe(food => {
           this.food = food
           this.selected = this.setSelected(food.menu)
+          this.menuService.getAll().subscribe(menus => {
+            this.setNumberInMenu(food, menus)
+          })
         })
     }
   }
+
+  setNumberInMenu(food: Food, menus: Menu[]): void {
+  let array: any = []
+  let weekArray: any[] = []
+  let numberInMenu: number = 0
+     menus.map(menu => {
+      if (food.menu === 'soup') {
+        let filtered = Array(menu[`${food.category}MenuFoodSoup`]).flat().filter(item => item.id === food.id)
+          if (Array(menu[`${food.category}MenuFoodSoup`]).flat().includes(filtered[0])) {
+            weekArray.push(menu.week)
+            array.push(filtered.filter(item => item.id === food.id))
+          }
+      }
+      if (food.menu === 'main_course') {
+        let filtered = Array(menu[`${food.category}MenuFoodMain`]).flat().filter(item => item.id === food.id)
+        if (Array(menu[`${food.category}MenuFoodMain`]).flat().includes(filtered[0])) {
+          weekArray.push(menu.week)
+          array.push(filtered.filter(item => item.id === food.id))
+        }
+      }
+      if (food.menu !== 'main_course' && food.menu !== 'soup') {
+        let filtered = Array(menu[`${food.category}MenuFood`]).flat().filter(item => item.id === food.id)
+        if (Array(menu[`${food.category}MenuFood`]).flat().includes(filtered[0])) {
+          weekArray.push(menu.week)
+          array.push(filtered.filter(item => item.id === food.id))
+        }
+      }
+    })
+    numberInMenu = array.length
+
+    if (numberInMenu !== 0 && food.numberInMenu !== numberInMenu ) {
+      food.numberInMenu = numberInMenu
+      food.weekOfYear = weekArray
+      this.saveFoodParams(food, food.numberInMenu)
+    }
+  }
+
+
+  saveFoodParams(food: Food, item: number) {
+    food.numberInMenu = item
+    this.foodService.update(food).subscribe(
+      food => food,
+      err => console.error(err))
+  }
+
 
   dataChanged(value: string) {
     let name = ''
@@ -104,11 +154,11 @@ export class FoodEditComponent implements OnInit {
     food.menu = this.selected
     if (this.activatedRoute.snapshot.params['id'] === '0') {
       this.foodService.create(food).subscribe(
-        response => this.router.navigate(['/', 'product']));
+        response => this.router.navigate(['/', 'menu', 'product']));
         this.toastr.success(this.messages[1].message, this.messages[1].title);
     } else {
       this.foodService.update(food).subscribe(
-        response => this.router.navigate(['/', 'product']));
+        response => this.router.navigate(['/', 'menu', 'product']));
         this.toastr.success(this.messages[2].message, this.messages[2].title);
     }
   }
@@ -126,7 +176,7 @@ export class FoodEditComponent implements OnInit {
       if (result === true) {
         this.foodService.delete(id).subscribe(
           response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-            this.router.navigate(['/', 'product' ]);
+            this.router.navigate(['/', 'menu', 'product' ]);
             this.toastr.error(this.messages[0].message, this.messages[0].title);
             }
           )

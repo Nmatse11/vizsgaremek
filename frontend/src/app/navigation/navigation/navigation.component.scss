@@ -3,14 +3,14 @@
 .nav {
 
   &-item &-link{
-       color: $button-color;
+       color: $light;
        font-size: 0.8rem;
        letter-spacing: 0.2rem;
        margin: 0 1rem;
        text-transform: uppercase;
 
        &:hover {
-        color: $edit-button-backgroundcolor;
+        color: $secondary;
       }
    }
 
@@ -24,13 +24,13 @@
     padding: 0.5rem;
     font-size: 1rem;
     font-family: arial;
-    color: $button-color-hover;
+    color: $dark;
     font-weight: lighter;
-    background-color: $edit-button-backgroundcolor;
+    background-color: $secondary;
     transform-origin: center;
 
     &:hover {
-      color: $button-color;
+      color: $light;
     }
 }
 
@@ -38,6 +38,6 @@
     text-transform:uppercase;
     font-family:impact;
     font-size: 1.5rem;
-    color: $button-color;
+    color: $light;
     letter-spacing: 0.1rem;
 }

@@ -14,7 +14,7 @@
           <div class="col-lg-3 col-md-12 mb-2">
             <div class="form-group">
               <label [for]="categoryMenuEditItems[0].prop">{{ categoryMenuEditItems[0].label }} *</label>
-              <input [(ngModel)]="category[categoryMenuEditItems[0].prop]" class="form-control" type="string"
+              <input [(ngModel)]="category[categoryMenuEditItems[0].prop]" class="form-control" type="text"
                 [name]="categoryMenuEditItems[0].prop" [id]="categoryMenuEditItems[0].prop" required
                 [pattern]="categoryMenuEditItems[0].pattern" [placeholder]="categoryMenuEditItems[0].placeholder"
                 (ngModelChange)="category[categoryMenuEditItems[0].prop] = $event"
@@ -39,7 +39,7 @@
           <div class="col-lg-3 col-md-12 mb-2">
             <div class="form-group" *ngIf="category.id !== 0">
               <label [for]="'category'">{{ categoryLabel }}</label>
-              <input [(ngModel)]="selected" class="form-control" type="string" disabled [name]="'category'"
+              <input [(ngModel)]="selected" class="form-control" type="text" disabled [name]="'category'"
                 [id]="'category'">
             </div>
           </div>
@@ -105,7 +105,7 @@
         <div class="row col-10 offset-1">
           <button [disabled]="categoryForm.invalid" mat-raised-button color="save" class="mr-2" type="submit">{{
             editPageText[1].name }}</button>
-          <button mat-raised-button color="cancel" routerLink="/category" class="mr-2" type="button">
+          <button mat-raised-button color="cancel" [routerLink]="['/', 'menu', 'category' ]" class="mr-2" type="button">
             {{ editPageText[3].name }}
           </button>
           <button *ngIf="category.id !== 0" mat-raised-button color="delete" (click)="onDelete(category.id)"

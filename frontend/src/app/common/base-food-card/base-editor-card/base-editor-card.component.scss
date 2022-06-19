@@ -4,18 +4,17 @@
   cursor: pointer;
 
   &:hover {
-    color: $list-button-backgroundcolor;
+    color: $primary;
   }
 }
 
 .mat {
   &-cancel {
-    background-color: $edit-button-backgroundcolor;
-    color: $button-color;
+    background-color: $secondary;
+    color: $light;
   }
 
   &-save {
-    background-color: $list-button-backgroundcolor;
-    color: $button-color;
+    background-color: $primary;
   }
 }

@@ -1,7 +1,7 @@
 @use '../../../../assets/modules/color' as *;
 
 .card {
-  background-color: $dashboard-card-backgroundcolor;
+  background-color: $secondary;
   max-width: 25rem;
 
   @media screen and (max-width: 768px) {

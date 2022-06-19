@@ -7,6 +7,8 @@ import { ConfigService } from 'src/app/service/config.service';
 import { FastfoodService } from 'src/app/service/fastfood.service';
 import { DeleteDialogComponent } from '../../dialog/delete-dialog/delete-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
+import { FastfoodOrderService } from 'src/app/service/fastfood-order.service';
+import { OrderFastfood } from 'src/app/model/order-fastfood';
 
 @Component({
   selector: 'app-fastfood-edit',
@@ -45,6 +47,7 @@ export class FastfoodEditComponent implements OnInit {
     private router: Router,
     private toastr: ToastrService,
     private dialog: MatDialog,
+    private fastfoodOrderService: FastfoodOrderService
   ) { }
 
   ngOnInit(): void {
@@ -58,8 +61,79 @@ export class FastfoodEditComponent implements OnInit {
         ).subscribe(fastfood => {
           this.fastfood = fastfood
           this.selected = this.setSelected(fastfood.menu)
+          this.fastfoodOrderService.getAll().subscribe(orders => {
+            this.setNumberOfOrder(fastfood, orders)
+        })
         })
     }
+  }
+
+  setNumberOfOrder(fastfood: Fastfood, orders: OrderFastfood[]): void {
+    let array = []
+    let arrayFamily = []
+    let arrayPaid = []
+    let arrayFamilyPaid = []
+    let number = 0
+    let numberFamily = 0
+    let paidNumber = 0
+    let paidNumberFamily = 0
+    orders.map(order => order.order.map(or => {
+      if (!or.notes || or.notes === 'normal') {
+        if (or.productID === fastfood.id) {
+            array.push(or.productID)
+        }
+      }
+      if (or.notes === "family") {
+        if (or.productID === fastfood.id) {
+          arrayFamily.push(or.productID)
+      }
+      }
+    }))
+    number = array.length
+    numberFamily = arrayFamily.length
+    orders.filter(order => order.status === 'paid').map(order => order.order.map(or => {
+      if (!or.notes || or.notes === 'normal') {
+        if (or.productID === fastfood.id) {
+            arrayPaid.push(or.productID)
+        }
+      }
+      if (or.notes === "family") {
+        if (or.productID === fastfood.id) {
+          arrayFamilyPaid.push(or.productID)
+      }
+    }
+    }))
+    paidNumber = arrayPaid.length
+    paidNumberFamily = arrayFamilyPaid.length
+    if (number !== 0 && fastfood.numberOfOrder !== number || paidNumber !== 0 && fastfood.numberOfPaidOrder !== paidNumber ) {
+      fastfood.numberOfOrder = number
+      fastfood.numberOfPaidOrder = paidNumber
+      this.saveFastfoodOrder(fastfood, fastfood.numberOfOrder, fastfood.numberOfPaidOrder)
+
+    if (fastfood.category === 'PIZ') {
+      if (numberFamily !== 0 && fastfood.numberOfOrderFamily !== numberFamily || paidNumberFamily !== 0 && fastfood.numberOfPaidOrderFamily !== paidNumberFamily) {
+        fastfood.numberOfOrderFamily = numberFamily
+        fastfood.numberOfPaidOrderFamily = paidNumberFamily
+        this.saveFastfoodOrderPizza(fastfood, fastfood.numberOfOrderFamily, fastfood.numberOfPaidOrderFamily)
+        }
+      }
+    }
+  }
+
+  saveFastfoodOrder(fastfood: Fastfood, item: number, item2: number) {
+    fastfood.numberOfOrder = item
+    fastfood.numberOfPaidOrder = item2
+    this.fastfoodService.update(fastfood).subscribe(
+      fastfood => fastfood,
+      err => console.error(err))
+  }
+
+  saveFastfoodOrderPizza(fastfood: Fastfood, item: number, item2: number) {
+    fastfood.numberOfOrderFamily = item
+    fastfood.numberOfPaidOrderFamily = item2
+    this.fastfoodService.update(fastfood).subscribe(
+      fastfood => fastfood,
+      err => console.error(err))
   }
 
   dataChanged(value: string) {
@@ -86,11 +160,11 @@ export class FastfoodEditComponent implements OnInit {
     fastfood.menu = this.selected
     if (this.activatedRoute.snapshot.params['id'] === '0') {
       this.fastfoodService.create(fastfood).subscribe(
-        response => this.router.navigate(['/', 'product']));
+        response => this.router.navigate(['/', 'fastfood', 'product']));
         this.toastr.success(this.messages[1].message, this.messages[1].title);
     } else {
       this.fastfoodService.update(fastfood).subscribe(
-        response => this.router.navigate(['/', 'product']));
+        response => this.router.navigate(['/', 'fastfood', 'product']));
         this.toastr.success(this.messages[2].message, this.messages[2].title);
     }
   }
@@ -108,7 +182,7 @@ export class FastfoodEditComponent implements OnInit {
       if (result === true) {
         this.fastfoodService.delete(id).subscribe(
           response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-            this.router.navigate(['/', 'product' ]);
+            this.router.navigate(['/', 'fastfood', 'product' ]);
             this.toastr.error(this.messages[0].message, this.messages[0].title);
             }
           )

@@ -14,7 +14,7 @@
           <div class="col-lg-5 col-md-12 mb-2">
             <div class="form-group">
               <label [for]="fastfoodEditItems[0].prop">{{ fastfoodEditItems[0].label }} *</label>
-              <input [(ngModel)]="fastfood[fastfoodEditItems[0].prop]" class="form-control" type="string"
+              <input [(ngModel)]="fastfood[fastfoodEditItems[0].prop]" class="form-control" type="text"
                 [name]="fastfoodEditItems[0].prop" [id]="fastfoodEditItems[0].prop" required
                 [pattern]="fastfoodEditItems[0].pattern" [placeholder]="fastfoodEditItems[0].placeholder">
               <div class="font-italic small ml-2 mt-1"
@@ -40,7 +40,7 @@
           <div class="col-lg-10 col-md-12 mb-2">
             <div class="form-group">
               <label [for]="fastfoodEditItems[4].prop">{{ fastfoodEditItems[4].label }} *</label>
-              <textarea [(ngModel)]="fastfood[fastfoodEditItems[4].prop]" class="form-control" type="string"
+              <textarea [(ngModel)]="fastfood[fastfoodEditItems[4].prop]" class="form-control" type="text"
                 [name]="fastfoodEditItems[4].prop" [id]="fastfoodEditItems[4].prop" required
                 [pattern]="fastfoodEditItems[4].pattern" [placeholder]="fastfoodEditItems[4].placeholder">
               </textarea>
@@ -68,12 +68,12 @@
           <div class="col-lg-5 col-md-12">
             <div class="form-group" *ngIf="!selected">
               <label [for]="fastfoodEditItems[1].prop">{{ fastfoodEditItems[1].label }}</label>
-              <input [(ngModel)]="selected" class="form-control" type="string" [name]="fastfoodEditItems[1].prop"
+              <input [(ngModel)]="selected" class="form-control" type="text" [name]="fastfoodEditItems[1].prop"
                 [id]="fastfoodEditItems[1].prop" required [disabled]="true">
             </div>
             <div class="form-group" *ngIf="selected">
               <label [for]="fastfoodEditItems[1].prop">{{ fastfoodEditItems[1].label }}</label>
-              <input [(ngModel)]="selected" class="form-control" type="string" [name]="fastfoodEditItems[1].prop"
+              <input [(ngModel)]="selected" class="form-control" type="text" [name]="fastfoodEditItems[1].prop"
                 [id]="fastfoodEditItems[1].prop" required [disabled]="true">
             </div>
           </div>
@@ -108,7 +108,8 @@
         <div class="row col-10 offset-1">
           <button [disabled]="fastfoodForm.invalid" mat-raised-button color="save" class="mr-2" type="submit">{{
             editPageText[1].name }}</button>
-          <button mat-raised-button color="cancel" routerLink="/product" class="mr-2" type="button">
+          <button mat-raised-button color="cancel" [routerLink]="['/', 'fastfood', 'product' ]" class="mr-2"
+            type="button">
             {{ editPageText[3].name }}
           </button>
           <button *ngIf="fastfood.id !== 0" mat-raised-button color="delete" (click)="onDelete(fastfood.id)"

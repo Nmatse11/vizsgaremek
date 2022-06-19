@@ -7,8 +7,38 @@
   }
 
   &_thead {
-    background-color: $edit-button-backgroundcolor;
-    color: $button-color;
+    background-color: $secondary;
+    color: $light;
     font-weight: bold;
   }
+}
+
+.mat {
+
+  &-add {
+    background-color: $primary;
+    color: $light;
+    width: 25rem;
+
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+
+  &-save {
+    background-color: $d-menu-color;
+    color: $light;
+
+    &:hover {
+      background-color: $dark;
+    }
+  }
+
+}
+
+::ng-deep mat-tooltip-component{
+  & .mat-save {
+    text-align: center;
+    font-size: 1.2rem;
+    }
 }

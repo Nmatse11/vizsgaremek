@@ -1,0 +1,21 @@
+<div class="container pt-3">
+  <hr>
+  <hr>
+  <div class="button-group d-flex justify-content-center">
+    <button mat-raised-button color="add" class="mr-3 pt-2 pb-1" [ngClass]="categoryName === 'menu' ? 'active' : ''"
+      [routerLink]="['/', 'menu', componentName]" type="button">
+      <h2>{{ setButtonText('menu', componentName) }}</h2>
+    </button>
+    <button mat-raised-button color="add" class="pt-2 pb-1" [ngClass]="categoryName === 'fastfood' ? 'active' : ''"
+      [routerLink]="['/', 'fastfood', componentName]" type="button">
+      <h2>{{ setButtonText('fastfood', componentName) }}</h2>
+    </button>
+  </div>
+  <hr>
+  <hr>
+</div>
+
+<app-base-list [List$]="List$" [columns]="columns" [componentName]="componentName" [categoryName]="categoryName"
+  [joinObjectOn]="joinObjectOn" [currencyPipeOn]="currencyPipeOn" [customerIdOn]="customerIdOn"
+  (removeById)="onDelete($event)">
+</app-base-list>
