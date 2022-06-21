@@ -19,7 +19,7 @@ export class BaseComponentListComponent implements OnInit {
   @Input() customerIdOn?: string
   @Input() joinObjectOn?: string
 
-  @Output() removeById: EventEmitter<number> = new EventEmitter();
+  @Output() removeById: EventEmitter<string> = new EventEmitter();
 
   header = this.config.tableItems
 
@@ -42,7 +42,7 @@ export class BaseComponentListComponent implements OnInit {
 
   ngOnInit( ): void { }
 
-  onDelete(id: number): void {
+  onDelete(id: string): void {
     this.removeById.emit(id);
   }
 

@@ -17,6 +17,7 @@ export class CustomerEditComponent implements OnInit {
 
   newCustomer: Customer = new Customer();
   customer!: Customer;
+  id: string = this.activatedRoute.snapshot.params['id']
 
   editPageText = this.config.editPageText
   editPageItems = this.config.editPageItems
@@ -60,7 +61,7 @@ export class CustomerEditComponent implements OnInit {
     }
   }
 
-  onDelete(id: number): void {
+  onDelete(id: string): void {
     const confirmDialog = this.dialog.open(DeleteDialogComponent, {
       data: {
         title: this.deleteDialog[0].title,

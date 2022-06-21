@@ -2,9 +2,9 @@ import { OrderFastfoodItem } from "./order-fastfood-item";
 
 export class OrderFastfood {
     [key: string]: any;
-    id: number = 0;
+    _id: string = '';
     date: string = new Date().toLocaleDateString('hu');
-    customerID: number = 1;
+    customerID: string = '';
     order: OrderFastfoodItem[] =  [new OrderFastfoodItem()];
     amount: number = 1000;
     shipping: string = 'free'

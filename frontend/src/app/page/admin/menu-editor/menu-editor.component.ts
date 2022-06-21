@@ -39,7 +39,7 @@ export class MenuEditorComponent implements OnInit {
   selectedWeek!: number;
 
   menu!: Menu[]
-  menuVariable = Object.keys(new Menu()).filter(value => value !== "id" && value !== "week")
+  menuVariable = Object.keys(new Menu()).filter(value => value !== "_id" && value !== "week")
 
   menuCardHeaderText = this.config.menuCardHeaderText
   generationText = this.config.generationText
@@ -50,6 +50,8 @@ export class MenuEditorComponent implements OnInit {
   randomMenu!: Menu
 
   messages = this.config.toastrItems
+
+  cancel = false
 
   constructor(
     private config: ConfigService,
@@ -85,6 +87,7 @@ export class MenuEditorComponent implements OnInit {
   }
 
   setMenuOfWeek(menuKey: string) {
+    this.cancel = false
       this.foodService.getAll().subscribe(foods => {
         this.randomMenu = new Menu()
 
@@ -105,7 +108,7 @@ export class MenuEditorComponent implements OnInit {
   }
 
   saveMenu(week: number, menuKey: string) {
-     this.menuService.getOne(week + 1).subscribe(menu => {
+     this.menuService.getMenu(week).subscribe(menu => {
       if (this.menuSelectPrimeArray.indexOf(menuKey) !== -1) {
         menu[`${menuKey}MenuFoodSoup`] = this.randomMenu[`${menuKey}MenuFoodSoup`]
         menu[`${menuKey}MenuFoodMain`] = this.randomMenu[`${menuKey}MenuFoodMain`]
@@ -120,6 +123,11 @@ export class MenuEditorComponent implements OnInit {
           this.toastr.success(this.messages[4].message, this.messages[4].title)}),
         err => console.error(err))
       })
+  }
+
+  cancelRandomMenu() {
+    this.randomMenu = new Menu()
+    this.cancel = true
   }
 
 }

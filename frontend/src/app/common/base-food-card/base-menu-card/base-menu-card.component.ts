@@ -37,6 +37,22 @@ export class BaseMenuCardComponent implements OnInit {
     return filtered
   }
 
+  setAllergenName(value: string): string {
+    let name = ''
+    this.allergensItems.filter(item => {
+      if (item.key === value) {
+        name = item.name
+      }
+    });
+    return name
+  }
+
+  setAllergenArrayName(obj: any): string[] {
+    let filtered = Object.keys(obj).filter(item => obj[item] === true)
+    let nameOfFiltered = filtered.map(item => this.setAllergenName(item))
+    return nameOfFiltered
+  }
+
   setAllergenIcon(value: string): string {
     let img = ''
     this.allergensItems.filter(item => {

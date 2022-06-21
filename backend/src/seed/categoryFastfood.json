@@ -1,0 +1,103 @@
+[
+  {
+    "id": 1,
+    "categoryCode": "PIZ",
+    "menu": "pizza",
+    "notes": "primary",
+    "price": 1610,
+    "size": 32,
+    "numberOfFood": 20,
+    "sumOfOrder": 195
+  },
+  {
+    "id": 2,
+    "categoryCode": "PIZ",
+    "menu": "pizza",
+    "notes": "primary",
+    "price": 2890,
+    "size": 40,
+    "numberOfFood": 20,
+    "sumOfOrder": 195
+  },
+  {
+    "id": 3,
+    "categoryCode": "GY1",
+    "menu": "gyros",
+    "notes": "primary",
+    "price": 1090,
+    "numberOfFood": 1,
+    "sumOfOrder": 11
+  },
+  {
+    "id": 4,
+    "categoryCode": "GY2",
+    "menu": "gyros",
+    "notes": "primary",
+    "price": 2340,
+    "numberOfFood": 1,
+    "sumOfOrder": 9
+  },
+  {
+    "id": 5,
+    "categoryCode": "HAMB1",
+    "menu": "hamburger",
+    "notes": "primary",
+    "price": 1990,
+    "numberOfFood": 1,
+    "sumOfOrder": 7
+  },
+  {
+    "id": 6,
+    "categoryCode": "HAMB2",
+    "menu": "hamburger",
+    "notes": "primary",
+    "price": 2370,
+    "numberOfFood": 6,
+    "sumOfOrder": 49
+  },
+  {
+    "id": 7,
+    "categoryCode": "HAMB3",
+    "menu": "hamburger",
+    "notes": "primary",
+    "price": 2890,
+    "numberOfFood": 2,
+    "sumOfOrder": 16
+  },
+  {
+    "id": 8,
+    "categoryCode": "SAL",
+    "menu": "salata",
+    "notes": "secondary",
+    "price": 1500,
+    "numberOfFood": 4,
+    "sumOfOrder": 36
+  },
+  {
+    "id": 9,
+    "categoryCode": "KÖR",
+    "menu": "side_dish",
+    "notes": "secondary",
+    "price": 750,
+    "numberOfFood": 2,
+    "sumOfOrder": 21
+  },
+  {
+    "id": 10,
+    "categoryCode": "DES",
+    "menu": "dessert",
+    "notes": "secondary",
+    "price": 600,
+    "numberOfFood": 4,
+    "sumOfOrder": 40
+  },
+  {
+    "id": 11,
+    "categoryCode": "DR",
+    "menu": "drink",
+    "notes": "secondary",
+    "price": 450,
+    "numberOfFood": 10,
+    "sumOfOrder": 82
+  }
+]

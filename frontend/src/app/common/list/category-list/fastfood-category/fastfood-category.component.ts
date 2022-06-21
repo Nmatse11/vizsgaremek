@@ -31,7 +31,7 @@ export class FastfoodCategoryComponent implements OnInit {
 
   ngOnInit( ): void { }
 
-  onDelete(id: number): void {
+  onDelete(id: string): void {
       this.fastfoodCategoryService.delete(id).subscribe(
         response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
           this.router.navigate(['/', this.categoryName, this.componentName]);

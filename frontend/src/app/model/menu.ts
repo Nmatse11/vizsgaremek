@@ -2,7 +2,7 @@ import { Food } from "./food";
 
 export class Menu {
     [key: string]: any;
-    id: number = 0;
+    _id: string = '';
     week: number = 0;
     AMenuFoodSoup: Food[] = [];
     AMenuFoodMain: Food[] = [];

@@ -1,14 +1,14 @@
 <div class="container py-5 min-vh-100">
   <div *ngIf="fastfood" class="card mt-2">
     <div class="card-header">
-      <h4 class="card-title" *ngIf="fastfood.id !== 0">{{ editPageItems[3].title }}</h4>
-      <h4 class="card-title" *ngIf="fastfood.id === 0">{{ editPageItems[3].new }}</h4>
+      <h4 class="card-title" *ngIf="id !== '0'">{{ editPageItems[3].title }}</h4>
+      <h4 class="card-title" *ngIf="id === '0'">{{ editPageItems[3].new }}</h4>
       <p class="card-category">{{ editPageText[0].name }}</p>
     </div>
     <div class="card-body">
       <form #fastfoodForm="ngForm" (ngSubmit)="saveFastfood(fastfood)">
 
-        <input [(ngModel)]="fastfood.id" type="hidden" name="id">
+        <input [(ngModel)]="fastfood._id" type="hidden" name="id">
 
         <div class="row mb-2 justify-content-center">
           <div class="col-lg-5 col-md-12 mb-2">
@@ -81,7 +81,7 @@
 
         <div class="row mb-2 justify-content-center">
           <div class="col-lg-10 col-md-12 mb-5 d-flex">
-            <div class="col-lg-4 col-md-12 mb-2" *ngIf="fastfood.id !== 0">
+            <div class="col-lg-4 col-md-12 mb-2" *ngIf="id !== '0'">
               <h6>{{ editPageText[4].name }}
                 <span class="font-weight-bold" *ngIf="fastfood.category === 'PIZ'">({{ editPageText[5].name }})</span>:
                 {{ fastfood.numberOfOrder }} {{ editPageText[7].name }}
@@ -112,8 +112,7 @@
             type="button">
             {{ editPageText[3].name }}
           </button>
-          <button *ngIf="fastfood.id !== 0" mat-raised-button color="delete" (click)="onDelete(fastfood.id)"
-            type="button">
+          <button *ngIf="id !== '0'" mat-raised-button color="delete" (click)="onDelete(fastfood._id)" type="button">
             {{ editPageText[2].name }}
           </button>
         </div>

@@ -51,4 +51,14 @@ export class BaseFastfoodCardComponent implements OnInit {
     return img
   }
 
+  setAllergenName(value: string): string {
+    let name = ''
+    this.allergensItems.filter(item => {
+      if (item.key === value) {
+        name = item.name
+      }
+    });
+    return name
+  }
+
 }

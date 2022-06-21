@@ -1,0 +1,211 @@
+[
+  {
+    "id": 1,
+    "categoryCode": "R1",
+    "menu": "breakfast",
+    "notes": "option",
+    "price": 150,
+    "weigh": 70,
+    "numberOfOrder": 13,
+    "numberOfFood": 14,
+    "numberOfPaidOrder": 5
+  },
+  {
+    "id": 2,
+    "categoryCode": "R2",
+    "menu": "breakfast",
+    "notes": "option",
+    "price": 170,
+    "weigh": 80,
+    "numberOfOrder": 8,
+    "numberOfFood": 10,
+    "numberOfPaidOrder": 8
+  },
+  {
+    "id": 3,
+    "categoryCode": "N",
+    "menu": "soup",
+    "notes": "prime",
+    "price": 300,
+    "weigh": 300,
+    "numberOfOrder": 77,
+    "numberOfFood": 0,
+    "numberOfPaidOrder": 68
+  },
+  {
+    "id": 4,
+    "categoryCode": "N",
+    "menu": "main_course",
+    "notes": "prime",
+    "price": 900,
+    "weigh": 318,
+    "numberOfOrder": 77,
+    "numberOfFood": 0,
+    "numberOfPaidOrder": 68
+  },
+  {
+    "id": 5,
+    "categoryCode": "A",
+    "menu": "soup",
+    "notes": "prime",
+    "price": 400,
+    "weigh": 400,
+    "numberOfOrder": 130,
+    "numberOfFood": 20,
+    "numberOfPaidOrder": 106
+  },
+  {
+    "id": 6,
+    "categoryCode": "A",
+    "menu": "main_course",
+    "notes": "prime",
+    "price": 1000,
+    "weigh": 530,
+    "numberOfOrder": 130,
+    "numberOfFood": 20,
+    "numberOfPaidOrder": 106
+  },
+  {
+    "id": 7,
+    "categoryCode": "B",
+    "menu": "soup",
+    "notes": "prime",
+    "price": 500,
+    "weigh": 400,
+    "numberOfOrder": 51,
+    "numberOfFood": 20,
+    "numberOfPaidOrder": 34
+  },
+  {
+    "id": 8,
+    "categoryCode": "B",
+    "menu": "main_course",
+    "notes": "prime",
+    "price": 1100,
+    "weigh": 530,
+    "numberOfOrder": 51,
+    "numberOfFood": 20,
+    "numberOfPaidOrder": 34
+  },
+  {
+    "id": 9,
+    "categoryCode": "E",
+    "menu": "soup",
+    "notes": "prime",
+    "price": 600,
+    "weigh": 400,
+    "numberOfOrder": 97,
+    "numberOfFood": 20,
+    "numberOfPaidOrder": 64
+  },
+  {
+    "id": 10,
+    "categoryCode": "E",
+    "menu": "main_course",
+    "notes": "prime",
+    "price": 1200,
+    "weigh": 530,
+    "numberOfOrder": 97,
+    "numberOfFood": 20,
+    "numberOfPaidOrder": 64
+  },
+  {
+    "id": 11,
+    "categoryCode": "F",
+    "menu": "main_course",
+    "notes": "prime",
+    "price": 1500,
+    "weigh": 480,
+    "numberOfOrder": 89,
+    "numberOfFood": 20,
+    "numberOfPaidOrder": 66
+  },
+  {
+    "id": 12,
+    "categoryCode": "V",
+    "menu": "soup",
+    "notes": "prime",
+    "price": 500,
+    "weigh": 400,
+    "numberOfOrder": 112,
+    "numberOfFood": 20,
+    "numberOfPaidOrder": 83
+  },
+  {
+    "id": 13,
+    "categoryCode": "V",
+    "menu": "main_course",
+    "notes": "prime",
+    "price": 1000,
+    "weigh": 530,
+    "numberOfOrder": 112,
+    "numberOfFood": 20,
+    "numberOfPaidOrder": 83
+  },
+  {
+    "id": 14,
+    "categoryCode": "Z",
+    "menu": "soup",
+    "notes": "prime",
+    "price": 600,
+    "weigh": 400,
+    "numberOfOrder": 150,
+    "numberOfFood": 20,
+    "numberOfPaidOrder": 122
+  },
+  {
+    "id": 15,
+    "categoryCode": "Z",
+    "menu": "main_course",
+    "notes": "prime",
+    "price": 1200,
+    "weigh": 530,
+    "numberOfOrder": 150,
+    "numberOfFood": 20,
+    "numberOfPaidOrder": 122
+  },
+  {
+    "id": 16,
+    "categoryCode": "D",
+    "menu": "dessert",
+    "notes": "option",
+    "price": 600,
+    "weigh": 90,
+    "numberOfOrder": 89,
+    "numberOfFood": 20,
+    "numberOfPaidOrder": 74
+  },
+  {
+    "id": 17,
+    "categoryCode": "S",
+    "menu": "cake",
+    "notes": "option",
+    "price": 450,
+    "weigh": 100,
+    "numberOfOrder": 136,
+    "numberOfFood": 16,
+    "numberOfPaidOrder": 100
+  },
+  {
+    "id": 18,
+    "categoryCode": "SA",
+    "menu": "pickles",
+    "notes": "option",
+    "price": 190,
+    "weigh": 150,
+    "numberOfOrder": 177,
+    "numberOfFood": 10,
+    "numberOfPaidOrder": 140
+  },
+  {
+    "id": 19,
+    "categoryCode": "I",
+    "menu": "drink",
+    "notes": "option",
+    "price": 450,
+    "weigh": 0.33,
+    "numberOfOrder": 277,
+    "numberOfFood": 10,
+    "numberOfPaidOrder": 211
+  }
+]

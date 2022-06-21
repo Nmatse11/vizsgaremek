@@ -1,0 +1,1040 @@
+[
+  {
+    "id": 1,
+    "name": "Magyaros",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszósz, szalámi, kolbász, hagyma, bacon, erőspaprika, sajt",
+    "active": true,
+    "numberOfOrder": 6,
+    "numberOfPaidOrder": 6,
+    "numberOfOrderFamily": 0,
+    "numberOfPaidOrderFamily": 0
+  },
+  {
+    "id": 2,
+    "name": "Hawaii",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszózs, sonka, ananász, sajt",
+    "active": true,
+    "numberOfOrder": 12,
+    "numberOfPaidOrder": 10,
+    "numberOfOrderFamily": 3,
+    "numberOfPaidOrderFamily": 2
+  },
+  {
+    "id": 3,
+    "name": "Kalifornia",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszósz, sonka, kukorica, sajt",
+    "active": true,
+    "numberOfOrder": 9,
+    "numberOfPaidOrder": 9,
+    "numberOfOrderFamily": 2,
+    "numberOfPaidOrderFamily": 2
+  },
+  {
+    "id": 4,
+    "name": "Mexicana",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszósz, bacon, bab, chili, hagyma, sajt",
+    "active": true,
+    "numberOfOrder": 5,
+    "numberOfPaidOrder": 5,
+    "numberOfOrderFamily": 2,
+    "numberOfPaidOrderFamily": 1
+  },
+  {
+    "id": 5,
+    "name": "Vegatariana",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszósz, gomba, kukorica, borsó, paradicsom, sajt",
+    "active": true,
+    "numberOfOrder": 10,
+    "numberOfPaidOrder": 10,
+    "numberOfOrderFamily": 3,
+    "numberOfPaidOrderFamily": 2
+  },
+  {
+    "id": 6,
+    "name": "Gladiator",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszósz, sonka, bacon, ördögmártás, erőspaprika, sajt",
+    "active": true,
+    "numberOfOrder": 14,
+    "numberOfPaidOrder": 14,
+    "numberOfOrderFamily": 0,
+    "numberOfPaidOrderFamily": 0
+  },
+  {
+    "id": 7,
+    "name": "Emerico",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "tejfölös alap, sonka bacon, szalámi, fokhagyma, sajt",
+    "active": true,
+    "numberOfOrder": 12,
+    "numberOfPaidOrder": 11,
+    "numberOfOrderFamily": 3,
+    "numberOfPaidOrderFamily": 3
+  },
+  {
+    "id": 8,
+    "name": "Donna",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszósz, sonka, gomba, kukorica, sajt",
+    "active": true,
+    "numberOfOrder": 9,
+    "numberOfPaidOrder": 9,
+    "numberOfOrderFamily": 4,
+    "numberOfPaidOrderFamily": 4
+  },
+  {
+    "id": 9,
+    "name": "Giovanni",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszósz, sonka, bazsalikom, paradicsom, sajt",
+    "active": true,
+    "numberOfOrder": 6,
+    "numberOfPaidOrder": 6,
+    "numberOfOrderFamily": 0,
+    "numberOfPaidOrderFamily": 0
+  },
+  {
+    "id": 10,
+    "name": "Szicília",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszósz, sonka, bacon, gomba, kukorica, sajt",
+    "active": true,
+    "numberOfOrder": 7,
+    "numberOfPaidOrder": 7,
+    "numberOfOrderFamily": 1,
+    "numberOfPaidOrderFamily": 1
+  },
+  {
+    "id": 11,
+    "name": "Don Corleone",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszósz, sonka, máj, hagyma, pepperoni, sajt",
+    "active": true,
+    "numberOfOrder": 6,
+    "numberOfPaidOrder": 6,
+    "numberOfOrderFamily": 1,
+    "numberOfPaidOrderFamily": 1
+  },
+  {
+    "id": 12,
+    "name": "Dolce",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "tejfölös alap pulykamell, ananász, őszibarack, eper, sajt",
+    "active": true,
+    "numberOfOrder": 10,
+    "numberOfPaidOrder": 10,
+    "numberOfOrderFamily": 3,
+    "numberOfPaidOrderFamily": 3
+  },
+  {
+    "id": 13,
+    "name": "Napplitana",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszósz, sonka, tejföl, oregano, bazsalikom, sajt",
+    "active": true,
+    "numberOfOrder": 7,
+    "numberOfPaidOrder": 7,
+    "numberOfOrderFamily": 2,
+    "numberOfPaidOrderFamily": 2
+  },
+  {
+    "id": 14,
+    "name": "Emerico",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "tejfölös alap, sonka, bacon, szalámi, fokhagyma, sajt",
+    "active": true,
+    "numberOfOrder": 11,
+    "numberOfPaidOrder": 11,
+    "numberOfOrderFamily": 0,
+    "numberOfPaidOrderFamily": 0
+  },
+  {
+    "id": 15,
+    "name": "Hawaii frutti",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "tejfölös alap, sonka, ananász, őszibarack, sajt",
+    "active": true,
+    "numberOfOrder": 8,
+    "numberOfPaidOrder": 8,
+    "numberOfOrderFamily": 0,
+    "numberOfPaidOrderFamily": 0
+  },
+  {
+    "id": 16,
+    "name": "Speciale",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszózs, főtt-füstölt tarja, főtt tojás, hagyma, pepperoni, sajt",
+    "active": true,
+    "numberOfOrder": 5,
+    "numberOfPaidOrder": 4,
+    "numberOfOrderFamily": 0,
+    "numberOfPaidOrderFamily": 0
+  },
+  {
+    "id": 17,
+    "name": "Mariana",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszósz, tonhal, rák, sajt",
+    "active": true,
+    "numberOfOrder": 8,
+    "numberOfPaidOrder": 8,
+    "numberOfOrderFamily": 1,
+    "numberOfPaidOrderFamily": 1
+  },
+  {
+    "id": 18,
+    "name": "Regina",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "pizzaszósz, sonka, gomba, sajt",
+    "active": true,
+    "numberOfOrder": 6,
+    "numberOfPaidOrder": 6,
+    "numberOfOrderFamily": 0,
+    "numberOfPaidOrderFamily": 0
+  },
+  {
+    "id": 19,
+    "name": "Rodosz",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "tejfölös alap, csirkemell, gyros hús, paradicsom, fokhagyma, sajt",
+    "active": true,
+    "numberOfOrder": 9,
+    "numberOfPaidOrder": 9,
+    "numberOfOrderFamily": 1,
+    "numberOfPaidOrderFamily": 1
+  },
+  {
+    "id": 20,
+    "name": "Forta",
+    "menu": "pizza",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "PIZ",
+    "descripiton": "tejfölös alap, sonka, bacon, bab, erős paprika, sajt",
+    "active": true,
+    "numberOfOrder": 8,
+    "numberOfPaidOrder": 8,
+    "numberOfOrderFamily": 1,
+    "numberOfPaidOrderFamily": 1
+  },
+  {
+    "id": 21,
+    "name": "Classic Burger",
+    "menu": "hamburger",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "HAMB1",
+    "descripiton": "vaslapon sült húspogácsa 200g, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
+    "active": true,
+    "numberOfOrder": 7,
+    "numberOfPaidOrder": 7
+  },
+  {
+    "id": 22,
+    "name": "Sajt Burger",
+    "menu": "hamburger",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "HAMB2",
+    "descripiton": "vaslapon sült húspogácsa 200g, sajt, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
+    "active": true,
+    "numberOfOrder": 9,
+    "numberOfPaidOrder": 8
+  },
+  {
+    "id": 23,
+    "name": "Camembert Burger",
+    "menu": "hamburger",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "HAMB2",
+    "descripiton": "rántott camembert sajt, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
+    "active": true,
+    "numberOfOrder": 7,
+    "numberOfPaidOrder": 7
+  },
+  {
+    "id": 24,
+    "name": "Baconos Burger",
+    "menu": "hamburger",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "HAMB2",
+    "descripiton": "vaslapon sült húspogácsa 200g, bacon, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
+    "active": true,
+    "numberOfOrder": 6,
+    "numberOfPaidOrder": 6
+  },
+  {
+    "id": 25,
+    "name": "Texas Burger",
+    "menu": "hamburger",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "HAMB2",
+    "descripiton": "vaslapon sült húspogácsa 200g, hagyma, uborka, paradicsom, jégsaláta, barbecue szósz",
+    "active": true,
+    "numberOfOrder": 8,
+    "numberOfPaidOrder": 8
+  },
+  {
+    "id": 26,
+    "name": "Hawaii Burger",
+    "menu": "hamburger",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "HAMB2",
+    "descripiton": "vaslapon sült húspogácsa 200g, ananász, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
+    "active": true,
+    "numberOfOrder": 10,
+    "numberOfPaidOrder": 9
+  },
+  {
+    "id": 27,
+    "name": "California Burger",
+    "menu": "hamburger",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "HAMB2",
+    "descripiton": "vaslapon sült húspogácsa 200g, jalapeno paprika, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
+    "active": true,
+    "numberOfOrder": 9,
+    "numberOfPaidOrder": 9
+  },
+  {
+    "id": 28,
+    "name": "Brutál Burger",
+    "menu": "hamburger",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "HAMB3",
+    "descripiton": "vaslapon sült húspogácsa 400g, tarja, bacon, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
+    "active": true,
+    "numberOfOrder": 9,
+    "numberOfPaidOrder": 9
+  },
+  {
+    "id": 29,
+    "name": "Gyros Burger",
+    "menu": "hamburger",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "HAMB3",
+    "descripiton": "vaslapon sült húspogácsa 200g, gyros hús, hagyma, uborka, paradicsom, jégsaláta, ketchup, mustár, majonéz",
+    "active": true,
+    "numberOfOrder": 7,
+    "numberOfPaidOrder": 7
+  },
+  {
+    "id": 30,
+    "name": "Gyros pitában",
+    "menu": "gyros",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "GY1",
+    "descripiton": "pita, csirka gyros hús, tzatziki, csipős szósz, káposzta, hagyma, uborka, paradicsom",
+    "active": true,
+    "numberOfOrder": 11,
+    "numberOfPaidOrder": 11
+  },
+  {
+    "id": 31,
+    "name": "Gyros tál",
+    "menu": "gyros",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "GY2",
+    "descripiton": "csirka gyros hús, sültkrumpli, tzatziki, csipős szósz, káposzta, hagyma, uborka, paradicsom",
+    "active": true,
+    "numberOfOrder": 9,
+    "numberOfPaidOrder": 9
+  },
+  {
+    "id": 32,
+    "name": "Csirkés cézár saláta",
+    "menu": "salata",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SAL",
+    "descripiton": "saláta, paradicsom, kígyó uborka, csirkemell, pirított kenyérkocka, cézár öntet",
+    "active": true,
+    "numberOfOrder": 11,
+    "numberOfPaidOrder": 11
+  },
+  {
+    "id": 33,
+    "name": "Tonhalas cézár saláta",
+    "menu": "salata",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SAL",
+    "descripiton": "saláta, paradicsom, kígyó uborka, tonhal, pirított kenyérkocka, cézár öntet",
+    "active": true,
+    "numberOfOrder": 11,
+    "numberOfPaidOrder": 11
+  },
+  {
+    "id": 34,
+    "name": "Görög saláta",
+    "menu": "salata",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SAL",
+    "descripiton": "saláta, paradicsom, uborka, lila hagyma, olívabogyó, fetasajt",
+    "active": true,
+    "numberOfOrder": 11,
+    "numberOfPaidOrder": 10
+  },
+  {
+    "id": 35,
+    "name": "Sajtsaláta",
+    "menu": "salata",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SAL",
+    "descripiton": "pannónia sajt, parenyica sajt, karaván sajt, jégsaláta, paradicsom, olivabogyó",
+    "active": true,
+    "numberOfOrder": 3,
+    "numberOfPaidOrder": 3
+  },
+  {
+    "id": 36,
+    "name": "Hasábburgonya",
+    "menu": "side_dish",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "KÖR",
+    "active": true,
+    "numberOfOrder": 14,
+    "numberOfPaidOrder": 14
+  },
+  {
+    "id": 37,
+    "name": "Steak burgonya",
+    "menu": "side_dish",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "KÖR",
+    "active": true,
+    "numberOfOrder": 7,
+    "numberOfPaidOrder": 6
+  },
+  {
+    "id": 38,
+    "name": "Ízes palacsinta",
+    "menu": "dessert",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "DES",
+    "active": true,
+    "numberOfOrder": 9,
+    "numberOfPaidOrder": 9
+  },
+  {
+    "id": 39,
+    "name": "Nutellás palacsinta",
+    "menu": "dessert",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": true,
+        "peanut": true
+      }
+    ],
+    "category": "DES",
+    "active": true,
+    "numberOfOrder": 12,
+    "numberOfPaidOrder": 11
+  },
+  {
+    "id": 40,
+    "name": "Tiramisu",
+    "menu": "dessert",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "DES",
+    "active": true,
+    "numberOfOrder": 7,
+    "numberOfPaidOrder": 7
+  },
+  {
+    "id": 41,
+    "name": "Somlói galuska",
+    "menu": "dessert",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "DES",
+    "active": true,
+    "numberOfOrder": 12,
+    "numberOfPaidOrder": 11
+  },
+  {
+    "id": 42,
+    "name": "Coca-Cola",
+    "menu": "drink",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "DR",
+    "active": true,
+    "numberOfOrder": 9,
+    "numberOfPaidOrder": 9
+  },
+  {
+    "id": 43,
+    "name": "Coca-Cola ZERO",
+    "menu": "drink",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "DR",
+    "active": true,
+    "numberOfOrder": 8,
+    "numberOfPaidOrder": 8
+  },
+  {
+    "id": 44,
+    "name": "Fanta Narancs",
+    "menu": "drink",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "DR",
+    "active": true,
+    "numberOfOrder": 12,
+    "numberOfPaidOrder": 12
+  },
+  {
+    "id": 45,
+    "name": "Sprite",
+    "menu": "drink",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "DR",
+    "active": true,
+    "numberOfOrder": 9,
+    "numberOfPaidOrder": 9
+  },
+  {
+    "id": 46,
+    "name": "Lipton citromízű jeges tea",
+    "menu": "drink",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "DR",
+    "active": true,
+    "numberOfOrder": 11,
+    "numberOfPaidOrder": 11
+  },
+  {
+    "id": 47,
+    "name": "HappyDay almalé",
+    "menu": "drink",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "DR",
+    "active": true,
+    "numberOfOrder": 5,
+    "numberOfPaidOrder": 5
+  },
+  {
+    "id": 48,
+    "name": "SIÓ baracklé",
+    "menu": "drink",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "DR",
+    "active": true,
+    "numberOfOrder": 8,
+    "numberOfPaidOrder": 8
+  },
+  {
+    "id": 49,
+    "name": "Red Bull",
+    "menu": "drink",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "DR",
+    "active": true,
+    "numberOfOrder": 8,
+    "numberOfPaidOrder": 7
+  },
+  {
+    "id": 50,
+    "name": "Natur Aqua szénsavas ásványvíz",
+    "menu": "drink",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "DR",
+    "active": true,
+    "numberOfOrder": 6,
+    "numberOfPaidOrder": 6
+  },
+  {
+    "id": 51,
+    "name": "Natur Aqua szénsavmentes ásványvíz",
+    "menu": "drink",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "DR",
+    "active": true,
+    "numberOfOrder": 6,
+    "numberOfPaidOrder": 5
+  }
+]

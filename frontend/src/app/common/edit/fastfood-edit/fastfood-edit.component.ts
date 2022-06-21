@@ -19,6 +19,7 @@ export class FastfoodEditComponent implements OnInit {
 
   newFastfood: Fastfood = new Fastfood();
   fastfood!: Fastfood;
+  id: string = this.activatedRoute.snapshot.params['id']
 
   editPageText = this.config.editPageText
   editPageItems = this.config.editPageItems
@@ -79,12 +80,12 @@ export class FastfoodEditComponent implements OnInit {
     let paidNumberFamily = 0
     orders.map(order => order.order.map(or => {
       if (!or.notes || or.notes === 'normal') {
-        if (or.productID === fastfood.id) {
+        if (or.productID === fastfood._id) {
             array.push(or.productID)
         }
       }
       if (or.notes === "family") {
-        if (or.productID === fastfood.id) {
+        if (or.productID === fastfood._id) {
           arrayFamily.push(or.productID)
       }
       }
@@ -93,12 +94,12 @@ export class FastfoodEditComponent implements OnInit {
     numberFamily = arrayFamily.length
     orders.filter(order => order.status === 'paid').map(order => order.order.map(or => {
       if (!or.notes || or.notes === 'normal') {
-        if (or.productID === fastfood.id) {
+        if (or.productID === fastfood._id) {
             arrayPaid.push(or.productID)
         }
       }
       if (or.notes === "family") {
-        if (or.productID === fastfood.id) {
+        if (or.productID === fastfood._id) {
           arrayFamilyPaid.push(or.productID)
       }
     }
@@ -169,7 +170,7 @@ export class FastfoodEditComponent implements OnInit {
     }
   }
 
-  onDelete(id: number): void {
+  onDelete(id: string): void {
     const confirmDialog = this.dialog.open(DeleteDialogComponent, {
       data: {
         title: this.deleteDialog[0].title,

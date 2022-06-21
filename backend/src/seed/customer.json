@@ -1,0 +1,3307 @@
+[
+  {
+    "id": 1,
+    "firstName": "Szekeres",
+    "lastName": "Kata",
+    "email": "szekeres.kata@gmail.com",
+    "phonenumber": "0620/2227105",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Boldogasszony sugárút",
+        "number": 45
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Boldogasszony sugárút",
+        "number": 45
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 2,
+    "firstName": "Varga",
+    "lastName": "Csaba",
+    "email": "varga.csaba@gmail.com",
+    "phonenumber": "0670/5652713",
+    "address": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Ybl Miklós utca",
+        "number": 56
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Ybl Miklós utca",
+        "number": 56
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 3,
+    "firstName": "Péter",
+    "lastName": "Dénes",
+    "email": "peter.denes@gmail.com",
+    "phonenumber": "0620/3916604",
+    "address": [
+      {
+        "zip": 6721,
+        "city": "Szeged",
+        "street": "Nagyrét utca",
+        "number": 20
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6721,
+        "city": "Szeged",
+        "street": "Nagyrét utca",
+        "number": 20
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 4,
+    "firstName": "László",
+    "lastName": "Rita",
+    "email": "laszlorita@gmail.com",
+    "phonenumber": "0670/1864763",
+    "address": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Tóth János dülő",
+        "number": 54
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "József Attila sugárút",
+        "number": 45
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 5,
+    "firstName": "Gyulai",
+    "lastName": "Zsolt",
+    "email": "gyulai.zsolt@gmail.com",
+    "phonenumber": "0620/2903714",
+    "address": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Fonógyári út",
+        "number": 44
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Fonógyári út",
+        "number": 44
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 6,
+    "firstName": "Orbán",
+    "lastName": "Balázs",
+    "email": "orban.bali@gmail.com",
+    "phonenumber": "0630/0727243",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Boldogasszony sugárút",
+        "number": 49
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Unka út",
+        "number": 57
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 7,
+    "firstName": "Bajnai",
+    "lastName": "Hedvig",
+    "email": "bajnai.hedvig@gmail.com",
+    "phonenumber": "0670/8434910",
+    "address": [
+      {
+        "zip": 6721,
+        "city": "Szeged",
+        "street": "Málna utca",
+        "number": 39
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Vályogos utca",
+        "number": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 8,
+    "firstName": "Forgács",
+    "lastName": "Borka",
+    "email": "forgacs.borka@gmail.com",
+    "phonenumber": "0620/3113375",
+    "address": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Csaba utca",
+        "number": 14
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Alkony utca",
+        "number": 34
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 9,
+    "firstName": "Pálos",
+    "lastName": "Domonkos",
+    "email": "palos.domi@gmail.com",
+    "phonenumber": "0670/9359955",
+    "address": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Széchényi tér",
+        "number": 45
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Széchényi tér",
+        "number": 45
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 10,
+    "firstName": "Darvas",
+    "lastName": "Kinga",
+    "email": "darvas.king@gmail.com",
+    "phonenumber": "0670/5120604",
+    "address": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Csallóközi utca",
+        "number": 3
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Délceg utca",
+        "number": 37
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 11,
+    "firstName": "Darvas",
+    "lastName": "Erika",
+    "email": "darvas.erika@gmail.com",
+    "phonenumber": "0670/0063581",
+    "address": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Kölcsey utca",
+        "number": 21
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6721,
+        "city": "Szeged",
+        "street": "Unka út",
+        "number": 60
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 12,
+    "firstName": "Vágó",
+    "lastName": "Nándor",
+    "email": "vágó.nándor@gmail.com",
+    "phonenumber": "0670/7891934",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Szakolcai utca",
+        "number": 10
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Kereskedő köz",
+        "number": 54
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 13,
+    "firstName": "Szekeres",
+    "lastName": "Pál",
+    "email": "szekere.pali@gmail.com",
+    "phonenumber": "0670/6521409",
+    "address": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Fonógyári út",
+        "number": 27
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Tégla köz",
+        "number": 19
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 14,
+    "firstName": "Cserkó",
+    "lastName": "Judit",
+    "email": "cserkojutka@gmail.com",
+    "phonenumber": "0670/5843238",
+    "address": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Nyíl utca",
+        "number": 3
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Temesvári utca",
+        "number": 10
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 15,
+    "firstName": "Darvas",
+    "lastName": "Márton",
+    "email": "darvas.marci@gmail.com",
+    "phonenumber": "0630/1160582",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Délceg utca",
+        "number": 31
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6724,
+        "city": "Makó",
+        "street": "Csongrádi sugárút",
+        "number": 9
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 16,
+    "firstName": "Lengyel",
+    "lastName": "Dóra",
+    "email": "lengyeldori@gmail.com",
+    "phonenumber": "0630/6348965",
+    "address": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Kölcsey utca",
+        "number": 5
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Kölcsey utca",
+        "number": 5
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 17,
+    "firstName": "Bajnai",
+    "lastName": "Zalán",
+    "email": "bajnaizala@gmail.com",
+    "phonenumber": "0670/8607498",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Szabadság tér",
+        "number": 1
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Hattyú utca",
+        "number": 50
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 18,
+    "firstName": "Béres",
+    "lastName": "Dénes",
+    "email": "beres.denes@gmail.com",
+    "phonenumber": "0620/1464827",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Nagyrét utca",
+        "number": 26
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Erzsébet utca",
+        "number": 16
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 19,
+    "firstName": "Wéber",
+    "lastName": "Gyula",
+    "email": "weber.gyula@gmail.com",
+    "phonenumber": "0670/7949787",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Gárdonyi Géza utca",
+        "number": 7
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Tisza Lajos körút",
+        "number": 56
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 20,
+    "firstName": "Kovács",
+    "lastName": "Gyula",
+    "email": "kovacs.gyula@gmail.com",
+    "phonenumber": "0620/2716849",
+    "address": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Akácfa utca",
+        "number": 38
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Málna utca",
+        "number": 6
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 21,
+    "firstName": "Báthory",
+    "lastName": "Judit",
+    "email": "bathory.judit@gmail.com",
+    "phonenumber": "0620/8681742",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Forradalom utca",
+        "number": 36
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6710,
+        "city": "Algyő",
+        "street": "Csaba utca",
+        "number": 44
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 22,
+    "firstName": "Orbán",
+    "lastName": "Gábor",
+    "email": "orban.gabor@gmail.com",
+    "phonenumber": "0630/3208005",
+    "address": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Széchényi tér",
+        "number": 10
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Boldogasszony sugárút",
+        "number": 36
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 23,
+    "firstName": "Lengyel",
+    "lastName": "Ferenc",
+    "email": "lengyel.ferenc@gmail.com",
+    "phonenumber": "0630/7082570",
+    "address": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "MáV utca",
+        "number": 16
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6728,
+        "city": "Domaszék",
+        "street": "Ybl Miklós utca",
+        "number": 35
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 24,
+    "firstName": "Szalai",
+    "lastName": "Mátyás",
+    "email": "szalai.matyi@gmail.com",
+    "phonenumber": "0630/1974465",
+    "address": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Csongrádi sugárút",
+        "number": 29
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Dugonics tér",
+        "number": 10
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 25,
+    "firstName": "Kossuth",
+    "lastName": "Krisztina",
+    "email": "kossuth.kriszti@gmail.com",
+    "phonenumber": "0620/1160288",
+    "address": [
+      {
+        "zip": 6753,
+        "city": "Mórahalom",
+        "street": "Ökörszem utca",
+        "number": 13
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Mars tér",
+        "number": 21
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 26,
+    "firstName": "Juhász",
+    "lastName": "Flóra",
+    "email": "juhasz.flora@gmail.com",
+    "phonenumber": "0670/3251659",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Akácfa utca",
+        "number": 32
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6721,
+        "city": "Algyő",
+        "street": "Tégla köz",
+        "number": 25
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 27,
+    "firstName": "Magyar",
+    "lastName": "Dorottya",
+    "email": "magyar.dori@gmail.com",
+    "phonenumber": "0670/1686081",
+    "address": [
+      {
+        "zip": 6729,
+        "city": "Domaszék",
+        "street": "Zengő utca",
+        "number": 21
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Hattyú utca",
+        "number": 52
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 28,
+    "firstName": "Báthory",
+    "lastName": "Balázs",
+    "email": "bathory.balazs@gmail.com",
+    "phonenumber": "0670/1178926",
+    "address": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Csongor tér",
+        "number": 6
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Csongor tér",
+        "number": 6
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 29,
+    "firstName": "Bajnai",
+    "lastName": "Jázmin",
+    "email": "bajnai.jazi@gmail.com",
+    "phonenumber": "0670/2926132",
+    "address": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Ádám utca",
+        "number": 41
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Attila utca",
+        "number": 36
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 30,
+    "firstName": "Pesti",
+    "lastName": "Gábor",
+    "email": "pesti.gabor@gmail.com",
+    "phonenumber": "0620/3938799",
+    "address": [
+      {
+        "zip": 6757,
+        "city": "Röszke",
+        "street": "Mórahegyi út",
+        "number": 30
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Nyíl utca",
+        "number": 44
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 31,
+    "firstName": "Forgács",
+    "lastName": "Tibor",
+    "email": "forgacs.tibi@gmail.com",
+    "phonenumber": "0670/6458118",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Ballada utca",
+        "number": 42
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Ballada utca",
+        "number": 42
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 32,
+    "firstName": "Tóth",
+    "lastName": "Nándor",
+    "email": "toth.nandor@gmail.com",
+    "phonenumber": "0620/8140950",
+    "address": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Kölcsey utca",
+        "number": 38
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Palóc utca",
+        "number": 35
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 33,
+    "firstName": "Szegedi",
+    "lastName": "Róbert",
+    "email": "szegedi.robert@gmail.com",
+    "phonenumber": "0670/5900785",
+    "address": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Dugonics tér",
+        "number": 21
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Palóc utca",
+        "number": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 34,
+    "firstName": "Fazekas",
+    "lastName": "Sára",
+    "email": "fazekas.sara@gmail.com",
+    "phonenumber": "0630/0609632",
+    "address": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Gárdonyi Géza utca",
+        "number": 58
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Gárdonyi Géza utca",
+        "number": 58
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 35,
+    "firstName": "Kovács",
+    "lastName": "Beáta",
+    "email": "kovacs.bea@gmail.com",
+    "phonenumber": "0670/7569966",
+    "address": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Kossuth Lajos sugárút",
+        "number": 27
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Széchényi tér",
+        "number": 20
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 36,
+    "firstName": "Forgács",
+    "lastName": "Zsolt",
+    "email": "forgácsz.solt@gmail.com",
+    "phonenumber": "0670/5605441",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Délceg utca",
+        "number": 25
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Kereskedő köz",
+        "number": 44
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 37,
+    "firstName": "Rákosi",
+    "lastName": "Emese",
+    "email": "rakosi.emese@gmail.com",
+    "phonenumber": "0620/4703024",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Ybl Miklós utca",
+        "number": 49
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Bordányi út",
+        "number": 42
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 38,
+    "firstName": "Szekeres",
+    "lastName": "Róbert",
+    "email": "szekeres.robi@gmail.com",
+    "phonenumber": "0670/0609610",
+    "address": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Palóc utca",
+        "number": 51
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Boldogasszony sugárút",
+        "number": 7
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 39,
+    "firstName": "Dénes",
+    "lastName": "Mátyás",
+    "email": "denes.matyi@gmail.com",
+    "phonenumber": "0670/7314186",
+    "address": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Kakukkfű utca",
+        "number": 44
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Kakukkfű utca",
+        "number": 44
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 40,
+    "firstName": "Szegedi",
+    "lastName": "Olivér",
+    "email": "szegedi.oliver@gmail.com",
+    "phonenumber": "0630/1815640",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Szakolcai utca",
+        "number": 18
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Zrínyi utca",
+        "number": 14
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 41,
+    "firstName": "Selyem",
+    "lastName": "Lajos",
+    "email": "selymes.lajos@gmail.com",
+    "phonenumber": "0670/2126872",
+    "address": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Mars tér",
+        "number": 55
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Ballada utca",
+        "number": 49
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 42,
+    "firstName": "Szekeres",
+    "lastName": "Mátyás",
+    "email": "szekeres.matyi@gmail.com",
+    "phonenumber": "0670/2136701",
+    "address": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Csongrádi sugárút",
+        "number": 53
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Teleki utca",
+        "number": 44
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 43,
+    "firstName": "Forgács",
+    "lastName": "Pál",
+    "email": "forgacs.pal@gmail.com",
+    "phonenumber": "0630/8447201",
+    "address": [
+      {
+        "zip": 6722,
+        "city": "Zsombó",
+        "street": "Kossuth Lajos utca",
+        "number": 11
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6722,
+        "city": "Zsombó",
+        "street": "Kossuth Lajos utca",
+        "number": 11
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 44,
+    "firstName": "Szegedi",
+    "lastName": "Réka",
+    "email": "szegedi.reka@gmail.com",
+    "phonenumber": "0670/2797882",
+    "address": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Gárdonyi Géza utca",
+        "number": 52
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Tégla köz",
+        "number": 49
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 45,
+    "firstName": "Takács",
+    "lastName": "Ferenc",
+    "email": "takacs.feri@gmail.com",
+    "phonenumber": "0670/2056843",
+    "address": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Dugonics tér",
+        "number": 57
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6728,
+        "city": "Zsombó",
+        "street": "Bajai út",
+        "number": 56
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 46,
+    "firstName": "Magyar",
+    "lastName": "Domonkos",
+    "email": "magyar.domi@gmail.com",
+    "phonenumber": "0630/9044492",
+    "address": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Fonógyári út",
+        "number": 24
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Fonógyári út",
+        "number": 24
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 47,
+    "firstName": "Vörös",
+    "lastName": "Dávid",
+    "email": "voros.david@gmail.com",
+    "phonenumber": "0670/7906002",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Boldogasszony sugárút",
+        "number": 11
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Boldogasszony sugárút",
+        "number": 11
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 48,
+    "firstName": "Vágó",
+    "lastName": "Gábor",
+    "email": "vago.gabor@gmail.com",
+    "phonenumber": "0620/5954384",
+    "address": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Fülemüle utca",
+        "number": 15
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Délceg utca",
+        "number": 53
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 49,
+    "firstName": "Lengyel",
+    "lastName": "Dóra",
+    "email": "lengyel.dora@gmail.com",
+    "phonenumber": "0620/5290399",
+    "address": [
+      {
+        "zip": 6721,
+        "city": "Szeged",
+        "street": "Palóc utca",
+        "number": 57
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Akácfa utca",
+        "number": 45
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 50,
+    "firstName": "Szekeres",
+    "lastName": "Jutka",
+    "email": "szekeres.jutka@gmail.com",
+    "phonenumber": "0670/6776866",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Vályogos utca",
+        "number": 59
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6726,
+        "city": "Bordány",
+        "street": "Málna utca",
+        "number": 50
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 51,
+    "firstName": "Magyar",
+    "lastName": "Domonkos",
+    "email": "magyar-domi@gmail.com",
+    "phonenumber": "0620/0931624",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Tégla köz",
+        "number": 38
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Tóth János dülő",
+        "number": 52
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 52,
+    "firstName": "Szekeres",
+    "lastName": "Lajos",
+    "email": "szekeres-lajos@gmail.com",
+    "phonenumber": "0670/7693944",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Attila utca",
+        "number": 56
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Attila utca",
+        "number": 56
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 53,
+    "firstName": "Selyem",
+    "lastName": "Borka",
+    "email": "selyem.borka@gmail.com",
+    "phonenumber": "0630/4616357",
+    "address": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Zrínyi utca",
+        "number": 12
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Délceg utca",
+        "number": 31
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 54,
+    "firstName": "Péter",
+    "lastName": "Dóra",
+    "email": "peterdori@gmail.com",
+    "phonenumber": "0670/9704602",
+    "address": [
+      {
+        "zip": 6721,
+        "city": "Szeged",
+        "street": "Füge sor",
+        "number": 50
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Csaba utca",
+        "number": 1
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 55,
+    "firstName": "Magyar",
+    "lastName": "Kinga",
+    "email": "magyar_king@gmail.com",
+    "phonenumber": "0670/2937242",
+    "address": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Fülemüle utca",
+        "number": 49
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Attila utca",
+        "number": 6
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 56,
+    "firstName": "Darvas",
+    "lastName": "Borka",
+    "email": "darva_borka@gmail.com",
+    "phonenumber": "0620/6969208",
+    "address": [
+      {
+        "zip": 6753,
+        "city": "Tiszaliget",
+        "street": "Teleki utca",
+        "number": 29
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "József Attila sugárút",
+        "number": 9
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 57,
+    "firstName": "Lengyel",
+    "lastName": "László",
+    "email": "lengyel.laszló@gmail.com",
+    "phonenumber": "0670/3667266",
+    "address": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Zrínyi utca",
+        "number": 23
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Füge sor",
+        "number": 44
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 58,
+    "firstName": "Juhász",
+    "lastName": "Erzsébet",
+    "email": "juhasz.erzsebet@gmail.com",
+    "phonenumber": "0630/4298460",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Zengő utca",
+        "number": 39
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6724,
+        "city": "Mórahalom",
+        "street": "Hattyú utca",
+        "number": 19
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 59,
+    "firstName": "Darvas",
+    "lastName": "Dénes",
+    "email": "darvas.denes@gmail.com",
+    "phonenumber": "0670/9808187",
+    "address": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Tégla köz",
+        "number": 35
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Gulácsi park",
+        "number": 43
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 60,
+    "firstName": "Takács",
+    "lastName": "Miklós",
+    "email": "takacs.miki@gmail.com",
+    "phonenumber": "0620/1487470",
+    "address": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Fonógyári út",
+        "number": 26
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "MáV utca",
+        "number": 16
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 61,
+    "firstName": "Wéber",
+    "lastName": "Bertalan",
+    "email": "weber.berci@gmail.com",
+    "phonenumber": "0620/1245227",
+    "address": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Bordányi út",
+        "number": 26
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6726,
+        "city": "Tiszaliget",
+        "street": "Kölcsey utca",
+        "number": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 62,
+    "firstName": "Király",
+    "lastName": "Emese",
+    "email": "kiraly.emese@gmail.com",
+    "phonenumber": "0630/5544608",
+    "address": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Erzsébet utca",
+        "number": 55
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Ybl Miklós utca",
+        "number": 6
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 63,
+    "firstName": "Forgács",
+    "lastName": "Ábel",
+    "email": "forgacs.abel@gmail.com",
+    "phonenumber": "0670/6732769",
+    "address": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Alkony utca",
+        "number": 12
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6729,
+        "city": "Szeged",
+        "street": "Kakukkfű utca",
+        "number": 43
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 64,
+    "firstName": "Orbán",
+    "lastName": "Olivér",
+    "email": "orban.oliver@gmail.com",
+    "phonenumber": "0630/6857603",
+    "address": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Zengő utca",
+        "number": 27
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Palóc utca",
+        "number": 56
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 65,
+    "firstName": "Cserkó",
+    "lastName": "Áron",
+    "email": "cserko.aron@gmail.com",
+    "phonenumber": "0620/5230416",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Széchényi tér",
+        "number": 48
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Csongrádi sugárút",
+        "number": 9
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 66,
+    "firstName": "Selyem",
+    "lastName": "Jázmin",
+    "email": "selyem.jazmin@gmail.com",
+    "phonenumber": "0670/9226842",
+    "address": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Széchényi tér",
+        "number": 47
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Zrínyi utca",
+        "number": 35
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 67,
+    "firstName": "Magyar",
+    "lastName": "Pál",
+    "email": "magyar.pali@gmail.com",
+    "phonenumber": "0630/8856182",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Kakukkfű utca",
+        "number": 59
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Ybl Miklós utca",
+        "number": 3
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 68,
+    "firstName": "Kovács",
+    "lastName": "Gyula",
+    "email": "kovacs.gyula@gmail.com",
+    "phonenumber": "0670/2827328",
+    "address": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Lomnici utca",
+        "number": 58
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6729,
+        "city": "Szeged",
+        "street": "Csongor tér",
+        "number": 54
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 69,
+    "firstName": "Orbán",
+    "lastName": "Emese",
+    "email": "orban.mesi@gmail.com",
+    "phonenumber": "0620/2737514",
+    "address": [
+      {
+        "zip": 6729,
+        "city": "Szeged",
+        "street": "Málna utca",
+        "number": 40
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Füge sor",
+        "number": 30
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 70,
+    "firstName": "Kovács",
+    "lastName": "Éva",
+    "email": "kovacs.eva@gmail.com",
+    "phonenumber": "0670/5631997",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Málna utca",
+        "number": 45
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Tóth János dülő",
+        "number": 34
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 71,
+    "firstName": "Tóth",
+    "lastName": "Flóra",
+    "email": "toth.flora@gmail.com",
+    "phonenumber": "0670/9152989",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Dugonics tér",
+        "number": 33
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Csaba utca",
+        "number": 54
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 72,
+    "firstName": "Rákosi",
+    "lastName": "Nóra",
+    "email": "rakosi.nori@gmail.com",
+    "phonenumber": "0670/5341216",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Nyíl utca",
+        "number": 24
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Ballada utca",
+        "number": 2
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 73,
+    "firstName": "Vörös",
+    "lastName": "Krisztina",
+    "email": "voros.kriszti@gmail.com",
+    "phonenumber": "0620/6371947",
+    "address": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Lomnici utca",
+        "number": 52
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Lomnici utca",
+        "number": 52
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 74,
+    "firstName": "Vörös",
+    "lastName": "Gyula",
+    "email": "voros.gyula@gmail.com",
+    "phonenumber": "0620/0036161",
+    "address": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Zrínyi utca",
+        "number": 59
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Zrínyi utca",
+        "number": 59
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 75,
+    "firstName": "Báthory",
+    "lastName": "Kinga",
+    "email": "bathory.kinga@gmail.com",
+    "phonenumber": "0670/2354985",
+    "address": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Füge sor",
+        "number": 23
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Hattyú utca",
+        "number": 15
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 76,
+    "firstName": "Király",
+    "lastName": "Bence",
+    "email": "kiraly.bence@gmail.com",
+    "phonenumber": "0620/3938247",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Akácfa utca",
+        "number": 8
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Akácfa utca",
+        "number": 8
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 77,
+    "firstName": "Szűcs",
+    "lastName": "Áron",
+    "email": "szucs.aron@gmail.com",
+    "phonenumber": "0670/5600850",
+    "address": [
+      {
+        "zip": 6729,
+        "city": "Röszke",
+        "street": "Szakolcai utca",
+        "number": 50
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6729,
+        "city": "Röszke",
+        "street": "Szakolcai utca",
+        "number": 50
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 78,
+    "firstName": "Báthory",
+    "lastName": "Éva",
+    "email": "bathory.vica@gmail.com",
+    "phonenumber": "0670/9612299",
+    "address": [
+      {
+        "zip": 6721,
+        "city": "Szeged",
+        "street": "Lomnici utca",
+        "number": 28
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Széchényi tér",
+        "number": 13
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 79,
+    "firstName": "Rákosi",
+    "lastName": "Dominik",
+    "email": "rakosi.dominik@gmail.com",
+    "phonenumber": "0630/7788460",
+    "address": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Mórahegyi út",
+        "number": 51
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Mórahegyi út",
+        "number": 51
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 80,
+    "firstName": "Bozsik",
+    "lastName": "Áron",
+    "email": "bozsik.aron@gmail.com",
+    "phonenumber": "0620/6740317",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Teleki utca",
+        "number": 49
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6757,
+        "city": "Szeged",
+        "street": "Nyíl utca",
+        "number": 17
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 81,
+    "firstName": "Dénes",
+    "lastName": "Balázs",
+    "email": "denes.balazs@gmail.com",
+    "phonenumber": "0620/1175691",
+    "address": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Bajai út",
+        "number": 32
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6721,
+        "city": "Szeged",
+        "street": "Széchényi tér",
+        "number": 9
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 82,
+    "firstName": "Selyem",
+    "lastName": "Áron",
+    "email": "selyem.aron@gmail.com",
+    "phonenumber": "0670/3067235",
+    "address": [
+      {
+        "zip": 6700,
+        "city": "Szeged",
+        "street": "Csongor tér",
+        "number": 51
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Pisztácia utca",
+        "number": 39
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 83,
+    "firstName": "Lengyel",
+    "lastName": "Zsanett",
+    "email": "lengyel.zsanett@gmail.com",
+    "phonenumber": "0630/6645849",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Fonógyári út",
+        "number": 5
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Széchényi tér",
+        "number": 41
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 84,
+    "firstName": "Forgács",
+    "lastName": "Kinga",
+    "email": "forgacs.kinga@gmail.com",
+    "phonenumber": "0620/7209301",
+    "address": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Szakolcai utca",
+        "number": 24
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Szakolcai utca",
+        "number": 24
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 85,
+    "firstName": "Szekeres",
+    "lastName": "Pál",
+    "email": "szekeres.pal@gmail.com",
+    "phonenumber": "0620/5703948",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Mars tér",
+        "number": 44
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Csallóközi utca",
+        "number": 50
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 86,
+    "firstName": "Darvas",
+    "lastName": "Lajos",
+    "email": "darvas.lajos@gmail.com",
+    "phonenumber": "0620/5332727",
+    "address": [
+      {
+        "zip": 6720,
+        "city": "Mórahalom",
+        "street": "Bognár utca",
+        "number": 1
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Mórahalom",
+        "street": "Bognár utca",
+        "number": 1
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 87,
+    "firstName": "Szűcs",
+    "lastName": "Gergő",
+    "email": "szucs.geri@gmail.com",
+    "phonenumber": "0620/5080602",
+    "address": [
+      {
+        "zip": 6700,
+        "city": "Mórahalom",
+        "street": "Ballada utca",
+        "number": 16
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6700,
+        "city": "Mórahalom",
+        "street": "Ballada utca",
+        "number": 16
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 88,
+    "firstName": "Bakonyi",
+    "lastName": "Csaba",
+    "email": "bakonyi.csaba@gmail.com",
+    "phonenumber": "0620/6798871",
+    "address": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Tisza Lajos körút",
+        "number": 52
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Tisza Lajos körút",
+        "number": 52
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 89,
+    "firstName": "Báthory",
+    "lastName": "Krisztina",
+    "email": "bathory.kriszta@gmail.com",
+    "phonenumber": "0670/4759237",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Alkony utca",
+        "number": 29
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Bordányi út",
+        "number": 9
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 90,
+    "firstName": "Dénes",
+    "lastName": "Dávid",
+    "email": "denes.david@gmail.com",
+    "phonenumber": "0630/8916440",
+    "address": [
+      {
+        "zip": 6722,
+        "city": "Sándorfalva",
+        "street": "Tóth János dülő",
+        "number": 49
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6722,
+        "city": "Sándorfalva",
+        "street": "Tóth János dülő",
+        "number": 49
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 91,
+    "firstName": "Dénes",
+    "lastName": "József",
+    "email": "denes.jozsef@gmail.com",
+    "phonenumber": "0620/0818294",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Palóc utca",
+        "number": 18
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Hattyú utca",
+        "number": 24
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 92,
+    "firstName": "Szegedi",
+    "lastName": "Gergő",
+    "email": "szegedi.gergo@gmail.com",
+    "phonenumber": "0670/8983907",
+    "address": [
+      {
+        "zip": 6726,
+        "city": "Szeged",
+        "street": "Mórahegyi út",
+        "number": 58
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6729,
+        "city": "Szeged",
+        "street": "Kölcsey utca",
+        "number": 52
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 93,
+    "firstName": "Báthory",
+    "lastName": "Nóra",
+    "email": "bathory.nori@gmail.com",
+    "phonenumber": "0670/1788424",
+    "address": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Tisza Lajos körút",
+        "number": 13
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Nyíl utca",
+        "number": 36
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 94,
+    "firstName": "Nagy",
+    "lastName": "Csaba",
+    "email": "nagy.csaba@gmail.com",
+    "phonenumber": "0630/1238569",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Állomás utca",
+        "number": 5
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Állomás utca",
+        "number": 5
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 95,
+    "firstName": "Sárosdi",
+    "lastName": "Veronika",
+    "email": "s.vera@gmail.com",
+    "phonenumber": "0620/8792187",
+    "address": [
+      {
+        "zip": 6727,
+        "city": "Szeged",
+        "street": "Barna utca",
+        "number": 22
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6727,
+        "city": "Szeged",
+        "street": "Barna utca",
+        "number": 22
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 96,
+    "firstName": "Megyeri",
+    "lastName": "Szabolcs",
+    "email": "megyeri.szabolcs@gmail.com",
+    "phonenumber": "0670/2579248",
+    "address": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Búcsú sor",
+        "number": 1
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Beszterce utca",
+        "number": 32
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 97,
+    "firstName": "Kovács",
+    "lastName": "Terézia",
+    "email": "kovacs.teri@gmail.com",
+    "phonenumber": "0630/8219127",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Cickafark utca",
+        "number": 30
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Cickafark utca",
+        "number": 30
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 98,
+    "firstName": "Tomor",
+    "lastName": "Balázs",
+    "email": "tomor.balázsa@gmail.com",
+    "phonenumber": "0620/1728159",
+    "address": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Csertő utca",
+        "number": 2
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Dugonics tér",
+        "number": 13
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 99,
+    "firstName": "Péter",
+    "lastName": "Emese Virág",
+    "email": "petermesi@gmail.com",
+    "phonenumber": "0670/2185928",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Cseresznye utca",
+        "number": 58
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Cseresznye utca",
+        "number": 58
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 100,
+    "firstName": "Kardos",
+    "lastName": "Zsuzsa",
+    "email": "kardoszsuzsi@gmail.com",
+    "phonenumber": "0630/8192781",
+    "address": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Felvidéki sor",
+        "number": 10
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Felvidéki sor",
+        "number": 10
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 101,
+    "firstName": "Velőssy",
+    "lastName": "Péter",
+    "email": "v.péter@gmail.com",
+    "phonenumber": "0620/2819182",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Laktanya utca",
+        "number": 100
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6729,
+        "city": "Szeged",
+        "street": "Szabadkai út",
+        "number": 7
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 102,
+    "firstName": "Papp",
+    "lastName": "Vera",
+    "email": "papp.vera@gmail.com",
+    "phonenumber": "0630/9718921",
+    "address": [
+      {
+        "zip": 6723,
+        "city": "Szeged",
+        "street": "Liszt utca",
+        "number": 5
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Dugonics tér",
+        "number": 13,
+        "notes": "1/202"
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 103,
+    "firstName": "Kiss",
+    "lastName": "Zalán Péter",
+    "email": "kiss.zalaa@gmail.com",
+    "phonenumber": "0620/1219291",
+    "address": [
+      {
+        "zip": 6771,
+        "city": "Szeged",
+        "street": "Magyar utca",
+        "number": 8
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6723,
+        "city": "Szeged",
+        "street": "Római körút",
+        "number": 23
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 104,
+    "firstName": "Ács",
+    "lastName": "Enikő",
+    "email": "acsenci@gmail.com",
+    "phonenumber": "0670/1189292",
+    "address": [
+      {
+        "zip": 6771,
+        "city": "Szeged",
+        "street": "Mimóza utca",
+        "number": 35
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6771,
+        "city": "Szeged",
+        "street": "Mimóza utca",
+        "number": 35
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 105,
+    "firstName": "Németh",
+    "lastName": "Ábel",
+    "email": "nemeth.abel@gmail.com",
+    "phonenumber": "0670/2618182",
+    "address": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Nádor utca",
+        "number": 1
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Nádor utca",
+        "number": 1
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 106,
+    "firstName": "Nádor",
+    "lastName": "Zita",
+    "email": "nádorzita@gmail.com",
+    "phonenumber": "0620/8192819",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Nadályfű utca",
+        "number": 3
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Nagy Jenő utca",
+        "number": 1
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 107,
+    "firstName": "Király",
+    "lastName": "Tamás Csaba",
+    "email": "kiralytomi@gmail.com",
+    "phonenumber": "0630/2918281",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Nyírfa utca",
+        "number": 20
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Nyírfa utca",
+        "number": 20
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 108,
+    "firstName": "Monori",
+    "lastName": "Judit",
+    "email": "monorjutka@gmail.com",
+    "phonenumber": "0670/2912891",
+    "address": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Óvoda utca",
+        "number": 9
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Óvoda utca",
+        "number": 9
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 109,
+    "firstName": "Parajdi",
+    "lastName": "Dominik",
+    "email": "paradomi@gmail.com",
+    "phonenumber": "0620/81928192",
+    "address": [
+      {
+        "zip": 6727,
+        "city": "Szeged",
+        "street": "Pilisi utca",
+        "number": 89
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Dugonics tér",
+        "number": 13,
+        "notes": "fsz porta"
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 110,
+    "firstName": "Parragi",
+    "lastName": "Erzsike",
+    "email": "parragi.erzsi@gmail.com",
+    "phonenumber": "0670/0091821",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Rózsa utca",
+        "number": 24,
+        "notes": "3/1"
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Rózsa utca",
+        "number": 24,
+        "notes": "3/1"
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 111,
+    "firstName": "Vigovszky",
+    "lastName": "Dániel",
+    "email": "vigodani@gmail.com",
+    "phonenumber": "0630/1892918",
+    "address": [
+      {
+        "zip": 6771,
+        "city": "Szeged",
+        "street": "Légió út",
+        "number": 80
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6771,
+        "city": "Szeged",
+        "street": "Légió út",
+        "number": 80
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 112,
+    "firstName": "Bacsai",
+    "lastName": "Tamás",
+    "email": "bacsitomi@gmail.com",
+    "phonenumber": "0620/99819281",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Széchenyi István utca",
+        "number": 11
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Széchenyi István utca",
+        "number": 11
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 113,
+    "firstName": "Vajna",
+    "lastName": "Miklós",
+    "email": "vajnamiki@gmail.com",
+    "phonenumber": "0630/8918192",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Szent Antal utca",
+        "number": 36
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Dugonics tér",
+        "number": 13,
+        "notes": "porta"
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 114,
+    "firstName": "Jurányi",
+    "lastName": "Eszter Virág",
+    "email": "jurányi.eszter@gmail.com",
+    "phonenumber": "0620/1928918",
+    "address": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Szent Rókus tér",
+        "number": 8,
+        "notes": "5/2"
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Petőfi Sándor sugárút",
+        "number": 82
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 115,
+    "firstName": "Varga",
+    "lastName": "Zsolt",
+    "email": "varga.zsolti@gmail.com",
+    "phonenumber": "0670/19819281",
+    "address": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Tábor utca",
+        "number": 29,
+        "notes": "2. emelet 5. ajtó"
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Tábor utca",
+        "number": 29,
+        "notes": "2. emelet 5. ajtó"
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 116,
+    "firstName": "Városi",
+    "lastName": "Csenge",
+    "email": "városi.csenge@gmail.com",
+    "phonenumber": "0630/19819281",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Állomás utca",
+        "number": 33
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Állomás utca",
+        "number": 33
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 117,
+    "firstName": "Vizes",
+    "lastName": "Péter",
+    "email": "vizes.peter@gmail.com",
+    "phonenumber": "0620/1192891",
+    "address": [
+      {
+        "zip": 6727,
+        "city": "Szeged",
+        "street": "Barna utca",
+        "number": 1
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6727,
+        "city": "Szeged",
+        "street": "Barna utca",
+        "number": 1
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 118,
+    "firstName": "Jakab",
+    "lastName": "Csaba",
+    "email": "jakab.csana@gmail.com",
+    "phonenumber": "0670/1982981",
+    "address": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Búcsú sor",
+        "number": 15
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Beszterce utca",
+        "number": 32
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 119,
+    "firstName": "Tudor",
+    "lastName": "Krisztián",
+    "email": "tudorkrisz@gmail.com",
+    "phonenumber": "0630/1892921",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Cickafark utca",
+        "number": 14
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Cickafark utca",
+        "number": 14
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 120,
+    "firstName": "Sass",
+    "lastName": "Timea",
+    "email": "sasstimi@gmail.com",
+    "phonenumber": "0620/1981928",
+    "address": [
+      {
+        "zip": 6753,
+        "city": "Szeged",
+        "street": "Csertő utca",
+        "number": 9
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Dugonics tér",
+        "number": 13,
+        "notes": "A épület 223. terem"
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 121,
+    "firstName": "Vasas",
+    "lastName": "Mária Erzsébet",
+    "email": "vasas.marcsi@gmail.com",
+    "phonenumber": "0670/1982981",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Cseresznye utca",
+        "number": 13
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Cseresznye utca",
+        "number": 13
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 122,
+    "firstName": "László",
+    "lastName": "Zsófia",
+    "email": "laszlo.zsofi@gmail.com",
+    "phonenumber": "0630/8192928",
+    "address": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Felvidéki sor",
+        "number": 1
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6728,
+        "city": "Szeged",
+        "street": "Felvidéki sor",
+        "number": 1
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 123,
+    "firstName": "Tatai",
+    "lastName": "Árpád",
+    "email": "tatai.arpi@gmail.com",
+    "phonenumber": "0620/19289281",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Laktanya utca",
+        "number": 10
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6729,
+        "city": "Szeged",
+        "street": "Szabadkai út",
+        "number": 7
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 124,
+    "firstName": "Gábor",
+    "lastName": "Tamás",
+    "email": "gabor.tamas@gmail.com",
+    "phonenumber": "0630/1928192",
+    "address": [
+      {
+        "zip": 6723,
+        "city": "Szeged",
+        "street": "Liszt utca",
+        "number": 23
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Dugonics tér",
+        "number": 13,
+        "notes": "5/539"
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 125,
+    "firstName": "Csirszka",
+    "lastName": "Zádor",
+    "email": "csiri-zar@gmail.com",
+    "phonenumber": "0620/19289281",
+    "address": [
+      {
+        "zip": 6771,
+        "city": "Szeged",
+        "street": "Magyar utca",
+        "number": 48
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6723,
+        "city": "Szeged",
+        "street": "Római körút",
+        "number": 23
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 126,
+    "firstName": "Füzér",
+    "lastName": "Krisztina",
+    "email": "fuzer.kriszta@gmail.com",
+    "phonenumber": "0670/1829376",
+    "address": [
+      {
+        "zip": 6771,
+        "city": "Szeged",
+        "street": "Mimóza utca",
+        "number": 30
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6771,
+        "city": "Szeged",
+        "street": "Mimóza utca",
+        "number": 30
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 127,
+    "firstName": "Tábori",
+    "lastName": "István",
+    "email": "tabori.istvan@gmail.com",
+    "phonenumber": "0670/19289281",
+    "address": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Nádor utca",
+        "number": 61
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Nádor utca",
+        "number": 61
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 128,
+    "firstName": "Sándor",
+    "lastName": "Anna",
+    "email": "sandoranna@gmail.com",
+    "phonenumber": "0620/8129191",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Nadályfű utca",
+        "number": 95
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Nagy Jenő utca",
+        "number": 5
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 129,
+    "firstName": "Kardos",
+    "lastName": "Bálint",
+    "email": "kardos.balint@gmail.com",
+    "phonenumber": "0630/2981285",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Nyírfa utca",
+        "number": 18
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Nyírfa utca",
+        "number": 18
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 130,
+    "firstName": "Németh",
+    "lastName": "Júlia",
+    "email": "nemethjuli@gmail.com",
+    "phonenumber": "0670/2984181",
+    "address": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Óvoda utca",
+        "number": 63
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6710,
+        "city": "Szeged",
+        "street": "Óvoda utca",
+        "number": 63
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 131,
+    "firstName": "Hegedüs",
+    "lastName": "Domonkos",
+    "email": "hegdomi@gmail.com",
+    "phonenumber": "0620/7891921",
+    "address": [
+      {
+        "zip": 6727,
+        "city": "Szeged",
+        "street": "Pilisi utca",
+        "number": 47
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Dugonics tér",
+        "number": 13,
+        "notes": "2/222"
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 132,
+    "firstName": "Papp",
+    "lastName": "Anna",
+    "email": "papp.anna@gmail.com",
+    "phonenumber": "0670/1982918",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Rózsa utca",
+        "number": 2,
+        "notes": "fsz/1"
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Rózsa utca",
+        "number": 2,
+        "notes": "fsz/1"
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 133,
+    "firstName": "Albert",
+    "lastName": "Flóra",
+    "email": "albert.flora@gmail.com",
+    "phonenumber": "0630/1982918",
+    "address": [
+      {
+        "zip": 6771,
+        "city": "Szeged",
+        "street": "Légió út",
+        "number": 11
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6771,
+        "city": "Szeged",
+        "street": "Légió út",
+        "number": 11
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 134,
+    "firstName": "Naszály",
+    "lastName": "Barbara",
+    "email": "naszaly.barbi@gmail.com",
+    "phonenumber": "0620/1981918",
+    "address": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Széchenyi István utca",
+        "number": 88
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6791,
+        "city": "Szeged",
+        "street": "Széchenyi István utca",
+        "number": 88
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 135,
+    "firstName": "Pálos",
+    "lastName": "Márton",
+    "email": "palos.marci@gmail.com",
+    "phonenumber": "0630/1879281",
+    "address": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Szent Antal utca",
+        "number": 5
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6720,
+        "city": "Szeged",
+        "street": "Dugonics tér",
+        "number": 13,
+        "notes": "1/114"
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 136,
+    "firstName": "Nagy",
+    "lastName": "Viktor",
+    "email": "nagy.viktor@gmail.com",
+    "phonenumber": "0620/2589618",
+    "address": [
+      {
+        "zip": 6724,
+        "city": "Szeged",
+        "street": "Szent Rókus tér",
+        "number": 8,
+        "notes": "4/4"
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6725,
+        "city": "Szeged",
+        "street": "Petőfi Sándor sugárút",
+        "number": 82
+      }
+    ],
+    "active": true
+  },
+  {
+    "id": 137,
+    "firstName": "Zsákos",
+    "lastName": "Zsanett",
+    "email": "zsazsa@gmail.com",
+    "phonenumber": "0670/5328912",
+    "address": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Tábor utca",
+        "number": 29,
+        "notes": "4/3"
+      }
+    ],
+    "shipAddress": [
+      {
+        "zip": 6722,
+        "city": "Szeged",
+        "street": "Tábor utca",
+        "number": 29,
+        "notes": "4/3"
+      }
+    ],
+    "active": true
+  }
+]

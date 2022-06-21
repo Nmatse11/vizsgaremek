@@ -19,6 +19,7 @@ export class MenuOrderEditComponent implements OnInit {
 
   newOrder: OrderMenu = new OrderMenu();
   order!: OrderMenu;
+  id: string = this.activatedRoute.snapshot.params['id']
 
   editPageText = this.config.editPageText
   editPageItems = this.config.editPageItems
@@ -40,7 +41,7 @@ export class MenuOrderEditComponent implements OnInit {
 
   oderEditError = this.config.orderEditErrorText
 
-  customerKeys: number[] = []
+  customerKeys: string[] = []
   customerValue: string[] = []
 
   deleteDialog = this.config.dialogItems
@@ -72,7 +73,7 @@ export class MenuOrderEditComponent implements OnInit {
   getCustomer(): void {
     this.customerService.getAll().subscribe(customers => {
       customers.map(customer => {
-        this.customerKeys.push(customer.id)
+        this.customerKeys.push(customer._id)
         let name = `${customer.firstName} ${customer.lastName}`
         this.customerValue.push(name)
        })
@@ -99,7 +100,7 @@ export class MenuOrderEditComponent implements OnInit {
     }
   }
 
-  onDelete(id: number): void {
+  onDelete(id: string): void {
     const confirmDialog = this.dialog.open(DeleteDialogComponent, {
       data: {
         title: this.deleteDialog[0].title,

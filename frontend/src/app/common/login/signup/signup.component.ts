@@ -32,7 +32,7 @@ export class SignupComponent implements OnInit {
   userSetting: boolean = false
 
   newEmail!: string
-  newId!: number
+  newId!: string
 
   messages = this.config.toastrItems
 
@@ -71,10 +71,10 @@ export class SignupComponent implements OnInit {
   }
 
   getNewData(email: string): void {
-    let newCustomerID!: number
+    let newCustomerID!: string
     let newCustomerEmail!: string
     this.customerService.getAll().subscribe(customers => {
-      newCustomerID = customers.filter(customer => customer.email === email).map(item => item.id)[0]
+      newCustomerID = customers.filter(customer => customer.email === email).map(item => item._id)[0]
       newCustomerEmail = customers.filter(customer => customer.email === email).map(item => item.email)[0]
       this.newId = newCustomerID
       this.newEmail = newCustomerEmail

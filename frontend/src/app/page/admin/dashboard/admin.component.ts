@@ -173,7 +173,7 @@ export class AdminComponent implements OnInit {
     let cityArray: string[] = []
     let number: number = 0
     orders.filter(order => order.status == 'paid').map(order => {
-      customers.filter(customer => customer.id === order.customerID)
+      customers.filter(customer => customer._id === order.customerID)
       .map(customer => {
         array.push(customer.shipAddress[0].city)
       })
@@ -184,7 +184,7 @@ export class AdminComponent implements OnInit {
       number = cityArray.length
         this.cityNumberMenu.push(number)
 
-        let customerOfCity = customers.filter(customer => customer.shipAddress[0].city === city).map(customer => customer.id)
+        let customerOfCity = customers.filter(customer => customer.shipAddress[0].city === city).map(customer => customer._id)
         let amountOfCity: number[] = []
         customerOfCity.map(item => {
           orders.filter((order => order.status == 'paid' && order.customerID === item)).map(order => {
@@ -202,7 +202,7 @@ export class AdminComponent implements OnInit {
     let number: number = 0
     orders.filter(order => order.status == 'paid').map(order => {
         customers.map(customer => {
-          if (order.customerID === customer.id) {
+          if (order.customerID === customer._id) {
               array.push(customer.shipAddress[0].city)
           }
         })
@@ -213,7 +213,7 @@ export class AdminComponent implements OnInit {
         number = cityArray.length
         this.cityNumberFastfood.push(number)
 
-        let customerOfCity = customers.filter(customer => customer.shipAddress[0].city === city).map(customer => customer.id)
+        let customerOfCity = customers.filter(customer => customer.shipAddress[0].city === city).map(customer => customer._id)
         let amountOfCity: number[] = []
         customerOfCity.map(item => {
           orders.filter((order => order.status == 'paid' && order.customerID === item)).map(order => {

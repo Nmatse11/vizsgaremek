@@ -5,7 +5,7 @@
   <mat-card-subtitle
     class="text-right mr-2 pt-3 mb-2 text-muted mt-auto align-self-end d-flex flex-row justify-content-end"
     *ngIf="allergensSoup">
-    <p class="small" *ngFor="let allergen of setAllergen(allergensSoup[0])" [matTooltip]='allergen'
+    <p class="small" *ngFor="let allergen of setAllergen(allergensSoup[0])" [matTooltip]='setAllergenName(allergen)'
       matTooltipPosition="below" TooltipTouchGestures="auto"> <img class="allImg" [src]="setAllergenIcon(allergen)"
         [alt]="allergen">
     </p>
@@ -18,7 +18,7 @@
       <p *ngIf="weighSoup" class="text-right small mr-2 mb-1">{{ weightText }}: {{ weighSoup }} {{ unit }}</p>
       <p class="text-right small mr-2">{{ allergenText }}:
         <span *ngIf="allergensSoup.length > 0">
-          {{setAllergenText(allergensSoup)}}
+          {{setAllergenText(setAllergenArrayName(allergensSoup[0]))}}
         </span>
         <span *ngIf="allergensSoup.length === 0">
           -
@@ -31,7 +31,7 @@
   </mat-card-content>
   <mat-card-footer class="text-right mr-2 mb-1 text-muted mt-auto align-self-end d-flex flex-row justify-content-end"
     *ngIf="allergens">
-    <p class="small" *ngFor="let allergen of setAllergen(allergens[0])" [matTooltip]='allergen'
+    <p class="small" *ngFor="let allergen of setAllergen(allergens[0])" [matTooltip]='setAllergenName(allergen)'
       matTooltipPosition="below" TooltipTouchGestures="auto"> <img class="allImg" [src]="setAllergenIcon(allergen)"
         [alt]="allergen">
     </p>
@@ -46,7 +46,7 @@
       <p class="text-right small mr-2 mb-1">{{ weightText }}: {{ weigh }} {{ unit }}</p>
       <p class="text-right small mr-2" *ngIf="!isDrink">{{ allergenText }}:
         <span *ngIf="allergens && allergens.length > 0">
-          {{setAllergenText(allergens)}}
+          {{setAllergenText(setAllergenArrayName(allergens[0]))}}
         </span>
         <span *ngIf="allergens && allergens.length === 0">
           -

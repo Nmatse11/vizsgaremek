@@ -6,7 +6,7 @@ import { BaseService } from './base.service';
 @Injectable({
   providedIn: 'root'
 })
-export class SummaryService<T extends { id: number, [key: string]: any  }> extends BaseService<T> {
+export class SummaryService<T extends { _id: string, [key: string]: any  }> extends BaseService<T> {
 
   constructor(
     public override http: HttpClient,

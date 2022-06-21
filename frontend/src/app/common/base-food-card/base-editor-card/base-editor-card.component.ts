@@ -63,7 +63,7 @@ export class BaseEditorCardComponent implements OnInit {
   }
 
   saveItem(day: number, selectedMenuKey: string, selectedWeek: number, newMenuName: string, number: number) {
-    this.menuService.getOne(selectedWeek + 1).subscribe(menu => {
+    this.menuService.getMenu(selectedWeek).subscribe(menu => {
       this.foodService.getAll().subscribe(foods => {
         let selectedFood = foods.filter(food => food.name === newMenuName)
         let notes = selectedFood[0].menu

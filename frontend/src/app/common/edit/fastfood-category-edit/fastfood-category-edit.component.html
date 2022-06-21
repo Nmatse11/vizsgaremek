@@ -1,14 +1,14 @@
 <div class="container py-5 min-vh-100">
   <div *ngIf="category" class="card mt-2">
     <div class="card-header">
-      <h4 class="card-title" *ngIf="category.id !== 0">{{ editPageItems[4].title }}</h4>
-      <h4 class="card-title" *ngIf="category.id === 0">{{ editPageItems[4].new }}</h4>
+      <h4 class="card-title" *ngIf="id !== '0'">{{ editPageItems[4].title }}</h4>
+      <h4 class="card-title" *ngIf="id === '0'">{{ editPageItems[4].new }}</h4>
       <p class="card-category">{{ editPageText[0].name }}</p>
     </div>
     <div class="card-body">
       <form #categoryForm="ngForm" (ngSubmit)="saveCategory(category)">
 
-        <input [(ngModel)]="category.id" type="hidden" name="id">
+        <input [(ngModel)]="category._id" type="hidden" name="id">
 
         <div class="row mb-2 justify-content-center">
           <div class="col-lg-3 col-md-12 mb-2">
@@ -38,7 +38,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-12 mb-2">
-            <div class="form-group" *ngIf="category.id !== 0">
+            <div class="form-group" *ngIf="id !== '0'">
               <label [for]="'category'">{{ categoryLabel }}</label>
               <input [(ngModel)]="selected" class="form-control" type="text" disabled [name]="'category'"
                 [id]="'category'">
@@ -93,7 +93,7 @@
         </div>
 
         <div class="row mb-2 justify-content-center">
-          <div class="col-lg-10 col-md-12 mb-2" *ngIf="category.id !== 0">
+          <div class="col-lg-10 col-md-12 mb-2" *ngIf="id !== '0'">
             <h6>{{ editPageText[13].name }}: {{category.numberOfFood }} {{ editPageText[7].name }}
             </h6>
             <h6>{{ editPageText[14].name }}: {{category.sumOfOrder }} {{ editPageText[7].name }}
@@ -109,8 +109,7 @@
             type="button">
             {{ editPageText[3].name }}
           </button>
-          <button *ngIf="category.id !== 0" mat-raised-button color="delete" (click)="onDelete(category.id)"
-            type="button">
+          <button *ngIf="id !== '0'" mat-raised-button color="delete" (click)="onDelete(category._id)" type="button">
             {{ editPageText[2].name }}
           </button>
         </div>

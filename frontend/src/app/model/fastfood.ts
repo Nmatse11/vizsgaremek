@@ -2,7 +2,7 @@ import { Allergen } from "./allergen";
 
 export class Fastfood {
   [key: string]: any;
-  id: number = 0;
+  _id: string = '';
   name: string = '';
   menu: string = 'pizza';
   allergens: Allergen[] = [new Allergen()]

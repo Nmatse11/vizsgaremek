@@ -2,7 +2,7 @@ import { Allergen } from "./allergen";
 
 export class Food {
   [key: string]: any;
-  id: number = 0;
+  _id: string = '';
   name: string = '';
   menu: string = 'breakfast';
   img: string = '';
@@ -11,6 +11,6 @@ export class Food {
   vegan: boolean = false;
   fitness: boolean = false;
   active: boolean = true;
-  numberInMenu: number = 0
-  weekOfYear: number[] = []
+  numberInMenu?: number = 0
+  weekOfYear?: number[] = []
 }

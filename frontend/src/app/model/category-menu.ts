@@ -1,6 +1,6 @@
 export class CategoryMenu {
   [key: string]: any;
-  id: number = 0;
+  _id: string = '';
   categoryCode: string = '';
   menu: string = 'main_course';
   notes: string = 'prime';

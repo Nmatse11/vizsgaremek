@@ -15,6 +15,7 @@ export class BillEditComponent implements OnInit {
 
   newBill: Bill = new Bill();
   bill!: Bill;
+  id: string = this.activatedRoute.snapshot.params['id']
 
   editPageText = this.config.editPageText
   editPageItems = this.config.editPageItems

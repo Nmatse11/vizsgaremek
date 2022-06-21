@@ -185,7 +185,6 @@ export class ConfigService {
   ]
 
   foodMenuItems: ITableColumnItem[] = [
-    {key: 'id', title: '#'},
     {key: 'name', title: 'Név'},
     {key: 'menu', title: 'Menü'},
     {key: 'allergens', title: 'Allergének'},
@@ -195,7 +194,6 @@ export class ConfigService {
   ];
 
   foodCategoryMenuItems: ITableColumnItem[] = [
-    {key: 'id', title: '#'},
     {key: 'categoryCode', title: 'Kategória kód'},
     {key: 'menu', title: 'Menü'},
     {key: 'notes', title: 'Fajta'},
@@ -204,7 +202,6 @@ export class ConfigService {
   ];
 
   fastfoodMenuItems: ITableColumnItem[] = [
-    {key: 'id', title: '#'},
     {key: 'name', title: 'Név'},
     {key: 'menu', title: 'Fajta'},
     {key: 'allergens', title: 'Allergének'},
@@ -213,7 +210,6 @@ export class ConfigService {
   ];
 
   fastfoodCategoryMenuItems: ITableColumnItem[] = [
-    {key: 'id', title: '#'},
     {key: 'categoryCode', title: 'Kategória kód'},
     {key: 'menu', title: 'Menü'},
     {key: 'price', title: 'Ár'},
@@ -221,7 +217,6 @@ export class ConfigService {
   ];
 
   customerItems: ITableColumnItem[] = [
-    {key: 'id', title: '#'},
     {key: 'firstName', title: 'Vezetéknév'},
     {key: 'lastName', title: 'Keresztnév'},
     {key: 'email', title: 'Email cím'},
@@ -231,7 +226,6 @@ export class ConfigService {
   ];
 
   orderItems: ITableColumnItem[] = [
-    {key: 'id', title: '#'},
     {key: 'customerID', title: 'Vásárló neve'},
     {key: 'date', title: 'Rendelés dátuma'},
     {key: 'amount', title: 'Összeg'},
@@ -240,7 +234,6 @@ export class ConfigService {
   ];
 
   billMenuItems: ITableColumnItem[] = [
-    {key: 'id', title: '#'},
     {key: 'orderDate', title: 'Rendelés dátuma'},
     {key: 'billDate', title: 'Számla dátuma'},
     {key: 'orderID', title: 'Rendelés azonosító'},
@@ -522,7 +515,7 @@ export class ConfigService {
     {name: 'date', pattern: '^(20)[0-9]{2}. (0[1-9]|1[0-2]). (0[1-9]|[12][0-9]|3[01]).$', message: 'Nem megfelelő dátum formátum. (ÉÉÉÉ. HH. NN.)'},
     {name: 'id', pattern: '^[0-9]{1,}$', message: 'A sorszám csak számokat tartalmazhat.'},
     {name: 'amount', pattern: '^[0-9]{1,}$', message: 'A összeg csak számokat tartalmazhat és nem lehet nulla.'},
-    {name: 'name', pattern: '^[a-űA-Ű ]{5,}$', message: 'A névnek legalább 5 karakter hosszúnak kell lennie.'},
+    {name: 'name', pattern: '^[a-űA-Ű-, ]{5,}$', message: 'A névnek legalább 5 karakter hosszúnak kell lennie.'},
     {name: 'descripiton', pattern: '^[a-űA-Ű, ]{5,}$', message: 'A leírásnak legalább 5 karakter hosszúnak kell lennie.'},
     {name: 'notes', pattern: '^[a-űA-Ű0-9,./ ]{3,}$', message: 'A megjegyzésnek legalább 3 karakter hosszúnak kell lennie. Betűkön és számokon kívül csak vesszőt, pontot és perjelet tartalmazhat.'},
     {name: 'categoryCode', pattern: '^[a-űA-Ű0-9]{1,4}$', message: 'A kategóriakód maximum 4 karakter hosszú lehet és csak betűkből és/vagy számból állhat.'},

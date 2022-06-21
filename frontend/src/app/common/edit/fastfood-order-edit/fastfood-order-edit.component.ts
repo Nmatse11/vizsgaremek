@@ -20,6 +20,7 @@ export class FastfoodOrderEditComponent implements OnInit {
 
   newOrder: OrderFastfood = new OrderFastfood();
   order!: OrderFastfood;
+  id: string = this.activatedRoute.snapshot.params['id']
 
   editPageText = this.config.editPageText
   editPageItems = this.config.editPageItems
@@ -40,12 +41,12 @@ export class FastfoodOrderEditComponent implements OnInit {
 
   oderEditError = this.config.orderEditErrorText
 
-  customerKeys: number[] = []
+  customerKeys: string[] = []
   customerValue: string[] = []
 
-  fastfoodKeys: number[] = []
+  fastfoodKeys: string[] = []
   fastfoodValue: string[] = []
-  fastfoodPizza: number[] = []
+  fastfoodPizza: string[] = []
   noteBooleanNotes: boolean[] = []
 
   selected!: any[]
@@ -77,10 +78,10 @@ export class FastfoodOrderEditComponent implements OnInit {
           this.order = order
           this.selected = this.order.order.map(item => item.productID)
           this.selected.map(item => {
-            if (this.fastfoodPizza.includes(Number(item))) {
+            if (this.fastfoodPizza.includes(item)) {
               this.noteBooleanNotes.push(true)
             }
-            if (!this.fastfoodPizza.includes(Number(item))) {
+            if (!this.fastfoodPizza.includes(item)) {
               this.noteBooleanNotes.push(false)
             }
           })
@@ -91,7 +92,7 @@ export class FastfoodOrderEditComponent implements OnInit {
   getCustomer(): void {
     this.customerService.getAll().subscribe(customers => {
       customers.map(customer => {
-        this.customerKeys.push(customer.id)
+        this.customerKeys.push(customer._id)
         let name = `${customer.firstName} ${customer.lastName}`
         this.customerValue.push(name)
        })
@@ -101,20 +102,20 @@ export class FastfoodOrderEditComponent implements OnInit {
   getFastfood(): void {
     this.fastfoodService.getAll().subscribe(fastfoods => {
       fastfoods.map(fastfood => {
-        this.fastfoodKeys.push(fastfood.id)
+        this.fastfoodKeys.push(fastfood._id)
         this.fastfoodValue.push(fastfood.name)
         if (fastfood.menu === 'pizza') {
-          this.fastfoodPizza.push(fastfood.id)
+          this.fastfoodPizza.push(fastfood._id)
         }
       })
     })
   }
 
-  dataChanged(value: number, row: number): void {
-    if (this.fastfoodPizza.includes(Number(value))) {
+  dataChanged(value: string, row: number): void {
+    if (this.fastfoodPizza.includes(value)) {
       this.noteBooleanNotes[row] = true
     }
-    if (!this.fastfoodPizza.includes(Number(value))) {
+    if (!this.fastfoodPizza.includes(value)) {
       this.noteBooleanNotes[row] = false
     }
   }
@@ -141,7 +142,7 @@ export class FastfoodOrderEditComponent implements OnInit {
       }
   }
 
-  onDelete(id: number): void {
+  onDelete(id: string): void {
     const confirmDialog = this.dialog.open(DeleteDialogComponent, {
       data: {
         title: this.deleteDialog[0].title,

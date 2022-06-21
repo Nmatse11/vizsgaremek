@@ -1,0 +1,5997 @@
+[
+  {
+    "id": 1,
+    "customerID": "62af8d2f621fb233c179ce42",
+    "date": "2022. 04. 01.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "E",
+        "portion": 3
+      }
+    ],
+    "amount": 27000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 2,
+    "customerID": "62af8d2f621fb233c179ceb1",
+    "date": "2022. 03. 08.",
+    "order": [
+      {
+        "week": 11,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 12,
+        "menuCode": "B",
+        "portion": 3
+      },
+      {
+        "week": 13,
+        "menuCode": "F",
+        "portion": 1
+      }
+    ],
+    "amount": 39000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 3,
+    "customerID": "62af8d2f621fb233c179cf02",
+    "date": "2021. 12. 28.",
+    "order": [
+      {
+        "week": 1,
+        "menuCode": "B",
+        "portion": 3
+      }
+    ],
+    "amount": 24000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 4,
+    "customerID": "62af8d2f621fb233c179ce87",
+    "date": "2022. 02. 02.",
+    "order": [
+      {
+        "week": 5,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 5,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 6,
+        "menuCode": "A",
+        "portion": 2
+      },
+      {
+        "week": 6,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 7,
+        "menuCode": "A",
+        "portion": 1
+      }
+    ],
+    "amount": 53250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 5,
+    "customerID": "62af8d2f621fb233c179ce96",
+    "date": "2022. 05. 24.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "R1",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "A",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "S",
+        "portion": 2
+      }
+    ],
+    "amount": 18500,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 6,
+    "customerID": "62af8d2f621fb233c179ce8d",
+    "date": "2022. 03. 02.",
+    "order": [
+      {
+        "week": 11,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 11,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 11,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 11,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 68250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 7,
+    "customerID": "62af8d2f621fb233c179cdc1",
+    "date": "2022. 05. 02.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 12,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 12,
+        "menuCode": "A",
+        "portion": 3
+      }
+    ],
+    "amount": 34500,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 8,
+    "customerID": "62af8d2f621fb233c179ce03",
+    "date": "2022. 02. 18.",
+    "order": [
+      {
+        "week": 4,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 5,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 6,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 27000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 9,
+    "customerID": "62af8d2f621fb233c179cefc",
+    "date": "2022. 06. 13.",
+    "order": [
+      {
+        "week": 25,
+        "menuCode": "A",
+        "portion": 3
+      }
+    ],
+    "amount": 21000,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 10,
+    "customerID": "62af8d2f621fb233c179ce39",
+    "date": "2022. 05. 31.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "B",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 18250,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 11,
+    "customerID": "62af8d2f621fb233c179ce54",
+    "date": "2022. 03. 13.",
+    "order": [
+      {
+        "week": 11,
+        "menuCode": "N",
+        "portion": 1
+      },
+      {
+        "week": 12,
+        "menuCode": "N",
+        "portion": 1
+      },
+      {
+        "week": 13,
+        "menuCode": "N",
+        "portion": 2
+      }
+    ],
+    "amount": 24000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 12,
+    "customerID": "62af8d2f621fb233c179cf20",
+    "date": "2022. 02. 22.",
+    "order": [
+      {
+        "week": 10,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 10,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "S",
+        "portion": 3
+      }
+    ],
+    "amount": 53000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 13,
+    "customerID": "62af8d2f621fb233c179ceb4",
+    "date": "2022. 04. 24.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "E",
+        "portion": 2
+      },
+      {
+        "week": 18,
+        "menuCode": "E",
+        "portion": 2
+      },
+      {
+        "week": 19,
+        "menuCode": "E",
+        "portion": 2
+      },
+      {
+        "week": 20,
+        "menuCode": "E",
+        "portion": 2
+      }
+    ],
+    "amount": 72000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 14,
+    "customerID": "62af8d2f621fb233c179ced8",
+    "date": "2022. 02. 05.",
+    "order": [
+      {
+        "week": 6,
+        "menuCode": "D",
+        "portion": 1
+      },
+      {
+        "week": 6,
+        "menuCode": "N",
+        "portion": 1
+      },
+      {
+        "week": 7,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 7,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 7,
+        "menuCode": "I",
+        "portion": 2
+      }
+    ],
+    "amount": 31500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 15,
+    "customerID": "62af8d2f621fb233c179ced2",
+    "date": "2022. 03. 05.",
+    "order": [
+      {
+        "week": 10,
+        "menuCode": "A",
+        "portion": 1
+      }
+    ],
+    "amount": 7000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 16,
+    "customerID": "62af8d2f621fb233c179cddc",
+    "date": "2022. 05. 16.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "B",
+        "portion": 1
+      },
+      {
+        "week": 22,
+        "menuCode": "B",
+        "portion": 3
+      },
+      {
+        "week": 23,
+        "menuCode": "B",
+        "portion": 3
+      }
+    ],
+    "amount": 56000,
+    "shipping": "personal",
+    "status": "new"
+  },
+  {
+    "id": 17,
+    "customerID": "62af8d2f621fb233c179ce69",
+    "date": "2022. 05. 18.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 21,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 21,
+        "menuCode": "SA",
+        "portion": 2
+      }
+    ],
+    "amount": 35000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 18,
+    "customerID": "62af8d2f621fb233c179cdfd",
+    "date": "2022. 04. 02.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 14,
+        "menuCode": "F",
+        "portion": 2
+      }
+    ],
+    "amount": 25250,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 19,
+    "customerID": "62af8d2f621fb233c179ce87",
+    "date": "2022. 04. 26.",
+    "order": [
+      {
+        "week": 18,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 18,
+        "menuCode": "V",
+        "portion": 2
+      },
+      {
+        "week": 18,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 18,
+        "menuCode": "SA",
+        "portion": 1
+      }
+    ],
+    "amount": 33250,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 20,
+    "customerID": "62af8d2f621fb233c179cdc1",
+    "date": "2021. 12. 30.",
+    "order": [
+      {
+        "week": 1,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 2,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 3,
+        "menuCode": "N",
+        "portion": 2
+      }
+    ],
+    "amount": 36000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 21,
+    "customerID": "62af8d2f621fb233c179cf05",
+    "date": "2022. 02. 02.",
+    "order": [
+      {
+        "week": 6,
+        "menuCode": "E",
+        "portion": 2
+      }
+    ],
+    "amount": 18000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 22,
+    "customerID": "62af8d2f621fb233c179cea5",
+    "date": "2022. 06. 05.",
+    "order": [
+      {
+        "week": 23,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 23,
+        "menuCode": "I",
+        "portion": 3
+      }
+    ],
+    "amount": 29250,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 23,
+    "customerID": "62af8d2f621fb233c179ce1e",
+    "date": "2021. 12. 29.",
+    "order": [
+      {
+        "week": 1,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 9000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 24,
+    "customerID": "62af8d2f621fb233c179cf14",
+    "date": "2022. 05. 20.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 27000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 25,
+    "customerID": "62af8d2f621fb233c179cdc1",
+    "date": "2022. 04. 07.",
+    "order": [
+      {
+        "week": 15,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 15,
+        "menuCode": "E",
+        "portion": 2
+      },
+      {
+        "week": 16,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 16,
+        "menuCode": "E",
+        "portion": 2
+      }
+    ],
+    "amount": 46500,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 26,
+    "customerID": "62af8d2f621fb233c179cf20",
+    "date": "2022. 02. 17.",
+    "order": [
+      {
+        "week": 8,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 8,
+        "menuCode": "A",
+        "portion": 2
+      },
+      {
+        "week": 9,
+        "menuCode": "B",
+        "portion": 1
+      },
+      {
+        "week": 10,
+        "menuCode": "Z",
+        "portion": 2
+      }
+    ],
+    "amount": 42250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 27,
+    "customerID": "62af8d2f621fb233c179ce9c",
+    "date": "2022. 05. 03.",
+    "order": [
+      {
+        "week": 19,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "F",
+        "portion": 3
+      }
+    ],
+    "amount": 26250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 28,
+    "customerID": "62af8d2f621fb233c179ce21",
+    "date": "2022. 05. 08.",
+    "order": [
+      {
+        "week": 19,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "SA",
+        "portion": 1
+      }
+    ],
+    "amount": 38500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 29,
+    "customerID": "62af8d2f621fb233c179ce72",
+    "date": "2022. 05. 11.",
+    "order": [
+      {
+        "week": 20,
+        "menuCode": "D",
+        "portion": 3
+      },
+      {
+        "week": 20,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 20,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 20,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 20,
+        "menuCode": "R1",
+        "portion": 1
+      }
+    ],
+    "amount": 50750,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 30,
+    "customerID": "62af8d2f621fb233c179ceab",
+    "date": "2022. 06. 01.",
+    "order": [
+      {
+        "week": 23,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 23,
+        "menuCode": "V",
+        "portion": 2
+      }
+    ],
+    "amount": 21750,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 31,
+    "customerID": "62af8d2f621fb233c179ce9f",
+    "date": "2022. 06. 10.",
+    "order": [
+      {
+        "week": 25,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 25,
+        "menuCode": "S",
+        "portion": 1
+      },
+      {
+        "week": 25,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 25,
+        "menuCode": "F",
+        "portion": 2
+      },
+      {
+        "week": 13,
+        "menuCode": "I",
+        "portion": 3
+      }
+    ],
+    "amount": 55000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 32,
+    "customerID": "62af8d2f621fb233c179ceba",
+    "date": "2022. 01. 05.",
+    "order": [
+      {
+        "week": 2,
+        "menuCode": "D",
+        "portion": 1
+      },
+      {
+        "week": 2,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 2,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 2,
+        "menuCode": "Z",
+        "portion": 2
+      }
+    ],
+    "amount": 41750,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 33,
+    "customerID": "62af8d2f621fb233c179cdee",
+    "date": "2022. 03. 27.",
+    "order": [
+      {
+        "week": 13,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 13,
+        "menuCode": "A",
+        "portion": 2
+      }
+    ],
+    "amount": 18500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 34,
+    "customerID": "62af8d2f621fb233c179ce81",
+    "date": "2022. 06. 04.",
+    "order": [
+      {
+        "week": 23,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 23,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 33750,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 35,
+    "customerID": "62af8d2f621fb233c179ce33",
+    "date": "2022. 01. 24.",
+    "order": [
+      {
+        "week": 5,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 6,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 7,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 63000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 36,
+    "customerID": "62af8d2f621fb233c179ce84",
+    "date": "2022. 02. 16.",
+    "order": [
+      {
+        "week": 8,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 9,
+        "menuCode": "A",
+        "portion": 2
+      }
+    ],
+    "amount": 21000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 37,
+    "customerID": "62af8d2f621fb233c179cedb",
+    "date": "2022. 02. 18.",
+    "order": [
+      {
+        "week": 15,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 27000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 38,
+    "customerID": "62af8d2f621fb233c179ced8",
+    "date": "2022. 03. 25.",
+    "order": [
+      {
+        "week": 13,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 13,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 13,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 13,
+        "menuCode": "A",
+        "portion": 1
+      }
+    ],
+    "amount": 46000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 39,
+    "customerID": "62af8d2f621fb233c179ce1b",
+    "date": "2022. 02. 02.",
+    "order": [
+      {
+        "week": 6,
+        "menuCode": "Z",
+        "portion": 2
+      },
+      {
+        "week": 6,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 20250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 40,
+    "customerID": "62af8d2f621fb233c179ce45",
+    "date": "2022. 04. 18.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "F",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "S",
+        "portion": 3
+      }
+    ],
+    "amount": 50250,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 41,
+    "customerID": "62af8d2f621fb233c179cf14",
+    "date": "2022. 02. 24.",
+    "order": [
+      {
+        "week": 9,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 9000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 42,
+    "customerID": "62af8d2f621fb233c179cd9a",
+    "date": "2022. 05. 23.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 22,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "7",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "SA",
+        "portion": 2
+      }
+    ],
+    "amount": 29750,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 43,
+    "customerID": "62af8d2f621fb233c179ce63",
+    "date": "2022. 02. 23.",
+    "order": [
+      {
+        "week": 9,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 9,
+        "menuCode": "Z",
+        "portion": 2
+      },
+      {
+        "week": 10,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 10,
+        "menuCode": "D",
+        "portion": 1
+      }
+    ],
+    "amount": 59250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 44,
+    "customerID": "62af8d2f621fb233c179ced2",
+    "date": "2022. 05. 09.",
+    "order": [
+      {
+        "week": 20,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 20,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 20,
+        "menuCode": "F",
+        "portion": 3
+      }
+    ],
+    "amount": 44750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 45,
+    "customerID": "62af8d2f621fb233c179cdeb",
+    "date": "2022. 05. 02.",
+    "order": [
+      {
+        "week": 19,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "D",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 19,
+        "menuCode": "F",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "E",
+        "portion": 1
+      }
+    ],
+    "amount": 31250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 46,
+    "customerID": "62af8d2f621fb233c179cde5",
+    "date": "2022. 05. 01.",
+    "order": [
+      {
+        "week": 18,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 18,
+        "menuCode": "Z",
+        "portion": 2
+      },
+      {
+        "week": 19,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 31500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 47,
+    "customerID": "62af8d2f621fb233c179ce36",
+    "date": "2022. 05. 29.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "N",
+        "portion": 3
+      },
+      {
+        "week": 21,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 21,
+        "menuCode": "S",
+        "portion": 2
+      }
+    ],
+    "amount": 31750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 48,
+    "customerID": "62af8d2f621fb233c179ce24",
+    "date": "2022. 06. 05.",
+    "order": [
+      {
+        "week": 23,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 23,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 23,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "SA",
+        "portion": 2
+      }
+    ],
+    "amount": 32000,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 49,
+    "customerID": "62af8d2f621fb233c179ce3f",
+    "date": "2022. 03. 14.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "F",
+        "portion": 1
+      },
+      {
+        "week": 12,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 13,
+        "menuCode": "F",
+        "portion": 3
+      },
+      {
+        "week": 23,
+        "menuCode": "I",
+        "portion": 3
+      }
+    ],
+    "amount": 57250,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 50,
+    "customerID": "62af8d2f621fb233c179cde5",
+    "date": "2022. 05. 17.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 21,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 21,
+        "menuCode": "I",
+        "portion": 2
+      }
+    ],
+    "amount": 45500,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 51,
+    "customerID": "62af8d2f621fb233c179cdd6",
+    "date": "2022. 05. 27.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "SA",
+        "portion": 2
+      }
+    ],
+    "amount": 41000,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 52,
+    "customerID": "62af8d2f621fb233c179cde5",
+    "date": "2022. 03. 19.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "N",
+        "portion": 3
+      },
+      {
+        "week": 12,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 12,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 48000,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 53,
+    "customerID": "62af8d2f621fb233c179ceab",
+    "date": "2022. 05. 23.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "E",
+        "portion": 3
+      }
+    ],
+    "amount": 33750,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 54,
+    "customerID": "62af8d2f621fb233c179cdeb",
+    "date": "2022. 05. 25.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 22,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 11250,
+    "shipping": "personal",
+    "status": "new"
+  },
+  {
+    "id": 55,
+    "customerID": "62af8d2f621fb233c179cecf",
+    "date": "2022. 03. 11.",
+    "order": [
+      {
+        "week": 11,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 11,
+        "menuCode": "D",
+        "portion": 1
+      },
+      {
+        "week": 12,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 12,
+        "menuCode": "F",
+        "portion": 1
+      }
+    ],
+    "amount": 22250,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 56,
+    "customerID": "62af8d2f621fb233c179ce5d",
+    "date": "2022. 05. 11.",
+    "order": [
+      {
+        "week": 20,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 20,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 21,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 21,
+        "menuCode": "V",
+        "portion": 3
+      }
+    ],
+    "amount": 58500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 57,
+    "customerID": "62af8d2f621fb233c179cdfa",
+    "date": "2022. 03. 16.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 12,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 12,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 47750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 58,
+    "customerID": "62af8d2f621fb233c179cec6",
+    "date": "2022. 04. 10.",
+    "order": [
+      {
+        "week": 15,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 15,
+        "menuCode": "F",
+        "portion": 2
+      }
+    ],
+    "amount": 25250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 59,
+    "customerID": "62af8d2f621fb233c179cdc4",
+    "date": "2022. 04. 13.",
+    "order": [
+      {
+        "week": 16,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "A",
+        "portion": 2
+      }
+    ],
+    "amount": 23250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 60,
+    "customerID": "62af8d2f621fb233c179cdc7",
+    "date": "2022. 04. 13.",
+    "order": [
+      {
+        "week": 16,
+        "menuCode": "Z",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 18,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "Z",
+        "portion": 2
+      }
+    ],
+    "amount": 78750,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 61,
+    "customerID": "62af8d2f621fb233c179cd8b",
+    "date": "2022. 03. 30.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 14,
+        "menuCode": "D",
+        "portion": 3
+      },
+      {
+        "week": 14,
+        "menuCode": "I",
+        "portion": 3
+      }
+    ],
+    "amount": 36750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 62,
+    "customerID": "62af8d2f621fb233c179ce3c",
+    "date": "2022. 03. 27.",
+    "order": [
+      {
+        "week": 13,
+        "menuCode": "E",
+        "portion": 1
+      }
+    ],
+    "amount": 9000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 63,
+    "customerID": "62af8d2f621fb233c179cde8",
+    "date": "2022. 06. 06.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 24,
+        "menuCode": "E",
+        "portion": 1
+      },
+      {
+        "week": 24,
+        "menuCode": "S",
+        "portion": 3
+      }
+    ],
+    "amount": 18000,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 64,
+    "customerID": "62af8d2f621fb233c179ce24",
+    "date": "2022. 04. 13.",
+    "order": [
+      {
+        "week": 16,
+        "menuCode": "E",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 20500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 65,
+    "customerID": "62af8d2f621fb233c179cdb2",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 18,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 18,
+        "menuCode": "D",
+        "portion": 3
+      },
+      {
+        "week": 18,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 18,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 48000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 66,
+    "customerID": "62af8d2f621fb233c179ced2",
+    "date": "2022. 03. 16.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 12,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 23250,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 67,
+    "customerID": "62af8d2f621fb233c179cda0",
+    "date": "2022. 05. 19.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 21,
+        "menuCode": "E",
+        "portion": 2
+      }
+    ],
+    "amount": 36500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 68,
+    "customerID": "62af8d2f621fb233c179ce00",
+    "date": "2022. 06. 13.",
+    "order": [
+      {
+        "week": 25,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 25,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 25,
+        "menuCode": "S",
+        "portion": 3
+      }
+    ],
+    "amount": 31500,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 69,
+    "customerID": "62af8d2f621fb233c179ceb4",
+    "date": "2022. 01. 04.",
+    "order": [
+      {
+        "week": 2,
+        "menuCode": "V",
+        "portion": 2
+      }
+    ],
+    "amount": 15000,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 70,
+    "customerID": "62af8d2f621fb233c179cef9",
+    "date": "2021. 12. 30.",
+    "order": [
+      {
+        "week": 1,
+        "menuCode": "N",
+        "portion": 1
+      },
+      {
+        "week": 2,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 2,
+        "menuCode": "SA",
+        "portion": 2
+      }
+    ],
+    "amount": 36500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 71,
+    "customerID": "62af8d2f621fb233c179ce36",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 9,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 9,
+        "menuCode": "SA",
+        "portion": 2
+      }
+    ],
+    "amount": 45500,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 72,
+    "customerID": "62af8d2f621fb233c179ce5a",
+    "date": "2022. 05. 19.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "A",
+        "portion": 2
+      },
+      {
+        "week": 21,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 22,
+        "menuCode": "V",
+        "portion": 2
+      },
+      {
+        "week": 22,
+        "menuCode": "I",
+        "portion": 3
+      }
+    ],
+    "amount": 38000,
+    "shipping": "personal",
+    "status": "new"
+  },
+  {
+    "id": 73,
+    "customerID": "62af8d2f621fb233c179cede",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 10,
+        "menuCode": "A",
+        "portion": 2
+      },
+      {
+        "week": 11,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 12,
+        "menuCode": "A",
+        "portion": 2
+      },
+      {
+        "week": 13,
+        "menuCode": "A",
+        "portion": 3
+      }
+    ],
+    "amount": 56000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 74,
+    "customerID": "62af8d2f621fb233c179ce51",
+    "date": "2022. 01. 13.",
+    "order": [
+      {
+        "week": 3,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 4,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 5,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 27000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 75,
+    "customerID": "62af8d2f621fb233c179ce3c",
+    "date": "2022. 05. 02.",
+    "order": [
+      {
+        "week": 19,
+        "menuCode": "N",
+        "portion": 1
+      }
+    ],
+    "amount": 6000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 76,
+    "customerID": "62af8d2f621fb233c179cef0",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "B",
+        "portion": 1
+      },
+      {
+        "week": 18,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 19,
+        "menuCode": "B",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 20,
+        "menuCode": "E",
+        "portion": 2
+      }
+    ],
+    "amount": 56750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 77,
+    "customerID": "62af8d2f621fb233c179cf0e",
+    "date": "2022. 01. 13.",
+    "order": [
+      {
+        "week": 3,
+        "menuCode": "V",
+        "portion": 3
+      }
+    ],
+    "amount": 22500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 78,
+    "customerID": "62af8d2f621fb233c179ce84",
+    "date": "2021. 12. 30.",
+    "order": [
+      {
+        "week": 1,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 1,
+        "menuCode": "I",
+        "portion": 2
+      }
+    ],
+    "amount": 11500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 79,
+    "customerID": "62af8d2f621fb233c179cdf7",
+    "date": "2022. 05. 26.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 22,
+        "menuCode": "V",
+        "portion": 2
+      },
+      {
+        "week": 23,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 24,
+        "menuCode": "V",
+        "portion": 1
+      }
+    ],
+    "amount": 63500,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 80,
+    "customerID": "62af8d2f621fb233c179cd9a",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 17,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 17,
+        "menuCode": "D",
+        "portion": 3
+      },
+      {
+        "week": 17,
+        "menuCode": "Z",
+        "portion": 2
+      },
+      {
+        "week": 18,
+        "menuCode": "R2",
+        "portion": 2
+      }
+    ],
+    "amount": 61500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 81,
+    "customerID": "62af8d2f621fb233c179ced5",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 9,
+        "menuCode": "R2",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 10,
+        "menuCode": "A",
+        "portion": 2
+      }
+    ],
+    "amount": 18500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 82,
+    "customerID": "62af8d2f621fb233c179cea5",
+    "date": "2022. 03. 16.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 27000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 83,
+    "customerID": "62af8d2f621fb233c179cee4",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 18,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 18,
+        "menuCode": "B",
+        "portion": 3
+      }
+    ],
+    "amount": 59750,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 84,
+    "customerID": "62af8d2f621fb233c179ceed",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 18,
+        "menuCode": "N",
+        "portion": 1
+      },
+      {
+        "week": 18,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 8250,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 85,
+    "customerID": "62af8d2f621fb233c179cdf1",
+    "date": "2022. 05. 12.",
+    "order": [
+      {
+        "week": 20,
+        "menuCode": "S",
+        "portion": 1
+      },
+      {
+        "week": 20,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 20,
+        "menuCode": "N",
+        "portion": 1
+      }
+    ],
+    "amount": 26750,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 86,
+    "customerID": "62af8d2f621fb233c179ce9c",
+    "date": "2022. 03. 30.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "E",
+        "portion": 3
+      },
+      {
+        "week": 14,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 29250,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 87,
+    "customerID": "62af8d2f621fb233c179ce5d",
+    "date": "2022. 04. 13.",
+    "order": [
+      {
+        "week": 16,
+        "menuCode": "B",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "S",
+        "portion": 2
+      }
+    ],
+    "amount": 12500,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 88,
+    "customerID": "62af8d2f621fb233c179ceae",
+    "date": "2022. 03. 30.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 14,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 14,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 14,
+        "menuCode": "F",
+        "portion": 3
+      }
+    ],
+    "amount": 65250,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 89,
+    "customerID": "62af8d2f621fb233c179ce57",
+    "date": "2022. 04. 13.",
+    "order": [
+      {
+        "week": 16,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "N",
+        "portion": 1
+      }
+    ],
+    "amount": 8250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 90,
+    "customerID": "62af8d2f621fb233c179cf20",
+    "date": "2022. 01. 20.",
+    "order": [
+      {
+        "week": 3,
+        "menuCode": "E",
+        "portion": 3
+      }
+    ],
+    "amount": 27000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 91,
+    "customerID": "62af8d2f621fb233c179cde8",
+    "date": "2022. 05. 12.",
+    "order": [
+      {
+        "week": 20,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 20,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 21,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 22,
+        "menuCode": "Z",
+        "portion": 2
+      },
+      {
+        "week": 22,
+        "menuCode": "S",
+        "portion": 2
+      }
+    ],
+    "amount": 56500,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 92,
+    "customerID": "62af8d2f621fb233c179cf1d",
+    "date": "2022. 04. 10.",
+    "order": [
+      {
+        "week": 15,
+        "menuCode": "N",
+        "portion": 3
+      }
+    ],
+    "amount": 18000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 93,
+    "customerID": "62af8d2f621fb233c179cef3",
+    "date": "2022. 05. 26.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 22,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 22,
+        "menuCode": "N",
+        "portion": 1
+      }
+    ],
+    "amount": 26500,
+    "shipping": "personal",
+    "status": "new"
+  },
+  {
+    "id": 94,
+    "customerID": "62af8d2f621fb233c179ceae",
+    "date": "2022. 02. 04.",
+    "order": [
+      {
+        "week": 6,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 7,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 8,
+        "menuCode": "V",
+        "portion": 2
+      },
+      {
+        "week": 9,
+        "menuCode": "V",
+        "portion": 1
+      }
+    ],
+    "amount": 67500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 95,
+    "customerID": "62af8d2f621fb233c179cedb",
+    "date": "2022. 06. 06.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "F",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 24,
+        "menuCode": "I",
+        "portion": 3
+      }
+    ],
+    "amount": 55000,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 96,
+    "customerID": "62af8d2f621fb233c179ce5a",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 17,
+        "menuCode": "B",
+        "portion": 2
+      },
+      {
+        "week": 18,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "F",
+        "portion": 2
+      },
+      {
+        "week": 20,
+        "menuCode": "F",
+        "portion": 2
+      }
+    ],
+    "amount": 63750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 97,
+    "customerID": "62af8d2f621fb233c179cda9",
+    "date": "2022. 03. 08.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 11,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 11,
+        "menuCode": "F",
+        "portion": 2
+      }
+    ],
+    "amount": 46000,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 98,
+    "customerID": "62af8d2f621fb233c179cdf1",
+    "date": "2022. 05. 12.",
+    "order": [
+      {
+        "week": 20,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 21,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 23,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 90000,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 99,
+    "customerID": "62af8d2f621fb233c179cdbb",
+    "date": "2022. 03. 30.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 14,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 24750,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 100,
+    "customerID": "62af8d2f621fb233c179ce4b",
+    "date": "2022. 05. 31.",
+    "order": [
+      {
+        "week": 23,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "V",
+        "portion": 2
+      }
+    ],
+    "amount": 24250,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 101,
+    "customerID": "62af8d2f621fb233c179ce21",
+    "date": "2022. 05. 26.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "F",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 23,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "F",
+        "portion": 3
+      },
+      {
+        "week": 23,
+        "menuCode": "SA",
+        "portion": 1
+      }
+    ],
+    "amount": 78000,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 102,
+    "customerID": "62af8d2f621fb233c179ce27",
+    "date": "2022. 01. 20.",
+    "order": [
+      {
+        "week": 3,
+        "menuCode": "V",
+        "portion": 3
+      }
+    ],
+    "amount": 22500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 103,
+    "customerID": "62af8d2f621fb233c179ce12",
+    "date": "2022. 05. 02.",
+    "order": [
+      {
+        "week": 19,
+        "menuCode": "S",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "F",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "D",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "R1",
+        "portion": 2
+      }
+    ],
+    "amount": 37500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 104,
+    "customerID": "62af8d2f621fb233c179cf05",
+    "date": "2022. 05. 02.",
+    "order": [
+      {
+        "week": 19,
+        "menuCode": "R2",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "F",
+        "portion": 2
+      },
+      {
+        "week": 20,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 20,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 20,
+        "menuCode": "F",
+        "portion": 3
+      }
+    ],
+    "amount": 60750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 105,
+    "customerID": "62af8d2f621fb233c179ce81",
+    "date": "2022. 03. 30.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "Z",
+        "portion": 2
+      },
+      {
+        "week": 15,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 16,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 72000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 106,
+    "customerID": "62af8d2f621fb233c179ceab",
+    "date": "2022. 05. 02.",
+    "order": [
+      {
+        "week": 19,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 19,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 19,
+        "menuCode": "A",
+        "portion": 3
+      }
+    ],
+    "amount": 47750,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 107,
+    "customerID": "62af8d2f621fb233c179ce00",
+    "date": "2022. 06. 13.",
+    "order": [
+      {
+        "week": 25,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 25,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 25,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 43000,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 108,
+    "customerID": "62af8d2f621fb233c179ce69",
+    "date": "2022. 03. 27.",
+    "order": [
+      {
+        "week": 13,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 13,
+        "menuCode": "V",
+        "portion": 2
+      }
+    ],
+    "amount": 42750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 109,
+    "customerID": "62af8d2f621fb233c179cebd",
+    "date": "2022. 04. 10.",
+    "order": [
+      {
+        "week": 15,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 15,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 16,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 27000,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 110,
+    "customerID": "62af8d2f621fb233c179ce42",
+    "date": "2022. 03. 08.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "E",
+        "portion": 2
+      }
+    ],
+    "amount": 18000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 111,
+    "customerID": "62af8d2f621fb233c179cdc4",
+    "date": "2022. 04. 13.",
+    "order": [
+      {
+        "week": 16,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 16,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 16,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "E",
+        "portion": 3
+      },
+      {
+        "week": 16,
+        "menuCode": "R1",
+        "portion": 1
+      }
+    ],
+    "amount": 47500,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 112,
+    "customerID": "62af8d2f621fb233c179cdf7",
+    "date": "2022. 03. 30.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "S",
+        "portion": 1
+      },
+      {
+        "week": 14,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 14,
+        "menuCode": "E",
+        "portion": 1
+      }
+    ],
+    "amount": 15750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 113,
+    "customerID": "62af8d2f621fb233c179ced8",
+    "date": "2022. 06. 06.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "R1",
+        "portion": 1
+      },
+      {
+        "week": 24,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "E",
+        "portion": 3
+      },
+      {
+        "week": 24,
+        "menuCode": "D",
+        "portion": 3
+      },
+      {
+        "week": 24,
+        "menuCode": "S",
+        "portion": 1
+      }
+    ],
+    "amount": 56750,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 114,
+    "customerID": "62af8d2f621fb233c179cdfa",
+    "date": "2022. 04. 13.",
+    "order": [
+      {
+        "week": 16,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 16,
+        "menuCode": "F",
+        "portion": 2
+      },
+      {
+        "week": 16,
+        "menuCode": "SA",
+        "portion": 1
+      }
+    ],
+    "amount": 31250,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 115,
+    "customerID": "62af8d2f621fb233c179cd9a",
+    "date": "2022. 05. 26.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 22,
+        "menuCode": "F",
+        "portion": 3
+      }
+    ],
+    "amount": 33250,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 116,
+    "customerID": "62af8d2f621fb233c179ce0c",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 10,
+        "menuCode": "D",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 10,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 10,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 29500,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 117,
+    "customerID": "62af8d2f621fb233c179ce93",
+    "date": "2022. 05. 12.",
+    "order": [
+      {
+        "week": 20,
+        "menuCode": "F",
+        "portion": 2
+      }
+    ],
+    "amount": 16000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 118,
+    "customerID": "62af8d2f621fb233c179cecc",
+    "date": "2022. 01. 13.",
+    "order": [
+      {
+        "week": 3,
+        "menuCode": "D",
+        "portion": 3
+      },
+      {
+        "week": 3,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 3,
+        "menuCode": "E",
+        "portion": 1
+      },
+      {
+        "week": 3,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 3,
+        "menuCode": "I",
+        "portion": 3
+      }
+    ],
+    "amount": 59250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 119,
+    "customerID": "62af8d2f621fb233c179cecf",
+    "date": "2022. 04. 10.",
+    "order": [
+      {
+        "week": 15,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 15,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 11250,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 120,
+    "customerID": "62af8d2f621fb233c179ceae",
+    "date": "2021. 12. 30.",
+    "order": [
+      {
+        "week": 1,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 1,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 1,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 1,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 1,
+        "menuCode": "D",
+        "portion": 1
+      }
+    ],
+    "amount": 53750,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 121,
+    "customerID": "62af8d2f621fb233c179ce6f",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 9000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 122,
+    "customerID": "62af8d2f621fb233c179ceb1",
+    "date": "2022. 01. 13.",
+    "order": [
+      {
+        "week": 3,
+        "menuCode": "A",
+        "portion": 1
+      }
+    ],
+    "amount": 7000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 123,
+    "customerID": "62af8d2f621fb233c179cdb8",
+    "date": "2022. 06. 06.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 24,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 24,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 24,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 63750,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 124,
+    "customerID": "62af8d2f621fb233c179ce66",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 9,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 9,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 10,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 10,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 10,
+        "menuCode": "I",
+        "portion": 2
+      }
+    ],
+    "amount": 55500,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 125,
+    "customerID": "62af8d2f621fb233c179cea8",
+    "date": "2022. 04. 10.",
+    "order": [
+      {
+        "week": 15,
+        "menuCode": "V",
+        "portion": 2
+      },
+      {
+        "week": 15,
+        "menuCode": "S",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 16,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 17,
+        "menuCode": "V",
+        "portion": 3
+      }
+    ],
+    "amount": 69000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 126,
+    "customerID": "62af8d2f621fb233c179cec0",
+    "date": "2022. 01. 22.",
+    "order": [
+      {
+        "week": 5,
+        "menuCode": "V",
+        "portion": 2
+      },
+      {
+        "week": 6,
+        "menuCode": "V",
+        "portion": 2
+      },
+      {
+        "week": 7,
+        "menuCode": "V",
+        "portion": 1
+      },
+      {
+        "week": 8,
+        "menuCode": "V",
+        "portion": 2
+      }
+    ],
+    "amount": 52500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 127,
+    "customerID": "62af8d2f621fb233c179ce51",
+    "date": "2022. 04. 10.",
+    "order": [
+      {
+        "week": 15,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 15,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 15,
+        "menuCode": "E",
+        "portion": 2
+      },
+      {
+        "week": 15,
+        "menuCode": "SA",
+        "portion": 1
+      }
+    ],
+    "amount": 38500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 128,
+    "customerID": "62af8d2f621fb233c179ce96",
+    "date": "2022. 04. 13.",
+    "order": [
+      {
+        "week": 16,
+        "menuCode": "B",
+        "portion": 3
+      },
+      {
+        "week": 16,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "D",
+        "portion": 3
+      }
+    ],
+    "amount": 35250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 129,
+    "customerID": "62af8d2f621fb233c179cedb",
+    "date": "2022. 01. 22.",
+    "order": [
+      {
+        "week": 5,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 6,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 7,
+        "menuCode": "A",
+        "portion": 2
+      },
+      {
+        "week": 8,
+        "menuCode": "A",
+        "portion": 3
+      }
+    ],
+    "amount": 77000,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 130,
+    "customerID": "62af8d2f621fb233c179ce0f",
+    "date": "2022. 05. 19.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "Z",
+        "portion": 2
+      },
+      {
+        "week": 21,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 21,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 38750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 131,
+    "customerID": "62af8d2f621fb233c179cdfa",
+    "date": "2022. 03. 30.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 14,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 14,
+        "menuCode": "N",
+        "portion": 2
+      }
+    ],
+    "amount": 42000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 132,
+    "customerID": "62af8d2f621fb233c179ce12",
+    "date": "2022. 04. 13.",
+    "order": [
+      {
+        "week": 16,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 16,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "SA",
+        "portion": 2
+      }
+    ],
+    "amount": 30000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 133,
+    "customerID": "62af8d2f621fb233c179cede",
+    "date": "2022. 01. 13.",
+    "order": [
+      {
+        "week": 3,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 3,
+        "menuCode": "V",
+        "portion": 2
+      }
+    ],
+    "amount": 33500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 134,
+    "customerID": "62af8d2f621fb233c179ceba",
+    "date": "2022. 05. 26.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "Z",
+        "portion": 2
+      }
+    ],
+    "amount": 45750,
+    "shipping": "personal",
+    "status": "new"
+  },
+  {
+    "id": 135,
+    "customerID": "62af8d2f621fb233c179cdd9",
+    "date": "2022. 01. 04.",
+    "order": [
+      {
+        "week": 2,
+        "menuCode": "N",
+        "portion": 2
+      }
+    ],
+    "amount": 12000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 136,
+    "customerID": "62af8d2f621fb233c179ce72",
+    "date": "2022. 01. 20.",
+    "order": [
+      {
+        "week": 3,
+        "menuCode": "S",
+        "portion": 1
+      },
+      {
+        "week": 3,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 3,
+        "menuCode": "N",
+        "portion": 1
+      }
+    ],
+    "amount": 12750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 137,
+    "customerID": "62af8d2f621fb233c179ceb7",
+    "date": "2022. 01. 13.",
+    "order": [
+      {
+        "week": 3,
+        "menuCode": "Z",
+        "portion": 2
+      }
+    ],
+    "amount": 18000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 138,
+    "customerID": "62af8d2f621fb233c179cf17",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 10,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 10,
+        "menuCode": "S",
+        "portion": 3
+      }
+    ],
+    "amount": 18750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 139,
+    "customerID": "62af8d2f621fb233c179ce57",
+    "date": "2022. 05. 12.",
+    "order": [
+      {
+        "week": 20,
+        "menuCode": "V",
+        "portion": 2
+      },
+      {
+        "week": 20,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 20,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 20,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 20,
+        "menuCode": "S",
+        "portion": 2
+      }
+    ],
+    "amount": 50750,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 140,
+    "customerID": "62af8d2f621fb233c179ce60",
+    "date": "2022. 02. 16.",
+    "order": [
+      {
+        "week": 8,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 9000,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 141,
+    "customerID": "62af8d2f621fb233c179cdcd",
+    "date": "2022. 03. 16.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 12,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 12,
+        "menuCode": "D",
+        "portion": 2
+      }
+    ],
+    "amount": 15250,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 142,
+    "customerID": "62af8d2f621fb233c179cf1d",
+    "date": "2022. 03. 27.",
+    "order": [
+      {
+        "week": 13,
+        "menuCode": "V",
+        "portion": 2
+      },
+      {
+        "week": 13,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 13,
+        "menuCode": "S",
+        "portion": 1
+      }
+    ],
+    "amount": 19500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 143,
+    "customerID": "62af8d2f621fb233c179cf05",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 18,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 18,
+        "menuCode": "B",
+        "portion": 3
+      }
+    ],
+    "amount": 33250,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 144,
+    "customerID": "62af8d2f621fb233c179cf1d",
+    "date": "2022. 01. 13.",
+    "order": [
+      {
+        "week": 3,
+        "menuCode": "Z",
+        "portion": 2
+      }
+    ],
+    "amount": 18000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 145,
+    "customerID": "62af8d2f621fb233c179ce12",
+    "date": "2022. 05. 12.",
+    "order": [
+      {
+        "week": 20,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 20,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 23250,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 146,
+    "customerID": "62af8d2f621fb233c179cda3",
+    "date": "2022. 05. 19.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 21,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 36250,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 147,
+    "customerID": "62af8d2f621fb233c179cdac",
+    "date": "2022. 06. 13.",
+    "order": [
+      {
+        "week": 25,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 25,
+        "menuCode": "N",
+        "portion": 1
+      },
+      {
+        "week": 25,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 25,
+        "menuCode": "I",
+        "portion": 3
+      }
+    ],
+    "amount": 25500,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 148,
+    "customerID": "62af8d2f621fb233c179ced2",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "V",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "D",
+        "portion": 2
+      }
+    ],
+    "amount": 21000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 149,
+    "customerID": "62af8d2f621fb233c179cd9a",
+    "date": "2022. 05. 12.",
+    "order": [
+      {
+        "week": 20,
+        "menuCode": "F",
+        "portion": 2
+      }
+    ],
+    "amount": 16000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 150,
+    "customerID": "62af8d2f621fb233c179cf14",
+    "date": "2022. 03. 16.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "F",
+        "portion": 1
+      },
+      {
+        "week": 12,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 12,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 19500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 151,
+    "customerID": "62af8d2f621fb233c179ce87",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 18,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 18,
+        "menuCode": "I",
+        "portion": 2
+      }
+    ],
+    "amount": 31500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 152,
+    "customerID": "62af8d2f621fb233c179ce0f",
+    "date": "2022. 05. 19.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "F",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "F",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "F",
+        "portion": 1
+      }
+    ],
+    "amount": 40000,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 153,
+    "customerID": "62af8d2f621fb233c179cdfd",
+    "date": "2022. 06. 06.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "E",
+        "portion": 3
+      },
+      {
+        "week": 24,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "S",
+        "portion": 3
+      }
+    ],
+    "amount": 38250,
+    "shipping": "personal",
+    "status": "new"
+  },
+  {
+    "id": 154,
+    "customerID": "62af8d2f621fb233c179ceff",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 18,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 18,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 18,
+        "menuCode": "A",
+        "portion": 3
+      }
+    ],
+    "amount": 36250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 155,
+    "customerID": "62af8d2f621fb233c179ceae",
+    "date": "2022. 05. 19.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 21,
+        "menuCode": "I",
+        "portion": 2
+      }
+    ],
+    "amount": 31500,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 156,
+    "customerID": "62af8d2f621fb233c179ce3c",
+    "date": "2022. 06. 06.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "F",
+        "portion": 3
+      }
+    ],
+    "amount": 24000,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 157,
+    "customerID": "62af8d2f621fb233c179ce81",
+    "date": "2022. 03. 30.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "V",
+        "portion": 1
+      },
+      {
+        "week": 24,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 25,
+        "menuCode": "D",
+        "portion": 1
+      },
+      {
+        "week": 25,
+        "menuCode": "V",
+        "portion": 2
+      }
+    ],
+    "amount": 27750,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 158,
+    "customerID": "62af8d2f621fb233c179ce18",
+    "date": "2022. 03. 30.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 14,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 31500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 159,
+    "customerID": "62af8d2f621fb233c179ceb4",
+    "date": "2022. 01. 22.",
+    "order": [
+      {
+        "week": 5,
+        "menuCode": "5",
+        "portion": 1
+      },
+      {
+        "week": 5,
+        "menuCode": "I",
+        "portion": 3
+      }
+    ],
+    "amount": 6750,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 160,
+    "customerID": "62af8d2f621fb233c179ce1b",
+    "date": "2022. 05. 19.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "E",
+        "portion": 2
+      },
+      {
+        "week": 22,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 23,
+        "menuCode": "E",
+        "portion": 3
+      },
+      {
+        "week": 23,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 24,
+        "menuCode": "E",
+        "portion": 1
+      }
+    ],
+    "amount": 78750,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 161,
+    "customerID": "62af8d2f621fb233c179ce69",
+    "date": "2022. 03. 27.",
+    "order": [
+      {
+        "week": 13,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 13,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 14,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 14,
+        "menuCode": "V",
+        "portion": 3
+      },
+      {
+        "week": 15,
+        "menuCode": "V",
+        "portion": 1
+      }
+    ],
+    "amount": 63750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 162,
+    "customerID": "62af8d2f621fb233c179cdc1",
+    "date": "2022. 05. 31.",
+    "order": [
+      {
+        "week": 23,
+        "menuCode": "E",
+        "portion": 1
+      }
+    ],
+    "amount": 9000,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 163,
+    "customerID": "62af8d2f621fb233c179ce4e",
+    "date": "2022. 04. 13.",
+    "order": [
+      {
+        "week": 16,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 16,
+        "menuCode": "B",
+        "portion": 1
+      }
+    ],
+    "amount": 12500,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 164,
+    "customerID": "62af8d2f621fb233c179ce66",
+    "date": "2022. 06. 06.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 24,
+        "menuCode": "I",
+        "portion": 2
+      }
+    ],
+    "amount": 25500,
+    "shipping": "personal",
+    "status": "new"
+  },
+  {
+    "id": 165,
+    "customerID": "62af8d2f621fb233c179cdd6",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "E",
+        "portion": 3
+      }
+    ],
+    "amount": 27000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 166,
+    "customerID": "62af8d2f621fb233c179cecf",
+    "date": "2021. 12. 30.",
+    "order": [
+      {
+        "week": 1,
+        "menuCode": "A",
+        "portion": 2
+      },
+      {
+        "week": 1,
+        "menuCode": "SA",
+        "portion": 2
+      }
+    ],
+    "amount": 32500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 167,
+    "customerID": "62af8d2f621fb233c179ce03",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "E",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 20250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 168,
+    "customerID": "62af8d2f621fb233c179ce18",
+    "date": "2022. 02. 09.",
+    "order": [
+      {
+        "week": 7,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 7,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 7,
+        "menuCode": "D",
+        "portion": 1
+      }
+    ],
+    "amount": 21750,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 169,
+    "customerID": "62af8d2f621fb233c179ceab",
+    "date": "2022. 05. 19.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 21,
+        "menuCode": "F",
+        "portion": 2
+      },
+      {
+        "week": 22,
+        "menuCode": "E",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 23,
+        "menuCode": "E",
+        "portion": 1
+      }
+    ],
+    "amount": 61000,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 170,
+    "customerID": "62af8d2f621fb233c179cefc",
+    "date": "2022. 04. 10.",
+    "order": [
+      {
+        "week": 15,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 15,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 16,
+        "menuCode": "N",
+        "portion": 2
+      }
+    ],
+    "amount": 28500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 171,
+    "customerID": "62af8d2f621fb233c179ce93",
+    "date": "2022. 05. 02.",
+    "order": [
+      {
+        "week": 19,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 15750,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 172,
+    "customerID": "62af8d2f621fb233c179ce1b",
+    "date": "2022. 06. 06.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "A",
+        "portion": 2
+      }
+    ],
+    "amount": 14000,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 173,
+    "customerID": "62af8d2f621fb233c179cd8e",
+    "date": "2022. 02. 09.",
+    "order": [
+      {
+        "week": 7,
+        "menuCode": "N",
+        "portion": 2
+      }
+    ],
+    "amount": 12000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 174,
+    "customerID": "62af8d2f621fb233c179ce21",
+    "date": "2022. 06. 06.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 24,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 24,
+        "menuCode": "B",
+        "portion": 1
+      }
+    ],
+    "amount": 30000,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 175,
+    "customerID": "62af8d2f621fb233c179cf08",
+    "date": "2022. 05. 26.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "A",
+        "portion": 1
+      }
+    ],
+    "amount": 13750,
+    "shipping": "personal",
+    "status": "new"
+  },
+  {
+    "id": 176,
+    "customerID": "62af8d2f621fb233c179cec0",
+    "date": "2022. 05. 02.",
+    "order": [
+      {
+        "week": 19,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "S",
+        "portion": 3
+      }
+    ],
+    "amount": 15750,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 177,
+    "customerID": "62af8d2f621fb233c179cdb8",
+    "date": "2022. 02. 16.",
+    "order": [
+      {
+        "week": 8,
+        "menuCode": "V",
+        "portion": 3
+      }
+    ],
+    "amount": 22500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 178,
+    "customerID": "62af8d2f621fb233c179cdf7",
+    "date": "2022. 04. 13.",
+    "order": [
+      {
+        "week": 16,
+        "menuCode": "E",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "S",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "I",
+        "portion": 3
+      }
+    ],
+    "amount": 18000,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 179,
+    "customerID": "62af8d2f621fb233c179ce4e",
+    "date": "2022. 02. 04.",
+    "order": [
+      {
+        "week": 6,
+        "menuCode": "S",
+        "portion": 1
+      },
+      {
+        "week": 6,
+        "menuCode": "V",
+        "portion": 2
+      },
+      {
+        "week": 6,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 6,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 6,
+        "menuCode": "D",
+        "portion": 3
+      }
+    ],
+    "amount": 42250,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 180,
+    "customerID": "62af8d2f621fb233c179cd9a",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 9,
+        "menuCode": "V",
+        "portion": 1
+      }
+    ],
+    "amount": 7500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 181,
+    "customerID": "62af8d2f621fb233c179cdd0",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 17,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "V",
+        "portion": 1
+      },
+      {
+        "week": 17,
+        "menuCode": "D",
+        "portion": 2
+      }
+    ],
+    "amount": 38750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 182,
+    "customerID": "62af8d2f621fb233c179cf1d",
+    "date": "2022. 05. 19.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "N",
+        "portion": 1
+      },
+      {
+        "week": 22,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 23,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "N",
+        "portion": 2
+      }
+    ],
+    "amount": 42000,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 183,
+    "customerID": "62af8d2f621fb233c179cec6",
+    "date": "2022. 05. 19.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "Z",
+        "portion": 2
+      },
+      {
+        "week": 21,
+        "menuCode": "SA",
+        "portion": 1
+      }
+    ],
+    "amount": 27250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 184,
+    "customerID": "62af8d2f621fb233c179cdcd",
+    "date": "2022. 02. 16.",
+    "order": [
+      {
+        "week": 8,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 8,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 8,
+        "menuCode": "F",
+        "portion": 1
+      }
+    ],
+    "amount": 42500,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 185,
+    "customerID": "62af8d2f621fb233c179cda0",
+    "date": "2022. 01. 22.",
+    "order": [
+      {
+        "week": 5,
+        "menuCode": "F",
+        "portion": 1
+      }
+    ],
+    "amount": 8000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 186,
+    "customerID": "62af8d2f621fb233c179cdf7",
+    "date": "2022. 01. 13.",
+    "order": [
+      {
+        "week": 3,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 3,
+        "menuCode": "F",
+        "portion": 3
+      }
+    ],
+    "amount": 28500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 187,
+    "customerID": "62af8d2f621fb233c179cde2",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "E",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 17,
+        "menuCode": "SA",
+        "portion": 3
+      }
+    ],
+    "amount": 48000,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 188,
+    "customerID": "62af8d2f621fb233c179cdd6",
+    "date": "2022. 05. 26.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "B",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "B",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "B",
+        "portion": 3
+      },
+      {
+        "week": 25,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 25,
+        "menuCode": "B",
+        "portion": 1
+      }
+    ],
+    "amount": 74500,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 189,
+    "customerID": "62af8d2f621fb233c179ce87",
+    "date": "2022. 05. 26.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "E",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "SA",
+        "portion": 1
+      }
+    ],
+    "amount": 36250,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 190,
+    "customerID": "62af8d2f621fb233c179cf1a",
+    "date": "2022. 02. 04.",
+    "order": [
+      {
+        "week": 6,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 6,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 11250,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 191,
+    "customerID": "62af8d2f621fb233c179ce21",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 18,
+        "menuCode": "V",
+        "portion": 1
+      }
+    ],
+    "amount": 7500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 192,
+    "customerID": "62af8d2f621fb233c179ceb1",
+    "date": "2022. 01. 22.",
+    "order": [
+      {
+        "week": 5,
+        "menuCode": "V",
+        "portion": 2
+      },
+      {
+        "week": 5,
+        "menuCode": "SA",
+        "portion": 2
+      }
+    ],
+    "amount": 33500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 193,
+    "customerID": "62af8d2f621fb233c179ce8d",
+    "date": "2022. 02. 09.",
+    "order": [
+      {
+        "week": 7,
+        "menuCode": "A",
+        "portion": 1
+      }
+    ],
+    "amount": 7000,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 194,
+    "customerID": "62af8d2f621fb233c179ce90",
+    "date": "2022. 05. 02.",
+    "order": [
+      {
+        "week": 19,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "D",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "E",
+        "portion": 2
+      }
+    ],
+    "amount": 51000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 195,
+    "customerID": "62af8d2f621fb233c179ce4e",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 10,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 10,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 10,
+        "menuCode": "SA",
+        "portion": 1
+      }
+    ],
+    "amount": 37750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 196,
+    "customerID": "62af8d2f621fb233c179cee7",
+    "date": "2022. 05. 19.",
+    "order": [
+      {
+        "week": 21,
+        "menuCode": "V",
+        "portion": 1
+      },
+      {
+        "week": 21,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 21,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 21,
+        "menuCode": "E",
+        "portion": 1
+      },
+      {
+        "week": 21,
+        "menuCode": "D",
+        "portion": 3
+      }
+    ],
+    "amount": 57750,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 197,
+    "customerID": "62af8d2f621fb233c179cf20",
+    "date": "2022. 02. 04.",
+    "order": [
+      {
+        "week": 6,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 6,
+        "menuCode": "S",
+        "portion": 1
+      },
+      {
+        "week": 6,
+        "menuCode": "B",
+        "portion": 1
+      }
+    ],
+    "amount": 12500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 198,
+    "customerID": "62af8d2f621fb233c179ce78",
+    "date": "2022. 06. 06.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "S",
+        "portion": 1
+      },
+      {
+        "week": 24,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 24,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 32000,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 199,
+    "customerID": "62af8d2f621fb233c179ceb7",
+    "date": "2022. 03. 08.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 11,
+        "menuCode": "SA",
+        "portion": 2
+      }
+    ],
+    "amount": 39500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 200,
+    "customerID": "62af8d2f621fb233c179cf08",
+    "date": "2022. 05. 26.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 22,
+        "menuCode": "E",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 23,
+        "menuCode": "E",
+        "portion": 3
+      },
+      {
+        "week": 24,
+        "menuCode": "E",
+        "portion": 2
+      }
+    ],
+    "amount": 67500,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 201,
+    "customerID": "62af8d2f621fb233c179cf14",
+    "date": "2022. 04. 10.",
+    "order": [
+      {
+        "week": 15,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 15,
+        "menuCode": "B",
+        "portion": 2
+      },
+      {
+        "week": 16,
+        "menuCode": "E",
+        "portion": 3
+      },
+      {
+        "week": 16,
+        "menuCode": "SA",
+        "portion": 1
+      }
+    ],
+    "amount": 9240,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 202,
+    "customerID": "62af8d2f621fb233c179ce27",
+    "date": "2022. 03. 30.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 14,
+        "menuCode": "B",
+        "portion": 3
+      },
+      {
+        "week": 15,
+        "menuCode": "E",
+        "portion": 3
+      },
+      {
+        "week": 16,
+        "menuCode": "A",
+        "portion": 2
+      }
+    ],
+    "amount": 13900,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 203,
+    "customerID": "62af8d2f621fb233c179cebd",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "A",
+        "portion": 2
+      },
+      {
+        "week": 18,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 20,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 20,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 51250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 204,
+    "customerID": "62af8d2f621fb233c179cee4",
+    "date": "2022. 05. 31.",
+    "order": [
+      {
+        "week": 23,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 27000,
+    "shipping": "personal",
+    "status": "new"
+  },
+  {
+    "id": 205,
+    "customerID": "62af8d2f621fb233c179cebd",
+    "date": "2022. 01. 22.",
+    "order": [
+      {
+        "week": 5,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 5,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 5,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 5,
+        "menuCode": "F",
+        "portion": 2
+      }
+    ],
+    "amount": 38000,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 206,
+    "customerID": "62af8d2f621fb233c179ce2d",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 9,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 10,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 11,
+        "menuCode": "A",
+        "portion": 2
+      },
+      {
+        "week": 12,
+        "menuCode": "A",
+        "portion": 1
+      }
+    ],
+    "amount": 35000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 207,
+    "customerID": "62af8d2f621fb233c179cdaf",
+    "date": "2021. 12. 30.",
+    "order": [
+      {
+        "week": 1,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 1,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 45500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 208,
+    "customerID": "62af8d2f621fb233c179cde5",
+    "date": "2022. 06. 13.",
+    "order": [
+      {
+        "week": 25,
+        "menuCode": "F",
+        "portion": 2
+      },
+      {
+        "week": 25,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 18250,
+    "shipping": "personal",
+    "status": "new"
+  },
+  {
+    "id": 209,
+    "customerID": "62af8d2f621fb233c179cee1",
+    "date": "2022. 02. 09.",
+    "order": [
+      {
+        "week": 7,
+        "menuCode": "F",
+        "portion": 2
+      }
+    ],
+    "amount": 16000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 210,
+    "customerID": "62af8d2f621fb233c179cdaf",
+    "date": "2022. 03. 30.",
+    "order": [
+      {
+        "week": 14,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 15,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 16,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 17,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 20,
+        "menuCode": "SA",
+        "portion": 1
+      }
+    ],
+    "amount": 57250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 211,
+    "customerID": "62af8d2f621fb233c179ce00",
+    "date": "2022. 05. 31.",
+    "order": [
+      {
+        "week": 23,
+        "menuCode": "D",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 23,
+        "menuCode": "A",
+        "portion": 3
+      }
+    ],
+    "amount": 30750,
+    "shipping": "shipping",
+    "status": "new"
+  },
+  {
+    "id": 212,
+    "customerID": "62af8d2f621fb233c179ce63",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "N",
+        "portion": 1
+      },
+      {
+        "week": 17,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 8250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 213,
+    "customerID": "62af8d2f621fb233c179ce21",
+    "date": "2022. 01. 22.",
+    "order": [
+      {
+        "week": 5,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 5,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 5,
+        "menuCode": "E",
+        "portion": 2
+      }
+    ],
+    "amount": 52500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 214,
+    "customerID": "62af8d2f621fb233c179cecc",
+    "date": "2022. 01. 20.",
+    "order": [
+      {
+        "week": 3,
+        "menuCode": "V",
+        "portion": 1
+      },
+      {
+        "week": 3,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 3,
+        "menuCode": "Z",
+        "portion": 2
+      },
+      {
+        "week": 3,
+        "menuCode": "I",
+        "portion": 1
+      }
+    ],
+    "amount": 46250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 215,
+    "customerID": "62af8d2f621fb233c179ce90",
+    "date": "2022. 03. 27.",
+    "order": [
+      {
+        "week": 13,
+        "menuCode": "F",
+        "portion": 2
+      },
+      {
+        "week": 14,
+        "menuCode": "F",
+        "portion": 3
+      },
+      {
+        "week": 15,
+        "menuCode": "F",
+        "portion": 1
+      },
+      {
+        "week": 16,
+        "menuCode": "F",
+        "portion": 1
+      }
+    ],
+    "amount": 56000,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 216,
+    "customerID": "62af8d2f621fb233c179ce12",
+    "date": "2022. 01. 04.",
+    "order": [
+      {
+        "week": 2,
+        "menuCode": "N",
+        "portion": 1
+      }
+    ],
+    "amount": 6000,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 217,
+    "customerID": "62af8d2f621fb233c179ce03",
+    "date": "2022. 02. 16.",
+    "order": [
+      {
+        "week": 8,
+        "menuCode": "N",
+        "portion": 1
+      },
+      {
+        "week": 8,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 9,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 9,
+        "menuCode": "N",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "N",
+        "portion": 1
+      }
+    ],
+    "amount": 34500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 218,
+    "customerID": "62af8d2f621fb233c179ce21",
+    "date": "2022. 05. 12.",
+    "order": [
+      {
+        "week": 20,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 20,
+        "menuCode": "I",
+        "portion": 2
+      }
+    ],
+    "amount": 13500,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 219,
+    "customerID": "62af8d2f621fb233c179cda9",
+    "date": "2022. 02. 04.",
+    "order": [
+      {
+        "week": 6,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 6,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 7,
+        "menuCode": "Z",
+        "portion": 1
+      }
+    ],
+    "amount": 22500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 220,
+    "customerID": "62af8d2f621fb233c179ce8a",
+    "date": "2022. 02. 04.",
+    "order": [
+      {
+        "week": 6,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 6,
+        "menuCode": "D",
+        "portion": 1
+      },
+      {
+        "week": 7,
+        "menuCode": "A",
+        "portion": 2
+      }
+    ],
+    "amount": 24000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 221,
+    "customerID": "62af8d2f621fb233c179ce5d",
+    "date": "2022. 01. 22.",
+    "order": [
+      {
+        "week": 5,
+        "menuCode": "Z",
+        "portion": 1
+      },
+      {
+        "week": 6,
+        "menuCode": "Z",
+        "portion": 3
+      }
+    ],
+    "amount": 36000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 222,
+    "customerID": "62af8d2f621fb233c179ceb7",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 9,
+        "menuCode": "A",
+        "portion": 2
+      },
+      {
+        "week": 9,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "A",
+        "portion": 3
+      }
+    ],
+    "amount": 48500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 223,
+    "customerID": "62af8d2f621fb233c179cdb5",
+    "date": "2022. 01. 04.",
+    "order": [
+      {
+        "week": 2,
+        "menuCode": "F",
+        "portion": 3
+      },
+      {
+        "week": 2,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 2,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 2,
+        "menuCode": "S",
+        "portion": 1
+      }
+    ],
+    "amount": 42250,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 224,
+    "customerID": "62af8d2f621fb233c179ce15",
+    "date": "2022. 05. 02.",
+    "order": [
+      {
+        "week": 19,
+        "menuCode": "S",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 19,
+        "menuCode": "V",
+        "portion": 1
+      },
+      {
+        "week": 19,
+        "menuCode": "S",
+        "portion": 3
+      }
+    ],
+    "amount": 50250,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 225,
+    "customerID": "62af8d2f621fb233c179cdf4",
+    "date": "2022. 01. 04.",
+    "order": [
+      {
+        "week": 2,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 2,
+        "menuCode": "B",
+        "portion": 1
+      },
+      {
+        "week": 3,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 3,
+        "menuCode": "B",
+        "portion": 3
+      }
+    ],
+    "amount": 43250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 226,
+    "customerID": "62af8d2f621fb233c179cd8e",
+    "date": "2022. 04. 13.",
+    "order": [
+      {
+        "week": 16,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 2,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 2,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 2,
+        "menuCode": "A",
+        "portion": 3
+      },
+      {
+        "week": 3,
+        "menuCode": "N",
+        "portion": 2
+      }
+    ],
+    "amount": 59750,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 227,
+    "customerID": "62af8d2f621fb233c179ce42",
+    "date": "2022. 01. 04.",
+    "order": [
+      {
+        "week": 2,
+        "menuCode": "N",
+        "portion": 2
+      },
+      {
+        "week": 3,
+        "menuCode": "N",
+        "portion": 1
+      },
+      {
+        "week": 4,
+        "menuCode": "N",
+        "portion": 2
+      }
+    ],
+    "amount": 30000,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 228,
+    "customerID": "62af8d2f621fb233c179ce57",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 9,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 8,
+        "menuCode": "F",
+        "portion": 1
+      },
+      {
+        "week": 7,
+        "menuCode": "E",
+        "portion": 2
+      },
+      {
+        "week": 6,
+        "menuCode": "A",
+        "portion": 1
+      },
+      {
+        "week": 6,
+        "menuCode": "SA",
+        "portion": 2
+      }
+    ],
+    "amount": 78500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 229,
+    "customerID": "62af8d2f621fb233c179cdbe",
+    "date": "2022. 06. 13.",
+    "order": [
+      {
+        "week": 25,
+        "menuCode": "E",
+        "portion": 1
+      },
+      {
+        "week": 25,
+        "menuCode": "S",
+        "portion": 1
+      }
+    ],
+    "amount": 11250,
+    "shipping": "personal",
+    "status": "new"
+  },
+  {
+    "id": 230,
+    "customerID": "62af8d2f621fb233c179ce9f",
+    "date": "2022. 04. 25.",
+    "order": [
+      {
+        "week": 17,
+        "menuCode": "D",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 19,
+        "menuCode": "E",
+        "portion": 2
+      },
+      {
+        "week": 19,
+        "menuCode": "S",
+        "portion": 3
+      }
+    ],
+    "amount": 40500,
+    "shipping": "free",
+    "status": "paid"
+  },
+  {
+    "id": 231,
+    "customerID": "62af8d2f621fb233c179cf0e",
+    "date": "2022. 03. 16.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 12,
+        "menuCode": "V",
+        "portion": 3
+      }
+    ],
+    "amount": 27000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 232,
+    "customerID": "62af8d2f621fb233c179ce7e",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 10,
+        "menuCode": "V",
+        "portion": 1
+      },
+      {
+        "week": 10,
+        "menuCode": "SA",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 10,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 10,
+        "menuCode": "D",
+        "portion": 3
+      }
+    ],
+    "amount": 53250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 233,
+    "customerID": "62af8d2f621fb233c179ce90",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 10,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 10,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "R1",
+        "portion": 1
+      },
+      {
+        "week": 10,
+        "menuCode": "S",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "V",
+        "portion": 1
+      }
+    ],
+    "amount": 39500,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 234,
+    "customerID": "62af8d2f621fb233c179cf17",
+    "date": "2022. 03. 16.",
+    "order": [
+      {
+        "week": 12,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 12,
+        "menuCode": "S",
+        "portion": 2
+      },
+      {
+        "week": 12,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 12,
+        "menuCode": "I",
+        "portion": 3
+      },
+      {
+        "week": 12,
+        "menuCode": "D",
+        "portion": 2
+      }
+    ],
+    "amount": 62750,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 235,
+    "customerID": "62af8d2f621fb233c179ce99",
+    "date": "2022. 04. 10.",
+    "order": [
+      {
+        "week": 15,
+        "menuCode": "E",
+        "portion": 3
+      }
+    ],
+    "amount": 27000,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 236,
+    "customerID": "62af8d2f621fb233c179ceb1",
+    "date": "2022. 05. 12.",
+    "order": [
+      {
+        "week": 20,
+        "menuCode": "F",
+        "portion": 1
+      },
+      {
+        "week": 20,
+        "menuCode": "SA",
+        "portion": 1
+      }
+    ],
+    "amount": 17250,
+    "shipping": "personal",
+    "status": "paid"
+  },
+  {
+    "id": 237,
+    "customerID": "62af8d2f621fb233c179cda6",
+    "date": "2022. 06. 06.",
+    "order": [
+      {
+        "week": 24,
+        "menuCode": "SA",
+        "portion": 1
+      },
+      {
+        "week": 24,
+        "menuCode": "D",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "I",
+        "portion": 2
+      },
+      {
+        "week": 24,
+        "menuCode": "V",
+        "portion": 2
+      }
+    ],
+    "amount": 34750,
+    "shipping": "personal",
+    "status": "new"
+  },
+  {
+    "id": 238,
+    "customerID": "62af8d2f621fb233c179cdbe",
+    "date": "2022. 03. 03.",
+    "order": [
+      {
+        "week": 10,
+        "menuCode": "SA",
+        "portion": 2
+      },
+      {
+        "week": 10,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 10,
+        "menuCode": "Z",
+        "portion": 3
+      },
+      {
+        "week": 10,
+        "menuCode": "D",
+        "portion": 1
+      },
+      {
+        "week": 10,
+        "menuCode": "S",
+        "portion": 2
+      }
+    ],
+    "amount": 55250,
+    "shipping": "shipping",
+    "status": "paid"
+  },
+  {
+    "id": 239,
+    "customerID": "62af8d2f621fb233c179cda6",
+    "date": "2022. 05. 26.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "R1",
+        "portion": 2
+      },
+      {
+        "week": 22,
+        "menuCode": "A",
+        "portion": 2
+      },
+      {
+        "week": 23,
+        "menuCode": "R1",
+        "portion": 2
+      },
+      {
+        "week": 23,
+        "menuCode": "A",
+        "portion": 2
+      }
+    ],
+    "amount": 28000,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 240,
+    "customerID": "62af8d2f621fb233c179ce03",
+    "date": "2022. 05. 31.",
+    "order": [
+      {
+        "week": 23,
+        "menuCode": "R1",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "E",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "I",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "SA",
+        "portion": 1
+      }
+    ],
+    "amount": 20500,
+    "shipping": "free",
+    "status": "new"
+  },
+  {
+    "id": 241,
+    "customerID": "62af8d2f621fb233c179cdca",
+    "date": "2022. 05. 26.",
+    "order": [
+      {
+        "week": 22,
+        "menuCode": "V",
+        "portion": 1
+      },
+      {
+        "week": 23,
+        "menuCode": "V",
+        "portion": 1
+      }
+    ],
+    "amount": 15000,
+    "shipping": "personal",
+    "status": "new"
+  }
+]

@@ -22,6 +22,7 @@ export class FastfoodCategoryEditComponent implements OnInit {
 
   newCategory: CategoryFastfood = new CategoryFastfood();
   category!: CategoryFastfood;
+  id: string = this.activatedRoute.snapshot.params['id']
 
   editPageText = this.config.editPageText
   editPageItems = this.config.editPageItems
@@ -144,7 +145,7 @@ export class FastfoodCategoryEditComponent implements OnInit {
     }
   }
 
-  onDelete(id: number): void {
+  onDelete(id: string): void {
     const confirmDialog = this.dialog.open(DeleteDialogComponent, {
       data: {
         title: this.deleteDialog[0].title,

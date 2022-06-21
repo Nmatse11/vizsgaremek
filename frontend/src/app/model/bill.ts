@@ -1,9 +1,9 @@
 export class Bill {
   [key: string]: any;
-  id: number = 0;
+  _id: string = '';
   orderDate: string = new Date().toLocaleDateString('hu');
   billDate: string = new Date().toLocaleDateString('hu');
-  orderID: number = 1;
+  orderID: string = '';
   type: string = 'menu';
   amount: number = 1000;
   status: string = 'new';

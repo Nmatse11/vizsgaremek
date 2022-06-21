@@ -2,9 +2,9 @@ import { OrderMenuItem } from "./order-menu-item";
 
 export class OrderMenu {
   [key: string]: any;
-  id: number = 0;
+  _id: string = '';
   date: string = new Date().toLocaleDateString('hu');
-  customerID: number = 1;
+  customerID: string = '';
   order: OrderMenuItem[] = [new OrderMenuItem()];
   amount: number = 1000;
   shipping: string = 'free'

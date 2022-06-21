@@ -48,7 +48,7 @@
     </h4>
   </div>
 
-  <div *ngIf="!randomMenu" class="container d-flex flex-row justify-content-center pb-5 h-100">
+  <div *ngIf="!randomMenu || cancel === true" class="container d-flex flex-row justify-content-center pb-5 h-100">
     <div *ngFor="let day of dayIndex" class="menu_card px-0">
       <mat-card class="h-10 menu_thead border rounded-0">
         <mat-card-content class="text-center">
@@ -79,7 +79,7 @@
     </div>
   </div>
 
-  <div *ngIf="randomMenu" class="container d-flex flex-row justify-content-center pb-5 h-100">
+  <div *ngIf="randomMenu && cancel === false" class="container d-flex flex-row justify-content-center pb-5 h-100">
     <div *ngFor="let day of dayIndex" class="menu_card px-0">
       <mat-card class="h-10 menu_thead border rounded-0">
         <mat-card-content class="text-center">
@@ -116,10 +116,14 @@
         {{ generationButtonText }} ( {{ selectedWeek }}. {{ weekText }} -
         {{ menuSelectArrayName[menuSelectArrayKey.indexOf(selectedMenuKey)] }} )
       </button>
-      <button *ngIf="randomMenu" mat-raised-button color="save" type="button" class="mt-5"
-        [matTooltip]='menuSaveButtonText' TooltipTouchGestures="auto" matTooltipPosition="below"
+      <button *ngIf="randomMenu" mat-raised-button color="save" type="button" class="mt-5 btn-block"
+        [matTooltip]='menuSaveButtonText' TooltipTouchGestures="auto" matTooltipPosition="after"
         matTooltipClass="mat-save" (click)="saveMenu(selectedWeek, selectedMenuKey)">
-        {{ editPageText[1].name }}
+        <h3 class="my-2">{{ editPageText[1].name }}</h3>
+      </button>
+      <button *ngIf="randomMenu" mat-raised-button color="cancel" type="button" class="mt-5"
+        (click)="cancelRandomMenu()">
+        {{ editPageText[3].name }}
       </button>
     </div>
   </div>

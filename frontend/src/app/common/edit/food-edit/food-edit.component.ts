@@ -19,6 +19,7 @@ export class FoodEditComponent implements OnInit {
 
   newFood: Food = new Food();
   food!: Food;
+  id: string = this.activatedRoute.snapshot.params['id']
 
   editPageText = this.config.editPageText
   editPageItems = this.config.editPageItems
@@ -76,24 +77,24 @@ export class FoodEditComponent implements OnInit {
   let numberInMenu: number = 0
      menus.map(menu => {
       if (food.menu === 'soup') {
-        let filtered = Array(menu[`${food.category}MenuFoodSoup`]).flat().filter(item => item.id === food.id)
+        let filtered = Array(menu[`${food.category}MenuFoodSoup`]).flat().filter(item => item._id === food._id)
           if (Array(menu[`${food.category}MenuFoodSoup`]).flat().includes(filtered[0])) {
             weekArray.push(menu.week)
-            array.push(filtered.filter(item => item.id === food.id))
+            array.push(filtered.filter(item => item._id === food._id))
           }
       }
       if (food.menu === 'main_course') {
-        let filtered = Array(menu[`${food.category}MenuFoodMain`]).flat().filter(item => item.id === food.id)
+        let filtered = Array(menu[`${food.category}MenuFoodMain`]).flat().filter(item => item._id === food._id)
         if (Array(menu[`${food.category}MenuFoodMain`]).flat().includes(filtered[0])) {
           weekArray.push(menu.week)
-          array.push(filtered.filter(item => item.id === food.id))
+          array.push(filtered.filter(item => item._id === food._id))
         }
       }
-      if (food.menu !== 'main_course' && food.menu !== 'soup') {
-        let filtered = Array(menu[`${food.category}MenuFood`]).flat().filter(item => item.id === food.id)
+      if (food.menu !== 'main_course' && food.menu !== 'soup' && food.menu !== 'drink') {
+        let filtered = Array(menu[`${food.category}MenuFood`]).flat().filter(item => item._id === food._id)
         if (Array(menu[`${food.category}MenuFood`]).flat().includes(filtered[0])) {
           weekArray.push(menu.week)
-          array.push(filtered.filter(item => item.id === food.id))
+          array.push(filtered.filter(item => item._id === food._id))
         }
       }
     })
@@ -150,8 +151,18 @@ export class FoodEditComponent implements OnInit {
     return name
   }
 
+  setSelectedKeyOfName(value: string) {
+    let name = ''
+    this.foodEditMenuItems.filter(item => {
+      if (item.new === value) {
+        name = item.title
+      }
+    });
+    return name
+  }
+
   saveFood(food: Food): void {
-    food.menu = this.selected
+    food.menu = this.setSelectedKeyOfName(this.selected)
     if (this.activatedRoute.snapshot.params['id'] === '0') {
       this.foodService.create(food).subscribe(
         response => this.router.navigate(['/', 'menu', 'product']));
@@ -163,7 +174,7 @@ export class FoodEditComponent implements OnInit {
     }
   }
 
-  onDelete(id: number): void {
+  onDelete(id: string): void {
     const confirmDialog = this.dialog.open(DeleteDialogComponent, {
       data: {
         title: this.deleteDialog[0].title,

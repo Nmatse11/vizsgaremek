@@ -30,7 +30,7 @@ export class BaseListComponent implements OnInit, AfterViewInit {
 
   @Input() sortPropIfObject!: string;
 
-  @Output() removeById: EventEmitter<number> = new EventEmitter();
+  @Output() removeById: EventEmitter<string> = new EventEmitter();
 
   @ViewChild(MatSort) sort: MatSort = new MatSort();
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -53,7 +53,7 @@ export class BaseListComponent implements OnInit, AfterViewInit {
   filterKey: string = '';
   phrase: string = '';
 
-  customerKeys: number[] = []
+  customerKeys: string[] = []
   customerValue: string[] = []
 
   oderEditError = this.config.orderEditErrorText
@@ -248,15 +248,15 @@ export class BaseListComponent implements OnInit, AfterViewInit {
   getCustomer() {
     this.customerService.getAll().subscribe(customers => {
       customers.map(customer => {
-        this.customerKeys.push(customer.id)
+        this.customerKeys.push(customer._id)
         let name = `${customer.firstName} ${customer.lastName}`
         this.customerValue.push(name)
       })
     })
   }
 
-  setCustomerName(id: number): string {
-      let index = this.customerKeys.indexOf(this.customerKeys.filter(item => item === Number(id))[0])
+  setCustomerName(id: string): string {
+      let index = this.customerKeys.indexOf(this.customerKeys.filter(item => item === id)[0])
       return this.customerValue[index]
   }
 
@@ -289,7 +289,7 @@ export class BaseListComponent implements OnInit, AfterViewInit {
     return array.flat().join(' ').trim().toLowerCase().includes(phrase);
   };
 
-  onDelete(id: number): void {
+  onDelete(id: string): void {
     const confirmDialog = this.dialog.open(DeleteDialogComponent, {
       data: {
         title: this.deleteDialog[0].title,

@@ -7,7 +7,7 @@
     <div class="card-body">
       <form #signupForm="ngForm" (ngSubmit)="saveCustomer(customer)">
 
-        <input [(ngModel)]="customer.id" type="hidden" name="id">
+        <input [(ngModel)]="customer._id" type="hidden" name="id">
 
         <div class="row mb-2 justify-content-center">
           <div class="col-lg-5 col-md-12 mb-2">
@@ -199,7 +199,7 @@
       <div class="card-body">
         <form #userForm="ngForm" (ngSubmit)="saveUser(user)">
 
-          <input [(ngModel)]="user.id" type="hidden" name="id">
+          <input [(ngModel)]="user._id" type="hidden" name="id">
           <input [(ngModel)]="user.customerID" type="hidden" name="customerId" [value]="newId">
 
           <div class="row mb-2 justify-content-center">

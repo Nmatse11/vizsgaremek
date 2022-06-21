@@ -1,0 +1,6682 @@
+[
+  {
+    "id": 1,
+    "name": "Pizzás csiga",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/pizzas_csiga.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 17,
+    "weekOfYear": [0, 3, 4, 5, 8, 9, 12, 16, 17, 18, 20, 21, 27, 28, 29, 30, 31]
+  },
+  {
+    "id": 2,
+    "name": "Szezámos-túrós pogácsa",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/szezamos_turos_pogacsa.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [0, 3, 4, 6, 8, 10, 20, 22, 30]
+  },
+  {
+    "id": 3,
+    "name": "Kiskalács",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/kiskalacs.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 15,
+    "weekOfYear": [1, 2, 3, 5, 7, 10, 14, 17, 24, 25, 26, 27, 28, 29, 31]
+  },
+  {
+    "id": 4,
+    "name": "Ízes levél",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/izes_level.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [2, 7, 10, 12, 14, 19, 21, 22, 28, 30]
+  },
+  {
+    "id": 5,
+    "name": "Sajtos pogács",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/sajtos_pogacsa.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [9, 11, 14, 16, 20, 21, 30]
+  },
+  {
+    "id": 6,
+    "name": "Sajtos rúd",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/sajtos_rud.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 14,
+    "weekOfYear": [0, 1, 3, 6, 7, 8, 11, 13, 15, 19, 21, 22, 24, 28]
+  },
+  {
+    "id": 7,
+    "name": "Tepertős pogács",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/tepertos_pogacsa.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [5, 8, 9, 11, 15, 21, 24, 25, 26, 31]
+  },
+  {
+    "id": 8,
+    "name": "Leveles, sajtos pogács",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/leveles_sajtos_pogacsa.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 15,
+    "weekOfYear": [0, 2, 7, 10, 11, 13, 14, 15, 16, 18, 20, 22, 23, 24, 25]
+  },
+  {
+    "id": 9,
+    "name": "Fahéja csiga",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/fahejas_csiga.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [5, 10, 15, 22, 25, 26, 31]
+  },
+  {
+    "id": 10,
+    "name": "Magvas-sajtos rúd",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/magvas-sajtos_rud.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": true,
+        "walnut": true
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 15,
+    "weekOfYear": [1, 2, 4, 6, 9, 12, 14, 16, 17, 20, 23, 25, 26, 27, 28]
+  },
+  {
+    "id": 11,
+    "name": "Tejfölös pogácsa",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/tejfolos_pogacsa.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [2, 3, 13, 15, 26, 29, 30]
+  },
+  {
+    "id": 12,
+    "name": "Fahéjas, cukros briós",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/fahejas_cukros_brios.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 12,
+    "weekOfYear": [4, 6, 7, 9, 13, 18, 19, 23, 24, 27, 29, 31]
+  },
+  {
+    "id": 13,
+    "name": "Burgonyás pogácsa",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/burgonyas_pogacsa.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [1, 5, 8, 11, 12, 16, 17, 18, 19, 23, 27]
+  },
+  {
+    "id": 14,
+    "name": "Vaníliás csiga",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/vanilias_csiga.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R1",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [0, 1, 4, 6, 12, 13, 17, 18, 19, 23, 29]
+  },
+  {
+    "id": 15,
+    "name": "Csokis croissant",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/csokis_croissant.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R2",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 19,
+    "weekOfYear": [
+      2, 4, 5, 8, 10, 11, 12, 13, 15, 18, 22, 24, 25, 26, 27, 28, 29, 30, 31
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Almás párna",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/almas_parna.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R2",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 20,
+    "weekOfYear": [
+      0, 3, 5, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 24, 25, 26, 27, 28, 31
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Sonkás, füstöltsajt-krémes croissant",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/sonkas-fustoltsajtkremes_croissant.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R2",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 12,
+    "weekOfYear": [0, 2, 9, 10, 12, 15, 16, 17, 18, 19, 28, 30]
+  },
+  {
+    "id": 18,
+    "name": "Csokis-meggyes párna",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/csokis-meggyes_parna.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R2",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 17,
+    "weekOfYear": [
+      1, 2, 5, 6, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22, 23, 25, 31
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Mákos patkó",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/makos_patko.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R2",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 16,
+    "weekOfYear": [0, 1, 2, 3, 5, 6, 7, 17, 19, 20, 21, 22, 24, 25, 27, 28]
+  },
+  {
+    "id": 20,
+    "name": "Meggyes párna",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/meggyes_parna.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R2",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 13,
+    "weekOfYear": [1, 4, 6, 7, 9, 14, 16, 19, 21, 22, 23, 26, 29]
+  },
+  {
+    "id": 21,
+    "name": "Mogyorókrémes croissant",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/mogyorokremes_croissant.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": true,
+        "walnut": false
+      }
+    ],
+    "category": "R2",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 21,
+    "weekOfYear": [
+      0, 1, 2, 3, 4, 7, 8, 10, 11, 13, 15, 19, 20, 21, 22, 23, 26, 27, 28, 29,
+      30
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Túrós batyu",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/turos_batyu.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R2",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 19,
+    "weekOfYear": [
+      3, 5, 6, 7, 8, 9, 11, 13, 14, 17, 18, 20, 23, 24, 25, 26, 29, 30, 31
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Baconos-sajtkrémes croissant",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/baconos-sajtkremes_croissant.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R2",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 14,
+    "weekOfYear": [0, 4, 6, 8, 9, 12, 14, 16, 20, 23, 24, 27, 29, 31]
+  },
+  {
+    "id": 24,
+    "name": "Vaníliás-epres croissant",
+    "menu": "breakfast",
+    "img": "../../../assets/images/foods/breakfast/vanilias-epres_croissant.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "R2",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [1, 3, 4, 7, 11, 15, 16, 21, 30]
+  },
+  {
+    "id": 25,
+    "name": "Erdei gyümölcsleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/erdei_gyumolcsleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 12,
+    "weekOfYear": [0, 2, 5, 7, 8, 10, 12, 14, 19, 20, 21, 29]
+  },
+  {
+    "id": 26,
+    "name": "Húsos, rakott kelkáposzta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/husos_rakott_kelkaposzta.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [0, 1, 5, 17, 18, 22, 24, 26, 28]
+  },
+  {
+    "id": 27,
+    "name": "Zöldségleves masnitésztával",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/zoldsegleves_masnitesztaval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [0, 5, 6, 10]
+  },
+  {
+    "id": 28,
+    "name": "Finomfőzelék, kis bécsi szelet",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/finomfozelek_kis_becsi_szelet.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [0, 6, 11, 13, 15, 18, 23, 29, 30]
+  },
+  {
+    "id": 29,
+    "name": "Lencseleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/lencseleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [7, 11, 13, 18, 23, 28]
+  },
+  {
+    "id": 30,
+    "name": "Krumplis tészta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/krumplis_teszta.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [0, 4, 5, 21]
+  },
+  {
+    "id": 31,
+    "name": "Magyaros gombaleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/magyaros_gombaleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [3, 9, 15, 16, 17, 18, 20, 25, 26, 28]
+  },
+  {
+    "id": 32,
+    "name": "Tökfőzelék, vagdalt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/tokfozelek_vagdalt.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [7, 10, 14, 15, 16, 17, 20, 23, 28]
+  },
+  {
+    "id": 33,
+    "name": "Faluházi csontleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/faluhazi_csontleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [9, 14, 16, 24, 25, 26]
+  },
+  {
+    "id": 34,
+    "name": "Hagymás, gombás sertésmáj, rizibizi",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/hagymas_gombas_sertesmaj_rizi-bizi.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [4, 10, 11, 20, 30]
+  },
+  {
+    "id": 35,
+    "name": "Göcseji burgonyagombóc leves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/gocseji_burgonyagomboc_leves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [0, 7, 10, 15, 16, 18, 24, 25, 29, 30]
+  },
+  {
+    "id": 36,
+    "name": "Zöldbabfőzelék, sertékpörkölt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/zoldbabfozelek_sertesporkolt.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [3, 7, 8, 9, 12, 14, 17, 25, 27, 30]
+  },
+  {
+    "id": 37,
+    "name": "Magyaros zöldborsóleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/magyaros_zoldborsoleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [1, 3, 5, 6, 14, 17, 25, 26, 27, 31]
+  },
+  {
+    "id": 38,
+    "name": "Virslis lecsó",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/virslis_lecso.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [2, 6, 8, 11, 12, 16, 27, 31]
+  },
+  {
+    "id": 39,
+    "name": "Tarhonyaleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tarhonyaleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [2, 4, 12, 15, 17, 22, 29]
+  },
+  {
+    "id": 40,
+    "name": "Babfőzelék, vagdalt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/babfozelek_vagdalt.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 12,
+    "weekOfYear": [2, 8, 11, 12, 13, 16, 19, 21, 25, 26, 28, 29]
+  },
+  {
+    "id": 41,
+    "name": "Gombaleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/gombaleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [2, 4, 9, 10, 19, 21, 29, 30, 31]
+  },
+  {
+    "id": 42,
+    "name": "Spagetti vadas szósszal, reszelt sajt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/spagetti_vadas_szosszal_reszelt_sajt.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [8, 9, 13, 19, 21, 23]
+  },
+  {
+    "id": 43,
+    "name": "Tojásleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tojasleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [9, 16, 22, 31]
+  },
+  {
+    "id": 44,
+    "name": "Tejszínes vöröslencse-főzelék, grillezett csirkemell falatok",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/tejszines_voroslencsefozelek_grillezett_csirkemell_falatok.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [1, 3, 9, 16, 22, 24, 25, 26, 29]
+  },
+  {
+    "id": 45,
+    "name": "Petrezselymes zöldborsóleves galuskával",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/petrezselymes_zoldborsoleves_galuskaval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [0, 1, 7, 9, 15, 19, 22]
+  },
+  {
+    "id": 46,
+    "name": "Paradicsomos húsgombóc, főtt burgonya",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/paradicsomos_husgomboc_fott_burgonya.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [3, 10, 14, 15, 19, 20, 25, 27, 28, 31]
+  },
+  {
+    "id": 47,
+    "name": "Májgaluskaleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/majgaluskaleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [0, 6, 12, 13, 17, 20, 21, 23, 26, 30]
+  },
+  {
+    "id": 48,
+    "name": "Csirkemell csíkok négysajtmártással, párolt rizs",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/csirkemell_csikok_negysajtmartassal_kukoricas_jazmin_rizs.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [1, 2, 9, 10, 14, 18, 21, 26, 27, 30]
+  },
+  {
+    "id": 49,
+    "name": "Magyaros zöldbableves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/magyaros_zoldbableves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 2,
+    "weekOfYear": [5, 6]
+  },
+  {
+    "id": 50,
+    "name": "Sonkás rakott tészta kemencében sütve",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/sonkas_rakott_teszta_kemenceben_sutve.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [0, 4, 6, 7, 10, 29, 31]
+  },
+  {
+    "id": 51,
+    "name": "Lebbencsleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/lebbencsleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [1, 8, 10, 11, 18, 27, 31]
+  },
+  {
+    "id": 52,
+    "name": "Petrezselymes burgonyafőzelék, csirkepörkölt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/petrezselymes_burgonyafozelek_csirkeporkolt.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [1, 4, 5, 18, 19, 24, 27, 30]
+  },
+  {
+    "id": 53,
+    "name": "Faluházi bableves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/faluhazi_bableves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [2, 3, 7, 13, 20, 22, 24, 26, 27, 30]
+  },
+  {
+    "id": 54,
+    "name": "Tejfölös sertéspaprikás, galuska",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/tejfolos_sertespaprikas_galuska.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [2, 3, 11, 12, 14, 16, 22, 25, 31]
+  },
+  {
+    "id": 55,
+    "name": "Sárgaborsóleves, pir. kenyérkocka",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/sargaborsoleves_pir_kenyerkockaval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [1, 4, 8, 11, 21, 24, 25, 29]
+  },
+  {
+    "id": 56,
+    "name": "Négysajtos penne csirkehússal",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/negysajtos_penne_csirkehussal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [2, 4, 6, 7, 8, 15, 17, 20, 22, 26, 28]
+  },
+  {
+    "id": 57,
+    "name": "Daragaluska-leves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/daragaluska-leves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [1, 5, 6, 13, 23, 24, 28]
+  },
+  {
+    "id": 58,
+    "name": "Magyaros zöldborsófőzelék, roston csirkemell",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/magyaros_zoldborsofozelek_roston_csirkemell.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [7, 13, 23, 31]
+  },
+  {
+    "id": 59,
+    "name": "Mascarponés sütőtökkrémleves pirított tökmaggal",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/mascarpones_sutotokkremleves_piritott_tokmaggal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [3, 11, 12, 14, 15, 21, 27, 28, 31]
+  },
+  {
+    "id": 60,
+    "name": "Magyaros sertésmáj - lecsós, majorannás, rizi-bizi",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/magyaros_szarnyasmaj_rizi-bizi.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [6, 15, 17, 19, 20, 23]
+  },
+  {
+    "id": 61,
+    "name": "Zöldségleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/zoldsegleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [2, 4, 8, 11, 12, 13, 14, 17, 19, 23, 27]
+  },
+  {
+    "id": 62,
+    "name": "Mákos tészta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/makos_teszta.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [3, 5, 9, 12, 13, 18, 22, 24]
+  },
+  {
+    "id": 63,
+    "name": "Tejfölös gombaleves galuskával",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tejfolos_gombaleves_galuskaval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [3, 4, 8, 16, 18, 19, 20, 22, 23, 28, 30]
+  },
+  {
+    "id": 64,
+    "name": "Babfőzelék, sertéspörkölt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/babfozelek_sertesporkolt.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "A",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [0, 1, 5, 21, 24, 29]
+  },
+  {
+    "id": 65,
+    "name": "Erőleves cérnametélttel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/eroleves_cernametelttel.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [1, 2, 3, 8, 9, 11, 13, 14, 16, 17, 28]
+  },
+  {
+    "id": 66,
+    "name": "Tarhonyáshús",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/tarhonyashus.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [0, 1, 5, 6, 8, 16, 17, 18, 23, 26, 27]
+  },
+  {
+    "id": 67,
+    "name": "Babgulyás",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/babgulyas.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [1, 3, 6, 13, 21, 24, 27]
+  },
+  {
+    "id": 68,
+    "name": "Pármai spagetti",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/parmai_spagetti.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [3, 6, 14, 23, 27, 28]
+  },
+  {
+    "id": 69,
+    "name": "Tejszínes cseresznyeleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tejszines_cseresznyeleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [0, 3, 15, 18, 26, 27, 30]
+  },
+  {
+    "id": 70,
+    "name": "Vadas pulyakotány, spagetti",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/vadas_pulykatokany_spagetti.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [6, 9, 11, 13, 14, 16, 18, 21, 28, 31]
+  },
+  {
+    "id": 71,
+    "name": "Zöldborsókrémleves mozzarella golyókkal",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/zoldborsokremleves_mozzarellagolyokkal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 16,
+    "weekOfYear": [0, 2, 5, 6, 8, 9, 10, 16, 20, 21, 24, 25, 26, 28, 29, 31]
+  },
+  {
+    "id": 72,
+    "name": "Mexikói chilis bab - vörösbab, fehérbab, kukorica",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/mexikoi_chilis_bab_reszelt_sajt.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [3, 7, 15, 20, 21, 23, 24, 26, 29, 30, 31]
+  },
+  {
+    "id": 73,
+    "name": "Tejfölös, gombás karfiolleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tejfolos_gombas_karfiolleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [0, 3, 4, 10, 11, 13, 15, 22, 25, 29]
+  },
+  {
+    "id": 74,
+    "name": "Budapest sertésszelet, párolt rizs",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/budapest_sertesszelet_parolt_rizs.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [0, 10, 11, 12, 17, 19, 30]
+  },
+  {
+    "id": 75,
+    "name": "Vilmoskörtés almaleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/vilmoskortes_almaleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [1, 12, 13, 22, 24, 25, 31]
+  },
+  {
+    "id": 76,
+    "name": "Sertéssült, párolt káposzta, tört burgonya",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/sertessult_parolt_kaposzta_tort_burgonya.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [2, 14, 15, 16, 17, 18, 19, 28]
+  },
+  {
+    "id": 77,
+    "name": "Tárkonyos, gombás csirkeraguleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tarkonyos_gombas_csirkeragu_leves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [4, 7, 12, 14, 17, 19, 23, 27]
+  },
+  {
+    "id": 78,
+    "name": "Fokhagymás pácban érlelt csirkemell csíkok roston, tejszínes penne tészta, reszelt sajt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/fokhagymas_pacban_erlelt_csirkemell_csikok_roston_tejszines_penne_teszta_reszelt_sajt.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [3, 8, 10, 11, 13, 16, 18, 21, 25, 29]
+  },
+  {
+    "id": 79,
+    "name": "Hideg őszibarackos meggyleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/hideg_oszibarackos_meggyleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [1, 3, 9, 10, 11, 12, 22, 28, 29, 31]
+  },
+  {
+    "id": 80,
+    "name": "Húsos lasagne reszelt sajttal",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/husos_lasagne_reszelt_sajttal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [1, 5, 6, 12, 14, 20, 22]
+  },
+  {
+    "id": 81,
+    "name": "Grízgaluskaleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/grizgaluskaleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [5, 7, 14, 18, 19, 20, 26, 27, 28]
+  },
+  {
+    "id": 82,
+    "name": "Grillezett csirkemell, sajtmártással, jázmin rizs",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/grillezett_csirkemell_sajtmartassal_jazmin_rizs.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [7, 12, 13, 17, 20, 22, 25, 27]
+  },
+  {
+    "id": 83,
+    "name": "Medvehagymás zöldségleves mozzarellagolyókkal",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/medvehagymas_zoldsegleves_mozzarellagolyokkal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [4, 5, 10, 11, 14, 17, 20, 23, 24]
+  },
+  {
+    "id": 84,
+    "name": "Bácskai rizseshús",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/bacskai_rizseshus.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [4, 7, 10, 12, 18, 22, 25, 27, 29, 31]
+  },
+  {
+    "id": 85,
+    "name": "Sajtkrémleves pirított kenyérkockával",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/sajtkremleves_piritott_kenyerkockaval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [5, 6, 7, 16, 18, 19, 20, 21, 22]
+  },
+  {
+    "id": 86,
+    "name": "Rántott sajt, párolt rizs, tatármártás",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/rantott_sajt_parolt_rizs_tartarmartas.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [1, 4, 10, 13, 15, 17, 26, 28]
+  },
+  {
+    "id": 87,
+    "name": "Vegyesgyümölcsleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/vegyes_gyumolcsleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [2, 6, 8, 9, 13, 18, 29, 31]
+  },
+  {
+    "id": 88,
+    "name": "Bolognai spagetti, reszelt sajt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/bolognai_spagetti_reszelt_sajt.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [2, 8, 10, 12, 19, 20, 30]
+  },
+  {
+    "id": 89,
+    "name": "Csontleves gombával, cérnametételttel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/csontleves_gombaval_cernametelttel.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [1, 15, 22, 28]
+  },
+  {
+    "id": 90,
+    "name": "Tócsni fokhagymás tejföllel, reszelt sajttal",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/tocsni_fokhagymas_tejfollel_reszelt_sajt.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [0, 5, 9, 15, 21, 30]
+  },
+  {
+    "id": 91,
+    "name": "Paradicsomleves mozzarellagolyókkal",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/paradicsomleves_mozzarellagolyokkal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [5, 6, 7, 18, 23, 30]
+  },
+  {
+    "id": 92,
+    "name": "Rizsfelfújt baracklekvárral",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/rizsfelfujt_baracklekvarral.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [4, 6, 8, 9, 13, 14, 25, 26, 28, 29, 31]
+  },
+  {
+    "id": 93,
+    "name": "Tejfölös, petrezselymes burgonyaleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tejfolos_petrezselymes_burgonyaleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [8, 11, 17, 19, 21, 23, 30, 31]
+  },
+  {
+    "id": 94,
+    "name": "Töltött paprika paradicsommártással, sós burgonya",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/toltott_paprika_paradicsommartassal_sos_burgonya.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [0, 2, 15, 19, 21, 22, 23, 29]
+  },
+  {
+    "id": 95,
+    "name": "Tejszínes gyümölcsleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tejszines_gyumolcsleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [0, 2, 8, 12, 14, 20, 25, 30]
+  },
+  {
+    "id": 96,
+    "name": "Grillezett sajt, áfolnyalekvár, sült burgonya",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/grillezett_sajt_afonyalekvar_sult_burgonya.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [1, 3, 9, 11, 16, 24]
+  },
+  {
+    "id": 97,
+    "name": "Karfiolleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/karfiolleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 2,
+    "weekOfYear": [4, 16]
+  },
+  {
+    "id": 98,
+    "name": "Zöldbabfőzelék, natúr csirkemell",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/zoldbabfozelek_natur_csirkemell.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [4, 22, 24, 27, 31]
+  },
+  {
+    "id": 99,
+    "name": "Hidegtejszínes málnaleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/hideg_tejszines_malnakremleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [4, 9, 17, 25, 26]
+  },
+  {
+    "id": 100,
+    "name": "Rántott karfiol, grillezett burgonya, fokhagymás tejföl",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/rantott_karfiol_grillezett_burgonya_fokhagymas_tejfol.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [0, 3, 5, 7, 8, 11, 19, 20, 23, 25]
+  },
+  {
+    "id": 101,
+    "name": "Zöldborsóleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/zoldborsoleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [15, 21, 24, 27, 30]
+  },
+  {
+    "id": 102,
+    "name": "Gombás marhatokány, csavart csőtészta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/gombas_marhatokany_csavart_csoteszta.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [2, 4, 5, 7, 24]
+  },
+  {
+    "id": 103,
+    "name": "Mézes, fahéjas almaleves kandírozott naranccsal, pirított dióval",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/mezes_fahejas_almaleves_kandirozott_naranccsal_piritott_dioval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [0, 2, 7, 10, 12, 15, 16, 19, 23, 26, 29]
+  },
+  {
+    "id": 104,
+    "name": "Vadas főzelék - sárga- és fehérrépával, mustárosan, főtt marhaszelet",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/vadas_fozelek_fott_marhaszelet.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "B",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [1, 2, 9, 24, 26, 30]
+  },
+  {
+    "id": 105,
+    "name": "Holland sajtleves, pirított kenyérkocka",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/holland_sajtleves_piritott_kenyerkocka.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 16,
+    "weekOfYear": [0, 1, 3, 5, 6, 9, 11, 13, 15, 16, 17, 19, 23, 24, 25, 26]
+  },
+  {
+    "id": 106,
+    "name": "Lacipecsenye burgonyapüré",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/lacipecsenye_burgonyapure.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [2, 6, 8, 14, 17, 18, 21, 22, 26, 28, 31]
+  },
+  {
+    "id": 107,
+    "name": "Brokkolikrémleves pirított kenyérkocka",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/brokkolikremleves_piritott_kenyerkockaval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [0, 3, 6, 9, 14, 17, 22, 24, 27]
+  },
+  {
+    "id": 108,
+    "name": "Csirke brassói aprópecsenye reszelt sajttal",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/csirke_brassoi_apropecsenye_reszelt_sajttal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [0, 6, 8, 16, 17, 18, 27, 28]
+  },
+  {
+    "id": 109,
+    "name": "Zöldborsós csirkeraguleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/zoldborsos_csirkeraguleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [14, 26, 27, 30]
+  },
+  {
+    "id": 110,
+    "name": "Bakonyi rakott tészta - csiperkés csirkemell paprikással rétegezve, füstölt sajttal összesütve",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/bakonyi_rakott_teszta.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [8, 10, 13, 24, 30]
+  },
+  {
+    "id": 111,
+    "name": "Húsimádók frankfurtilevese - tarjával, kolbásszal",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/husimadok_frankfurti_levese.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [1, 2, 8, 12, 16, 18, 21, 23, 29]
+  },
+  {
+    "id": 112,
+    "name": "Grillezett csirkemell tárkonyos joghurttal, country burgonya",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/grillezett_csirkemell_tarkonyos_joghurttal_country_burgonya.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 14,
+    "weekOfYear": [1, 3, 6, 7, 8, 10, 12, 14, 16, 20, 22, 23, 25, 29]
+  },
+  {
+    "id": 113,
+    "name": "Vegyesmézes feketeszeder leves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/vegyesmezes_feketeszederleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [0, 3, 14, 15, 16, 20, 21, 23]
+  },
+  {
+    "id": 114,
+    "name": "Bécsi szelet, burgonyapüré",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/becsi_szelet_burgonyapure.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [1, 3, 7, 10, 11, 12, 15, 16, 23, 25, 30]
+  },
+  {
+    "id": 115,
+    "name": "Jókai-bableves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/jokai-bableves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [6, 11, 15, 20, 22, 23, 31]
+  },
+  {
+    "id": 116,
+    "name": "Sokmagvas rántott pulykamell - szezámmag, napraforgómag, mandula, tökmag, rizi-bizi",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/sokmagvas_rantott_pulykamell_rizi-bizi.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [0, 9, 17, 19, 20, 21]
+  },
+  {
+    "id": 117,
+    "name": "Trópusi gyümölcsleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tropusi_gyumolcsleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [8, 10, 11, 16, 17, 19, 24, 25, 28, 29, 30]
+  },
+  {
+    "id": 118,
+    "name": "Marhapörkölt, tarhonya",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/marhaporkolt_tarhonya.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [3, 14, 21, 24, 28, 29]
+  },
+  {
+    "id": 119,
+    "name": "Füstöltsajtkrémleves, pirított kiflikarikával",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/fustoltsajtkremleves_pir_kiflikarikaval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [4, 9, 10, 13, 16, 19, 22, 24, 27, 29]
+  },
+  {
+    "id": 120,
+    "name": "Csirkehúsos, baconos, tojásos rakott burgonya, házi tejföllel",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/csirkehusos_baconos_tojasos_rakott_burgonya_hazi_tejfollel.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [0, 1, 3, 5, 7, 11, 13, 17, 19, 24]
+  },
+  {
+    "id": 121,
+    "name": "Bográcsgulyás",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/bogracsgulyas.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [1, 2, 5, 7, 13, 28, 31]
+  },
+  {
+    "id": 122,
+    "name": "Magyaros zöldborsófőzelék, kis bécsi szelet",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/magyaros_zoldborsofozelek_kis_becsi_szelet.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [6, 21, 24, 27, 30]
+  },
+  {
+    "id": 123,
+    "name": "Medvehagymás zöldségleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/medvehagymas_zoldsegleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [2, 3, 5, 11, 14, 20, 31]
+  },
+  {
+    "id": 124,
+    "name": "Mézes pulykamell, párolt gyümölcs, párolt rizs",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/mezes_pulykamell_parolt_gyumolcs_parolt_rizs.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [2, 5, 11, 21]
+  },
+  {
+    "id": 125,
+    "name": "Tejszínes-tárkonyos szárnyasraguleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tejszines_tarkonyos_szarnyasraguleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [6, 11, 18, 19, 21, 22, 26, 30]
+  },
+  {
+    "id": 126,
+    "name": "Baconos, juhtúrós sztrapacska",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/baconos_juhturos_sztrapacska.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [0, 1, 17, 23, 27, 29]
+  },
+  {
+    "id": 127,
+    "name": "Tavaszi zöldségleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tavaszi_zoldsegleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [7, 9, 12, 20, 21, 23, 25, 26]
+  },
+  {
+    "id": 128,
+    "name": "Pulykamell sajtos bundában, vegyes köret",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/pulykamell_sajtos_bundaban_vegyes_koret.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [2, 4, 6, 7, 9, 16, 20, 22, 25, 29]
+  },
+  {
+    "id": 129,
+    "name": "Frankfurtileves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/frankfurti_leves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 3,
+    "weekOfYear": [12, 13, 17]
+  },
+  {
+    "id": 130,
+    "name": "Hentestokány, galuska",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/hentestokany_galuska.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [13, 18, 22, 25]
+  },
+  {
+    "id": 131,
+    "name": "Szárnyaraguleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/szarnyasraguleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [2, 4, 7, 15, 26, 27, 28, 30]
+  },
+  {
+    "id": 132,
+    "name": "Őszibarackkal töltött rántott csirkemell, mandulás rizs",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/oszibarackkal_toltott_rantott_csirkemell_mandulas_rizs.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [0, 11, 15, 20, 31]
+  },
+  {
+    "id": 133,
+    "name": "Parasztcsorba - eredeti erdélyi zöldséges húsleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/parasztcsorba.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [0, 5, 7, 8, 12, 15, 17, 18, 24, 28, 30]
+  },
+  {
+    "id": 134,
+    "name": "Makói aprópecsenye, rizi-bizi",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/makoi_apropecsenye_rizi-bizi.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [4, 9, 13, 14, 15, 18, 19, 20, 26]
+  },
+  {
+    "id": 135,
+    "name": "Gulyásleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/gulyasleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [4, 10, 12, 20, 29]
+  },
+  {
+    "id": 136,
+    "name": "Bécsi szelet, jázmin rizs",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/becsi_szelet_jazmin_rizs.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [1, 26, 27, 28]
+  },
+  {
+    "id": 137,
+    "name": "Banános, őszibarackos gyümölcsleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/bananos_oszibarackos_gyumolcsleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [1, 14, 18, 28, 29, 31]
+  },
+  {
+    "id": 138,
+    "name": "Csirkepaprikás, szarvacska tészta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/csirkepaprikas_szarvacska_teszta.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [2, 4, 14, 18, 23, 26, 31]
+  },
+  {
+    "id": 139,
+    "name": "Lakodalmas Újházy tyúkhúsleves gazdagon",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/lakodalmas_ujhazy_tyukhusleves_gazdagon.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [1, 2, 5, 6, 8, 9, 10, 21, 22, 25, 31]
+  },
+  {
+    "id": 140,
+    "name": "Tejszínes csirkemell csíkok, spagetti, reszelt sajt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/tejszines_csirkemell_csikok_spagetti_reszelt_sajt.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [3, 5, 7, 8, 12, 23, 25, 27, 29]
+  },
+  {
+    "id": 141,
+    "name": "Tárkonyos csirkehúsleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tarkonyos_csirkehusleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [0, 4, 7, 8, 19, 27]
+  },
+  {
+    "id": 142,
+    "name": "Chilis bab, reszelt sajt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/chilis_bab_reszelt_sajt.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 12,
+    "weekOfYear": [2, 4, 5, 9, 10, 12, 15, 19, 24, 26, 30, 31]
+  },
+  {
+    "id": 143,
+    "name": "Marhahúsleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/marhahusleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [3, 4, 10, 13, 18, 25]
+  },
+  {
+    "id": 144,
+    "name": "Hagymás, gombás sertésmáj, tört burgonya",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/hagymas_gombas_szarnyasmaj_tort_burgonya.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "E",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 14,
+    "weekOfYear": [4, 5, 9, 10, 11, 12, 13, 15, 16, 19, 22, 28, 30, 31]
+  },
+  {
+    "id": 145,
+    "name": "Csirkemell ropogós, ezersziget öntet, mediterrán saláta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/csirkemell_ropogos_ezersziget_ontet_mediterran_salata.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [3, 11, 23, 25, 29]
+  },
+  {
+    "id": 146,
+    "name": "Kemencében sült csirkemell csíkozva, mozzarellás almasaláta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/kemenceben_sult_csirkemell_csikozva_mozzarellas_almasalata.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [0, 6, 7, 9, 13, 17, 22, 23]
+  },
+  {
+    "id": 147,
+    "name": "Füstöltsajttal ropogósra sütött pulykamell, fűszervajas párolt zöldségek",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/fustoltsajttal_ropogosra_sutott_pulykamell_fuszervajas_parolt_zoldsegek.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [1, 6, 15, 18, 21, 25, 28, 30]
+  },
+  {
+    "id": 148,
+    "name": "Szeletben sült csirkemell zöldségkrém mártásban, rizi-bizi",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/szeletben_sult_csirkemell_zoldsegkremmartasban_rizi_bizi.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 17,
+    "weekOfYear": [
+      4, 6, 8, 9, 11, 15, 17, 18, 19, 21, 22, 23, 24, 26, 27, 28, 29
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Ropogósra sült csirkecomb zöldfűszeres vajban párolt zöldségekkel",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/ropogosra_sult_csirkecomb_zoldfuszeres_vajban_parolt_zoldseg.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [2, 5, 10, 12, 20, 26, 29]
+  },
+  {
+    "id": 150,
+    "name": "Ananászos, füstölt sajtos rakott csirkemell, finomfüves párolt zöldségek",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/ananaszos_fustolt_sajtos_rakott_csirkemell_finomfuves_parolt_zoldsegek.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [1, 2, 5, 9, 16, 18, 19, 31]
+  },
+  {
+    "id": 151,
+    "name": "Házi csirke nugget's, pünkösdi saláta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/hazi_csirke_nuggets_punkosdi_salata.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [3, 12, 14, 15, 16, 20]
+  },
+  {
+    "id": 152,
+    "name": "Sajttal töltött rántott csirkemell, primőr saláta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/sajttal_toltott_rantott_csirkemell_primor_salata.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [0, 3, 10, 19, 27, 28]
+  },
+  {
+    "id": 153,
+    "name": "Mexikói sült csirkemell, sajttal kemencében sütve, fűszervajas párolt zöldségek",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/mexikoi_sult_csirkemell_sajttal_kemenceben_sutve_fuszervajas_parolt_zoldsegek.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 3,
+    "weekOfYear": [0, 4, 24]
+  },
+  {
+    "id": 154,
+    "name": "Füstöltsajtos csirkemell, almás basmati rizs",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/fustoltsajtos_csirkemell_almas_basmati_rizs.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [1, 10, 20, 22, 25, 29, 30]
+  },
+  {
+    "id": 155,
+    "name": "Csirkés bulgur rizottó mogyoróval, kukoricával",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/csirkes_bulgur_rizotto_mogyoroval_kukoricaval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": true,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [2, 5, 8, 9, 14, 18, 19, 26, 30]
+  },
+  {
+    "id": 156,
+    "name": "Kecskesajttal szórt sült halfilé, zöldséges bulgur",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/kecskesajttal_szort_sult_halfile_zoldseges_bulgur.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [0, 6, 16, 19, 24, 26, 28]
+  },
+  {
+    "id": 157,
+    "name": "Fűszeres mozzarellával sült csirkemell, zöldséges, sajtos, rizssaláta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/fuszeres_mozzarellaval_sult_csirkemell_zoldseges_sajtos_rizssalata.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [5, 11, 13, 16, 22, 23, 31]
+  },
+  {
+    "id": 158,
+    "name": "Gyros csirkemell, fokhagymás, joghurtos öntet márványsajttal, saláta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/gyros_csirkemell_fokhagymas_joghurtos_ontet_marvanysajttal_salata.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [3, 5, 10, 16, 18, 21, 30, 31]
+  },
+  {
+    "id": 159,
+    "name": "Majorannás roston pulykamell, fűszervajas párolt zöldségek",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/majorannas_roston_pulykamell_fuszervajas_parolt_zoldsegek.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [4, 6, 8, 9, 12, 13, 24, 27]
+  },
+  {
+    "id": 160,
+    "name": "Ropogós csirkecomb, görög saláta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/ropogos_csirkecomb_gorogsalata.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [7, 12, 13, 14, 15, 20, 21, 25]
+  },
+  {
+    "id": 161,
+    "name": "Rántott csirkemell görög salátával",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/rantott_csirkemell_gorogsalataval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [0, 7, 8, 10, 11, 17, 20]
+  },
+  {
+    "id": 162,
+    "name": "Görög fűszerezésű roston csirkemell, joghurtöntet fokhagymás zöldfűszerrel, kerti saláta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/gorog_fuszerezesu_roston_csirkemell_joghurtontet_fokhagym_zoldfusz_kerti_salata.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [1, 2, 7, 11, 12, 14, 17, 29, 30, 31]
+  },
+  {
+    "id": 163,
+    "name": "Pezsgős, mézes csirkemell, grill zöldségek",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/pezsgos_mezes_csirkemell_grill_zoldsegek.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [1, 4, 7, 8, 17, 21, 22, 26, 31]
+  },
+  {
+    "id": 164,
+    "name": "Szezámmagos rántott csirkemell, vitaminsaláta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/szezammagos_rantott_csirkemell_vitaminsalata.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "F",
+    "vegan": false,
+    "fitness": true,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [2, 3, 4, 13, 14, 15, 23, 24, 25, 27, 28]
+  },
+  {
+    "id": 165,
+    "name": "Bazsalikomos lencsekrémleves paradicsommal",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/bazsalikomos_lencsekrem_leves_paradicsommal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [2, 3, 5, 7, 11, 14, 17, 19, 23, 26, 31]
+  },
+  {
+    "id": 166,
+    "name": "Parajos galuska sajtmártással",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/parajos_galuska_sajtmartassal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [5, 7, 10, 11, 15, 18, 20, 21, 22, 28, 31]
+  },
+  {
+    "id": 167,
+    "name": "Zöld minestrone leves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/zold_minestrone_leves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 12,
+    "weekOfYear": [0, 2, 3, 6, 13, 17, 18, 19, 24, 26, 30, 31]
+  },
+  {
+    "id": 168,
+    "name": "Rakott brokkoli kölessel, füstölt sajttal",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/rakott_brokkoli_kolessel_fustolt_sajttal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [6, 7, 17, 18, 22, 23, 24, 26]
+  },
+  {
+    "id": 169,
+    "name": "Zöldségkrémleves pirított kesudióval",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/zoldsegkremleves_piritott_kesudioval.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [0, 6, 9, 16, 18, 24, 27, 31]
+  },
+  {
+    "id": 170,
+    "name": "Risotto Primavera sok zöldséggel, füstölt sajttal",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/risotto_primavera_sok_zoldseggel_fustolt_sajttal.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [1, 3, 7, 8, 16, 17, 22, 25, 29]
+  },
+  {
+    "id": 171,
+    "name": "Árpagyöngyleves zöldségekkel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/arpagyongy_leves_zoldsegekkel.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [9, 13, 15, 16, 21, 22, 23, 25, 27, 29, 30]
+  },
+  {
+    "id": 172,
+    "name": "Brassói búzahúsból",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/brassoi_buzahusbol.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [0, 2, 3, 11, 13, 16, 23, 24, 25, 30]
+  },
+  {
+    "id": 173,
+    "name": "Zellerkrémleves pirított mandulával",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/zellerkremleves_piritott_mandulaval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [0, 6, 8, 11, 12, 22, 27, 29]
+  },
+  {
+    "id": 174,
+    "name": "Káposztás tészta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/kaposztas_teszta.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [2, 4, 5, 7, 9, 15, 25, 29, 31]
+  },
+  {
+    "id": 175,
+    "name": "Zöldborsókrémleves pirított tökmaggal",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/zoldborsokremleves_piritott_tokmaggal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [1, 3, 4, 6, 8, 12, 13, 16, 21, 26]
+  },
+  {
+    "id": 176,
+    "name": "Paprikás burgonya lencsével",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/paprikas_burgonya_lencsevel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [1, 2, 6, 8, 16, 18, 24, 27, 29, 30]
+  },
+  {
+    "id": 177,
+    "name": "Cukkinileves sütőtökkel, kókusztejjel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/cukkinileves_sutotokkel_kokusztejjel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [1, 5, 8, 9, 13, 14, 19, 25, 30]
+  },
+  {
+    "id": 178,
+    "name": "Paradicsomos, zöldséges rizottó füstölt sajttal",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/paradicsomos_zoldseges_rizotto_fustolt_sajttal.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [0, 2, 5, 7, 8, 13, 14, 17, 27]
+  },
+  {
+    "id": 179,
+    "name": "Céklakrémleves almával",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/ceklakremleves_almaval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [0, 4, 7, 10, 14]
+  },
+  {
+    "id": 180,
+    "name": "Krémes, parmezános, brokkolis spagetti",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/kremes_parmezanos_brokkolis_spagetti.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [3, 9, 10, 13, 19, 20, 21, 28]
+  },
+  {
+    "id": 181,
+    "name": "Burgonyaleves zabitallal, metélőhagymával",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/burgonyaleves_zabtejszinnel_metelohagymaval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [1, 7, 8, 20, 27, 31]
+  },
+  {
+    "id": 182,
+    "name": "Zelleres, burgonyás zöldborsó",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/zelleres_burgonyas_zoldborso.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [4, 11, 15, 18, 24, 26, 27, 29]
+  },
+  {
+    "id": 183,
+    "name": "Spenótleves lencsével",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/spenotleves_lencsevel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [5, 14, 15, 16]
+  },
+  {
+    "id": 184,
+    "name": "Szezámos zöldségek rizstésztával",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/szezamos_zoldsegek_rizstesztaval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [5, 9, 14, 21, 23, 27]
+  },
+  {
+    "id": 185,
+    "name": "Karfiolkrémleves zöldborsóval",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/karfiolkremleves_zoldborsoval.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [4, 10, 12, 13, 17, 21, 22, 26, 29]
+  },
+  {
+    "id": 186,
+    "name": "Szarvacska tészta padlizsános-paprikás szósszal, fűszeres csicseriborsóval",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/szarvacska_teszta_paprikas_szosszal_fuszeres_csicseriborsoval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [9, 12, 17, 20, 21, 26, 28]
+  },
+  {
+    "id": 187,
+    "name": "Vöröslencse-leves pirított kesudióval",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/voroslencse_leves_piritott_kesudioval.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [2, 5, 9, 15, 19, 20, 21, 25]
+  },
+  {
+    "id": 188,
+    "name": "Kapros tökfőzelék, szejtánfasírt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/kapros_tokfozelek_szejtanfasirttal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [0, 12, 18, 22, 28, 31]
+  },
+  {
+    "id": 189,
+    "name": "Paradicsom-krémleves kapribogyóval",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/paradicsom_kremleves_kapribogyoval.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [0, 2, 12, 15, 18, 20, 21, 25, 28, 31]
+  },
+  {
+    "id": 190,
+    "name": "Paella zöldségekkel",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/paella_zoldsegekkel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [2, 4, 5, 8, 12, 14, 15]
+  },
+  {
+    "id": 191,
+    "name": "Három hagymás cukkinileves zabkrémmel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/harom_hagymas_cukkinileves_zabkremmel.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [3, 5, 10, 11, 18, 29, 30]
+  },
+  {
+    "id": 192,
+    "name": "Krémes, sütőtökös spagetti parmezánnal",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/kremes_sutotokos_spagetti_parmezannal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [1, 13, 16, 19, 28, 29]
+  },
+  {
+    "id": 193,
+    "name": "Mandulás sárgarépaleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/mandulas_sargarepaleves.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [1, 7, 10, 11, 15, 17, 24, 29]
+  },
+  {
+    "id": 194,
+    "name": "Pirított, sült burgonya, pikáns paprikakeverékkel",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/piritott_sult_burgonya_pikans_paprika_keverekkel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [0, 1, 4, 11, 14, 25, 26, 31]
+  },
+  {
+    "id": 195,
+    "name": "Kókusztejes, currys csicseriborsó-leves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/kokusztejes_currys_csicseriborsoleves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [3, 4, 6, 9, 17, 19, 20, 23, 27, 28, 30]
+  },
+  {
+    "id": 196,
+    "name": "Sajtos galuska pirított tökmagvakkal, pirított hagymával",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/sajtos_galuska_piritott_tokmagvakkal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [1, 4, 10, 13, 14, 19, 26, 30, 31]
+  },
+  {
+    "id": 197,
+    "name": "Fehér gyöngybableves zöldségekkel és hajdinával",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/feher_gyongybableves_zoldsegekkel_es_hajdinaval.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [11, 12, 16, 22, 24, 25, 28]
+  },
+  {
+    "id": 198,
+    "name": "Zöldségfasírt, zöldbab-becsinált",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/zoldsegfasirt_zoldbab_becsinalt.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [12, 17, 20, 21, 22, 23, 30]
+  },
+  {
+    "id": 199,
+    "name": "Snidlinges kukoricaleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/snidlinges_kukorica-kremleves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [1, 2, 8, 10]
+  },
+  {
+    "id": 200,
+    "name": "Cheddar sajtszószos, zöldséges spagetti - zöldbab nélkül",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/cheddar_sajtszoszos_zoldseges_spagetti.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [0, 3, 6, 9, 12, 23, 24, 27]
+  },
+  {
+    "id": 201,
+    "name": "Zellerkrémleves almakockával, pirított dióval",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/zellerkremleves_almakockaval_piritott_dioval.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [7, 14, 23, 24, 26, 28]
+  },
+  {
+    "id": 202,
+    "name": "Orsótészta négysajtmártással",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/orsoteszta_tejszines_negysajtmartassal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [3, 6, 10, 11, 15, 16, 19, 30]
+  },
+  {
+    "id": 203,
+    "name": "Snidlinges csicseriborsó krémleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/snidlinges_csicseriborsó-kremleves_960x_960x586.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [4, 18, 20, 22, 23, 28]
+  },
+  {
+    "id": 204,
+    "name": "Ricottás lasagne, olaszos paradicsommártással",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/ricottas_lasagne_olaszos_paradicsommartassal.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "V",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [6, 8, 10, 19, 20, 25]
+  },
+  {
+    "id": 205,
+    "name": "Magyaros zöldborsóleves, édesítőszerekkel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/magyaros_zoldborsoleves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [0, 1, 4, 6, 9, 17, 18, 23, 26, 27, 28]
+  },
+  {
+    "id": 206,
+    "name": "Zöldbabfőzelék, sertéspörkölt, édesítőszerekkel",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/zoldbabfozelek_sertesporkolt_edesitoszerekkel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [10, 12, 14, 18, 22, 23, 27, 28]
+  },
+  {
+    "id": 207,
+    "name": "Tejszínes mangóleves, édesítőszerekkel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tejszines_mangoleves_edesitoszerekkel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [4, 9, 16, 22, 26]
+  },
+  {
+    "id": 208,
+    "name": "Pulykapörkölt, édesítőszerekkel, szarvacska tészta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/pulykaporkolt_edesitoszerekkel_szarvacska_teszta.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [6, 9, 12, 14, 20, 28, 31]
+  },
+  {
+    "id": 209,
+    "name": "Tejszínes, tárkonyos csirkeraguleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tarkonyos_gombas_csirkeragu_leves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [3, 13, 19, 20, 25, 28, 29, 30]
+  },
+  {
+    "id": 210,
+    "name": "Marengói csirkemell, basmati rizs",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/marengoi_csirkemell_basmati_rizsjpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [1, 2, 8, 14, 15, 21, 29]
+  },
+  {
+    "id": 211,
+    "name": "Csontleves finommetélttel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/csontleves_finommetelttel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 19,
+    "weekOfYear": [
+      1, 2, 3, 6, 8, 10, 11, 12, 13, 14, 16, 17, 20, 22, 24, 25, 27, 29, 30
+    ]
+  },
+  {
+    "id": 212,
+    "name": "Lecsós virslipörkölt, tarhonya",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/lecsos_virsliporkolt.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [1, 2, 5, 9, 19, 21, 22, 24]
+  },
+  {
+    "id": 213,
+    "name": "Paradicsomleves, édesítőszerekkel, betűtésztával",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/paradicsomleves_betutesztaval.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [1, 7, 8, 11, 18, 27, 31]
+  },
+  {
+    "id": 214,
+    "name": "Rántott sajt, vegyes köret, áfonyaszósz, édesítőszerekkel",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/rantott_sajt_vegyes_koret_afonyaszosz_edesitoszerekkel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [5, 13, 16, 22, 23, 24, 25, 30]
+  },
+  {
+    "id": 215,
+    "name": "Székelygulyás",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/szekelygulyas_edesitoszerekkel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 3,
+    "weekOfYear": [0, 4, 12]
+  },
+  {
+    "id": 216,
+    "name": "Rántott sertésmáj, burgonyapüré",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/rantott_sertesmaj_burgonyapure.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [3, 5, 6, 7, 13, 26]
+  },
+  {
+    "id": 217,
+    "name": "Spárgakrémleves, édesítőszerekkel, pirított kenyérkockával",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/spargakremleves_edesitoszerekkel_piritott_kenyerkockaval.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [2, 7, 15, 19, 29]
+  },
+  {
+    "id": 218,
+    "name": "Grillezett csirkemell szeletek, tzatziki salátával, édesítőszerekkel",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/grillezett_csirkemell_szeletek_tzatziki_salataval_edesitoszerekkel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [0, 2, 3, 7, 8, 25]
+  },
+  {
+    "id": 219,
+    "name": "Tejszínes meggyleves, édesítőszerekkel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tejszines_meggyleves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [2, 10, 15, 16, 21, 22, 24, 30]
+  },
+  {
+    "id": 220,
+    "name": "Székelykáposzta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/szekelykaposzta_edesitoszerekkel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [0, 1, 3, 8, 11, 16, 18, 19, 26]
+  },
+  {
+    "id": 221,
+    "name": "Bakonyi gombaleves jércemellel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/bakonyi_gombaleves_sovany_jercemellel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [5, 8, 13, 15, 22, 27, 30]
+  },
+  {
+    "id": 222,
+    "name": "Szerb rizseshús - lecsós sertésragu rizzsel összeforgatva, sült paprikakockákkal",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/szerb_rizseshus_edesitoszerekkel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [10, 11, 14, 15, 16, 25, 29]
+  },
+  {
+    "id": 223,
+    "name": "Zelleres burgonyaleves, édesítőszerekkel, csipetkével",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/zelleres_burgonyaleves_csipetkevel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [8, 9, 14, 15, 16, 17, 19, 26, 31]
+  },
+  {
+    "id": 224,
+    "name": "Gödöllői töltött csirkecomb, jázmin rizs",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/godolloi_toltott_csirkecomb_jazmin_rizs.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [6, 8, 9, 21]
+  },
+  {
+    "id": 225,
+    "name": "Fahéjas szilvaleves, édesítőszerekkel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/fahejas_szilvaleves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [0, 13, 22, 23]
+  },
+  {
+    "id": 226,
+    "name": "Füstölt sajtos, sonkás csőben sült karfiol",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/fustoltsajtos_sonkas_csoben_sult_karfiol.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [5, 19, 20, 30]
+  },
+  {
+    "id": 227,
+    "name": "Újházy tyúkhúsleves",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/ujhazy_tyukhusleves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [3, 4, 7, 11, 18, 23, 24, 26]
+  },
+  {
+    "id": 228,
+    "name": "Vadas marhatokány, édesítőszerekkel, spagetti",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/vadas_marhatokany_edesitoszerekkel_spagetti.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 13,
+    "weekOfYear": [1, 2, 3, 10, 18, 21, 22, 24, 25, 26, 28, 29, 30]
+  },
+  {
+    "id": 229,
+    "name": "Hideg málnakrémleves, édesítőszerekkel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/hideg_malnakremleves_edesitoszerekkel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [2, 6, 9, 15, 21, 26]
+  },
+  {
+    "id": 230,
+    "name": "Töltött káposzta",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/toltott_kaposzta.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [4, 5, 7, 16, 17, 21, 28]
+  },
+  {
+    "id": 231,
+    "name": "Vegyes halászlé, édesítőszerekkel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/vegyes_halaszle_edesitoszerekkel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [1, 2, 3, 5, 8, 11, 20, 23, 30]
+  },
+  {
+    "id": 232,
+    "name": "Natúr pulykamell szeletek, almás meggymártás, édesítőszerekkel, jázmin rizs",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/natur_pulykamell_szeletek_almas_meggymartas_edesitoszerekkel_jazmin_rizs.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [4, 17, 19, 23, 30, 31]
+  },
+  {
+    "id": 233,
+    "name": "Madártejleves pirított mandulás, narancsos sült habbal",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/madartejleves_piritott_mandulas_narancsos_sult_habbal.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "Z",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [1, 6, 9, 14, 17, 19, 21, 28, 29, 31]
+  },
+  {
+    "id": 234,
+    "name": "Cigánypecsenye, magyaros tört burgonya",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/ciganypecsenye_magyaros_tort_burgonya.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [4, 6, 7, 9, 11, 19, 20, 26]
+  },
+  {
+    "id": 235,
+    "name": "Erdei gyümölcsleves, édesítőszerekkel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/erdei_gyumolcsleves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [0, 7, 12, 16, 18, 20, 21, 27, 28, 31]
+  },
+  {
+    "id": 236,
+    "name": "Gombapaprikás, galuska",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/gombapaprikas_edesitoszerekkel_galuska.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 13,
+    "weekOfYear": [2, 3, 4, 11, 12, 13, 17, 20, 23, 24, 27, 28, 31]
+  },
+  {
+    "id": 237,
+    "name": "Frankfurtileves, édesítőszerekkel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/frankfurti_leves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 5,
+    "weekOfYear": [5, 10, 14, 18, 25]
+  },
+  {
+    "id": 238,
+    "name": "Sárgaborsófőzelék, pulykafasírt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/sargaborsofozelek_pulykafasirt.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [0, 4, 7, 9, 10, 14, 15, 22, 27, 29]
+  },
+  {
+    "id": 239,
+    "name": "Tárkonyos pulykaraguleves, édesítőszerekkel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/tarkonyos_pulykaraguleves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [11, 12, 13, 17, 20, 28, 31]
+  },
+  {
+    "id": 240,
+    "name": "Tarhonyáshús - sertéscombból",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/tarhonyashus_edesitoszerekkel.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [0, 12, 13, 15, 18, 26, 30]
+  },
+  {
+    "id": 241,
+    "name": "Karfiolleves, édesítőszerekkel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/karfiolleves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [0, 4, 5, 6, 10, 21, 24]
+  },
+  {
+    "id": 242,
+    "name": "Baconos, kukoricás csirkemell rizottó, reszelt sajt",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/baconos_kukoricas_csirkemell_rizotto_reszelt_sajt.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 12,
+    "weekOfYear": [10, 11, 12, 13, 15, 16, 17, 18, 23, 27, 29, 31]
+  },
+  {
+    "id": 243,
+    "name": "Vilmoskörtés almaleves, édesítőszerekkel",
+    "menu": "soup",
+    "img": "../../../assets/images/foods/soup/vilmoskortes_almaleves.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [3, 5, 7, 10, 12, 14, 19, 23, 24, 25, 29]
+  },
+  {
+    "id": 244,
+    "name": "Párizsi pulykamell, vegyes köret",
+    "menu": "main_course",
+    "img": "../../../assets/images/foods/main_course/parizsi_pulykamell_vegyes_koret.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "Z",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [0, 1, 6, 8, 17, 20, 24, 25, 27, 31]
+  },
+  {
+    "id": 245,
+    "name": "Szilvás máglyarakás",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/szilvas_maglyarakas.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [3, 4, 11, 13, 17, 21, 23, 25, 31]
+  },
+  {
+    "id": 246,
+    "name": "Rizsfelfújt meggylekvárral",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/rizsfelfujt_meggylekvarral.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [1, 11, 13, 14, 18, 22, 24, 25, 29, 31]
+  },
+  {
+    "id": 247,
+    "name": "Vargabéles",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/vargabeles.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [0, 1, 6, 13, 17, 21, 26, 28, 29, 30]
+  },
+  {
+    "id": 248,
+    "name": "Tiramisu alla Frutta - erdei gyümölcsös tiramisu",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/tiramisu_alla_frutta.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 12,
+    "weekOfYear": [1, 7, 8, 9, 11, 16, 19, 20, 22, 26, 27, 30]
+  },
+  {
+    "id": 249,
+    "name": "Maskarás gesztenyelabdák - gombócolva, csokiforgáccsal",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/farsang_maskaras_gesztenyelabdak.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [10, 12, 21, 27, 29, 31]
+  },
+  {
+    "id": 250,
+    "name": "Mangós kókusztejes tápiókapuding őszibarackkal",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/indiai_kokusztejes_tapiokapuding_oszibarackkal.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [2, 6, 10, 26, 27, 29]
+  },
+  {
+    "id": 251,
+    "name": "Répatorta mascarpone krémmel",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/repatorta_mascarpone_kremmel.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [2, 4, 5, 9, 14, 15, 22, 28]
+  },
+  {
+    "id": 252,
+    "name": "Gundel palacsinta",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/gundel_palacsinta.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [3, 4, 8, 15, 16, 23, 24, 28, 31]
+  },
+  {
+    "id": 253,
+    "name": "Olimposz csúcs - gesztenyés, vaníliakrémes piskóta csokiöntettel, tejszínhabbal",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/olimposz_csucs.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [2, 6, 10, 12, 14, 17]
+  },
+  {
+    "id": 254,
+    "name": "Gyümölcsrizs ananásszal és őszibarackkal",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/gyumolcsrizs_ananasszal_es_oszibarackkal_desszert.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [3, 4, 6, 11, 17, 24, 31]
+  },
+  {
+    "id": 255,
+    "name": "Máglyarakás",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/maglyarakas.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [7, 11, 12, 13, 16, 19, 23, 26, 30]
+  },
+  {
+    "id": 256,
+    "name": "Somlói galuska",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/somloi_galuska.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [0, 5, 9, 12, 26, 29, 30]
+  },
+  {
+    "id": 257,
+    "name": "Trópusi gyümölcsrizs",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/tropusi_gyumolcsrizs.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [0, 1, 5, 16, 18, 19, 20, 28, 30]
+  },
+  {
+    "id": 258,
+    "name": "Őszibarackos túrókrémmel töltött palacsinta, vaníliaöntet",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/oszibarackos_turokremmel_toltott_palacsinta_vaniliaontet.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [5, 19, 21, 22, 25, 27]
+  },
+  {
+    "id": 259,
+    "name": "Gyümölcsrizs",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/gyumolcsrizs.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 12,
+    "weekOfYear": [0, 1, 2, 4, 5, 7, 12, 15, 22, 24, 27, 28]
+  },
+  {
+    "id": 260,
+    "name": "Nutellával töltött piskóta étcsokis pudinggal",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/nutellas_piskota_suru_etcsokiontettel.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": true,
+        "walnut": true
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [0, 8, 10, 17, 19, 21, 23, 24]
+  },
+  {
+    "id": 261,
+    "name": "Epres krémsajttorta - cheesecake",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/epres_kremsajttorta.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [6, 9, 14, 18, 20, 25]
+  },
+  {
+    "id": 262,
+    "name": "Házi túrógombóc édes tejföllel",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/hazi_turogomboc_edes_tejfollel_desszert.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [3, 7, 8, 9, 13, 14, 15, 25]
+  },
+  {
+    "id": 263,
+    "name": "Mákos guba narancsos vaníliaöntettel",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/makos_guba_narancsos_vaniliaontettel.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [7, 10, 18, 20]
+  },
+  {
+    "id": 264,
+    "name": "Madártej",
+    "menu": "dessert",
+    "img": "../../../assets/images/foods/dessert/madartej.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "D",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [2, 3, 8, 15, 16, 18, 20, 23]
+  },
+  {
+    "id": 265,
+    "name": "Almás rétes",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/almas_retes.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 266,
+    "name": "Mézeskrémes",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/mezes_kremes.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 13,
+    "weekOfYear": [1, 2, 3, 6, 13, 15, 16, 19, 24, 26, 28, 30, 31]
+  },
+  {
+    "id": 267,
+    "name": "Dobszelet",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/dobszelet.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [4, 6, 10, 12, 18, 25, 26, 30, 31]
+  },
+  {
+    "id": 268,
+    "name": "Túrós-feketeribizlis rétes",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/turos-feketeribizlis_retes.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 16,
+    "weekOfYear": [2, 4, 5, 7, 8, 9, 10, 11, 12, 17, 18, 19, 20, 21, 27, 30]
+  },
+  {
+    "id": 269,
+    "name": "Rumos-kókuszos szelet",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/rumos_kokuszos_szelet.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [0, 5, 6, 8, 9, 12, 13, 17, 20, 21, 23]
+  },
+  {
+    "id": 270,
+    "name": "Csokiszelet",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/csokiszelet.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 10,
+    "weekOfYear": [2, 4, 12, 14, 21, 22, 23, 25, 27, 29]
+  },
+  {
+    "id": 271,
+    "name": "Marcipános-mandulás szelet",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/marcipanos_mandulas_szelet.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 12,
+    "weekOfYear": [0, 3, 4, 6, 7, 18, 21, 22, 23, 24, 26, 29]
+  },
+  {
+    "id": 272,
+    "name": "Belga csokis krémtúró szelet",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/belga_csokis_kremturo_szelet.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 6,
+    "weekOfYear": [7, 9, 15, 18, 23, 29]
+  },
+  {
+    "id": 273,
+    "name": "Tejszínes eperkocka",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/tejszines_eperkocka.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 8,
+    "weekOfYear": [2, 3, 14, 19, 20, 24, 25, 27]
+  },
+  {
+    "id": 274,
+    "name": "Kókuszgolyó",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/kokuszgolyo.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [1, 7, 10, 13, 15, 17, 18, 29, 31]
+  },
+  {
+    "id": 275,
+    "name": "Bounty szelet",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/bounty_szelet.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [0, 1, 14, 17, 19, 25, 28, 29, 31]
+  },
+  {
+    "id": 276,
+    "name": "Oroszkrém kocka",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/oroszkrem_kocka.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 12,
+    "weekOfYear": [0, 3, 8, 9, 11, 12, 14, 16, 22, 23, 24, 28]
+  },
+  {
+    "id": 277,
+    "name": "Csokis mignon",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/csokis_mignon.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 11,
+    "weekOfYear": [1, 8, 10, 13, 15, 16, 17, 20, 21, 24, 30]
+  },
+  {
+    "id": 278,
+    "name": "Almás-mákos rétes",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/almas_makos_retes.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 279,
+    "name": "Piskótatekercs karamellöntettel",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/piskotatekercs_karamellontettel.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 7,
+    "weekOfYear": [3, 5, 15, 22, 25, 27, 28]
+  },
+  {
+    "id": 280,
+    "name": "Meggyes-mákos lepény",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/meggyes_makos_lepeny.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 4,
+    "weekOfYear": [5, 8, 10, 11]
+  },
+  {
+    "id": 281,
+    "name": "Meggyes rétes",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/meggyes_retes.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": false,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 282,
+    "name": "Képviselőfánk",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/kepviselofank.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 9,
+    "weekOfYear": [2, 9, 11, 14, 16, 20, 26, 30, 31]
+  },
+  {
+    "id": 283,
+    "name": "Zserbószelet",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/zserboszelet.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": true
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 284,
+    "name": "Gesztenyés kocka",
+    "menu": "cake",
+    "img": "../../../assets/images/foods/cake/gesztenyes_kocka.jpg",
+    "allergens": [
+      {
+        "gluten": true,
+        "milk": true,
+        "soya": true,
+        "egg": true,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "S",
+    "vegan": false,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 14,
+    "weekOfYear": [0, 1, 4, 5, 6, 7, 11, 13, 16, 19, 22, 26, 27, 28]
+  },
+  {
+    "id": 285,
+    "name": "Csalamádé",
+    "menu": "pickles",
+    "img": "../../../assets/images/foods/pickles/csalamade.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SA",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 19,
+    "weekOfYear": [
+      0, 2, 4, 5, 6, 8, 9, 11, 12, 14, 15, 16, 17, 20, 23, 25, 27, 28, 31
+    ]
+  },
+  {
+    "id": 286,
+    "name": "Tavaszi vegyes vágott",
+    "menu": "pickles",
+    "img": "../../../assets/images/foods/pickles/tavaszi_vegyes_vagott.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SA",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 19,
+    "weekOfYear": [
+      1, 2, 4, 7, 8, 9, 11, 13, 14, 16, 20, 21, 22, 23, 24, 28, 29, 30, 31
+    ]
+  },
+  {
+    "id": 287,
+    "name": "Káposztasaláta",
+    "menu": "pickles",
+    "img": "../../../assets/images/foods/pickles/kaposztasalata.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SA",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 16,
+    "weekOfYear": [2, 3, 4, 5, 10, 13, 14, 16, 19, 20, 21, 24, 27, 29, 30, 31]
+  },
+  {
+    "id": 288,
+    "name": "Uborkasaláta",
+    "menu": "pickles",
+    "img": "../../../assets/images/foods/pickles/uborkasalata.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SA",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 21,
+    "weekOfYear": [
+      1, 3, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 20, 21, 24, 25, 26, 27, 28,
+      29
+    ]
+  },
+  {
+    "id": 289,
+    "name": "Csemegeuborka",
+    "menu": "pickles",
+    "img": "../../../assets/images/foods/pickles/csemegeuborka.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SA",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 13,
+    "weekOfYear": [5, 6, 7, 12, 13, 15, 16, 18, 20, 21, 22, 23, 26]
+  },
+  {
+    "id": 290,
+    "name": "Paradicsomsaláta",
+    "menu": "pickles",
+    "img": "../../../assets/images/foods/pickles/paradicsomsalata.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SA",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 13,
+    "weekOfYear": [0, 1, 3, 6, 8, 10, 11, 16, 17, 18, 26, 28, 30]
+  },
+  {
+    "id": 291,
+    "name": "Tejfölös uborkasaláta",
+    "menu": "pickles",
+    "img": "../../../assets/images/foods/pickles/tejfolos_uborkasalata.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": true,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SA",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 15,
+    "weekOfYear": [0, 1, 3, 5, 9, 10, 17, 18, 19, 21, 22, 25, 26, 27, 28]
+  },
+  {
+    "id": 292,
+    "name": "Céklasaláta",
+    "menu": "pickles",
+    "img": "../../../assets/images/foods/pickles/ceklasalata.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SA",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 14,
+    "weekOfYear": [0, 2, 3, 6, 7, 8, 9, 10, 12, 15, 18, 24, 29, 31]
+  },
+  {
+    "id": 293,
+    "name": "Vegyes tál - almapaprika, csalamádé, csemege uborka",
+    "menu": "pickles",
+    "img": "../../../assets/images/foods/pickles/vegyestal.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SA",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 14,
+    "weekOfYear": [4, 5, 6, 12, 14, 15, 19, 22, 23, 25, 26, 29, 30, 31]
+  },
+  {
+    "id": 294,
+    "name": "Köményes káposztasaláta",
+    "menu": "pickles",
+    "img": "../../../assets/images/foods/pickles/komenyes_kaposzta_salata.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "SA",
+    "vegan": true,
+    "fitness": false,
+    "active": true,
+    "numberInMenu": 16,
+    "weekOfYear": [0, 1, 2, 4, 7, 11, 13, 17, 18, 19, 22, 23, 24, 25, 27, 30]
+  },
+  {
+    "id": 295,
+    "name": "Coca-Cola",
+    "menu": "drink",
+    "img": "../../../assets/images/foods/drink/cola_cola.png",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "I",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 296,
+    "name": "Coca-Cola ZERO",
+    "menu": "drink",
+    "img": "../../../assets/images/foods/drink/cola_cola_zero.png",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "I",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 297,
+    "name": "Fanta Narancs",
+    "menu": "drink",
+    "img": "../../../assets/images/foods/drink/fanta.png",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "I",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 298,
+    "name": "Sprite",
+    "menu": "drink",
+    "img": "../../../assets/images/foods/drink/sprite.png",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "I",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 299,
+    "name": "Lipton citromízű jeges tea",
+    "menu": "drink",
+    "img": "../../../assets/images/foods/drink/lipton_lemon.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "I",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 300,
+    "name": "HappyDay almalé",
+    "menu": "drink",
+    "img": "../../../assets/images/foods/drink/happyday-almale.png",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "I",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 301,
+    "name": "SIÓ baracklé",
+    "menu": "drink",
+    "img": "../../../assets/images/foods/drink/sio_oszi.jpg",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "I",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 302,
+    "name": "Red Bull",
+    "menu": "drink",
+    "img": "../../../assets/images/foods/drink/redbull.png",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "I",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 303,
+    "name": "Natur Aqua szénsavas ásványvíz",
+    "menu": "drink",
+    "img": "../../../assets/images/foods/drink/natur_aqua_szensavas_asvanyviz.png",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "I",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  },
+  {
+    "id": 304,
+    "name": "Natur Aqua szénsavmentes ásványvíz",
+    "menu": "drink",
+    "img": "../../../assets/images/foods/drink/natur_aqua_szensavmentes_asvanyviz.png",
+    "allergens": [
+      {
+        "gluten": false,
+        "milk": false,
+        "soya": false,
+        "egg": false,
+        "peanut": false,
+        "walnut": false
+      }
+    ],
+    "category": "I",
+    "vegan": false,
+    "fitness": false,
+    "active": true
+  }
+]

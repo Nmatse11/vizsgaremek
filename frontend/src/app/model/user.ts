@@ -1,7 +1,9 @@
 export class User {
   [key: string]: any;
-  id: number = 0;
+  _id: string = '';
   email: string = '';
   password: string = '';
-  customerID?: number = 0;
+  role: string = 'customer'
+  customerID?: string = '';
+  accessToken: string = ''
 }
