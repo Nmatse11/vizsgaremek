@@ -5,6 +5,7 @@ export interface IMenuItem {
   link?: string;
   icon?: string;
   status?: boolean
+  role?: string
 }
 
 export interface ITableItem {
@@ -162,8 +163,10 @@ export class ConfigService {
   ];
 
   loginNavbarItems: IMenuItem[] = [
-    { text: 'Nagy Petra', link: '/', icon: 'person', status: true},
-    { text: 'Kijelentkezés', link: '/', icon: 'rlogout', status: true },
+    { role: 'admin', text: 'Nagy Petra - Admin', link: '/', icon: 'person', status: true},
+    //{ role: 'editor', text: 'Kiss Réka - Szerkesztő', link: '/', icon: 'person', status: true},
+    //{ role: 'customer', text: '', link: '/', icon: 'person', status: true},
+    { role: 'admin, editor, customer', text: 'Kijelentkezés', link: '/', icon: 'logout', status: true },
     { text: 'Bejelentkezés', link: '/login', icon: 'person', status: false },
     { text: 'Regisztráció', link: '/signup', icon: 'person_add', status: false },
   ];
@@ -557,6 +560,7 @@ export class ConfigService {
     {prop: 'type', label: 'Típus',  pattern: ''},
     {prop: 'amount', label: 'Összeg', placeholder: 'Összeg...', pattern: this.patternItems[10].pattern, message: this.patternItems[10].message},
     {prop: 'status', label: 'Státusz', pattern: ''},
+    {prop: 'orderID', label: 'Megrendelő', placeholder: 'Megrendelő...', pattern: this.patternItems[0].pattern, message: this.patternItems[0].message}
   ];
 
   fastfoodEditItems: IEditItem[] = [

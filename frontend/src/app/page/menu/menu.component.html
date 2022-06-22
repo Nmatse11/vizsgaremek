@@ -47,18 +47,18 @@
 
 <div *ngIf="menus$ | async as menu;" class="container-fluid pb-5 mb-5">
   <div class="row border border-dark d-flex flex-row menu_thead">
-    <mat-card class="menu-card menu_thead menu_tkey h-auto text-center mt-2 border-0 rounded-0">
+    <mat-card class="menu-card menu_thead menu_tkey h-auto text-center pt-4 border-0 rounded-0 mat-elevation-z4">
       <mat-card-content>
         <h5>{{ menuCardHeaderText[0].name }}</h5>
       </mat-card-content>
     </mat-card>
-    <mat-card class="menu-card menu_thead menu_name h-auto text-center mt-2 border-0 rounded-0">
+    <mat-card class="menu-card menu_thead menu_name h-auto text-center pt-4 border-0 rounded-0 mat-elevation-z4">
       <mat-card-content>
         <h5>{{ menuCardHeaderText[1].name }}</h5>
       </mat-card-content>
     </mat-card>
     <div *ngFor="let day of dayIndex" class="menu_card px-0 text-center">
-      <mat-card class="menu-card h-auto menu_thead border-0 rounded-0">
+      <mat-card class="menu-card h-auto menu_thead border-0 rounded-0 mat-elevation-z4">
         <mat-card-content>
           <h5>{{ menuCardHeaderText[day+2].name }}</h5>
           <p class="small">{{ customDateFormats(this.weekService.getWeekDays(week)[day]) }}</p>
@@ -68,13 +68,13 @@
   </div>
   <div *ngFor="let index of primeIndex" class="row border border-dark d-flex flex-row"
     [id]="menuCardText[index].scroll">
-    <mat-card class="menu-card menu_key h-auto d-flex align-items-center border-0 rounded-0"
+    <mat-card class="menu-card menu_key h-auto d-flex align-items-center border-0 rounded-0 mat-elevation-z4"
       [ngClass]="menuCardText[index].class">
       <mat-card-content>
         <p>{{ menuCardText[index].key }}</p>
       </mat-card-content>
     </mat-card>
-    <mat-card class="menu-card menu_name h-auto d-flex align-items-center border-0 rounded-0"
+    <mat-card class="menu-card menu_name h-auto d-flex align-items-center border-0 rounded-0 mat-elevation-z4"
       [ngClass]="menuCardText[index].class">
       <mat-card-content>
         <p>{{ menuCardText[index].name }}</p>
@@ -107,33 +107,34 @@
   <hr>
 
   <div class="row border border-dark d-flex flex-row menu_thead">
-    <mat-card class="menu-card menu_thead menu_tkey h-auto text-center border-0 rounded-0">
+    <mat-card class="menu-card menu_thead menu_tkey h-auto text-center pt-4 border-0 rounded-0 mat-elevation-z4">
       <mat-card-content>
         <h5>{{ menuCardHeaderText[0].name }}</h5>
       </mat-card-content>
     </mat-card>
-    <mat-card class="menu-card menu_thead menu_name h-auto text-center border-0 rounded-0">
+    <mat-card class="menu-card menu_thead menu_name h-auto text-center pt-4 border-0 rounded-0 mat-elevation-z4">
       <mat-card-content>
         <h5>{{ menuCardHeaderText[1].name }}</h5>
       </mat-card-content>
     </mat-card>
     <div *ngFor="let day of dayIndex" class="menu_card px-0 text-center">
-      <mat-card class="menu-card h-auto menu_thead border-0 rounded-0">
+      <mat-card class="menu-card h-auto menu_thead border-0 rounded-0 mat-elevation-z4">
         <mat-card-content>
           <h5>{{ menuCardHeaderText[day+2].name }}</h5>
+          <p class="small">{{ customDateFormats(this.weekService.getWeekDays(week)[day]) }}</p>
         </mat-card-content>
       </mat-card>
     </div>
   </div>
   <div *ngFor="let index of optionIndex" class="row border border-dark d-flex flex-row"
     [id]="menuCardText[index + 7].scroll">
-    <mat-card class="menu-card menu_key h-auto d-flex align-items-center border-0 rounded-0"
+    <mat-card class="menu-card menu_key h-auto d-flex align-items-center border-0 rounded-0 mat-elevation-z4"
       [ngClass]="menuCardText[index + 7].class">
       <mat-card-content>
         <p>{{ menuCardText[index + 7].key }}</p>
       </mat-card-content>
     </mat-card>
-    <mat-card class="menu-card menu_name h-auto d-flex align-items-center border-0 rounded-0"
+    <mat-card class="menu-card menu_name h-auto d-flex align-items-center border-0 rounded-0 mat-elevation-z4"
       [ngClass]="menuCardText[index + 7].class">
       <mat-card-content>
         <p>{{ menuCardText[index + 7].name }}</p>
@@ -153,32 +154,33 @@
   <hr>
 
   <div class="row border border-dark d-flex flex-row menu_thead">
-    <mat-card class="menu-card menu_thead menu_tkey h-auto text-center border-0 rounded-0">
+    <mat-card class="menu-card menu_thead menu_tkey h-auto text-center pt-4 border-0 rounded-0 mat-elevation-z4">
       <mat-card-content>
         <h5>{{ menuCardHeaderText[0].name }}</h5>
       </mat-card-content>
     </mat-card>
-    <mat-card class="menu-card menu_thead menu_name h-auto text-center border-0 rounded-0">
+    <mat-card class="menu-card menu_thead menu_name h-auto text-center pt-4 border-0 rounded-0 mat-elevation-z4">
       <mat-card-content>
         <h5>{{ menuCardHeaderText[1].name }}</h5>
       </mat-card-content>
     </mat-card>
     <div *ngFor="let day of dayIndex" class="menu_card px-0 text-center">
-      <mat-card class="menu-card h-auto menu_thead border-0 rounded-0">
+      <mat-card class="menu-card h-auto menu_thead border-0 rounded-0 mat-elevation-z4">
         <mat-card-content>
           <h5>{{ menuCardHeaderText[day+2].name }}</h5>
+          <p class="small">{{ customDateFormats(this.weekService.getWeekDays(week)[day]) }}</p>
         </mat-card-content>
       </mat-card>
     </div>
   </div>
   <div *ngFor="let imenu of iMenuItem; index as i" class="row border border-dark d-flex flex-row"
     [id]="menuCardText[12].scroll">
-    <mat-card class="menu-card menu_I menu_key h-auto d-flex align-items-center border-0 rounded-0">
+    <mat-card class="menu-card menu_I menu_key h-auto d-flex align-items-center border-0 rounded-0 mat-elevation-z4">
       <mat-card-content>
         <p>{{ menuCardText[12].key }}{{i+1}}</p>
       </mat-card-content>
     </mat-card>
-    <mat-card class="menu-card menu_I menu_name h-auto d-flex align-items-center border-0 rounded-0">
+    <mat-card class="menu-card menu_I menu_name h-auto d-flex align-items-center border-0 rounded-0 mat-elevation-z4">
       <mat-card-content>
         <p>{{ menuCardText[12].name }}</p>
         <p class="text-muted">{{ priceArray[12] | customCurrency }} / {{priceOfDayText}}</p>

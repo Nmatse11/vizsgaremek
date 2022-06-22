@@ -21,11 +21,7 @@ const UserSchema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Customer',
     required: false
-  },
-  accessToken: {
-    type: String,
-    required: false
-  },
+  }
 }, {
   timeStamps: true
 });

@@ -110,15 +110,15 @@ export class MenuEditorComponent implements OnInit {
   saveMenu(week: number, menuKey: string) {
      this.menuService.getMenu(week).subscribe(menu => {
       if (this.menuSelectPrimeArray.indexOf(menuKey) !== -1) {
-        menu[`${menuKey}MenuFoodSoup`] = this.randomMenu[`${menuKey}MenuFoodSoup`]
-        menu[`${menuKey}MenuFoodMain`] = this.randomMenu[`${menuKey}MenuFoodMain`]
+        menu[0][`${menuKey}MenuFoodSoup`] = this.randomMenu[`${menuKey}MenuFoodSoup`]
+        menu[0][`${menuKey}MenuFoodMain`] = this.randomMenu[`${menuKey}MenuFoodMain`]
       }
       if (this.menuSelectOptionArray.indexOf(menuKey) !== -1) {
-        menu[`${menuKey}MenuFood`] = this.randomMenu[`${menuKey}MenuFood`]
+        menu[0][`${menuKey}MenuFood`] = this.randomMenu[`${menuKey}MenuFood`]
       }
 
-      this.menuService.update(menu).subscribe(
-        next => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      this.menuService.update(menu[0]).subscribe(
+        menu => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
           this.router.navigate(['/', 'menu-editor' ]);
           this.toastr.success(this.messages[4].message, this.messages[4].title)}),
         err => console.error(err))

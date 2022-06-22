@@ -16,8 +16,8 @@ export class BaseComponentListComponent implements OnInit {
   @Input() componentName!: string
   @Input() categoryName!: string
   @Input() currencyPipeOn?: string
-  @Input() customerIdOn?: string
   @Input() joinObjectOn?: string
+  @Input() customerNameOn?: string;
 
   @Output() removeById: EventEmitter<string> = new EventEmitter();
 

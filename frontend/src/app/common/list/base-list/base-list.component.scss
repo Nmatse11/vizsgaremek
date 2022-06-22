@@ -13,8 +13,17 @@
   }
 
   &td {
-    width: 15%
+    width: 15%;
+    margin: 0 1rem
   }
+}
+
+.mat-header-cell {
+  padding-left: 4rem;
+}
+
+th.mat-header-cell:first-of-type {
+  padding-left: 5rem;
 }
 
 button, .nav-link, mat-paginator, mat-checkbox, mat-icon-button  {

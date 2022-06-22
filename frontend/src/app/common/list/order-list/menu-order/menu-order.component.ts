@@ -18,7 +18,7 @@ export class MenuOrderComponent implements OnInit {
   categoryName: string = 'menu'
 
   currencyPipeOn = 'amount';
-  customerIdOn = 'customerID'
+  customerNameOn = 'customerID'
 
   messages = this.config.toastrItems
 

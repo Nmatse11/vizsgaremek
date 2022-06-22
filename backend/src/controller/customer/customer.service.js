@@ -5,9 +5,9 @@ exports.create = requestData => {
   return entity.save();
 };
 
-exports.findAll = () => Customer.find().populate();
+exports.findAll = () => Customer.find().populate('address').populate('shipAddress');
 
-exports.findOne = id => Customer.findById(id).populate();
+exports.findOne = id => Customer.findById(id).populate('address').populate('shipAddress');
 
 exports.update = (id, updateData) => Customer.findByIdAndUpdate(id, updateData, { new: true });
 
@@ -16,3 +16,5 @@ exports.delete = async id => {
   if (!doc) { throw new Error('Not found'); }
   return doc.delete();
 }
+
+exports.findAllName = () => Customer.find({}, { firstName: 1, lastName: 1 })

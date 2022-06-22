@@ -47,7 +47,7 @@ const FoodMenuSchema = mongoose.Schema({
   },
   img: {
     type: String,
-    required: true,
+    required: false,
   },
   allergens: [AllergenSchema],
   category: {

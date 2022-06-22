@@ -3,7 +3,7 @@
     <div class="card-header">
       <h4 class="card-title" *ngIf="id !== '0'">{{ editPageItems[0].title }}</h4>
       <h4 class="card-title" *ngIf="id === '0'">{{ editPageItems[0].new }}</h4>
-      <p class="card-category">{{ editPageText[0].name }}</p>
+      <p class="card-category" *ngIf="id !== '0'">{{ editPageText[0].name }}</p>
     </div>
     <div class="card-body">
       <form #billForm="ngForm" (ngSubmit)="saveBill(bill)">
@@ -39,15 +39,31 @@
 
         <div class="row mb-2 justify-content-center">
           <div class="col-lg-5 col-md-12 mb-2">
-            <div class="form-group">
+            <div class="form-group" *ngIf="id !== '0' && customerKeys !== [] && customerValue !== []">
+              <label [for]="billEditItems[2].prop">{{ billEditItems[6].label }} *</label>
+              <select [(ngModel)]="bill[billEditItems[2].prop].customerID" class="form-control" required
+                [name]="billEditItems[2].prop" [id]="billEditItems[2].prop" [disabled]="id !== '0'">
+                <option *ngFor="let key of customerKeys; index as i" [value]="key">
+                  {{ customerValue[i] }}
+                </option>
+              </select>
+            </div>
+            <div class="form-group" *ngIf="id === '0'">
               <label [for]="billEditItems[2].prop">{{ billEditItems[2].label }} *</label>
-              <input [(ngModel)]="bill[billEditItems[2].prop]" class="form-control" type="number"
-                [name]="billEditItems[2].prop" [disabled]="id !== '0'" [id]="billEditItems[2].prop" required
-                [pattern]="billEditItems[2].pattern" min="1" [placeholder]="billEditItems[2].placeholder">
-              <div class="font-italic small ml-2 mt-1"
-                [hidden]="billForm.controls[billEditItems[2].prop]?.valid || billForm.controls[billEditItems[2].prop]?.pristine">
-                {{ billEditItems[2].message }}
-              </div>
+              <select *ngIf="orderMenuKeys !== [] && bill[billEditItems[3].prop] === 'menu'"
+                [(ngModel)]="bill[billEditItems[2].prop]" class="form-control" required [name]="billEditItems[2].prop"
+                [id]="billEditItems[2].prop" [disabled]="id !== '0'">
+                <option *ngFor="let key of orderMenuKeys;" [value]="key">
+                  {{ key }}
+                </option>
+              </select>
+              <select *ngIf="orderFastfoodKeys !== [] && bill[billEditItems[3].prop] === 'fastfood'"
+                [(ngModel)]="bill[billEditItems[2].prop]" class="form-control" required [name]="billEditItems[2].prop"
+                [id]="billEditItems[2].prop" [disabled]="id !== '0'">
+                <option *ngFor="let key of orderFastfoodKeys;" [value]="key">
+                  {{ key }}
+                </option>
+              </select>
             </div>
           </div>
           <div class="col-lg-5 col-md-12">

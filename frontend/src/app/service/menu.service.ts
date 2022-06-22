@@ -18,6 +18,6 @@ export class MenuService extends SummaryService<Menu>{
    }
 
    getMenu(week: number): Observable<Menu> {
-    return this.http.get<Menu>(`${this.apiUrl}${this.entityName}/set/${week}`);
+    return this.http.get<Menu>(`${this.apiUrl}${this.entityName}/week/${week}`);
   }
 }

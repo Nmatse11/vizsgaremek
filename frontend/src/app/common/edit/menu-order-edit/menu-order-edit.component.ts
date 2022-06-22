@@ -71,12 +71,12 @@ export class MenuOrderEditComponent implements OnInit {
   }
 
   getCustomer(): void {
-    this.customerService.getAll().subscribe(customers => {
+    this.customerService.getNames().subscribe(customers => {
       customers.map(customer => {
         this.customerKeys.push(customer._id)
         let name = `${customer.firstName} ${customer.lastName}`
         this.customerValue.push(name)
-       })
+      })
     })
   }
 

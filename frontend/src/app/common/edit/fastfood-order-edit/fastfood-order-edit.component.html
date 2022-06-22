@@ -26,8 +26,14 @@
           <div class="col-lg-5 col-md-12">
             <div class="form-group" *ngIf="customerKeys && customerValue">
               <label [for]="orderFastfoodEditItems[1].prop">{{ orderFastfoodEditItems[1].label }} *</label>
-              <select [(ngModel)]="order[orderFastfoodEditItems[1].prop]" class="form-control" required
-                [name]="orderFastfoodEditItems[1].prop" [id]="orderFastfoodEditItems[1].prop">
+              <select *ngIf="id !== '0'" [(ngModel)]="order[orderFastfoodEditItems[1].prop]._id" class="form-control"
+                required [name]="orderFastfoodEditItems[1].prop" [id]="orderFastfoodEditItems[1].prop">
+                <option *ngFor="let key of customerKeys; index as i" [value]="key">
+                  {{ customerValue[i] }}
+                </option>
+              </select>
+              <select *ngIf="id === '0'" [(ngModel)]="order[orderFastfoodEditItems[1].prop]" class="form-control"
+                required [name]="orderFastfoodEditItems[1].prop" [id]="orderFastfoodEditItems[1].prop">
                 <option *ngFor="let key of customerKeys; index as i" [value]="key">
                   {{ customerValue[i] }}
                 </option>

@@ -28,8 +28,8 @@ router.delete('/:id', (req, res, next) => {
   return controller.delete(req, res, next);
 });
 
-// get one mneu
-router.get('/set/:week', (req, res, next) => {
+// get one menu
+router.get('/week/:week', (req, res, next) => {
   return controller.findOneWeek(req, res, next);
 });
 

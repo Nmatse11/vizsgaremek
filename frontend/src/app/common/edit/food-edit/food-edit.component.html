@@ -10,6 +10,10 @@
 
         <input [(ngModel)]="food._id" type="hidden" name="id">
 
+        <div *ngIf="id !== '0'" class="row mb-2 justify-content-center">
+          <img [src]="food.img" alt="food image" class="foodImg">
+        </div>
+
         <div class="row mb-2 justify-content-center">
           <div class="col-lg-5 col-md-12 mb-2">
             <div class="form-group">
@@ -86,6 +90,7 @@
             </div>
           </div>
         </div>
+
 
         <div class="row mb-2 justify-content-center">
           <div class="col-lg-10 col-md-12 mb-5 d-flex">

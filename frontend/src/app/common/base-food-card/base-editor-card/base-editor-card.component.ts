@@ -68,16 +68,16 @@ export class BaseEditorCardComponent implements OnInit {
         let selectedFood = foods.filter(food => food.name === newMenuName)
         let notes = selectedFood[0].menu
       if (number === 1) {
-        menu[`${selectedMenuKey}MenuFoodSoup`][day] = selectedFood[0]
+        menu[0][`${selectedMenuKey}MenuFoodSoup`][day] = selectedFood[0]
       }
       if (number === 2 && notes === 'main_course') {
-        menu[`${selectedMenuKey}MenuFoodMain`][day] = selectedFood[0]
+        menu[0][`${selectedMenuKey}MenuFoodMain`][day] = selectedFood[0]
       }
       if (number === 2 && notes !== 'main_course') {
-        menu[`${selectedMenuKey}MenuFood`][day] = selectedFood[0]
+        menu[0][`${selectedMenuKey}MenuFood`][day] = selectedFood[0]
       }
 
-      this.menuService.update(menu).subscribe(
+      this.menuService.update(menu[0]).subscribe(
         next => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
           this.router.navigate(['/', 'menu-editor' ]);
           this.toastr.success(this.messages[4].message, this.messages[4].title)}),

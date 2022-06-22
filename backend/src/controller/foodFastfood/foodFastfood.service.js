@@ -1,18 +1,18 @@
-const Fastfood = require('../../model/foodFastfood.model')
+const FoodFastfood = require('../../model/foodFastfood.model')
 
 exports.create = requestData => {
-  const entity = new Fastfood(requestData);
+  const entity = new FoodFastfood(requestData);
   return entity.save();
 };
 
-exports.findAll = () => Fastfood.find().populate();
+exports.findAll = () => FoodFastfood.find().populate();
 
-exports.findOne = id => Fastfood.findById(id).populate();
+exports.findOne = id => FoodFastfood.findById(id).populate();
 
-exports.update = (id, updateData) => Fastfood.findByIdAndUpdate(id, updateData, { new: true });
+exports.update = (id, updateData) => FoodFastfood.findByIdAndUpdate(id, updateData, { new: true });
 
 exports.delete = async id => {
-  const doc = await Fastfood.findByIdAndRemove(id);
+  const doc = await FoodFastfood.findByIdAndRemove(id);
   if (!doc) { throw new Error('Not found'); }
   return doc.delete();
 }

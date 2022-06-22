@@ -5,9 +5,9 @@ exports.create = requestData => {
   return entity.save();
 };
 
-exports.findAll = () => Menu.find().populate();
+exports.findAll = () => Menu.find();
 
-exports.findOne = id => Menu.findById(id).populate();
+exports.findOne = id => Menu.findById(id);
 
 exports.update = (id, updateData) => Menu.findByIdAndUpdate(id, updateData, { new: true });
 
@@ -17,4 +17,4 @@ exports.delete = async id => {
   return doc.delete();
 }
 
-exports.findOneWeek = number => Menu.find({ week: { $eq: number } }).populate();
+exports.findOneWeek = number => Menu.find({ week: number });

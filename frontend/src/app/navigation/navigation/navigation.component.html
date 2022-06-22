@@ -28,10 +28,13 @@
     </ul>
     <ul class="navbar-nav ml-lg-auto mb-2 mb-lg-0">
       <li class="nav-item" *ngFor="let item of loginNavbarItems">
-        <a class="nav-link d-flex flex-row align-items-center" [routerLink]="item.link" *ngIf="login === item.status"
-          data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link d-flex flex-row align-items-center" [routerLink]="item.link" data-toggle="collapse"
+          *ngIf="item.status === login" data-target=".navbar-collapse.show">
           <i class="material-icons">{{ item.icon }} </i>
-          <p class="nav-text">{{ item.text }}</p>
+          <a *ngIf="item.text !== loginNavbarItems[3].text" class="nav-link-text">{{ item.text }}</a>
+          <a *ngIf="item.text === loginNavbarItems[3].text" class="nav-link-text" (click)="logout()">
+            {{ item.text }}
+          </a>
         </a>
       </li>
     </ul>

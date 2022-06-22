@@ -43,6 +43,9 @@ app.use(express.static('public'));
 app.post('/login', authHandler.login);
 app.post('/refresh', authHandler.refresh);
 app.post('/logout', authHandler.logout);
+//app.use('/login', require('./auth/signin/signin.router'));
+
+app.post('/signup', require('./auth/signup/signup.router'));
 
 app.use('/bill', require('./controller/bill/bill.routes'));
 app.use('/category-fastfood', require('./controller/categoryFastfood/categoryFastfood.routes'));

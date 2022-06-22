@@ -1,18 +1,21 @@
-const Order = require('../../model/orderFastfood.model')
+const OrderFastfood = require('../../model/orderFastfood.model')
 
 exports.create = requestData => {
-  const entity = new Order(requestData);
+  const entity = new OrderFastfood(requestData);
   return entity.save();
 };
 
-exports.findAll = () => Order.find().populate();
+exports.findAll = async () => {
+  const doc = await OrderFastfood.find().populate('customerID')
+  return doc.sort((a, b) => (new Date(a.date)) - (new Date(b.date)))
+};
 
-exports.findOne = id => Order.findById(id).populate();
+exports.findOne = id => OrderFastfood.findById(id).populate('customerID');
 
-exports.update = (id, updateData) => Order.findByIdAndUpdate(id, updateData, { new: true });
+exports.update = (id, updateData) => OrderFastfood.findByIdAndUpdate(id, updateData, { new: true });
 
 exports.delete = async id => {
-  const doc = await Order.findByIdAndRemove(id);
+  const doc = await OrderFastfood.findByIdAndRemove(id);
   if (!doc) { throw new Error('Not found'); }
   return doc.delete();
 }

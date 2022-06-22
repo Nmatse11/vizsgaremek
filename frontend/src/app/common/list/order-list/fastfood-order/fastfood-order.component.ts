@@ -18,7 +18,7 @@ export class FastfoodOrderComponent implements OnInit {
   categoryName: string = 'fastfood'
 
   currencyPipeOn = 'amount';
-  customerIdOn = 'customerID'
+  customerNameOn = 'customerID'
 
   messages = this.config.toastrItems
 

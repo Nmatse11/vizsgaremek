@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
-import { Address } from '../model/address';
+import { Observable } from 'rxjs';
 import { Customer } from '../model/customer';
 import { SummaryService } from './summary.service';
 
@@ -15,6 +14,10 @@ export class CustomerService extends SummaryService<Customer>{
   ) {
     super(http);
     this.entityName = 'customer';
+  }
+
+  getNames(): Observable<Customer[]> {
+    return this.http.get<Customer[]>(`${this.apiUrl}${this.entityName}/names`);
   }
 
 }

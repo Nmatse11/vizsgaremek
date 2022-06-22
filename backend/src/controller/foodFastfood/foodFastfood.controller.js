@@ -1,11 +1,11 @@
 const express = require('express');
 const createError = require('http-errors');
 
-const Fastfood = require('../../model/foodFastfood.model');
+const FoodFastfood = require('../../model/foodFastfood.model');
 const fastfoodService = require('./foodFastfood.service');
 
 exports.create = (req, res, next) => {
-  const validationErrors = new Fastfood(req.body).validateSync();
+  const validationErrors = new FoodFastfood(req.body).validateSync();
   if (validationErrors) {
     return next(
       new createError.BadRequest(validationErrors)
@@ -38,7 +38,7 @@ exports.findOne = (req, res, next) => {
 };
 
 exports.update = (req, res, next) => {
-  const validationErrors = new Fastfood(req.body).validateSync();
+  const validationErrors = new FoodFastfood(req.body).validateSync();
   if (validationErrors) {
     return next(
       new createError.BadRequest(validationErrors)

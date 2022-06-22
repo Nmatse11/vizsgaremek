@@ -63,8 +63,7 @@ exports.delete = (req, res, next) => {
 };
 
 exports.findOneWeek = (req, res, next) => {
-  const { week } = req.body
-  return menuService.findOneWeek(week)
+  return menuService.findOneWeek(req.params.week)
     .then(menu => {
       if (!menu) {
         return next(new createError.NotFound("Menu is not found"));

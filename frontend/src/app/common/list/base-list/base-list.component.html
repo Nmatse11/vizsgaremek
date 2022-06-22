@@ -44,11 +44,13 @@
 
 
     <div class="table-responsive mat-elevation-z8">
-      <table *ngIf="List && customerKeys && customerValue" mat-table matSort [dataSource]="List" class="admintable">
+      <table *ngIf="List" mat-table matSort [dataSource]="List" class="admintable text-center">
 
         <ng-container [matColumnDef]="col.title" *ngFor="let col of columns">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header class="admintd"> {{ col.title }} </th>
-          <td mat-cell *matCellDef="let item" class="admintd">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header class="text-center">
+            {{ col.title | titlecase }}
+          </th>
+          <td mat-cell *matCellDef="let item" class="admintd text-center">
             <ng-container *ngIf="isBoolean(item[col.key]); else booleanFalse">
               <mat-slide-toggle [checked]="item[col.key] === true" disabled="true"
                 [matTooltip]="item[col.key] ? setTooltipTrue(col.key) : setTooltipFalse(col.key)"
@@ -66,8 +68,13 @@
               </ng-container>
             </ng-template>
             <ng-template #noObject>
-              <ng-container *ngIf="col.key === customerIdOn; else noID">
+              <ng-container *ngIf="col.key === customerNameOn; else noName">
                 {{ setCustomerName(item[col.key]) }}
+              </ng-container>
+            </ng-template>
+            <ng-template #noName>
+              <ng-container *ngIf="col.key === customerIdOn; else noID">
+                {{ setBillCustomerName(item[col.key].customerID) }}
               </ng-container>
             </ng-template>
             <ng-template #noID>

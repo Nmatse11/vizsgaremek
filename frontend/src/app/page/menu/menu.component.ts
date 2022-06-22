@@ -41,7 +41,7 @@ export class MenuComponent implements OnInit {
   primeIndex!: number[]
   optionIndex!: number[]
 
-  menuVariable = Object.keys(new Menu()).filter(value => value !== "id" && value !== "week")
+  menuVariable = Object.keys(new Menu()).filter(value => value !== "_id" && value !== "week")
 
   menuPrimeButton = this.config.menuPrimeButtonText
   menuOptionButton = this.config.menuOptionButtonText

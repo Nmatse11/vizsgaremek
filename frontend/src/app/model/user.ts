@@ -5,5 +5,4 @@ export class User {
   password: string = '';
   role: string = 'customer'
   customerID?: string = '';
-  accessToken: string = ''
 }

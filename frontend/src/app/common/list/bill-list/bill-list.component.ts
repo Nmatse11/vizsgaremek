@@ -18,6 +18,7 @@ export class BillListComponent implements OnInit {
   componentName = 'bill';
 
   currencyPipeOn = 'amount';
+  customerIdOn = 'orderID'
 
   messages = this.config.toastrItems
 

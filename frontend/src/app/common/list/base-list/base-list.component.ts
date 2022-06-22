@@ -4,6 +4,9 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Observable } from 'rxjs';
+import { Customer } from 'src/app/model/customer';
+import { OrderFastfood } from 'src/app/model/order-fastfood';
+import { OrderMenu } from 'src/app/model/order-menu';
 import { ConfigService, ITableColumnItem } from 'src/app/service/config.service';
 import { CustomerService } from 'src/app/service/customer.service';
 import { DeleteDialogComponent } from '../../dialog/delete-dialog/delete-dialog.component';
@@ -38,7 +41,8 @@ export class BaseListComponent implements OnInit, AfterViewInit {
   @Input() currencyPipeOn?: string;
   @Input() joinObjectOn?: string;
   @Input() getFullOn?: string;
-  @Input() customerIdOn?: string
+  @Input() customerIdOn?: string;
+  @Input() customerNameOn?: string;
 
   header = this.config.tableItems
   units = this.config.unitItems
@@ -53,10 +57,10 @@ export class BaseListComponent implements OnInit, AfterViewInit {
   filterKey: string = '';
   phrase: string = '';
 
+  oderEditError = this.config.orderEditErrorText
+
   customerKeys: string[] = []
   customerValue: string[] = []
-
-  oderEditError = this.config.orderEditErrorText
 
   constructor(
     private dialog: MatDialog,
@@ -72,8 +76,8 @@ export class BaseListComponent implements OnInit, AfterViewInit {
           this.columns.map(item => this.columnsArray.push(item.title))
           this.columnsArray.push('option');
 
-          if (this.customerIdOn) {
-              this.getCustomer()
+          if (this.componentName === 'bill') {
+            this.getCustomer()
           }
 
           this.List = new MatTableDataSource<any>(result)
@@ -130,7 +134,10 @@ export class BaseListComponent implements OnInit, AfterViewInit {
 
   setObject(value: any): any {
     if (typeof value === 'object') {
-      return Object.values(value)
+      let setObject: any[] = []
+      let obj = Object.entries(value).filter(item => !item.includes('_id'))
+      obj.map(item => setObject.push(obj[obj.indexOf(item)][1]))
+      return setObject
     }
   }
 
@@ -245,8 +252,15 @@ export class BaseListComponent implements OnInit, AfterViewInit {
     return foodType
   }
 
-  getCustomer() {
-    this.customerService.getAll().subscribe(customers => {
+  setCustomerName(value: Customer): any {
+    if (typeof value === 'object') {
+      let name = `${value.firstName} ${value.lastName}`
+      return name
+    }
+  }
+
+  getCustomer(): void {
+    this.customerService.getNames().subscribe(customers => {
       customers.map(customer => {
         this.customerKeys.push(customer._id)
         let name = `${customer.firstName} ${customer.lastName}`
@@ -255,9 +269,9 @@ export class BaseListComponent implements OnInit, AfterViewInit {
     })
   }
 
-  setCustomerName(id: string): string {
-      let index = this.customerKeys.indexOf(this.customerKeys.filter(item => item === id)[0])
-      return this.customerValue[index]
+  setBillCustomerName(value: string): any {
+    let filtered = this.customerKeys.filter(item => item === value)
+    return this.customerValue[this.customerKeys.indexOf(filtered[0])]
   }
 
   applyFilter() {

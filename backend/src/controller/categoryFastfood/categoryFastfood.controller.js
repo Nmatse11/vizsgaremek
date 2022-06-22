@@ -1,11 +1,11 @@
 const express = require('express');
 const createError = require('http-errors');
 
-const Category = require('../../model/categoryFastfood.model');
+const CategoryFastfood = require('../../model/categoryFastfood.model');
 const categoryService = require('./categoryFastfood.service');
 
 exports.create = (req, res, next) => {
-  const validationErrors = new Category(req.body).validateSync();
+  const validationErrors = new CategoryFastfood(req.body).validateSync();
   if (validationErrors) {
     return next(
       new createError.BadRequest(validationErrors)
@@ -38,7 +38,7 @@ exports.findOne = (req, res, next) => {
 };
 
 exports.update = (req, res, next) => {
-  const validationErrors = new Category(req.body).validateSync();
+  const validationErrors = new CategoryFastfood(req.body).validateSync();
   if (validationErrors) {
     return next(
       new createError.BadRequest(validationErrors)

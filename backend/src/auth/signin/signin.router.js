@@ -4,6 +4,38 @@ const jwt = require('jsonwebtoken');
 
 const refreshTokens = [];
 
+/*const router = express.Router();
+
+router.post('/', async (req, res, next) => {
+
+  const { email, password } = req.body;
+  const user = await User.findOne({ email });
+
+  if (!user) {
+    return res.sendStatus(404);
+  }
+
+  const valid = user.verifyPasswordSync(password);
+  if (valid) {
+    const accessToken = jwt.sign({
+      email: user.email,
+      role: user.role,
+    }, process.env.ACCESS_TOKEN_SECRET, {
+      expiresIn: process.env.TOKEN_EXPIRY,
+    });
+
+    res.json({
+      success: true,
+      accessToken,
+      user: { ...user._doc, password: '' },
+    });
+  } else {
+    return res.sendStatus(401);
+  }
+});
+
+module.exports = router;*/
+
 module.exports.login = async (req, res, next) => {
 
   const { email, password } = req.body;
@@ -16,7 +48,6 @@ module.exports.login = async (req, res, next) => {
   const valid = user.verifyPasswordSync(password);
   if (valid) {
     const accessToken = jwt.sign({
-      _id: user._id,
       email: user.email,
       role: user.role,
     }, process.env.ACCESS_TOKEN_SECRET, {
@@ -39,7 +70,7 @@ module.exports.login = async (req, res, next) => {
   }
 };
 
-module.exports.refresh = (req, res, next) => {
+module.exports.refresh = async (req, res, next) => {
   const { token } = req.body;
 
   if (!token) {
@@ -84,5 +115,5 @@ module.exports.logout = (req, res) => {
   const tokenIndex = refreshTokens.indexOf(token);
   refreshTokens.splice(tokenIndex, 1);
 
-  res.sendStatus(200);
+  return res.sendStatus(200);
 };
