@@ -17,7 +17,11 @@ export class CustomerService extends SummaryService<Customer>{
   }
 
   getNames(): Observable<Customer[]> {
-    return this.http.get<Customer[]>(`${this.apiUrl}${this.entityName}/names`);
+    return this.http.get<Customer[]>(`${this.apiUrl}${this.entityName}/customer/names`);
+  }
+
+  getOneByEmail(email: string): Observable<Customer> {
+    return this.http.get<Customer>(`${this.apiUrl}${this.entityName}/customer/${email}`);
   }
 
 }

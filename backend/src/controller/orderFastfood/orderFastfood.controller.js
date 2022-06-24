@@ -61,3 +61,10 @@ exports.delete = (req, res, next) => {
       next(new createError.InternalServerError(err.message));
     });
 };
+
+exports.findAllOrderOfCustomer = (req, res, next) => {
+  return orderService.findAllOrderOfCustomer(req.params.id)
+    .then(orders => {
+      res.json(orders);
+    });
+};

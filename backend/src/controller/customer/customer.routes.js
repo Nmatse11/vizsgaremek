@@ -8,14 +8,19 @@ router.post('/', (req, res, next) => {
   return controller.create(req, res, next);
 });
 
-// get names
-router.get('/names', (req, res, next) => {
-  return controller.findAllName(req, res, next);
-});
-
 // get
 router.get('/', (req, res, next) => {
   return controller.findAll(req, res, next);
+});
+
+// get names
+router.get('/customer/names', (req, res, next) => {
+  return controller.findAllName(req, res, next);
+});
+
+// get one email
+router.get('/customer/:email', (req, res, next) => {
+  return controller.findOneByEmail(req, res, next);
 });
 
 // get one

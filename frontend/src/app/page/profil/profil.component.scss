@@ -1,0 +1,37 @@
+@use '../../../assets/modules/color' as *;
+
+.mat {
+
+  &-cancel {
+    background-color: $secondary;
+    color: $light;
+
+    &:hover {
+      background-color: $dark;
+    }
+  }
+
+  &-edit {
+    background-color: $primary;
+    color: $light;
+
+    &:hover {
+      background-color: $d-menu-color;
+    }
+  }
+
+  &-save {
+    background-color: $primary;
+    color: $light;
+
+    &:hover {
+      background-color: $d-menu-color;
+      color: $dark;
+    }
+  }
+
+}
+
+.card-header {
+  background-color: $d-menu-color;
+}

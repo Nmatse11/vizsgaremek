@@ -11,13 +11,13 @@ const cors = require('cors');
 // Autentikáció
 const authenticateJwt = require('./auth/authenticate');
 const adminOnly = require('./auth/adminOnly');
-const authHandler = require('./auth/signin/signin.router')
+const authHandler = require('./auth/signin/signin')
+const signupHandler = require('./auth/signup/signup')
 
 // Swagger
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');
 const swaggerDocument = YAML.load('./docs/swagger.yaml');
-
 
 const { host, user, pass } = config.get('database')
 
@@ -43,20 +43,19 @@ app.use(express.static('public'));
 app.post('/login', authHandler.login);
 app.post('/refresh', authHandler.refresh);
 app.post('/logout', authHandler.logout);
-//app.use('/login', require('./auth/signin/signin.router'));
 
-app.post('/signup', require('./auth/signup/signup.router'));
+app.post('/signup', signupHandler.signup);
 
-app.use('/bill', require('./controller/bill/bill.routes'));
+app.use('/user', require('./controller/user/user.routes'));
+app.use('/customer', require('./controller/customer/customer.routes'));
 app.use('/category-fastfood', require('./controller/categoryFastfood/categoryFastfood.routes'));
 app.use('/category-menu', require('./controller/categoryMenu/categoryMenu.routes'));
-app.use('/customer', require('./controller/customer/customer.routes'));
 app.use('/foods-fastfood', require('./controller/foodFastfood/foodFastfood.routes'));
 app.use('/foods-menu', require('./controller/foodMenu/foodMenu.routes'));
 app.use('/menu', require('./controller/menu/menu.routes'));
-app.use('/order-fastfood', require('./controller/orderFastfood/orderFastfood.routes'));
-app.use('/order-menu', require('./controller/orderMenu/orderMenu.routes'));
-app.use('/user', require('./controller/user/user.routes'));
+app.use('/order-fastfood', authenticateJwt, adminOnly, require('./controller/orderFastfood/orderFastfood.routes'));
+app.use('/order-menu', authenticateJwt, adminOnly, require('./controller/orderMenu/orderMenu.routes'));
+app.use('/bill', authenticateJwt, adminOnly, require('./controller/bill/bill.routes'));
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 

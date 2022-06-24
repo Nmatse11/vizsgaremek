@@ -1,14 +1,13 @@
 const express = require('express');
 const User = require('../../model/user.model');
 
-const router = express.Router();
+module.exports.signup = async (req, res, next) => {
 
-router.post('/', async (req, res, next) => {
-
-  const { email, password } = req.body;
+  const { email, password, customerID } = req.body;
   const newUser = new User({
-    email: email,
-    password: password,
+    email,
+    password,
+    customerID,
     role: 'customer'
   });
 
@@ -21,6 +20,4 @@ router.post('/', async (req, res, next) => {
   return res.json({ message: 'New User created' });
 
 
-});
-
-module.exports = router;
+};

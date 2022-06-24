@@ -7,6 +7,7 @@ import { CustomerService } from 'src/app/service/customer.service';
 import { User } from 'src/app/model/user';
 import { UserService } from 'src/app/service/user.service';
 import { AbstractControl } from '@angular/forms';
+import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
   selector: 'app-signup',
@@ -17,6 +18,8 @@ export class SignupComponent implements OnInit {
 
   customer: Customer = new Customer();
   user: User = new User()
+
+  alreadyCustomer!: Customer
 
   editPageText = this.config.editPageText
   signupTitleText = this.config.signupTitleText
@@ -36,48 +39,54 @@ export class SignupComponent implements OnInit {
 
   messages = this.config.toastrItems
 
+  errorMessage!: string
+
   constructor(
-    private activatedRoute: ActivatedRoute,
     private customerService: CustomerService,
-    private userService: UserService,
     private config: ConfigService,
-    private router: Router,
     private toastr: ToastrService,
+    private authService: AuthService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
-    sessionStorage.removeItem('newEmail')
+    this.errorMessage!
   }
 
-  saveCustomer(customer: Customer): void {
-      this.userSetting = true
-      customer.active = true
-      this.customerService.create(customer).subscribe(
-        customer => this.getNewData(customer.email));
+  saveCustomer(newCustomer: Customer): void {
+    this.customerService.getOneByEmail(newCustomer.email).subscribe(response => {
+      if (response._id) {
+        this.errorMessage = this.config.editPageText[22].name
+        setTimeout(() => {
+          this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+          this.router.navigate(['/', 'signup'])});
+        }, 3000)
+      }
+
+      if (response['message'] === 'Customer is not found') {
+        this.errorMessage!
+        this.userSetting = true
+        newCustomer.active = true
+        this.customerService.create(newCustomer).subscribe(
+            customer => this.getNewData(customer.email));
+      }
+    })
   }
 
   saveUser(user: User): void {
     user.email = this.newEmail
     user.customerID = this.newId
-    this.userService.create(user).subscribe(
-      response => {
-        this.router.navigate(['/', 'home'])
-        this.toastr.success(this.messages[3].message, this.messages[3].title);
-        this.userSetting = false
-        this.newEmail!
-        this.newId!
-        }
-    )
+    this.authService.signup(user)
+    this.toastr.success(this.messages[3].message, this.messages[3].title);
+    this.userSetting = false
+    this.newEmail!
+    this.newId!
   }
 
   getNewData(email: string): void {
-    let newCustomerID!: string
-    let newCustomerEmail!: string
-    this.customerService.getAll().subscribe(customers => {
-      newCustomerID = customers.filter(customer => customer.email === email).map(item => item._id)[0]
-      newCustomerEmail = customers.filter(customer => customer.email === email).map(item => item.email)[0]
-      this.newId = newCustomerID
-      this.newEmail = newCustomerEmail
+    this.customerService.getOneByEmail(email).subscribe(customer => {
+      this.newId = customer._id
+      this.newEmail = customer.email
     })
   }
 

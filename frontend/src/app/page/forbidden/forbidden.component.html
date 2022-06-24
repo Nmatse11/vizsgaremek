@@ -2,10 +2,17 @@
   <div class="col-6 mt-5 pt-5">
     <h5 class="text-center forbidden p-2 m-0">{{ forbiddenText }}</h5>
     <h6 class="text-center forbidden p-2 m-0">{{ forbiddenTextPlease }}</h6>
-    <div class="button-group d-flex justify-content-center forbidden p-2 mb-3">
-      <button mat-raised-button class="btn btn-lg login text-white mt-2" type="submit">
-        {{ loginText[3].name }}
-      </button>
+    <div class="forbidden">
+      <div class="button-group d-flex flex-column justify-content-center p-2">
+        <button mat-raised-button class="btn btn-lg login text-white mt-2" type="submit" [routerLink]="['/', 'login']">
+          {{ loginText[0].name }}
+        </button>
+      </div>
+      <div class="button-group d-flex flex-column col-4 offset-4 justify-content-center mt-3 pb-3">
+        <button mat-raised-button class="btn back text-white" type="button" (click)="onBack()">
+          {{ loginText[3].name }}
+        </button>
+      </div>
     </div>
   </div>
 </div>

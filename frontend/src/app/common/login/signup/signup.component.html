@@ -1,5 +1,5 @@
 <div class="container py-5 min-vh-100">
-  <div class="card mt-2" *ngIf="customer && !userSetting">
+  <div class="card mt-2" *ngIf="customer && !userSetting && !errorMessage">
     <div class="card-header">
       <h4 class="card-title">{{ signupTitleText }}</h4>
       <p class="card-category">{{ editPageText[0].name }}</p>
@@ -190,48 +190,54 @@
     </div>
   </div>
 
-  <div class="container py-5 min-vh-100">
-    <div class="card mt-2" *ngIf="user && userSetting && newEmail && newId">
-      <div class="card-header">
-        <h4 class="card-title">{{ signupTitleText }}</h4>
-        <p class="card-category">{{ editPageText[0].name }}</p>
-      </div>
-      <div class="card-body">
-        <form #userForm="ngForm" (ngSubmit)="saveUser(user)">
 
-          <input [(ngModel)]="user._id" type="hidden" name="id">
-          <input [(ngModel)]="user.customerID" type="hidden" name="customerId" [value]="newId">
-
-          <div class="row mb-2 justify-content-center">
-            <div class="col-lg-5 col-md-12 mb-2" *ngIf="newEmail">
-              <div class="form-group">
-                <label [for]="userEditItems[0].prop">{{ userEditItems[0].label }} *</label>
-                <input [(ngModel)]="newEmail" class="form-control" type="text" [name]="userEditItems[0].prop"
-                  [id]="userEditItems[0].prop" required [disabled]="true">
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-2 justify-content-center">
-            <div class="col-lg-5 col-md-12">
-              <div class="form-group">
-                <label [for]="userEditItems[1].prop">{{ userEditItems[1].label }} *</label>
-                <input [(ngModel)]="user[userEditItems[1].prop]" class="form-control" type="text"
-                  [name]="userEditItems[1].prop" [id]="userEditItems[1].prop" required
-                  [pattern]="userEditItems[1].pattern" [placeholder]="userEditItems[1].placeholder">
-                <div class="font-italic small ml-2 mt-1"
-                  [hidden]="userForm.controls[userEditItems[1].prop]?.valid || userForm.controls[userEditItems[1].prop]?.pristine">
-                  {{ userEditItems[1].message }}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row col-10 offset-1 justify-content-center">
-            <button [disabled]="userForm.invalid" mat-raised-button color="save" class="mr-2" type="submit">
-              {{ signupSaveButtonText }}</button>
-            <button mat-raised-button color="cancel" routerLink="/home">{{ editPageText[3].name }}</button>
-          </div>
-        </form>
-      </div>
+  <div class="card mt-2" *ngIf="errorMessage">
+    <div class="card-header">
+      <h6 class="card-title pt-2">{{ errorMessage }}</h6>
     </div>
+  </div>
+
+  <div class="card mt-2" *ngIf="userSetting && newEmail && newId">
+    <div class="card-header">
+      <h4 class="card-title">{{ signupTitleText }}</h4>
+      <p class="card-category">{{ editPageText[0].name }}</p>
+    </div>
+    <div class="card-body">
+      <form #userForm="ngForm" (ngSubmit)="saveUser(user)">
+
+        <input [(ngModel)]="user._id" type="hidden" name="id">
+        <input [(ngModel)]="user.customerID" type="hidden" name="customerId" [value]="newId">
+
+        <div class="row mb-2 justify-content-center">
+          <div class="col-lg-5 col-md-12 mb-2" *ngIf="newEmail">
+            <div class="form-group">
+              <label [for]="userEditItems[0].prop">{{ userEditItems[0].label }} *</label>
+              <input [(ngModel)]="newEmail" class="form-control" type="text" [name]="userEditItems[0].prop"
+                [id]="userEditItems[0].prop" required [disabled]="true">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-2 justify-content-center">
+          <div class="col-lg-5 col-md-12">
+            <div class="form-group">
+              <label [for]="userEditItems[1].prop">{{ userEditItems[1].label }} *</label>
+              <input [(ngModel)]="user[userEditItems[1].prop]" class="form-control" type="text"
+                [name]="userEditItems[1].prop" [id]="userEditItems[1].prop" required
+                [pattern]="userEditItems[1].pattern" [placeholder]="userEditItems[1].placeholder">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="userForm.controls[userEditItems[1].prop]?.valid || userForm.controls[userEditItems[1].prop]?.pristine">
+                {{ userEditItems[1].message }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row col-10 offset-1 justify-content-center">
+          <button [disabled]="userForm.invalid" mat-raised-button color="save" class="mr-2" type="submit">
+            {{ signupSaveButtonText }}</button>
+          <button mat-raised-button color="cancel" routerLink="/home">{{ editPageText[3].name }}</button>
+        </div>
+      </form>
+    </div>
+  </div>

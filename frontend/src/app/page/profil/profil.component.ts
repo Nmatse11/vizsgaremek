@@ -1,26 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { switchMap } from 'rxjs';
-import { ConfigService } from 'src/app/service/config.service';
 import { Customer } from 'src/app/model/customer';
+import { User } from 'src/app/model/user';
+import { AuthService } from 'src/app/service/auth.service';
+import { ConfigService } from 'src/app/service/config.service';
 import { CustomerService } from 'src/app/service/customer.service';
-import { DeleteDialogComponent } from '../../dialog/delete-dialog/delete-dialog.component';
-import { MatDialog } from '@angular/material/dialog';
-import { MenuOrderService } from 'src/app/service/menu-order.service';
 import { FastfoodOrderService } from 'src/app/service/fastfood-order.service';
 import { FastfoodService } from 'src/app/service/fastfood.service';
+import { MenuOrderService } from 'src/app/service/menu-order.service';
 
 @Component({
-  selector: 'app-customer-edit',
-  templateUrl: './customer-edit.component.html',
-  styleUrls: ['./customer-edit.component.scss']
+  selector: 'app-profil',
+  templateUrl: './profil.component.html',
+  styleUrls: ['./profil.component.scss']
 })
-export class CustomerEditComponent implements OnInit {
+export class ProfilComponent implements OnInit {
 
-  newCustomer: Customer = new Customer();
   customer!: Customer;
-  id: string = this.activatedRoute.snapshot.params['id']
+  customerName!: string
+
+  user$ = this.authService.user$;
+
+  onEdit: boolean = false
 
   editPageText = this.config.editPageText
   editPageItems = this.config.editPageItems
@@ -50,29 +51,32 @@ export class CustomerEditComponent implements OnInit {
   pizzaText = this.config.fastfoodEditMenuItems[0].new
 
   constructor(
-    private activatedRoute: ActivatedRoute,
     private customerService: CustomerService,
     private config: ConfigService,
-    private router: Router,
     private toastr: ToastrService,
-    private dialog: MatDialog,
+    private authService: AuthService,
     private orderMenuService: MenuOrderService,
     private orderFastfoodService: FastfoodOrderService,
     private fastfoodService: FastfoodService
   ) { }
 
   ngOnInit(): void {
-    if (this.activatedRoute.snapshot.params['id'] === '0') {
-      this.customer = this.newCustomer
-    }
-    else {
-      this.activatedRoute.params.pipe(
-        switchMap( params => this.customerService.getOne(params['id']))
-        ).subscribe(customer => {
+    this.user$.subscribe({
+      next: user => {
+        if (user) {
+          this.getCustomer(user)
+        }
+      }
+    });
+  }
+
+  getCustomer(user: User): any {
+    if (user.customerID) {
+      this.customerService.getOne(user.customerID).subscribe(customer => {
+          this.customerName = `${customer.firstName} ${customer.lastName}`
           this.customer = customer
           this.getAllOrder(customer)
-
-        })
+      })
     }
   }
 
@@ -112,38 +116,22 @@ export class CustomerEditComponent implements OnInit {
     return this.notesValue[this.notesKeys.indexOf(value)]
   }
 
-  saveCustomer(customer: Customer): void {
-    if (this.activatedRoute.snapshot.params['id'] === '0') {
-      this.customerService.create(customer).subscribe(
-        response => this.router.navigate(['/', 'customer']));
-        this.toastr.success(this.messages[1].message, this.messages[1].title);
-    } else {
+
+  onUpdate(customer: Customer): void {
       this.customerService.update(customer).subscribe(
-        response => this.router.navigate(['/', 'customer']));
-        this.toastr.success(this.messages[2].message, this.messages[2].title);
-    }
+        response => {
+        this.toastr.success(this.messages[2].message, this.messages[2].title),
+        this.onEdit = false
+        })
   }
 
-  onDelete(id: string): void {
-    const confirmDialog = this.dialog.open(DeleteDialogComponent, {
-      data: {
-        title: this.deleteDialog[0].title,
-        message: this.deleteDialog[0].message,
-        ok: this.deleteDialog[0].ok,
-        cancel: this.deleteDialog[0].cancel
-      }
-    });
-    confirmDialog.afterClosed().subscribe(result => {
-      if (result === true) {
-        this.customerService.delete(id).subscribe(
-          response => this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-            this.router.navigate(['/', 'customer' ]);
-            this.toastr.error(this.messages[0].message, this.messages[0].title);
-            }
-          )
-        )
-      }
-    });
+  setOnEdit(value: boolean): void {
+    if (value) {
+      this.onEdit = false
+    }
+    if (!value) {
+      this.onEdit = true
+    }
   }
 
 }

@@ -96,10 +96,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input';
+import { MatDividerModule } from '@angular/material/divider';
 
 // Chart
 import { BarChartComponent } from './common/charts/bar-chart/bar-chart.component';
 import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component';
+import { ProfilComponent } from './page/profil/profil.component';
 
 @NgModule({
   declarations: [
@@ -150,7 +152,8 @@ import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component
     MenuOrderComponent,
     MenuCategoryComponent,
     FastfoodCategoryComponent,
-    BaseComponentListComponent
+    BaseComponentListComponent,
+    ProfilComponent
   ],
   imports: [
     BrowserModule,
@@ -179,7 +182,8 @@ import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component
     NgxScrollTopModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDividerModule
   ],
   providers: [
     {

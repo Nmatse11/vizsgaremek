@@ -24,6 +24,9 @@ import { FastfoodProductComponent } from './common/list/product-list/fastfood-pr
 import { FastfoodOrderComponent } from './common/list/order-list/fastfood-order/fastfood-order.component';
 import { MenuCategoryComponent } from './common/list/category-list/menu-category/menu-category.component';
 import { FastfoodCategoryComponent } from './common/list/category-list/fastfood-category/fastfood-category.component';
+import { ProfilComponent } from './page/profil/profil.component';
+import { AuthGuardService } from './service/auth-guard.service';
+import { RoleGuardService } from './service/role-guard.service';
 
 const routes: Routes = [
   {
@@ -47,80 +50,156 @@ const routes: Routes = [
     component: SigninComponent,
   },
   {
+    path: 'profil',
+    component: ProfilComponent,
+  },
+  {
     path: 'forbidden',
     component: ForbiddenComponent,
   },
   {
     path: 'admin',
     component: AdminComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['admin'],
+    }
   },
   {
     path: 'menu-editor',
     component: MenuEditorComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['editor', 'admin'],
+    }
   },
   {
     path: 'menu/product',
     component: MenuProductComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['editor', 'admin'],
+    }
   },
   {
     path: 'fastfood/product',
     component: FastfoodProductComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['editor', 'admin'],
+    }
   },
   {
     path: 'menu/product/edit/:id',
     component: FoodEditComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['editor', 'admin'],
+    }
   },
   {
     path: 'fastfood/product/edit/:id',
     component: FastfoodEditComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['editor', 'admin'],
+    }
   },
   {
     path: 'menu/category',
     component: MenuCategoryComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['editor', 'admin'],
+    }
   },
   {
     path: 'fastfood/category',
     component: FastfoodCategoryComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['editor', 'admin'],
+    }
   },
   {
     path: 'menu/category/edit/:id',
     component: MenuCategoryEditComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['editor', 'admin'],
+    }
   },
   {
     path: 'fastfood/category/edit/:id',
     component: FastfoodCategoryEditComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['editor', 'admin'],
+    }
   },
   {
     path: 'customer',
     component: CustomerComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['admin'],
+    }
   },
   {
     path: 'customer/edit/:id',
     component: CustomerEditComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['admin'],
+    }
   },
   {
     path: 'menu/order',
     component: MenuOrderComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['admin'],
+    }
   },
   {
     path: 'fastfood/order',
     component: FastfoodOrderComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['admin'],
+    }
   },
   {
     path: 'menu/order/edit/:id',
     component: MenuOrderEditComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['admin'],
+    }
   },
   {
     path: 'fastfood/order/edit/:id',
     component: FastfoodOrderEditComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['admin'],
+    }
   },
   {
     path: 'bill',
     component: BillComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['admin'],
+    }
   },
   {
     path: 'bill/edit/:id',
     component:  BillEditComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: {
+      expectedRole: ['admin'],
+    }
   },
   {
     path: '**',

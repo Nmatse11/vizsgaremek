@@ -18,3 +18,5 @@ exports.delete = async id => {
 }
 
 exports.findAllName = () => Customer.find({}, { firstName: 1, lastName: 1 })
+
+exports.findOneByEmail = value => Customer.findOne({ email: value })

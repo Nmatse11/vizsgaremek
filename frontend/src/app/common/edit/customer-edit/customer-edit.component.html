@@ -192,6 +192,41 @@
           </div>
         </div>
 
+
+        <div *ngIf="orderMenuArray[0] && orderMenuArray[0].length !== 0" class="row mt-2 mb-5 justify-content-center">
+          <h4 class="col-lg-10 offset-1 mt-4 mb-2">{{ editPageText[20].name }}</h4>
+
+          <div class="col-lg-10 offset-1 d-flex flex-row" *ngFor="let orders of orderMenuArray[0]; index as i">
+            <p class="col-1 font-weight-bold">{{ i + 1 }}.</p>
+            <p class="col-2">{{ orders.date }}</p>
+            <div class="col-11 d-flex flex-column">
+              <div *ngFor="let order of orderMenuArray[0][i].order" class="d-flex flex-row">
+                <p class="mr-2">{{ order.week }}. {{ weekText }}</p>
+                <p class="col-2">{{ getMenuName(order.menuCode) }}</p>
+                <p>{{ order.portion }} {{ editPageText[7].name }}</p>
+              </div>
+            </div>
+            <mat-divider></mat-divider>
+          </div>
+        </div>
+
+        <div *ngIf="orderFastfoodArray[0] && orderFastfoodArray[0].length !== 0"
+          class="row mt-2 mb-5 justify-content-center">
+          <h4 class="col-lg-10 offset-1 mt-4 mb-2">{{ editPageText[21].name }}</h4>
+
+          <div class="col-lg-10 offset-1 d-flex flex-row" *ngFor="let orders of orderFastfoodArray[0]; index as i">
+            <p class="col-1 font-weight-bold">{{ i + 1 }}.</p>
+            <p class="col-2">{{ orders.date }}</p>
+            <div class="col-11 d-flex flex-column">
+              <div *ngFor="let order of orderFastfoodArray[0][i].order" class="d-flex flex-row">
+                <p class="mr-1">{{ getFastfoodName(order.productID) }}</p>
+                <p *ngIf="fastfoodPizza.includes(order.productID)">
+                  - {{ getNotesName(order.notes) }} {{ pizzaText }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row col-10 offset-1">
           <button [disabled]="customerForm.invalid" mat-raised-button color="save" class="mr-2" type="submit">{{
             editPageText[1].name }}</button>

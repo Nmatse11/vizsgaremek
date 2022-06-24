@@ -11,3 +11,12 @@
 .forbidden {
   background-color: $d-menu-color;
 }
+
+.back {
+  background-color: $i-menu-color;
+  color: $light;
+
+  &:hover {
+    background-color: $dark;
+  }
+}

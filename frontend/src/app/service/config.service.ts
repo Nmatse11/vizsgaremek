@@ -134,7 +134,7 @@ export class ConfigService {
   menuEditorWeekSelect: string = 'Válassz egy hetet...'
 
   forbiddenText: string = 'Ennek az oldalnak a megtekintéséhez nincs jogosultságod.'
-  forbiddenTextPlease: string = 'Kérlek jelentkezz be!'
+  forbiddenTextPlease: string = 'Kérlek jelentkezz be adminként!'
 
   signupTitleText: string = 'Regisztráció'
   signupButtonText: string = 'Tovább'
@@ -164,8 +164,8 @@ export class ConfigService {
 
   loginNavbarItems: IMenuItem[] = [
     { role: 'admin', text: 'Nagy Petra - Admin', link: '/', icon: 'person', status: true},
-    //{ role: 'editor', text: 'Kiss Réka - Szerkesztő', link: '/', icon: 'person', status: true},
-    //{ role: 'customer', text: '', link: '/', icon: 'person', status: true},
+    { role: 'editor', text: 'Kiss Réka - Szerkesztő', link: '/', icon: 'person', status: true},
+    { role: 'customer', text: '', link: '/profil', icon: 'person', status: true},
     { role: 'admin, editor, customer', text: 'Kijelentkezés', link: '/', icon: 'logout', status: true },
     { text: 'Bejelentkezés', link: '/login', icon: 'person', status: false },
     { text: 'Regisztráció', link: '/signup', icon: 'person_add', status: false },
@@ -503,7 +503,7 @@ export class ConfigService {
     {name: 'Bejelentkezés'},
     {name: 'Email cím'},
     {name: 'Jelszó'},
-    {name: 'Bejelentkezés'},
+    {name: 'Vissza'},
   ];
 
   patternItems: IPatternItem[] = [
@@ -541,7 +541,13 @@ export class ConfigService {
     {name: 'Ételek száma ebben a kategóriában'},
     {name: 'Összes rendelés ebből a kategóriából'},
     {name: 'Ennyiszer szerepel a heti menükben összesen'},
-    {name: 'Hetek, amikor megrendelhető'}
+    {name: 'Hetek, amikor megrendelhető'},
+    {name: 'Profil megtekintése'},
+    {name: 'Profil szerkesztése'},
+    {name: 'Szerkesztés'},
+    {name: 'Eddig leadott menü rendelések'},
+    {name: 'Eddig leadott gyorskaja rendelések'},
+    {name: 'Ezzel az email címmel már létezik felhasználó. Kérlek jelentkezz be!'},
   ];
 
   editPageItems: IEditPageItem[] = [

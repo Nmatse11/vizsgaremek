@@ -24,7 +24,6 @@ export class SigninComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.authService.logout();
   }
 
   onLogin(loginData: ILoginData): void {

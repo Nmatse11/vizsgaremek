@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { User } from 'src/app/model/user';
 import { AuthService } from 'src/app/service/auth.service';
 import { ConfigService, IMenuItem } from 'src/app/service/config.service';
+import { CustomerService } from 'src/app/service/customer.service';
 
 @Component({
   selector: 'app-navigation',
@@ -9,49 +11,47 @@ import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 })
 export class NavigationComponent implements OnInit {
 
-  user$ = this.authService.currentUserSubject$;
-  login: boolean = (this.authService.currentUserSubject$) ? true : false
-
-  admin: boolean = false
-  editor: boolean = false
+  user$ = this.authService.user$;
+  user!: User
 
   appName: string = this.config.appName;
   navbarItems: IMenuItem[] = this.config.navbarItems;
   adminNavbar: IMenuItem = this.config.adminNavbar;
   adminNavbarItems: IMenuItem[] = this.config.adminNavbarItems;
-  loginNavbarItems: IMenuItem[] = this.config.loginNavbarItems;
+  loginNavbarItems: IMenuItem[] = this.config.loginNavbarItems.filter(item => item.status === false);
+  loginUserNavbarItems!: IMenuItem[]
+
+  customerName!: string
 
   constructor(
     private config: ConfigService,
-    private authService: AuthService
-  ) {
+    private authService: AuthService,
+    private customerService: CustomerService
+  ) { }
+
+  ngOnInit(): void {
     this.user$.subscribe({
       next: user => {
         if (user) {
-          this.getLoginNavbarItems(user.role)
-          if (user.role === 'admin') {
-            this.admin = true
-          }
-          if (user.role === 'editor') {
-            this.editor = true
-          }
+          this.user = user
+          this.loginUserNavbarItems = this.config.loginNavbarItems.filter(item => item.status === true && item.role?.includes(user.role));
+          this.getCustomer(user)
         }
       }
     });
   }
 
-  ngOnInit(): void {
+  getCustomer(user: User): any {
+    if (user.customerID) {
+      this.customerService.getOne(user.customerID).subscribe(customer => {
+          this.customerName = `${customer.firstName} ${customer.lastName}`
+        })
+    }
   }
 
-  getLoginNavbarItems(value: string): IMenuItem[] {
-    let texts = this.config.loginNavbarItems.filter(item => item.role?.includes(value))
-    return this.loginNavbarItems = texts
-  }
-
-  logout() {
-    this.admin = false
-    this.editor = false
+  onLogout() {
     this.authService.logout();
+    this.user!
   }
 
 }

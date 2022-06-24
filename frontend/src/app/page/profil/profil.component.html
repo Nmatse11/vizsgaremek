@@ -1,0 +1,258 @@
+<div class="container py-5 min-vh-100">
+  <div class="card mt-2" *ngIf="customer">
+    <div class="card-header">
+      <h1 class="card-title" *ngIf="!onEdit">{{ editPageText[17].name }}</h1>
+      <h1 class="card-title" *ngIf="onEdit">{{ editPageText[18].name }}</h1>
+      <h4 class="card-title">{{ customerName }}</h4>
+      <p class="card-category" *ngIf="onEdit">{{ editPageText[0].name }}</p>
+    </div>
+
+    <div class="card-body">
+      <form #customerForm="ngForm" (ngSubmit)="onUpdate(customer)">
+
+        <input [(ngModel)]="customer._id" type="hidden" name="id">
+        <input [(ngModel)]="customer.active" type="hidden" name="active">
+
+        <div class="row mb-2 flex-column justify-content-center">
+
+          <div class="col-10 offset-1">
+
+            <div class="form-group col-6 d-flex flex-row">
+              <label [for]="customerEditItems[0].prop" class="col-4">{{ customerEditItems[0].label }} <span
+                  *ngIf="onEdit">*</span></label>
+              <input [(ngModel)]="customer[customerEditItems[0].prop]" class="form-control col-8" type="text"
+                [name]="customerEditItems[0].prop" [id]="customerEditItems[0].prop" required
+                [pattern]="customerEditItems[0].pattern" [placeholder]="customerEditItems[0].placeholder"
+                [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[0].prop]?.valid || customerForm.controls[customerEditItems[0].prop]?.pristine">
+                {{ customerEditItems[0].message }}
+              </div>
+            </div>
+
+            <div class="form-group col-6 d-flex flex-row">
+              <label [for]="customerEditItems[1].prop" class="col-4">{{ customerEditItems[1].label }} <span
+                  *ngIf="onEdit">*</span></label>
+              <input [(ngModel)]="customer[customerEditItems[1].prop]" class="form-control col-8" type="text"
+                [name]="customerEditItems[1].prop" [id]="customerEditItems[1].prop" required
+                [pattern]="customerEditItems[1].pattern" [placeholder]="customerEditItems[1].placeholder"
+                [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[1].prop]?.valid || customerForm.controls[customerEditItems[1].prop]?.pristine">
+                {{ customerEditItems[1].message }}
+              </div>
+            </div>
+
+
+            <div class="form-group col-6 d-flex flex-row">
+              <label [for]="customerEditItems[2].prop" class="col-4">{{ customerEditItems[2].label }} <span
+                  *ngIf="onEdit">*</span></label>
+              <input [(ngModel)]="customer[customerEditItems[2].prop]" class="form-control col-8" type="email"
+                [name]="customerEditItems[2].prop" [id]="customerEditItems[2].prop" required
+                [pattern]="customerEditItems[2].pattern" [placeholder]="customerEditItems[2].placeholder"
+                [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[2].prop]?.valid || customerForm.controls[customerEditItems[2].prop]?.pristine">
+                {{ customerEditItems[2].message }}
+              </div>
+            </div>
+
+
+            <div class="form-group col-6 d-flex flex-row">
+              <label [for]="customerEditItems[3].prop" class="col-4">{{ customerEditItems[3].label }} <span
+                  *ngIf="onEdit">*</span></label>
+              <input [(ngModel)]="customer[customerEditItems[3].prop]" class="form-control col-8" type="text"
+                [name]="customerEditItems[3].prop" [id]="customerEditItems[3].prop" required
+                [pattern]="customerEditItems[3].pattern" [placeholder]="customerEditItems[3].placeholder"
+                [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[3].prop]?.valid || customerForm.controls[customerEditItems[3].prop]?.pristine">
+                {{ customerEditItems[3].message }}
+              </div>
+            </div>
+          </div>
+
+          <h4 class="col-lg-10 offset-1 mt-4 mb-2">{{ editPageText[8].name }}</h4>
+
+          <div class="row mt-4 mb-2 justify-content-center">
+            <div class="form-group col-lg-5 col-md-6 mb-2">
+              <label [for]="customerEditItems[4].prop+'zip'">{{ customerEditItems[4].label }} <span
+                  *ngIf="onEdit">*</span></label>
+              <input class="form-control" [(ngModel)]="customer[customerEditItems[4].prop][0].zip" class="form-control"
+                type="text" [name]="customerEditItems[4].prop+'zip'" [id]="customerEditItems[4].prop+'zip'" required
+                [pattern]="customerEditItems[4].pattern" [placeholder]="customerEditItems[4].placeholder"
+                [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[4].prop+'zip']?.valid || customerForm.controls[customerEditItems[4].prop+'zip']?.pristine">
+                {{ customerEditItems[4].message }}
+              </div>
+            </div>
+            <div class="form-group col-lg-5 col-md-6 mb-2">
+              <label [for]="customerEditItems[5].prop+'city'">{{ customerEditItems[5].label }} <span
+                  *ngIf="onEdit">*</span></label>
+              <input class="form-control" [(ngModel)]="customer[customerEditItems[5].prop][0].city" class="form-control"
+                type="text" [name]="customerEditItems[5].prop+'city'" [id]="customerEditItems[5].prop+'city'" required
+                [pattern]="customerEditItems[5].pattern" [placeholder]="customerEditItems[5].placeholder"
+                [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[5].prop+'city']?.valid || customerForm.controls[customerEditItems[5].prop+'city']?.pristine">
+                {{ customerEditItems[5].message }}
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4 mb-2 justify-content-center">
+            <div class="form-group col-lg-4 col-md-6 mb-2">
+              <label [for]="customerEditItems[6].prop+'street'">{{ customerEditItems[6].label }} <span
+                  *ngIf="onEdit">*</span></label>
+              <input class="form-control" [(ngModel)]="customer[customerEditItems[6].prop][0].street"
+                class="form-control" type="text" [name]="customerEditItems[6].prop+'street'"
+                [id]="customerEditItems[6].prop+'street'" required [pattern]="customerEditItems[6].pattern"
+                [placeholder]="customerEditItems[6].placeholder" [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[6].prop+'street']?.valid || customerForm.controls[customerEditItems[6].prop+'street']?.pristine">
+                {{ customerEditItems[6].message }}
+              </div>
+            </div>
+            <div class="form-group col-lg-3 col-md-6 mb-2">
+              <label [for]="customerEditItems[7].prop+'number'">{{ customerEditItems[7].label }} <span
+                  *ngIf="onEdit">*</span></label>
+              <input class="form-control" [(ngModel)]="customer[customerEditItems[7].prop][0].number"
+                class="form-control" type="number" [name]="customerEditItems[7].prop+'number'"
+                [id]="customerEditItems[7].prop+'number'" required [pattern]="customerEditItems[7].pattern" min="1"
+                [placeholder]="customerEditItems[7].placeholder" [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[7].prop+'number']?.valid || customerForm.controls[customerEditItems[7].prop+'number']?.pristine">
+                {{ customerEditItems[7].message }}
+              </div>
+            </div>
+            <div class="form-group col-lg-3 col-md-6">
+              <label [for]="customerEditItems[8].prop+'notes'">{{ customerEditItems[8].label }}</label>
+              <input class="form-control" [(ngModel)]="customer[customerEditItems[8].prop][0].notes"
+                class="form-control" type="text" [name]="customerEditItems[8].prop+'notes'"
+                [id]="customerEditItems[8].prop+'notes'" [pattern]="customerEditItems[8].pattern"
+                [placeholder]="customerEditItems[8].placeholder" [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[8].prop+'notes']?.valid || customerForm.controls[customerEditItems[8].prop+'notes']?.pristine">
+                {{ customerEditItems[8].message }}
+              </div>
+            </div>
+          </div>
+
+          <h4 class="col-lg-10 offset-1 mt-4 mb-2">{{ editPageText[9].name }}</h4>
+
+          <div class="row mt-2 mb-2 justify-content-center">
+            <div class="form-group col-lg-5 col-md-6 mb-2">
+              <label [for]="customerEditItems[9].prop+'zip'">{{ customerEditItems[9].label }} <span
+                  *ngIf="onEdit">*</span></label>
+              <input class="form-control" [(ngModel)]="customer[customerEditItems[9].prop][0].zip" class="form-control"
+                type="text" [name]="customerEditItems[9].prop+'zip'" [id]="customerEditItems[9].prop+'zip'" required
+                [pattern]="customerEditItems[9].pattern" [placeholder]="customerEditItems[9].placeholder"
+                [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[9].prop+'zip']?.valid || customerForm.controls[customerEditItems[9].prop+'zip']?.pristine">
+                {{ customerEditItems[9].message }}
+              </div>
+            </div>
+            <div class="form-group col-lg-5 col-md-6 mb-2">
+              <label [for]="customerEditItems[10].prop+'city'">{{ customerEditItems[10].label }} <span
+                  *ngIf="onEdit">*</span></label>
+              <input class="form-control" [(ngModel)]="customer[customerEditItems[10].prop][0].city"
+                class="form-control" type="text" [name]="customerEditItems[10].prop+'city'"
+                [id]="customerEditItems[10].prop+'city'" required [pattern]="customerEditItems[10].pattern"
+                [placeholder]="customerEditItems[10].placeholder" [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[10].prop+'city']?.valid || customerForm.controls[customerEditItems[10].prop+'city']?.pristine">
+                {{ customerEditItems[10].message }}
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4 mb-4 justify-content-center">
+            <div class="form-group col-lg-4 col-md-6 mb-2">
+              <label [for]="customerEditItems[11].prop+'street'">{{ customerEditItems[11].label }} <span
+                  *ngIf="onEdit">*</span></label>
+              <input class="form-control" [(ngModel)]="customer[customerEditItems[11].prop][0].street"
+                class="form-control" type="text" [name]="customerEditItems[11].prop+'street'"
+                [id]="customerEditItems[11].prop+'street'" required [pattern]="customerEditItems[11].pattern"
+                [placeholder]="customerEditItems[11].placeholder" [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[11].prop+'street']?.valid || customerForm.controls[customerEditItems[11].prop+'street']?.pristine">
+                {{ customerEditItems[11].message }}
+              </div>
+            </div>
+            <div class="form-group col-lg-3 col-md-6 mb-2">
+              <label [for]="customerEditItems[12].prop+'number'">{{ customerEditItems[12].label }} <span
+                  *ngIf="onEdit">*</span></label>
+              <input class="form-control" [(ngModel)]="customer[customerEditItems[12].prop][0].number"
+                class="form-control" type="number" [name]="customerEditItems[12].prop+'number'"
+                [id]="customerEditItems[12].prop+'number'" required [pattern]="customerEditItems[12].pattern" min="1"
+                [placeholder]="customerEditItems[12].placeholder" [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[12].prop+'number']?.valid || customerForm.controls[customerEditItems[12].prop+'number']?.pristine">
+                {{ customerEditItems[12].message }}
+              </div>
+            </div>
+            <div class="form-group col-lg-3 col-md-6">
+              <label [for]="customerEditItems[13].prop+'notes'">{{ customerEditItems[13].label }}</label>
+              <input class="form-control" [(ngModel)]="customer[customerEditItems[13].prop][0].notes"
+                class="form-control" type="text" [name]="customerEditItems[13].prop+'notes'"
+                [id]="customerEditItems[13].prop+'notes'" [pattern]="customerEditItems[13].pattern"
+                [placeholder]="customerEditItems[13].placeholder" [disabled]="!onEdit">
+              <div class="font-italic small ml-2 mt-1"
+                [hidden]="customerForm.controls[customerEditItems[13].prop+'notes']?.valid || customerForm.controls[customerEditItems[13].prop+'notes']?.pristine">
+                {{ customerEditItems[13].message }}
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div *ngIf="orderMenuArray[0] && orderMenuArray[0].length !== 0" class="row mt-2 mb-5 justify-content-center">
+          <h4 class="col-lg-10 offset-1 mt-4 mb-2">{{ editPageText[20].name }}</h4>
+
+          <div class="col-lg-10 offset-1 d-flex flex-row" *ngFor="let orders of orderMenuArray[0]; index as i">
+            <p class="col-1 font-weight-bold">{{ i + 1 }}.</p>
+            <p class="col-2">{{ orders.date }}</p>
+            <div class="col-11 d-flex flex-column">
+              <div *ngFor="let order of orderMenuArray[0][i].order" class="d-flex flex-row">
+                <p class="mr-2">{{ order.week }}. {{ weekText }}</p>
+                <p class="col-2">{{ getMenuName(order.menuCode) }}</p>
+                <p>{{ order.portion }} {{ editPageText[7].name }}</p>
+              </div>
+            </div>
+            <mat-divider></mat-divider>
+          </div>
+        </div>
+
+        <div *ngIf="orderFastfoodArray[0] && orderFastfoodArray[0].length !== 0"
+          class="row mt-2 mb-5 justify-content-center">
+          <h4 class="col-lg-10 offset-1 mt-4 mb-2">{{ editPageText[21].name }}</h4>
+
+          <div class="col-lg-10 offset-1 d-flex flex-row" *ngFor="let orders of orderFastfoodArray[0]; index as i">
+            <p class="col-1 font-weight-bold">{{ i + 1 }}.</p>
+            <p class="col-2">{{ orders.date }}</p>
+            <div class="col-11 d-flex flex-column">
+              <div *ngFor="let order of orderFastfoodArray[0][i].order" class="d-flex flex-row">
+                <p class="mr-1">{{ getFastfoodName(order.productID) }}</p>
+                <p *ngIf="fastfoodPizza.includes(order.productID)">
+                  - {{ getNotesName(order.notes) }} {{ pizzaText }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row col-10 offset-1">
+          <button *ngIf="!onEdit" mat-raised-button color="edit" (click)="setOnEdit(onEdit)" class="mr-2" type="button">
+            {{ editPageText[19].name }}
+          </button>
+          <button *ngIf="onEdit" [disabled]="customerForm.invalid" mat-raised-button color="save" class="mr-2"
+            type="submit">
+            {{ editPageText[1].name }}
+          </button>
+          <button *ngIf="onEdit" mat-raised-button color="cancel" (click)="setOnEdit(onEdit)" class="mr-2"
+            type="button">
+            {{ editPageText[3].name }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>

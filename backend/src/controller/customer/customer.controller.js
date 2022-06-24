@@ -68,3 +68,13 @@ exports.findAllName = (req, res, next) => {
       res.json(customers);
     });
 };
+
+exports.findOneByEmail = (req, res, next) => {
+  return customerService.findOneByEmail(req.params.email)
+    .then(customer => {
+      if (customer === null) {
+        return next(new createError.NotFound("Customer is not found"));
+      }
+      return res.json(customer);
+    });
+};

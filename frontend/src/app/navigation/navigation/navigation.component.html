@@ -14,7 +14,7 @@
           <p class="nav-text">{{ item.text }}</p>
         </a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" *ngIf="(user$ | async) && user.role !== 'customer'">
         <a class="nav-link dropdown-toggle d-flex flex-row align-items-center" id="navbarDropdown" role="button"
           data-toggle="dropdown" aria-expanded="false">
           <i class="material-icons">{{ adminNavbar.icon }}</i>
@@ -26,13 +26,25 @@
         </div>
       </li>
     </ul>
-    <ul class="navbar-nav ml-lg-auto mb-2 mb-lg-0">
+    <ul class="navbar-nav ml-lg-auto mb-2 mb-lg-0" *ngIf="!(user$ | async)">
       <li class="nav-item" *ngFor="let item of loginNavbarItems">
         <a class="nav-link d-flex flex-row align-items-center" [routerLink]="item.link" data-toggle="collapse"
-          *ngIf="item.status === login" data-target=".navbar-collapse.show">
+          data-target=".navbar-collapse.show">
           <i class="material-icons">{{ item.icon }} </i>
-          <a *ngIf="item.text !== loginNavbarItems[3].text" class="nav-link-text">{{ item.text }}</a>
-          <a *ngIf="item.text === loginNavbarItems[3].text" class="nav-link-text" (click)="logout()">
+          <p class="nav-link-text">{{ item.text }}</p>
+        </a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-lg-auto mb-2 mb-lg-0" *ngIf="(user$ | async) as user">
+      <li class="nav-item" *ngFor="let item of loginUserNavbarItems">
+        <a class="nav-link d-flex flex-row align-items-center" [routerLink]="item.link" data-toggle="collapse"
+          data-target=".navbar-collapse.show">
+          <i class="material-icons">{{ item.icon }} </i>
+          <p *ngIf="item.text !== loginUserNavbarItems[1].text && user.role === 'customer'" class="nav-link-text">
+            {{ customerName }}</p>
+          <p *ngIf="item.text !== loginUserNavbarItems[1].text && user.role !== 'customer'" class="nav-link-text">
+            {{ item.text }}</p>
+          <a *ngIf="item.text === loginUserNavbarItems[1].text" class="nav-link-text" (click)="onLogout()">
             {{ item.text }}
           </a>
         </a>

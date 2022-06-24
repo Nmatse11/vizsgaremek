@@ -10,7 +10,7 @@
 
         <input [(ngModel)]="food._id" type="hidden" name="id">
 
-        <div *ngIf="id !== '0'" class="row mb-2 justify-content-center">
+        <div *ngIf="id !== '0' && food.img" class="row mb-2 justify-content-center">
           <img [src]="food.img" alt="food image" class="foodImg">
         </div>
 
