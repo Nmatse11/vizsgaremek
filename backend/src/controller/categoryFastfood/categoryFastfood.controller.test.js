@@ -9,35 +9,35 @@ describe('categoryFastfood controller', () => {
 
   const mockData = [
     {
-      "id": 1,
+      "_id": "62b203f1e712926327447413",
       "categoryCode": "AA",
       "menu": "aaa",
       "notes": "primary",
       "price": 1000,
     },
     {
-      "id": 2,
+      "_id": "62b203f1e712926327447414",
       "categoryCode": "BB",
       "menu": "bbb",
       "notes": "primary",
       "price": 2000,
     },
     {
-      "id": 3,
+      "_id": "62b593427bd821989c8a0c99",
       "categoryCode": "CC",
       "menu": "ccc",
       "notes": "primary",
       "price": 3000,
     },
     {
-      "id": 4,
+      "_id": "62b593427bd821989c8a0c9c",
       "categoryCode": "DD",
       "menu": "ddd",
       "notes": "primary",
       "price": 4000,
     },
     {
-      "id": 5,
+      "_id": "62b203f1e712926327447413",
       "categoryCode": "EE",
       "menu": "eee",
       "notes": "primary",
@@ -54,7 +54,7 @@ describe('categoryFastfood controller', () => {
   });
 
   test("find one with valid id", () => {
-    const CATEGORY_ID = 1;
+    const CATEGORY_ID = "62b203f1e712926327447413";
 
     const request = mockRequest({
       params: {
@@ -66,7 +66,7 @@ describe('categoryFastfood controller', () => {
       .then(() => {
         expect(categoryFastfoodService.findOne).toBeCalledWith(CATEGORY_ID);
         expect(response.json).toBeCalledWith(
-          mockData.find(category => category.id === CATEGORY_ID)
+          mockData.find(category => category._id === CATEGORY_ID)
         );
       });
   });

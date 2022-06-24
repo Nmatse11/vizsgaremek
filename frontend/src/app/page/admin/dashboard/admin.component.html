@@ -44,6 +44,9 @@
       </div>
     </div>
 
+    {{ dontPaidBillAmount$ | async }}
+    {{ paidBillAmount$ | async }}
+    {{ billChartData }}
     <div class="col-12 col-lg-8 offset-lg-2 d-md-flex flex-sm-row justify-content-lg-center mt-4">
       <div class="col-10 offset-1 col-md-6 mb-5 mb-md-0" *ngIf="ready1 === true">
         <h4 class="text-center mb-3">{{ billChartTitle }}</h4>

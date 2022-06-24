@@ -1,9 +1,9 @@
-const service = jest.mock('./service');
+const service = jest.mock('./orderMenu.service');
 
 let mockData;
 
 service.findOne = jest.fn(id => Promise.resolve(
-  mockData.find(entity => entity.id === id))
+  mockData.find(entity => entity._id === id))
 );
 
 service.__setMockData = data => mockData = data;

@@ -30,7 +30,7 @@
             <ng-container *ngFor="let codes of fastfoodCodes; index as i">
               <tr>
                 <td>
-                  <button class="btn btn-sm m-0 p-0" data-toggle="collapse" aria-expanded="false"
+                  <button class="btn btn-sm m-0 p-0 collapsed" data-toggle="collapse" aria-expanded="false"
                     attr.data-target="#collapse{{i}}" attr.aria-controls="collapse{{i}}"><span
                       class="material-icons m-0 p-0">visibility</span></button>
                 </td>
@@ -45,7 +45,7 @@
               </tr>
               <tr>
                 <td colspan="12" class="p-0">
-                  <div class="collapse" attr.id="collapse{{i}}" class="table-responsive">
+                  <div class="table-responsive collapse" attr.id="collapse{{i}}">
                     <table class="table table-bordered table-striped text-center">
                       <thead>
                         <tr>

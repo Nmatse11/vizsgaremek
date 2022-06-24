@@ -172,6 +172,5 @@ data
 
 # Config
 config
-config_test
 
 # End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode

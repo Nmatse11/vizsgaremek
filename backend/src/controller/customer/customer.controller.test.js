@@ -3,13 +3,13 @@ const { mockRequest, mockResponse } = require("jest-mock-req-res");
 const customerController = require('./customer.controller');
 const customerService = require('./customer.service');
 
-jest.mock('./customer.service.js');
+jest.mock('./customer.service');
 
 describe('customer controller', () => {
 
   const mockData = [
     {
-      id: 1,
+      _id: "62b203f1e712926327447413",
       firstName: "Példa",
       lastName: "István",
       email: "pelda.istvan@gmail.com",
@@ -33,7 +33,7 @@ describe('customer controller', () => {
       active: true
     },
     {
-      id: 2,
+      _id: "62b203f1e712926327447414",
       firstName: "Minta",
       lastName: "Károly",
       email: "minta.karoly@gmail.com",
@@ -57,7 +57,7 @@ describe('customer controller', () => {
       active: true
     },
     {
-      id: 3,
+      _id: "62b593427bd821989c8a0c99",
       firstName: "Teszt",
       lastName: "Elek",
       email: "test.elek@gmail.com",
@@ -91,7 +91,7 @@ describe('customer controller', () => {
   });
 
   test("find one with valid id", () => {
-    const CUSTOMER_ID = 1;
+    const CUSTOMER_ID = "62b203f1e712926327447413";
 
     const request = mockRequest({
       params: {
@@ -103,7 +103,7 @@ describe('customer controller', () => {
       .then(() => {
         expect(customerService.findOne).toBeCalledWith(CUSTOMER_ID);
         expect(response.json).toBeCalledWith(
-          mockData.find(customer => customer.id === CUSTOMER_ID)
+          mockData.find(customer => customer._id === CUSTOMER_ID)
         );
       });
   });

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const AddressSchema = mongoose.Schema({
   zip: {
-    type: String,
+    type: Number,
     required: true
   },
   city: {
@@ -14,7 +14,7 @@ const AddressSchema = mongoose.Schema({
     required: true
   },
   number: {
-    type: String,
+    type: Number,
     required: true
   },
   notes: {

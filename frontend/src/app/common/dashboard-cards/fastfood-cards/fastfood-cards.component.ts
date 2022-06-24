@@ -211,7 +211,7 @@ export class FastfoodCardsComponent implements OnInit {
           this.saveFastfoodCategoryOrder(category, category.sumOfOrder)
         }
 
-      if (category.categoryCode && category.size !== 40) {
+      if (category.categoryCode && Number(category.size) !== 40) {
         this.sumOfOrder.push(category.sumOfOrder as number)
       }
 
@@ -267,13 +267,13 @@ export class FastfoodCardsComponent implements OnInit {
           }
         }
 
-        else if (fastfood.category === "PIZ") {
+        if (fastfood.category === "PIZ") {
           let pizzanumber = 0
-          if (fastfood.category === category.categoryCode && category.size === 32) {
-            pizzanumber = (fastfood.numberOfPaidOrder as number) * category.price
+          if (fastfood.category === category.categoryCode && Number(category.size) === 32 && fastfood.numberOfPaidOrder) {
+            pizzanumber = fastfood.numberOfPaidOrder * category.price
           }
-          if (fastfood.category === category.categoryCode && category.size === 40) {
-            pizzanumber = (fastfood.numberOfPaidOrderFamily as number) * category.price
+          if (fastfood.category === category.categoryCode && Number(category.size) === 40 && fastfood.numberOfPaidOrderFamily) {
+            pizzanumber = fastfood.numberOfPaidOrderFamily * category.price
           }
           arrayAmount.push(pizzanumber)
         }

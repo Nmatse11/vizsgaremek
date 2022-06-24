@@ -9,7 +9,7 @@ describe('orderMenu controller', () => {
 
   const mockData = [
     {
-      "id": 1,
+      "_id": "62b203f1e712926327447413",
       "customerID": "62af8d2f621fb233c179ce42",
       "date": "2022. 01. 01.",
       "order": [
@@ -24,7 +24,7 @@ describe('orderMenu controller', () => {
       "status": "paid"
     },
     {
-      "id": 2,
+      "_id": "62b203f1e712926327447414",
       "customerID": "62af8d2f621fb233c179ceb1",
       "date": "2022. 01. 02.",
       "order": [
@@ -49,7 +49,7 @@ describe('orderMenu controller', () => {
       "status": "paid"
     },
     {
-      "id": 3,
+      "_id": "62b593427bd821989c8a0c99",
       "customerID": "62af8d2f621fb233c179cf02",
       "date": "2022. 01. 03.",
       "order": [
@@ -74,7 +74,7 @@ describe('orderMenu controller', () => {
   });
 
   test("find one with valid id", () => {
-    const ORDER_ID = 1;
+    const ORDER_ID = "62b203f1e712926327447413";
 
     const request = mockRequest({
       params: {
@@ -86,7 +86,7 @@ describe('orderMenu controller', () => {
       .then(() => {
         expect(orderMenuService.findOne).toBeCalledWith(ORDER_ID);
         expect(response.json).toBeCalledWith(
-          mockData.find(order => order.id === ORDER_ID)
+          mockData.find(order => order._id === ORDER_ID)
         );
       });
   });

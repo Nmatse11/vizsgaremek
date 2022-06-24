@@ -3,3 +3,7 @@
 .table {
   background-color: $secondary;
 }
+
+.collapse:not(.show) {
+  display: none;
+}

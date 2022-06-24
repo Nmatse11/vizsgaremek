@@ -9,7 +9,7 @@ describe('menu controller', () => {
 
   const mockData = [
     {
-      "id": 1,
+      "_id": "62b203f1e712926327447413",
       "week": 1,
       "AMenuFoodSoup": [],
       "AMenuFoodMain": [],
@@ -30,7 +30,7 @@ describe('menu controller', () => {
       "SAMenuFood": []
     },
     {
-      "id": 2,
+      "_id": "62b203f1e712926327447414",
       "week": 2,
       "AMenuFoodSoup": [],
       "AMenuFoodMain": [],
@@ -51,7 +51,7 @@ describe('menu controller', () => {
       "SAMenuFood": []
     },
     {
-      "id": 3,
+      "_id": "62b593427bd821989c8a0c99",
       "week": 3,
       "AMenuFoodSoup": [],
       "AMenuFoodMain": [],
@@ -82,7 +82,7 @@ describe('menu controller', () => {
   });
 
   test("find one with valid id", () => {
-    const MENU_ID = 1;
+    const MENU_ID = "62b203f1e712926327447413";
 
     const request = mockRequest({
       params: {
@@ -94,7 +94,7 @@ describe('menu controller', () => {
       .then(() => {
         expect(menuService.findOne).toBeCalledWith(MENU_ID);
         expect(response.json).toBeCalledWith(
-          mockData.find(menu => menu.id === MENU_ID)
+          mockData.find(menu => menu._id === MENU_ID)
         );
       });
   });

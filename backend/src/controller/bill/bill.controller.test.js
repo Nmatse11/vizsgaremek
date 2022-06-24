@@ -9,7 +9,7 @@ describe('bill controller', () => {
 
   const mockData = [
     {
-      "id": 1,
+      "_id": "62b203f1e712926327447413",
       "orderDate": "2022. 01. 01.",
       "billDate": "2022. 01. 01.",
       "orderID": "62b1ebb5cae246b1c4d73fc3",
@@ -18,7 +18,7 @@ describe('bill controller', () => {
       "status": "paid"
     },
     {
-      "id": 2,
+      "_id": "62b203f1e712926327447414",
       "orderDate": "2022. 01. 02.",
       "billDate": "2022. 01. 02.",
       "orderID": "62b1ebb5cae246b1c4d73fc5",
@@ -27,7 +27,7 @@ describe('bill controller', () => {
       "status": "paid"
     },
     {
-      "id": 3,
+      "_id": "62b593427bd821989c8a0c99",
       "orderDate": "2022. 01. 03.",
       "billDate": "2022. 01. 03.",
       "orderID": "62b1f3c8e57a08d0ecdeaaad",
@@ -36,7 +36,7 @@ describe('bill controller', () => {
       "status": "paid"
     },
     {
-      "id": 4,
+      "_id": "62b593427bd821989c8a0c9c",
       "orderDate": "2022. 01. 04.",
       "billDate": "2022. 01. 04.",
       "orderID": "62b1ebb5cae246b1c4d73fc9",
@@ -45,7 +45,7 @@ describe('bill controller', () => {
       "status": "paid"
     },
     {
-      "id": 5,
+      "_id": "62b203f1e712926327447413",
       "orderDate": "2022. 01. 05.",
       "billDate": "2022. 01. 05.",
       "orderID": "62b1ebb5cae246b1c4d73fcb",
@@ -64,7 +64,7 @@ describe('bill controller', () => {
   });
 
   test("find one with valid id", () => {
-    const BILL_ID = 1;
+    const BILL_ID = "62b203f1e712926327447413";
 
     const request = mockRequest({
       params: {
@@ -76,7 +76,7 @@ describe('bill controller', () => {
       .then(() => {
         expect(billService.findOne).toBeCalledWith(BILL_ID);
         expect(response.json).toBeCalledWith(
-          mockData.find(bill => bill.id === BILL_ID)
+          mockData.find(bill => bill._id === BILL_ID)
         );
       });
   });

@@ -9,7 +9,7 @@ describe('foodFastfood controller', () => {
 
   const mockData = [
     {
-      "id": 1,
+      "_id": "62b203f1e712926327447413",
       "name": "Pizza1",
       "menu": "pizza",
       "allergens": [
@@ -27,7 +27,7 @@ describe('foodFastfood controller', () => {
       "active": true,
     },
     {
-      "id": 2,
+      "_id": "62b203f1e712926327447414",
       "name": "Pizza2",
       "menu": "pizza",
       "allergens": [
@@ -45,7 +45,7 @@ describe('foodFastfood controller', () => {
       "active": true,
     },
     {
-      "id": 3,
+      "_id": "62b593427bd821989c8a0c99",
       "name": "Pizza3",
       "menu": "pizza",
       "allergens": [
@@ -73,7 +73,7 @@ describe('foodFastfood controller', () => {
   });
 
   test("find one with valid id", () => {
-    const FASTFOOD_ID = 1;
+    const FASTFOOD_ID = "62b203f1e712926327447413";
 
     const request = mockRequest({
       params: {
@@ -85,7 +85,7 @@ describe('foodFastfood controller', () => {
       .then(() => {
         expect(foodFastfoodService.findOne).toBeCalledWith(FASTFOOD_ID);
         expect(response.json).toBeCalledWith(
-          mockData.find(fastfood => fastfood.id === FASTFOOD_ID)
+          mockData.find(fastfood => fastfood._id === FASTFOOD_ID)
         );
       });
   });

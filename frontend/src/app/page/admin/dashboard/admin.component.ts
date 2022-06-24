@@ -118,6 +118,7 @@ export class AdminComponent implements OnInit {
 
     this.setBillChart()
     this.setAmountChart()
+
     this.CustomerList$.subscribe(customers => {
       this.OrderMenuList$.subscribe(menuOrders => {
         this.OrderFastfoodList$.subscribe(fastOrders => {
@@ -147,7 +148,7 @@ export class AdminComponent implements OnInit {
       this.paidBillAmount$.subscribe(paidNumber => {
         let number1 = dontPaidNumber
         let number2 = paidNumber
-        this.billChartData.push(number1, number2)
+        this.billChartData = [number1, number2]
       })
     })
     let label1 = this.config.billChartLabel[1].label

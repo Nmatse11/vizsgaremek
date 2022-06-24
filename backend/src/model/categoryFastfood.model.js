@@ -22,7 +22,7 @@ const CategoryFastfoodSchema = mongoose.Schema({
     default: 1000
   },
   size: {
-    type: String,
+    type: Number,
     required: false,
   },
   numberOfFood: {

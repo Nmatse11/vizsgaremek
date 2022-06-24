@@ -11,35 +11,35 @@ describe('user controller', () => {
 
   const mockData = [
     {
-      "id": 1,
+      "_id": "62b203f1e712926327447413",
       "email": "minta.ferenc@gmail.com",
       "password": "test",
       "role": "customer",
       "customerID": "62af8d2f621fb233c179cd8b"
     },
     {
-      "id": 2,
+      "_id": "62b203f1e712926327447414",
       "email": "pelda.maria@gmail.com",
       "password": "test",
       "role": "customer",
       "customerID": "62af8d2f621fb233c179cd8e"
     },
     {
-      "id": 3,
+      "_id": "62b593427bd821989c8a0c99",
       "email": "teszt.elek@gmail.com",
       "password": "test",
       "role": "customer",
       "customerID": "62af8d2f621fb233c179cd91"
     },
     {
-      "id": 4,
+      "_id": "62b593427bd821989c8a0c9c",
       "email": "minta.lajos@gmail.com",
       "password": "test",
       "role": "customer",
       "customerID": "62af8d2f621fb233c179cd94"
     },
     {
-      "id": 5,
+      "_id": "62b203f1e712926327447413",
       "email": "pelda.eva@gmail.com",
       "password": "test",
       "role": "customer",
@@ -56,7 +56,7 @@ describe('user controller', () => {
   });
 
   test("find one with valid id", () => {
-    const USER_ID = 1;
+    const USER_ID = "62b203f1e712926327447413";
 
     const request = mockRequest({
       params: {
@@ -68,7 +68,7 @@ describe('user controller', () => {
       .then(() => {
         expect(userService.findOne).toBeCalledWith(USER_ID);
         expect(response.json).toBeCalledWith(
-          mockData.find(user => user.id === USER_ID)
+          mockData.find(user => user._id === USER_ID)
         );
       });
   });
