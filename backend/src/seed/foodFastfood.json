@@ -28,7 +28,11 @@
     "allergens": [
       {
         "gluten": true,
-        "milk": true
+        "milk": true,
+        "egg": false,
+        "soya": false,
+        "peanut": false,
+        "walnut": false
       }
     ],
     "category": "PIZ",
