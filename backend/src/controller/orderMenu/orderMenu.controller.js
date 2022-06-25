@@ -68,3 +68,10 @@ exports.findAllOrderOfCustomer = (req, res, next) => {
       res.json(orders);
     });
 };
+
+exports.findAllPaidOrder = (req, res, next) => {
+  return orderService.findAllPaidOrder()
+    .then(orders => {
+      res.json(orders);
+    });
+};

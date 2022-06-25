@@ -10,7 +10,7 @@ exports.findAll = async () => {
   return doc.sort((a, b) => (new Date(a.date)) - (new Date(b.date)))
 };
 
-exports.findOne = id => OrderFastfood.findById(id).populate('customerID');
+exports.findOne = id => OrderFastfood.findById(id)
 
 exports.update = (id, updateData) => OrderFastfood.findByIdAndUpdate(id, updateData, { new: true });
 
@@ -24,3 +24,5 @@ exports.findAllOrderOfCustomer = async (id) => {
   const doc = await OrderFastfood.find({ customerID: id })
   return doc.sort((a, b) => (new Date(a.date)) - (new Date(b.date)))
 };
+
+exports.findAllPaidOrder = async () => await OrderFastfood.find({ status: 'paid' });

@@ -53,9 +53,9 @@ app.use('/category-menu', require('./controller/categoryMenu/categoryMenu.routes
 app.use('/foods-fastfood', require('./controller/foodFastfood/foodFastfood.routes'));
 app.use('/foods-menu', require('./controller/foodMenu/foodMenu.routes'));
 app.use('/menu', require('./controller/menu/menu.routes'));
-app.use('/order-fastfood', require('./controller/orderFastfood/orderFastfood.routes'));
-app.use('/order-menu', require('./controller/orderMenu/orderMenu.routes'));
-app.use('/bill', require('./controller/bill/bill.routes'));
+app.use('/order-fastfood', authenticateJwt, adminOnly, require('./controller/orderFastfood/orderFastfood.routes'));
+app.use('/order-menu', authenticateJwt, adminOnly, require('./controller/orderMenu/orderMenu.routes'));
+app.use('/bill', authenticateJwt, adminOnly, require('./controller/bill/bill.routes'));
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 

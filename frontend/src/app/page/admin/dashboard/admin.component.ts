@@ -1,6 +1,6 @@
 import { Bill } from './../../../model/bill';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { combineLatest, Observable } from 'rxjs';
 import { CategoryFastfood } from 'src/app/model/category-fastfood';
 import { CategoryMenu } from 'src/app/model/category-menu';
 import { Customer } from 'src/app/model/customer';
@@ -36,23 +36,23 @@ export class AdminComponent implements OnInit {
   OrderFastfoodList$!: Observable<OrderFastfood[]>
   CategoryFastfoodList$!: Observable<CategoryFastfood[]>
 
-  paidBillAmount$:  Observable<number> = this.billService.getSumValue('status', 'paid', 'amount')
-  dontPaidBillAmount$:  Observable<number> = this.billService.getSumValue('status', 'new', 'amount')
-  allOfBillAmount$: Observable<number> = this.billService.getSum('amount')
+  paidBillAmount$!:  Observable<number>
+  dontPaidBillAmount$!:  Observable<number>
+  allOfBillAmount$!: Observable<number>
 
   billChartTitle: string = this.config.billChartLabel[0].label
   billChartData: number[] = []
   billChartLabels: string[] = []
 
-  paidMenuAmount$:  Observable<number> = this.billService.getSumValue3('status', 'paid', 'type', 'menu', 'amount')
-  paidFastfoodAmount$:  Observable<number> = this.billService.getSumValue3('status', 'paid', 'type', 'fastfood', 'amount')
+  paidMenuAmount$!:  Observable<number>
+  paidFastfoodAmount$!:  Observable<number>
 
   AmountChartTitle: string = this.config.billChartLabel[3].label
   AmountChartData: number[] = []
   AmountChartLabels: string[] = []
 
-  activeCustomerNumber$:  Observable<Number> = this.customerService.getNumberOfValue('active', true);
-  allOfCustomer$: Observable<Number> = this.customerService.getNumberOf()
+  activeCustomerNumber$!:  Observable<Number>
+  allOfCustomer$!: Observable<Number>
 
   cityName: string[] = []
   cityNumberMenu: number[] = []
@@ -68,7 +68,7 @@ export class AdminComponent implements OnInit {
 
   CityNumberChartData: number[] = []
   CityAmountChartData: number[] = []
-  CityChartLabels: string[] = []
+  CityChartLabels: string[] = [this.config.cityChartLabel[1].label, this.config.cityChartLabel[2].label]
 
   dateChartTitle: string = this.config.dateChartLabel[0].label
 
@@ -77,7 +77,7 @@ export class AdminComponent implements OnInit {
   dateAmountMenu: number[] = []
   dateNumberFastfood: number[] = []
   dateAmountFastfood: number[] = []
-  DateChartLabels: string[] = []
+  DateChartLabels: string[] = [this.config.dateChartLabel[1].label, this.config.dateChartLabel[2].label]
 
   dateChartSecondaryTitleNumber = this.config.dateChartLabel[3].label
   dateChartSecondaryTitleAmount = this.config.dateChartLabel[4].label
@@ -93,6 +93,10 @@ export class AdminComponent implements OnInit {
 
   ready1: boolean = false
   ready2: boolean = false
+  ready3: boolean = false
+  ready4: boolean = false
+  ready5: boolean = false
+  ready6: boolean = false
 
   constructor(
     private config: ConfigService,
@@ -110,37 +114,45 @@ export class AdminComponent implements OnInit {
     this.CustomerList$ = this.customerService.getAll();
     this.BillList$ = this.billService.getAll();
     this.FoodList$ = this.foodService.getAll();
-    this.OrderMenuList$ = this.menuOrderService.getAll();
+    this.OrderMenuList$ = this.menuOrderService.getAllPaidOrder();
     this.CategoryMenuList$ = this.menuCategoryService.getAll();
     this.FastfoodList$ = this.fastfoodService.getAll();
-    this.OrderFastfoodList$ = this.fastfoodOrderService.getAll();
+    this.OrderFastfoodList$ = this.fastfoodOrderService.getAllPaidOrder();
     this.CategoryFastfoodList$ = this.fastfoodCategoryService.getAll();
 
+    this.setBaseCardData()
     this.setBillChart()
     this.setAmountChart()
 
-    this.CustomerList$.subscribe(customers => {
-      this.OrderMenuList$.subscribe(menuOrders => {
-        this.OrderFastfoodList$.subscribe(fastOrders => {
-          this.setCityArrayMenu(customers, menuOrders)
-          this.setCityArrayFastfood(customers, fastOrders)
-          this.CityNumberChartData.push(this.cityNumberMenu[0], this.cityNumberFastfood[0])
-          this.CityAmountChartData.push(this.cityAmountMenu[0], this.cityAmountFastfood[0])
-          this.CityChartLabels.push(this.config.cityChartLabel[1].label, this.config.cityChartLabel[2].label)
-          this.ready1 = true
-        })
+    combineLatest(
+      this.CustomerList$,
+      this.OrderMenuList$,
+      this.OrderFastfoodList$,
+      this.BillList$
+    )
+    .subscribe(
+      ([customers, menuOrders, fastOrders, bills]) => {
+        this.setCityArrayMenu(customers, menuOrders);
+        this.setCityArrayFastfood(customers, fastOrders);
+        this.setDateChartMenu(bills)
+        this.setDateChartFastfood(bills)
+
+        this.dateName.push(this.config.dateLabels[11].shortlabel)
+        for (let i = 0; i < 12; i++) {
+          this.dateName.push(this.config.dateLabels[i].shortlabel)
+        }
+
       })
-    })
-    this.BillList$.subscribe(bills => {
-      this.setDateChartMenu(bills)
-      this.setDateChartFastfood(bills)
-      this.DateChartLabels.push(this.config.dateChartLabel[1].label, this.config.dateChartLabel[2].label)
-      this.dateName.push(this.config.dateLabels[11].shortlabel)
-      for (let i = 0; i < 12; i++) {
-        this.dateName.push(this.config.dateLabels[i].shortlabel)
-      }
-      this.ready2 = true
-    })
+  }
+
+  setBaseCardData() {
+    this.paidBillAmount$ = this.billService.getSumValue('status', 'paid', 'amount')
+    this.dontPaidBillAmount$ = this.billService.getSumValue('status', 'new', 'amount')
+    this.allOfBillAmount$ = this.billService.getSum('amount')
+    this.paidMenuAmount$ = this.billService.getSumValue3('status', 'paid', 'type', 'menu', 'amount')
+    this.paidFastfoodAmount$ = this.billService.getSumValue3('status', 'paid', 'type', 'fastfood', 'amount')
+    this.activeCustomerNumber$ = this.customerService.getNumberOfValue('active', true);
+    this.allOfCustomer$ = this.customerService.getNumberOf()
   }
 
   setBillChart() {
@@ -149,6 +161,7 @@ export class AdminComponent implements OnInit {
         let number1 = dontPaidNumber
         let number2 = paidNumber
         this.billChartData = [number1, number2]
+        this.ready2 = true
       })
     })
     let label1 = this.config.billChartLabel[1].label
@@ -162,6 +175,7 @@ export class AdminComponent implements OnInit {
         let number1 = dontPaidNumber
         let number2 = paidNumber
         this.AmountChartData.push(number1, number2)
+        this.ready3 = true
       })
     })
     let label1 = this.config.billChartLabel[4].label
@@ -170,16 +184,16 @@ export class AdminComponent implements OnInit {
   }
 
   setCityArrayMenu(customers: Customer[], orders: OrderMenu[]): void {
-    let array: string[] = []
     let cityArray: string[] = []
     let number: number = 0
-    orders.filter(order => order.status == 'paid').map(order => {
-      customers.filter(customer => customer._id === order.customerID)
-      .map(customer => {
-        array.push(customer.shipAddress[0].city)
+    let array: string[] = []
+    orders.map(order => {
+      customers.filter(customer => customer._id === order.customerID).map(customer => {
+          array.push(customer.shipAddress[0].city);
+        })
       })
-    })
     this.cityName = [... new Set(array)]
+
     this.cityName.map(city => {
       cityArray = array.filter(item => item === city)
       number = cityArray.length
@@ -188,12 +202,16 @@ export class AdminComponent implements OnInit {
         let customerOfCity = customers.filter(customer => customer.shipAddress[0].city === city).map(customer => customer._id)
         let amountOfCity: number[] = []
         customerOfCity.map(item => {
-          orders.filter((order => order.status == 'paid' && order.customerID === item)).map(order => {
+          orders.filter((order => order.customerID === item)).map(order => {
             amountOfCity.push(order.amount)
           })
         })
         this.cityAmountMenu.push(amountOfCity.reduce((prev, next) => prev + next, 0))
+
+        this.ready4 = true
       })
+      this.CityAmountChartData.push(this.cityAmountMenu[0])
+      this.CityNumberChartData.push(this.cityNumberMenu[0])
   }
 
 
@@ -201,28 +219,31 @@ export class AdminComponent implements OnInit {
     let array: string[] = []
     let cityArray: string[] = []
     let number: number = 0
-    orders.filter(order => order.status == 'paid').map(order => {
-        customers.map(customer => {
-          if (order.customerID === customer._id) {
-              array.push(customer.shipAddress[0].city)
-          }
-        })
+    orders.map(order => {
+      customers.filter(customer => customer._id === order.customerID).map(customer => {
+        array.push(customer.shipAddress[0].city);
       })
-      this.cityName = [... new Set(array)]
-      this.cityName.map(city => {
-        cityArray = array.filter(item => item === city)
-        number = cityArray.length
-        this.cityNumberFastfood.push(number)
+    })
+    this.cityName = [... new Set(array)]
 
-        let customerOfCity = customers.filter(customer => customer.shipAddress[0].city === city).map(customer => customer._id)
-        let amountOfCity: number[] = []
-        customerOfCity.map(item => {
-          orders.filter((order => order.status == 'paid' && order.customerID === item)).map(order => {
-            amountOfCity.push(order.amount)
-          })
-        })
-        this.cityAmountFastfood.push(amountOfCity.reduce((prev, next) => prev + next, 0))
+    this.cityName.map(city => {
+      cityArray = array.filter(item => item === city)
+      number = cityArray.length
+      this.cityNumberFastfood.push(number)
+
+      let customerOfCity = customers.filter(customer => customer.shipAddress[0].city === city).map(customer => customer._id)
+      let amountOfCity: number[] = []
+      customerOfCity.map(item => {
+        orders.filter((order => order.customerID === item)).map(order => {
+          amountOfCity.push(order.amount)
       })
+    })
+    this.cityAmountFastfood.push(amountOfCity.reduce((prev, next) => prev + next, 0))
+
+    this.ready5 = true
+  })
+  this.CityAmountChartData.push(this.cityAmountFastfood[0])
+  this.CityNumberChartData.push(this.cityNumberFastfood[0])
   }
 
   setDateChartMenu(bills: Bill[]): void {

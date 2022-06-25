@@ -20,4 +20,8 @@ export class MenuOrderService extends SummaryService<OrderMenu> {
     return this.http.get<OrderMenu[]>(`${this.apiUrl}${this.entityName}/customer/${id}`);
   }
 
+  getAllPaidOrder(): Observable<OrderMenu[]> {
+    return this.http.get<OrderMenu[]>(`${this.apiUrl}${this.entityName}/paid/orders`);
+  }
+
 }

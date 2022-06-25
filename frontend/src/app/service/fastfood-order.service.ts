@@ -20,5 +20,9 @@ export class FastfoodOrderService extends SummaryService<OrderFastfood> {
     return this.http.get<OrderFastfood[]>(`${this.apiUrl}${this.entityName}/customer/${id}`);
   }
 
+  getAllPaidOrder(): Observable<OrderFastfood[]> {
+    return this.http.get<OrderFastfood[]>(`${this.apiUrl}${this.entityName}/paid/orders`);
+  }
+
 }
 

@@ -50,8 +50,8 @@ export class NavigationComponent implements OnInit {
   }
 
   onLogout() {
-    this.authService.logout();
     this.user!
+    this.authService.logout();
   }
 
 }

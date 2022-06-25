@@ -19,11 +19,11 @@
       <h2 class="dashboardTitle">{{ titles[0].title }}</h2>
     </div>
     <div class="col-12 col-lg-8 offset-lg-2 d-md-flex flex-sm-row">
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6" *ngIf="activeCustomerNumber$ && allOfCustomer$">
         <app-customer-card [activeCustomerNumber$]="activeCustomerNumber$" [allOfCustomer$]="allOfCustomer$">
         </app-customer-card>
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6" *ngIf="dontPaidBillAmount$ && allOfBillAmount$">
         <app-bill-card [dontPaidBillAmount$]="dontPaidBillAmount$" [allOfBillAmount$]="allOfBillAmount$">
         </app-bill-card>
       </div>
@@ -32,29 +32,27 @@
     <div class="col-lg-8 offset-lg-2 d-flex justify-content-center my-3">
       <h4>{{ titles[1].title }}</h4>
     </div>
-    <div class="col-12 col-lg-8 offset-lg-2 d-md-flex flex-sm-row">
+    <div class="col-12 col-lg-8 offset-lg-2 d-md-flex flex-sm-row"
+      *ngIf="dontPaidOrderNumberMenu$ && allOfOrderNumberMenu$">
       <div class="col-12 col-md-6">
         <app-order-menu-card [dontPaidOrderNumber$]="dontPaidOrderNumberMenu$"
           [allOfOrderNumber$]="allOfOrderNumberMenu$"></app-order-menu-card>
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6" *ngIf="dontPaidOrderNumberFastfood$ && allOfOrderNumberFastfood$">
         <app-order-fastfood-card [dontPaidOrderNumber$]="dontPaidOrderNumberFastfood$"
           [allOfOrderNumber$]="allOfOrderNumberFastfood$">
         </app-order-fastfood-card>
       </div>
     </div>
 
-    {{ dontPaidBillAmount$ | async }}
-    {{ paidBillAmount$ | async }}
-    {{ billChartData }}
     <div class="col-12 col-lg-8 offset-lg-2 d-md-flex flex-sm-row justify-content-lg-center mt-4">
-      <div class="col-10 offset-1 col-md-6 mb-5 mb-md-0" *ngIf="ready1 === true">
+      <div class="col-10 offset-1 col-md-6 mb-5 mb-md-0" *ngIf="ready2 === true">
         <h4 class="text-center mb-3">{{ billChartTitle }}</h4>
         <div>
           <app-pie-chart [dataArray]="billChartData" [labels]="billChartLabels"></app-pie-chart>
         </div>
       </div>
-      <div class="col-10 offset-1 col-md-6 mb-5" *ngIf="ready1 === true">
+      <div class="col-10 offset-1 col-md-6 mb-5" *ngIf="ready3 === true">
         <h5 class="text-center mb-3">{{ AmountChartTitle }}</h5>
         <div>
           <app-pie-chart [dataArray]="AmountChartData" [labels]="AmountChartLabels"></app-pie-chart>
@@ -65,13 +63,13 @@
     <hr>
     <hr>
 
-    <div class="col-12 mt-5" *ngIf="ready1 === true">
+    <div class="col-12 mt-5" *ngIf="ready4 === true && ready5 === true">
       <h4 class="text-center mb-3">{{ cityChartTitle }}</h4>
       <div class="col-12 mt-3">
         <h6 class="text-center mb-3">{{ cityChartSecondaryTitleNumber }}</h6>
         <div class="col-10 offset-1 col-md-4 offset-md-4 mb-2">
           <h6 class="text-center mb-3 text-muted">{{ cityName[0] }}</h6>
-          <app-pie-chart [dataArray]=" CityNumberChartData" [labels]="CityChartLabels">
+          <app-pie-chart [dataArray]="CityNumberChartData" [labels]="CityChartLabels">
           </app-pie-chart>
         </div>
       </div>
@@ -81,11 +79,11 @@
         </app-bar-chart>
       </div>
     </div>
-    <div class="col-12 my-5" *ngIf="ready1 === true">
+    <div class="col-12 my-5" *ngIf="ready4 === true && ready5 === true">
       <h6 class="text-center mb-3">{{ cityChartSecondaryTitleAmount }}</h6>
       <div class="col-10 offset-1 col-md-4 offset-md-4 mb-2">
         <h6 class="text-center mb-3 text-muted">{{ cityName[0] }}</h6>
-        <app-pie-chart [dataArray]=" CityAmountChartData" [labels]="CityChartLabels">
+        <app-pie-chart [dataArray]="CityAmountChartData" [labels]="CityChartLabels">
         </app-pie-chart>
       </div>
       <div class="col-12">

@@ -19,7 +19,6 @@ export class PieChartComponent implements OnInit {
   constructor( ) { }
 
   ngOnInit(): void {
-    console.log(this.dataArray)
       this.pieChartData.labels = this.labels
       this.pieChartData.datasets[0].data = this.dataArray
       this.chart?.update();

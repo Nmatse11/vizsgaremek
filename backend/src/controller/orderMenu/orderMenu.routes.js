@@ -13,7 +13,13 @@ router.get('/', (req, res, next) => {
   return controller.findAll(req, res, next);
 });
 
-// get all order of customer
+// get all paid order
+router.get('/paid/orders', (req, res, next) => {
+  return controller.findAllPaidOrder(req, res, next);
+});
+
+
+// get all orders of customer
 router.get('/customer/:id', (req, res, next) => {
   return controller.findAllOrderOfCustomer(req, res, next);
 });

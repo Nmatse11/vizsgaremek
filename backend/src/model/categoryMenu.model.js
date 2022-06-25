@@ -24,7 +24,7 @@ const CategoryMenuSchema = mongoose.Schema({
     default: 1000
   },
   weigh: {
-    type: String,
+    type: Number,
     required: false,
     default: 100
   },

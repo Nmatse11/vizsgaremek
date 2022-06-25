@@ -1,0 +1,2002 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: FullStack course final project
+  description: An API where you can get and order fastfood or a weekly menu. You can also edit, add and delete foods, menus and fastfood with the appropriate role.
+servers:
+  - url: http://localhost:3000
+paths:
+  /bill:
+    get:
+      description: Returns a list of bills
+      security:
+        - bearerAuth: []
+      responses:
+        "200":
+          description: List of bills returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Bill"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    post:
+      description: Creates a new bill
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Bill"
+      responses:
+        "201":
+          description: Bill has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Bill"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /bill/{_id}:
+    get:
+      description: Get a bill
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Returns a Bill
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Bill"
+        "404":
+          description: Bill based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    patch:
+      description: Updates a bill
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Bill"
+      responses:
+        "200":
+          description: Bill has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Bill"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    delete:
+      description: Removes a bill
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Bill has been deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+        "404":
+          description: Bill based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /category-fastfood:
+    get:
+      description: Returns a list of fastfood categories
+      responses:
+        "200":
+          description: List of fastfood categories returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/CategoryFastfood"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    post:
+      description: Creates a new category of fastfood
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CategoryFastfood"
+      responses:
+        "201":
+          description: Category of fastfood has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CategoryFastfood"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /category-fastfood/{_id}:
+    get:
+      description: Get a category of fastfood
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Returns a category of fastfood
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/CategoryFastfood"
+        "404":
+          description: Category of fastfood based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    patch:
+      description: Updates a category of fastfood
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CategoryFastfood"
+      responses:
+        "200":
+          description: Category of fastfood has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CategoryFastfood"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    delete:
+      description: Removes a category of fastfood
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Category of fastfood has been deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+        "404":
+          description: Category of fastfood based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /category-menu:
+    get:
+      description: Returns a list of menu categories
+      responses:
+        "200":
+          description: List of menu categories returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/CategoryMenu"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    post:
+      description: Creates a new category of menu
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CategoryMenu"
+      responses:
+        "201":
+          description: Category of menu has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CategoryMenu"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /category-menu/{_id}:
+    get:
+      description: Get a category of menu
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Returns a category of menu
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/CategoryMenu"
+        "404":
+          description: Category of menu based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    patch:
+      description: Updates a category of menu
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CategoryMenu"
+      responses:
+        "200":
+          description: Category of menu has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CategoryMenu"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    delete:
+      description: Removes a category of menu
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Category of menu has been deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+        "404":
+          description: Category of menu based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /customer:
+    get:
+      description: Returns a list of customer
+      responses:
+        "200":
+          description: List of customer returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Customer"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    post:
+      description: Creates a new customer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Customer"
+      responses:
+        "201":
+          description: Customer has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Customer"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /customer/{_id}:
+    get:
+      description: Get a customer
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Returns a customer
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Customer"
+        "404":
+          description: Menu based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    patch:
+      description: Updates a customer
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Customer"
+      responses:
+        "200":
+          description: Customer has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Customer"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    delete:
+      description: Removes a customer
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Customer has been deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+        "404":
+          description: Customer based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /customer/customer/names:
+    get:
+      description: Returns a list of customer names
+      responses:
+        "200":
+          description: Names of customer returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Customer"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /customer/customer/{email}:
+    get:
+      description: Get a customer with a specific email
+      parameters:
+        - in: path
+          name: email
+          required: true
+          schema:
+            type: string
+            format: email
+      responses:
+        "200":
+          description: Returns a customer with a specific email
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Customer"
+        "404":
+          description: Customer with a specific email based on email is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /foods-fastfood:
+    get:
+      description: Returns a list of fastfood foods
+      responses:
+        "200":
+          description: List of fastfood foods returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/FoodFastfood"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    post:
+      description: Creates a new food of fastfood
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FoodFastfood"
+      responses:
+        "201":
+          description: Food of fastfood has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FoodFastfood"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /foods-fastfood/{_id}:
+    get:
+      description: Get a food of fastfood
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Returns a food of fastfood
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/FoodFastfood"
+        "404":
+          description: Food of fastfood based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    patch:
+      description: Updates a food of fastfood
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FoodFastfood"
+      responses:
+        "200":
+          description: Food of fastfood has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FoodFastfood"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    delete:
+      description: Removes a food of fastfood
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Food of fastfood has been deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+        "404":
+          description: Food of fastfood based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /foods-menu:
+    get:
+      description: Returns a list of menu foods
+      responses:
+        "200":
+          description: List of menu foods returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/FoodMenu"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    post:
+      description: Creates a new food of menu
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FoodMenu"
+      responses:
+        "201":
+          description: Food of menu has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FoodMenu"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /foods-menu/{_id}:
+    get:
+      description: Get a food of menu
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Returns a food of menu
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/FoodMenu"
+        "404":
+          description: Food of menu based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    patch:
+      description: Updates a food of menu
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FoodMenu"
+      responses:
+        "200":
+          description: Food of menu has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FoodMenu"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    delete:
+      description: Removes a food of menu
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Food of menu has been deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+        "404":
+          description: Food of menu based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /menu:
+    get:
+      description: Returns a list of menu
+      responses:
+        "200":
+          description: List of menu returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Menu"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /menu/{_id}:
+    get:
+      description: Get a menu
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Returns a menu
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Menu"
+        "404":
+          description: Menu based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    patch:
+      description: Updates a menu
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Menu"
+      responses:
+        "200":
+          description: Menu has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Menu"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /menu/week/{week}:
+    get:
+      description: Get a specific weekly menu
+      parameters:
+        - in: path
+          name: week
+          required: true
+          schema:
+            type: number
+            minimum: 0
+            maximum: 52
+      responses:
+        "200":
+          description: Returns a specific weekly menu
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Menu"
+        "404":
+          description: Menu based on week is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /order-fastfood:
+    get:
+      description: Returns a list of fastfood orders
+      security:
+        - bearerAuth: []
+      responses:
+        "200":
+          description: List of fastfood orders returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/OrderFastfood"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    post:
+      description: Creates a new order of fastfood
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OrderFastfood"
+      responses:
+        "201":
+          description: Order of fastfood has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrderFastfood"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /order-fastfood/{_id}:
+    get:
+      description: Get a order of fastfood
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Returns a order of fastfood
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/OrderFastfood"
+        "404":
+          description: Order of fastfood based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    patch:
+      description: Updates a order of fastfood
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OrderFastfood"
+      responses:
+        "200":
+          description: Order of fastfood has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrderFastfood"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    delete:
+      description: Removes a order of fastfood
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Order of fastfood has been deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+        "404":
+          description: Order of fastfood based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /order-fastfood/paid/orders:
+    get:
+      description: Returns list of paid fastfood orders
+      security:
+        - bearerAuth: []
+      responses:
+        "200":
+          description: List of paid fastfood orders returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/OrderFastfood"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /order-fastfood/customer/{_id}:
+    get:
+      description: Get list of a customer all orders
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: List of a customer all orders returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/OrderFastfood"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /order-menu:
+    get:
+      description: Returns a list of menu orders
+      security:
+        - bearerAuth: []
+      responses:
+        "200":
+          description: List of menu orders returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/OrderMenu"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    post:
+      description: Creates a new order of menu
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OrderMenu"
+      responses:
+        "201":
+          description: Order of menu has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrderMenu"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /order-menu/{_id}:
+    get:
+      description: Get a order of menu
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Returns a order of menu
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/OrderMenu"
+        "404":
+          description: Order of menu based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    patch:
+      description: Updates a order of menu
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OrderMenu"
+      responses:
+        "200":
+          description: Order of menu has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrderMenu"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    delete:
+      description: Removes a order of menu
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Order of menu has been deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+        "404":
+          description: Order of menu based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /order-menu/paid/orders:
+    get:
+      description: Returns list of paid menu orders
+      security:
+        - bearerAuth: []
+      responses:
+        "200":
+          description: List of paid menu orders returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/OrderMenu"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /order-menu/customer/{_id}:
+    get:
+      description: Get list of a customer all menu orders
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: List of a customer all menu orders returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/OrderMenu"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /user:
+    get:
+      description: Returns a list of users
+      security:
+        - bearerAuth: []
+      responses:
+        "200":
+          description: List of users returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/User"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    post:
+      description: Creates a new user
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+      responses:
+        "201":
+          description: User has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /user/{_id}:
+    get:
+      description: Get a user
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Returns a user
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/User"
+        "404":
+          description: User based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    patch:
+      description: Updates a user
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+      responses:
+        "200":
+          description: User has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        "400":
+          description: Invalid request when the post data is invalid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    delete:
+      description: Removes a user
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: _id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: User has been deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                example: {}
+        "404":
+          description: User based on id is doesn't exist
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /login:
+    post:
+      description: Login
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        "200":
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  accessToken:
+                    type: string
+        "404":
+          description: Authorization failed
+          content:
+            text/html:
+              schema:
+                type: string
+        "401":
+          description: Authentication failed
+          content:
+            text/html:
+              schema:
+                type: string
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    Bill:
+      type: object
+      required:
+        - orderDate
+        - billDate
+        - orderID
+        - type
+        - amount
+        - status
+      properties:
+        orderDate:
+          type: string
+        billDate:
+          type: string
+        orderID:
+          type: string
+          example: "629e4f9c2cd842ed2e447cc8"
+        type:
+          type: string
+        amount:
+          type: number
+        status:
+          type: string
+    CategoryFastfood:
+      type: object
+      required:
+        - categoryCode
+        - menu
+        - notes
+        - price
+        - size
+      properties:
+        categoryCode:
+          type: string
+        menu:
+          type: string
+        notes:
+          type: string
+        price:
+          type: number
+        size:
+          type: number
+        numberOfFood:
+          type: number
+        sumOfOrder:
+          type: number
+    CategoryMenu:
+      type: object
+      required:
+        - categoryCode
+        - menu
+        - notes
+        - price
+        - weigh
+      properties:
+        categoryCode:
+          type: string
+        menu:
+          type: string
+        notes:
+          type: string
+        price:
+          type: number
+        weigh:
+          type: number
+        numberOfFood:
+          type: number
+        numberOfOrder:
+          type: number
+        numberOfPaidOrder:
+          type: number
+    Customer:
+      type: object
+      required:
+        - firstName
+        - lastName
+        - email
+        - phonenumber
+        - address
+        - shipAddress
+        - active
+      properties:
+        firstName:
+          type: string
+        lastName:
+          type: string
+        email:
+          type: string
+        phonenumber:
+          type: string
+        address:
+          type: array
+          items:
+            type: object
+            required:
+              - zip
+              - city
+              - street
+              - number
+            properties:
+              zip:
+                type: number
+              city:
+                type: string
+              street:
+                type: string
+              number:
+                type: number
+              notes:
+                type: string
+        shipAddress:
+          type: array
+          items:
+            type: object
+            required:
+              - zip
+              - city
+              - street
+              - number
+            properties:
+              zip:
+                type: number
+              city:
+                type: string
+              street:
+                type: string
+              number:
+                type: number
+              notes:
+                type: string
+        active:
+          type: boolean
+    Menu:
+      type: object
+      required:
+        - week
+        - AMenuFoodSoup
+        - AMenuFoodMain
+        - BMenuFoodSoup
+        - BMenuFoodMain
+        - EMenuFoodSoup
+        - EMenuFoodMain
+        - FMenuFoodSoup
+        - FMenuFoodMain
+        - VMenuFoodSoup
+        - VMenuFoodMain
+        - ZMenuFoodSoup
+        - ZMenuFoodMain
+        - R1MenuFood
+        - R2MenuFood
+        - DMenuFood
+        - SMenuFood
+        - SAMenuFood
+      properties:
+        week:
+          type: number
+          minimum: 0
+          maximum: 52
+        AMenuFoodSoup:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        AMenuFoodMain:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        BMenuFoodSoup:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        BMenuFoodMain:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        EMenuFoodSoup:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        EMenuFoodMain:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        FMenuFoodSoup:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        FMenuFoodMain:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        VMenuFoodSoup:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        VMenuFoodMain:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        ZMenuFoodSoup:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        ZMenuFoodMain:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        R1MenuFood:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        R2MenuFood:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        DMenuFood:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        SMenuFood:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+        SAMenuFood:
+          type: array
+          items:
+            tpye: object
+            $ref: "#/components/schemas/FoodMenu"
+    FoodFastfood:
+      type: object
+      required:
+        - name
+        - menu
+        - allergens
+        - category
+        - active
+      properties:
+        name:
+          type: string
+        menu:
+          type: string
+        allergens:
+          type: array
+          items:
+            type: object
+            required:
+              - gluten
+              - milk
+              - soya
+              - egg
+              - peanut
+              - walnut
+            properties:
+              gluten:
+                type: boolean
+              milk:
+                type: boolean
+              soya:
+                type: boolean
+              egg:
+                type: boolean
+              peanut:
+                type: boolean
+              walnut:
+                type: boolean
+        category:
+          type: string
+        descripiton:
+          type: string
+        active:
+          type: boolean
+        numberOfOrder:
+          type: number
+        numberOfPaidOrder:
+          type: number
+    FoodMenu:
+      type: object
+      required:
+        - name
+        - menu
+        - allergens
+        - category
+        - vegan
+        - active
+      properties:
+        name:
+          type: string
+        menu:
+          type: string
+        allergens:
+          type: array
+          items:
+            type: object
+            required:
+              - gluten
+              - milk
+              - soya
+              - egg
+              - peanut
+              - walnut
+            properties:
+              gluten:
+                type: boolean
+              milk:
+                type: boolean
+              soya:
+                type: boolean
+              egg:
+                type: boolean
+              peanut:
+                type: boolean
+              walnut:
+                type: boolean
+        category:
+          type: string
+        vegan:
+          type: boolean
+        fitness:
+          type: boolean
+        active:
+          type: boolean
+        numberInMenu:
+          type: number
+        weekOfYear:
+          type: array
+          items:
+            type: number
+    OrderFastfood:
+      type: object
+      required:
+        - date
+        - customerID
+        - order
+        - amount
+        - shipping
+        - status
+      properties:
+        date:
+          type: string
+        customerID:
+          type: string
+          example: "629e4f9c2cd842ed2e447cc8"
+        order:
+          type: array
+          items:
+            type: object
+            $ref: "#/components/schemas/OrderFastfoodItem"
+        amount:
+          type: number
+        shipping:
+          type: string
+        status:
+          type: string
+    OrderFastfoodItem:
+      type: object
+      required:
+        - productID
+      properties:
+        productID:
+          type: string
+          example: "629e4f9c2cd842ed2e447cc8"
+        notes:
+          type: string
+    OrderMenu:
+      type: object
+      required:
+        - date
+        - customerID
+        - order
+        - amount
+        - shipping
+        - status
+      properties:
+        date:
+          type: string
+        customerID:
+          type: string
+          example: "629e4f9c2cd842ed2e447cc8"
+        order:
+          type: array
+          items:
+            type: object
+            $ref: "#/components/schemas/OrderMenuItem"
+        amount:
+          type: number
+        shipping:
+          type: string
+        status:
+          type: string
+    OrderMenuItem:
+      type: object
+      required:
+        - week
+        - menuCode
+        - portion
+      properties:
+        week:
+          type: number
+        menuCode:
+          type: string
+        portion:
+          type: number
+    User:
+      type: object
+      required:
+        - email
+        - password
+        - role
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+        role:
+          type: string
+        customerID:
+          type: string
+          example: "629e4f9c2cd842ed2e447cc8"
+    Error:
+      type: object
+      required:
+        - message
+        - has_error
+      properties:
+        message:
+          type: string
+        has_error:
+          type: boolean
