@@ -1,0 +1,42 @@
+@use '../../../assets/modules/color.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+.homeImg {
+  width: auto;
+}
+
+h1 {
+  font-family: 'Acme', sans-serif;
+  font-size: 5rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-family: 'Amiri', serif;
+}
+
+.welcome {
+
+  &Title {
+    font-family: 'Acme', sans-serif;
+    background-color: $welcome;
+  };
+
+  &Card {
+    background-color: $a-b-e-menu-color;
+  };
+
+  &Link {
+    cursor: pointer;
+    text-decoration: none;
+    color: $info;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

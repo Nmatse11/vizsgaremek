@@ -6,7 +6,7 @@
 
 - Forkolni kell az adott GitHub repository tartalmát: https://github.com/Nmatse11/vizsgaremek
 - A célgépre le kell klónozni az adott GitHub repository tartalmát:
-  git clone https://github.com/Nmatse11/vizsgaremek.git
+  - `git clone https://github.com/Nmatse11/vizsgaremek.git`
 - Telepíteni kell az alkalmazás függőségeit:
 
   - Backend

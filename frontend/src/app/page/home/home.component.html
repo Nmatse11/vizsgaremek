@@ -1,1 +1,311 @@
-<p>home works!</p>
+<div class="container-fluid container-md py-4 min-vh-100">
+
+  <div class="row d-flex justify-content-center">
+    <picture class="homeImg">
+      <source media="(max-width:768px)" srcset="../../../assets/images/mobil.png">
+      <img src="../../../assets/images/desktop.png" alt="zabalda logo">
+    </picture>
+  </div>
+
+  <div class="row d-flex justify-content-center mt-2 py-4 mb-4">
+    <h5>{{ address }}</h5>
+  </div>
+
+  <div class="row mt-2 py-4 mb-3">
+    <div class="col-12 d-flex flex-column justify-content-center">
+      <h1 class="h3 h1-md text-center">{{ welcomeTexts[0].text }}</h1>
+      <h2 class="h4 h2-md col-md-10 offset-md-1 text-center">{{ welcomeTexts[1].text }}</h2>
+    </div>
+  </div>
+
+  <section class="home mt-3">
+    <div class="d-flex welcomeTitle">
+      <h3 class="p-3 col-11">{{ welcomeMenuTexts[0].text }}</h3>
+      <button class="btn btn-sm m-0 p-0 collapsed col-1" data-toggle="collapse" aria-expanded="false"
+        data-target="#welcomeCollapse1" aria-controls="welcomeCollapse1">
+        <span class="material-icons m-0 p-0">keyboard_double_arrow_down</span>
+      </button>
+    </div>
+    <div class="container collapse" id="welcomeCollapse1">
+      <div class="row">
+        <div data-wow-delay="0.5s"
+          class="col-12 col-lg wow my-2 m-md-2 bounceInDown d-md-flex justify-content-md-center">
+          <mat-card class="col-lg-8 offset-lg-2 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h4 class="h5 h4-md text-center">{{ welcomeMenuTexts[1].text }}</h4>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <h5 class="h6 h5-md text-center col-md-8 offset-md-2 my-3">{{ welcomeMenuTexts[2].text }}</h5>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <div class="row">
+        <div data-wow-delay="0.5s" class="col-12 col-lg wow my-2 m-md-2 rollIn">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeMenuTexts[3].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeMenuTexts[4].text }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div data-wow-delay="0.5s" class="col-12 col-lg wow my-2 m-md-2 lightSpeedIn">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeMenuTexts[5].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="col-md-10 mb-1 text-justify">
+                <span class="font-weight-bold welcomeLink" [routerLink]="['/', 'menu']">
+                  {{welcomeMenuTexts[6].text }}</span>
+                {{welcomeMenuTexts[7].text}}
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg wow my-2 m-md-2 rollIn center">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeMenuTexts[8].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeMenuTexts[9].text }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-12 col-lg wow my-2 m-md-2 bounceInRight center">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeMenuTexts[10].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeMenuTexts[11].text }}</p>
+            </mat-card-content>
+            <mat-card-footer>
+              <p class="col-md-10 ml-md-3 text-muted text-justify">{{ welcomeMenuTexts[12].text }}</p>
+            </mat-card-footer>
+          </mat-card>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg wow my-2 m-md-2 bounceInLeft"
+          style="visibility: visible; animation-name: bounceInLeft;">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeMenuTexts[13].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeMenuTexts[14].text }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-12 col-lg wow my-2 m-md-2 bounceInRight">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeMenuTexts[15].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeMenuTexts[16].text }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg wow my-2 m-md-2 rollIn center">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeMenuTexts[17].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="ml-3 mb-1 text-justify">{{ welcomeMenuTexts[18].text }}</p>
+            </mat-card-content>
+            <mat-card-footer>
+              <p class="col-md-10 ml-md-3 text-muted text-justify">{{ welcomeMenuTexts[19].text }}</p>
+            </mat-card-footer>
+          </mat-card>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div data-wow-delay="0.5s" class="col-12 col-lg wow my-2 m-md-2 bounceInUp center">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-3">
+              <h5>{{ welcomeMenuTexts[20].text }}</h5>
+            </mat-card-title>
+            <mat-card-title>
+              <h6 class="font-italic">{{ welcomeMenuTexts[21].text }}</h6>
+            </mat-card-title>
+            <mat-card-content>
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeMenuTexts[22].text }}</p>
+              <p class="col-md-10 mb-1 text-justify font-weight-bold">
+                <a class="font-weight-bold welcomeLink" [href]="addressLink">{{ welcomeMenuTexts[23].text}}</a>
+              </p>
+            </mat-card-content>
+            <mat-card-content>
+              <p class="ml-3 mb-3 text-muted text-justify">{{ welcomeMenuTexts[24].text }}</p>
+            </mat-card-content>
+            <mat-card-title class="mt-3">
+              <h6 class="font-italic">{{ welcomeMenuTexts[25].text }}</h6>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="mb-1 ml-3 text-justify"><span class="font-weight-bold">{{ welcomeMenuTexts[26].text }}</span>{{
+                welcomeMenuTexts[27].text
+                }}</p>
+            </mat-card-content>
+            <mat-card-title class="mt-4">
+              <h6 class="font-italic">{{ welcomeMenuTexts[28].text }}</h6>
+            </mat-card-title>
+            <mat-card-content class="mb-0 ml-3" *ngFor="let city of cityItems">
+              <ul class="cityList">
+                <li class="col-md-10 mb-1 text-justify">{{ city }}</li>
+              </ul>
+            </mat-card-content>
+            <mat-card-content class="mb-0 mt-3">
+              <p class="col-md-10 mb-1 text-justify li1">{{ welcomeMenuTexts[29].text }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home mt-2">
+    <div class="d-flex welcomeTitle">
+      <h3 class="p-3 col-11">{{ welcomeFastfoodTexts[0].text }}</h3>
+      <button class="btn btn-sm m-0 p-0 collapsed col-1" data-toggle="collapse" aria-expanded="false"
+        data-target="#welcomeCollapse2" aria-controls="welcomeCollapse2">
+        <span class="material-icons m-0 p-0">keyboard_double_arrow_down</span>
+      </button>
+    </div>
+    <div class="container collapse" id="welcomeCollapse2">
+      <div class="row">
+        <div data-wow-delay="0.5s"
+          class="col-12 col-lg wow my-2 m-md-2 bounceInDown d-md-flex justify-content-md-center">
+          <mat-card class="col-lg-8 offset-lg-2 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h4 class="h5 h4-md text-center">{{ welcomeFastfoodTexts[1].text }}</h4>
+            </mat-card-title>
+          </mat-card>
+        </div>
+      </div>
+      <div class="row">
+        <div data-wow-delay="0.5s" class="col-12 col-lg wow my-2 m-md-2 rollIn">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeFastfoodTexts[2].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeFastfoodTexts[3].text }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div data-wow-delay="0.5s" class="col-12 col-lg wow my-2 m-md-2 lightSpeedIn">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeFastfoodTexts[4].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="col-md-10 mb-1 text-justify">
+              <p><span class="font-weight-bold welcomeLink" [routerLink]="['/', 'fastfood']">
+                  {{welcomeFastfoodTexts[5].text}}</span>
+                {{welcomeFastfoodTexts[6].text}}
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg wow my-2 m-md-2 rollIn center">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeFastfoodTexts[7].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeFastfoodTexts[8].text }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-12 col-lg wow my-2 m-md-2 bounceInRight center">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeFastfoodTexts[9].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeFastfoodTexts[10].text }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg wow my-2 m-md-2 bounceInLeft"
+          style="visibility: visible; animation-name: bounceInLeft;">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeFastfoodTexts[11].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeFastfoodTexts[12].text }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-12 col-lg wow my-2 m-md-2 bounceInRight">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-1">
+              <h5>{{ welcomeFastfoodTexts[13].text }}</h5>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeFastfoodTexts[14].text }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div data-wow-delay="0.5s" class="col-12 col-lg wow my-2 m-md-2 bounceInUp center">
+          <mat-card class="col-12 h-100 border rounded-0 pb-3 m-2 mat-elevation-z8 welcomeCard">
+            <mat-card-title class="mb-3">
+              <h5>{{ welcomeFastfoodTexts[15].text }}</h5>
+            </mat-card-title>
+            <mat-card-title>
+              <h6 class="font-italic">{{ welcomeFastfoodTexts[16].text }}</h6>
+            </mat-card-title>
+            <mat-card-content>
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeFastfoodTexts[17].text }}</p>
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeFastfoodTexts[18].text }}</p>
+              <p class="col-md-10 mb-1 text-justify">
+                <a class="font-weight-bold welcomeLink" [href]="addressLink">{{welcomeFastfoodTexts[19].text}}
+                </a>
+              </p>
+            </mat-card-content>
+            <mat-card-content>
+              <p class="ml-3 mb-3 text-muted text-justify">{{ welcomeFastfoodTexts[20].text }}</p>
+            </mat-card-content>
+            <mat-card-title class="mt-4">
+              <h6 class="font-italic">{{ welcomeFastfoodTexts[21].text }}</h6>
+            </mat-card-title>
+            <mat-card-content class="mb-0">
+              <p class="mb-1 ml-3 text-justify"><span class="font-weight-bold">{{ welcomeFastfoodTexts[22].text
+                  }}</span>{{ welcomeFastfoodTexts[23].text }}</p>
+            </mat-card-content>
+            <mat-card-title class="mt-3">
+              <h6 class="font-italic">{{ welcomeFastfoodTexts[24].text }}</h6>
+            </mat-card-title>
+            <mat-card-content class="mb-0 ml-3" *ngFor="let city of cityItems">
+              <ul class="cityList">
+                <li class="col-md-10 mb-1 text-justify">{{ city }}</li>
+              </ul>
+            </mat-card-content>
+            <mat-card-content class="mb-0 mt-3">
+              <p class="col-md-10 mb-1 text-justify">{{ welcomeFastfoodTexts[25].text }}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</div>

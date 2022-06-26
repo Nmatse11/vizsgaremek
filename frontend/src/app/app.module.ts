@@ -8,6 +8,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
 import { AppRoutingModule } from './app-routing.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { NgwWowModule } from 'ngx-wow';
 
 import { AppComponent } from './app.component';
 
@@ -183,7 +184,8 @@ import { ProfilComponent } from './page/profil/profil.component';
     MatSelectModule,
     MatFormFieldModule,
     MatInputModule,
-    MatDividerModule
+    MatDividerModule,
+    NgwWowModule
   ],
   providers: [
     {

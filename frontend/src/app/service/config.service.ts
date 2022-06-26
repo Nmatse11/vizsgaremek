@@ -108,11 +108,18 @@ export interface IAllergenItem {
   img: string
 }
 
+export interface IWelcomeItem {
+  text: string
+}
+
 @Injectable({
   providedIn: 'root',
 })
 export class ConfigService {
   appName: string = 'Ételrendelés';
+
+  address: string = '6721 Szeged Szent István tér 13.'
+  addressLink: string = 'https://www.google.hu/maps/place/Szeged,+Szent+Istv%C3%A1n+t%C3%A9r+13,+6721/@46.2580117,20.1472819,17z/data=!3m1!4b1!4m5!3m4!1s0x4744880ce9d8082b:0x2eb708c1c761c49a!8m2!3d46.258008!4d20.1494706?hl=hu'
 
   adminNavbar: IMenuItem= { text: 'Admin', icon: 'dashboard' };
 
@@ -145,6 +152,95 @@ export class ConfigService {
   generationText: string = 'FONTOS! Csak olyan hét menüjét lehet random összeállítani, ami aktuálisan nem rendelhető meg!'
   generationButtonText: string = 'Új menü generálása'
   menuSaveButtonText: string = 'FONTOS! A mentés után már nem vonható vissza a változtatás!'
+
+  welcomeTexts: IWelcomeItem[] = [
+    {text: 'Üdvözöllek az oldalon!'},
+    {text: 'Mi a Zabálda nevű vállalkozásnál azért dolgozunk, hogy a kínálatunkban mindenki megtalálja a fogára valót.'},
+  ];
+
+  welcomeMenuTexts: IWelcomeItem[] = [
+    {text: 'Szeretnél minden hétköznap jól lakni?'},
+    {text: 'Ha a kérdésre a válaszod igen, akkor jó helyen jársz, mert mi az év minden hetére igazán finom és változatos menükkel készültünk Neked.'},
+    {text: 'A kínálatunkban többféle menü közül tudsz választani.'},
+    {text: 'Miért hívjuk őket menünek?'},
+    {text: 'Azért nevezzük őket menünek, mert ezeket mi előre összeállítottuk Neked az év minden hetére, nem Neked kell őket összeválogatni.'},
+    {text: 'Hogyan nézhetem meg a menü kínálatot?'},
+    {text: 'Ha a Menük oldalra kattintasz'},
+    {text: ', akkor megnézheted az aktuális heti és a következő két hétre rendelhető menüket.'},
+    {text: 'Mennyibe kerül egy menü?'},
+    {text: 'Az egyes menük árát feltüntettük napokra lebontva is, de ha szeretnél egy menüt megrendelni, akkor mind az öt napra meg kell rendelned, szóval valójában az egész heti árat kell majd kifizetned.'},
+    {text: 'Meddig kell megrendelni?'},
+    {text: 'A menük esetén fontos, hogy minden menüt legkésőbb az előző héten meg kell rendelned, csak így tudjuk vállalni az elkészítését.'},
+    {text: 'Fontos, hogy csak akkor tudjuk megkezdeni a rendelt menü elkészítését, ha annak az összege az előző hét végéig megérkezik a számlánkra.'},
+    {text: 'Milyen módon lehet leadni a rendelést?'},
+    {text: 'Menük esetén kizárólag internes rendelésre van lehetőség. Telefonon és személyesen nem áll módunkba rendelést felvenni.'},
+    {text: 'Milyen módon lehet kifizetni a rendelést?'},
+    {text: 'Menük esetén bankkártyával vagy átutalással is fizetheted a rendelésedet.'},
+    {text: 'Milyen csomagolásban kapom meg a megrendelt ételeket?'},
+    {text: 'Minden ételt külön dobozba csomagolunk. Cégünk számára nagyon fontos a fenntarthatóság, ezért minden csomagolóanyagunk, evőeszközünk újrahasznosított, lebomló és környezetkímélő anyagból készült.'},
+    {text: 'Fontos, hogy minden általunk adott doboz betehető a mikroba.'},
+    {text: 'Milyen szállítási módok közül lehet választani?'},
+    {text: 'Személyes átvétel'},
+    {text: 'A heti menük esetén minden hétköznap reggel 7 órától lehet átvenni a Zabálda épületében az adott napra megrendelt ételt.'},
+    {text: this.address},
+    {text: 'A személyes átvétel teljesen ingyenes.'},
+    {text: 'Kiszállítás'},
+    {text: 'Szeged egész területén '},
+    {text: 'ingyenes a kiszállítás. A kiszállítást reggel 7 órától kezdjük meg és igyekszünk a futárokat úgy szervezni, hogy mindenkihez legfeljebb reggel 8 óráig odaérjenek.'},
+    {text: 'További kiszállítási települések:'},
+    {text: 'Ezekre a településekre 1000 Ft kiszállítási díjat számolunk fel, ami az egész heti kiszállításra vonatkozik.'},
+  ];
+
+  welcomeFastfoodTexts: IWelcomeItem[] = [
+    {text: 'Szeretnél gyorsan jól lakni?'},
+    {text: 'Ha a kérdésre a válaszod igen, akkor jó helyen jársz, mert igazán finom gyorskaják készítésével is foglalkozunk.'},
+    {text: 'Miért hívjuk őket gyorskajáknak?'},
+    {text: 'Azért nevezzük őket gyorskajáknak, mert mindegyiket itt helyben a megrendelés után kezdjük el elkészíteni és azonnal kiszállítjuk, amint végeztünk vele.'},
+    {text: 'Hol nézhetem meg a gyorskaja kínálatot?'},
+    {text: 'Ha a Gyorskaják oldalra kattintasz'},
+    {text: ', akkor megnézheted az aktuális gyorskaja kínálatunkat.'},
+    {text: 'Mennyibe kerülnek a gyorskaják?'},
+    {text: 'Minden egyes gyorskajánál feltüntettük az árát. Pizzák esetén van lehetőség normál és családi pizza méretek közül választani.'},
+    {text: 'Mettől meddig lehet rendelni?'},
+    {text: 'Minden nap reggel 8-21 óráig fogadjuk a rendeléseket.'},
+    {text: 'Milyen módon lehet leadni a rendelést?'},
+    {text: 'Gyorskaják esetén telefonon, személyesen vagy interneten, ezen az oldalon keresztül is leadhatod a rendelésedet. '},
+    {text: 'Milyen módon lehet kifizetni a rendelést?'},
+    {text: 'Gyorskaják esetén készpénzzel, Szép kártyával, bankkártyával vagy átutalással is fizetheted a rendelésedet.'},
+    {text: 'Milyen szállítási módok közül lehet választani?'},
+    {text: 'Személyes átvétel'},
+    {text: 'Minden gyorskaja rendelés esetén fél órán belül jöhetsz a megrendelt ételekért.'},
+    {text: 'A személyesen megrendelt gyorskaját elkészülését megvárhatod üzletünkbe is.'},
+    {text: this.address},
+    {text: 'A személyes átvétel teljesen ingyenes.'},
+    {text: 'Kiszállítás'},
+    {text: 'Szeged egész területén '},
+    {text: 'ingyenes a kiszállítás. Az általunk vállalt kiszállítási maximum egy óra a megrendeléstől kezdve.'},
+    {text: 'További kiszállítási települések:'},
+    {text: 'Ezekre a településekre 1000 Ft kiszállítási díjat számolunk fel.'},
+  ];
+
+  cityItems: IWelcomeItem[] = [
+    {text: 'Algyő'},
+    {text: 'Sándorfalva'},
+    {text: 'Szatymaz'},
+    {text: 'Zsombó'},
+    {text: 'Kiskundorozsma'},
+    {text: 'Domaszék'},
+    {text: 'Röszke'},
+    {text: 'Újszentiván'},
+    {text: 'Tiszasziget'},
+    {text: 'Deszk'},
+    {text: 'Mórahalom'},
+    {text: 'Tiszaliget'},
+    {text: 'Bordány'},
+    {text: 'Makó'},
+    {text: 'Zákányszék'},
+    {text: 'Bordány'},
+    {text: 'Maroslele'},
+    {text: 'Klárafalva'},
+    {text: 'Kübekháza'},
+  ]
 
   navbarItems: IMenuItem[] = [
     { text: 'Főoldal', link: '/', icon: 'home' },
