@@ -411,10 +411,12 @@ export class ConfigService {
     {name: 'A listából válogass a Neked tetsző menük közül.'},
     {name: 'A rendeléshez a kosár ikonra kell kattintani és ugyanitt beállíthatod, hogy hány adagot szeretnél rendelni az adott termékből.'},
     {name: 'Bármilyen allergia esetén fontos, hogy figyelj az allergia ikonokra.'},
+    {name: 'Fontos, hogy egy adott hétre irányuló megrendelésnek legkésőbb az előző hét végig be kell érkeznie.'},
     {name: 'Végül válassz kiszállítási módot:'},
     {name: 'Személyes átvétel: INGYENES'},
     {name: 'Szegedi kiszállítás: INGYENES'},
     {name: 'Távolabbi településekre: 1000 Ft/hét'},
+    {name: 'Az aznapi menüvel a kiszállítást minden hétköznap reggel 7 órától kezdjük meg és mindenkihez legfeljebb reggel 8 óráig odaérünk.'},
   ]
 
   orderFastfoodDialog: IButtonItem[] = [
@@ -428,6 +430,7 @@ export class ConfigService {
     {name: 'Személyes átvétel: INGYENES'},
     {name: 'Szegedi kiszállítás: INGYENES'},
     {name: 'Távolabbi településekre: 1000 Ft/kiszállás'},
+    {name: 'Kiszállítás esetén az általunk vállalt kiszállítási határidő a rendelés beérkezése követő 1 óra.'},
   ]
 
   toastrItems: IToastrItem[] = [

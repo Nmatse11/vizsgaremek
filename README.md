@@ -540,3 +540,35 @@ A mégsére kattintva szintén visszatérünk a listaoldalra.
 Mivel a listaoldalon csak kevés adatot tudunk jól láthatóan megjeleníteni, ezért a táblázat utolsó cellájában minden megrendeléshez tartozik egy információs gomb. Erre kattintva egy új oldalra kerülünk, ahol űrlapos formában megjelennek a megrendelés adatai.
 Ezek az adatok a számviteli törvénynek megfelelően nem szerkeszthetőek.
 A vissza gombra kattintva visszatérünk a listaoldalra.
+
+---
+
+---
+
+## _A projekt egyéb adatai:_
+
+**Prioritás:**  
+magas
+
+**Megvalósítás időtartama:**  
+5 hét
+
+**További fejlesztési lehetőségek:**
+
+- A termékek megrendelési lehetőségének megvalósítása.
+- Kosár funkció megvalósítása.
+- A rendelések editor oldalán az egyes rendelés elemek árának feltüntése.
+- Az összeg kiszámítása a megrendelt termékek árának függvényében.
+- A számlák és a rendelések végösszegének összefésülése, hogy mindenhol a megfelelő összeg legyen.
+- Lezárt rendelések kezelése, hogy ott már ne lehessen módosítani.
+- A lezárt rendeléseken kívül a módosított rendelések jelölése a számla oldalon, hogy számvitelileg helyes legyen.
+- Lehessen stornózni és módosítani a számlát.
+- Számlák nyomtatási nézetének elkészítése. (Az egyes vásárlókhoz való hozzárendelése.)
+
+---
+
+---
+
+## **Linkek:**
+
+- [A dokumentáció itt érhető el.](https://github.com/Nmatse11/vizsgaremek/blob/main/DOCUMENTATION.md)

@@ -62,7 +62,7 @@
         [menuName1]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenuKey) * 2]][day]?.name"
         [Foods]="FoodList$ | async | filter: selectedMenuKey :'category' | filter: 'main_course':'menu'"
         [menuName2]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenuKey) * 2 + 1]][day]?.name"
-        [day]="day" [selectedMenuKey]="selectedMenuKey" [selectedWeek]="selectedWeek">
+        [day]="day" [selectedMenuKey]="selectedMenuKey" [selectedWeek]="selectedWeek" [weekNumber]="weekNumber">
       </app-base-editor-card>
       <app-base-editor-card
         *ngIf="menu && menuSelectPrimeArray.indexOf(selectedMenuKey) !== -1 && menuSelectPrimeArray.indexOf(selectedMenuKey) === 3"
@@ -70,12 +70,12 @@
         [menuName1]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenuKey) * 2]][day]?.name"
         [Foods]="FoodList$ | async | filter: selectedMenuKey :'category' | filter: 'main_course':'menu'"
         [menuName2]="menu[selectedWeek][menuVariable[menuSelectPrimeArray.indexOf(selectedMenuKey) * 2 + 1]][day]?.name"
-        [day]="day" [selectedMenuKey]="selectedMenuKey" [selectedWeek]="selectedWeek">
+        [day]="day" [selectedMenuKey]="selectedMenuKey" [selectedWeek]="selectedWeek" [weekNumber]="weekNumber">
       </app-base-editor-card>
       <app-base-editor-card *ngIf="menu && menuSelectOptionArray.indexOf(selectedMenuKey) !== -1" class="h-100"
         [Foods]="FoodList$ | async | filter: selectedMenuKey :'category'"
         [menuName2]="menu[selectedWeek][menuVariable[menuSelectOptionArray.indexOf(selectedMenuKey) + 12]][day]?.name"
-        [day]="day" [selectedMenuKey]="selectedMenuKey" [selectedWeek]="selectedWeek">
+        [day]="day" [selectedMenuKey]="selectedMenuKey" [selectedWeek]="selectedWeek" [weekNumber]="weekNumber">
       </app-base-editor-card>
     </div>
   </div>

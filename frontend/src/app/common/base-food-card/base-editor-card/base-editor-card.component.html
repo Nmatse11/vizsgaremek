@@ -2,7 +2,9 @@
   <mat-card-content class="d-flex flex-row">
     <p class="col-10 m-0 p-0" *ngIf="menuName1">{{ menuName1 }}</p>
     <p class="col-2 m-0 p-0">
-      <i class="material-icons edit_icon" *ngIf="SoupFoods && random === false" (click)="editItem(1)">edit</i>
+      <i class="material-icons edit_icon"
+        *ngIf="SoupFoods && random === false && selectedWeek !== weekNumber && selectedWeek !== weekNumber + 1 && selectedWeek !== weekNumber + 2"
+        (click)="editItem(1)">edit</i>
     </p>
   </mat-card-content>
   <mat-card-content *ngIf="editItem1 === true && SoupFoods">
@@ -22,7 +24,9 @@
   <mat-card-content class="mt-2 d-flex flex-row">
     <p class="col-10 m-0 p-0" *ngIf="menuName2">{{ menuName2 }}</p>
     <p class="col-2 m-0 p-0">
-      <i class="material-icons edit_icon" *ngIf="random === false" (click)="editItem(2)">edit</i>
+      <i class="material-icons edit_icon"
+        *ngIf="random === false && selectedWeek !== weekNumber && selectedWeek !== weekNumber + 1 && selectedWeek !== weekNumber + 2"
+        (click)="editItem(2)">edit</i>
     </p>
   </mat-card-content>
   <mat-card-content *ngIf="editItem2 === true && Foods">

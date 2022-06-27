@@ -20,6 +20,7 @@ export class BaseEditorCardComponent implements OnInit {
   @Input() day!: number
   @Input() selectedMenuKey!: string
   @Input() selectedWeek!: number
+  @Input() weekNumber!: number
 
   menuSelectArray: string[] = this.config.menuCardItems.map(item => item.key)
 

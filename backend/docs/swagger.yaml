@@ -9,6 +9,8 @@ paths:
   /bill:
     get:
       description: Returns a list of bills
+      tags:
+        - Bill
       security:
         - bearerAuth: []
       responses:
@@ -28,6 +30,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     post:
       description: Creates a new bill
+      tags:
+        - Bill
       security:
         - bearerAuth: []
       requestBody:
@@ -58,6 +62,8 @@ paths:
   /bill/{_id}:
     get:
       description: Get a bill
+      tags:
+        - Bill
       security:
         - bearerAuth: []
       parameters:
@@ -88,6 +94,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     patch:
       description: Updates a bill
+      tags:
+        - Bill
       security:
         - bearerAuth: []
       parameters:
@@ -123,6 +131,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     delete:
       description: Removes a bill
+      tags:
+        - Bill
       security:
         - bearerAuth: []
       parameters:
@@ -154,6 +164,8 @@ paths:
   /category-fastfood:
     get:
       description: Returns a list of fastfood categories
+      tags:
+        - Fastfood Category
       responses:
         "200":
           description: List of fastfood categories returned successfully
@@ -171,6 +183,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     post:
       description: Creates a new category of fastfood
+      tags:
+        - Fastfood Category
       requestBody:
         required: true
         content:
@@ -199,6 +213,8 @@ paths:
   /category-fastfood/{_id}:
     get:
       description: Get a category of fastfood
+      tags:
+        - Fastfood Category
       parameters:
         - in: path
           name: _id
@@ -227,6 +243,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     patch:
       description: Updates a category of fastfood
+      tags:
+        - Fastfood Category
       parameters:
         - in: path
           name: _id
@@ -260,6 +278,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     delete:
       description: Removes a category of fastfood
+      tags:
+        - Fastfood Category
       parameters:
         - in: path
           name: _id
@@ -289,6 +309,8 @@ paths:
   /category-menu:
     get:
       description: Returns a list of menu categories
+      tags:
+        - Menu Category
       responses:
         "200":
           description: List of menu categories returned successfully
@@ -306,6 +328,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     post:
       description: Creates a new category of menu
+      tags:
+        - Menu Category
       requestBody:
         required: true
         content:
@@ -334,6 +358,8 @@ paths:
   /category-menu/{_id}:
     get:
       description: Get a category of menu
+      tags:
+        - Menu Category
       parameters:
         - in: path
           name: _id
@@ -362,6 +388,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     patch:
       description: Updates a category of menu
+      tags:
+        - Menu Category
       parameters:
         - in: path
           name: _id
@@ -395,6 +423,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     delete:
       description: Removes a category of menu
+      tags:
+        - Menu Category
       parameters:
         - in: path
           name: _id
@@ -424,6 +454,8 @@ paths:
   /customer:
     get:
       description: Returns a list of customer
+      tags:
+        - Customer
       responses:
         "200":
           description: List of customer returned successfully
@@ -441,6 +473,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     post:
       description: Creates a new customer
+      tags:
+        - Customer
       requestBody:
         required: true
         content:
@@ -469,6 +503,8 @@ paths:
   /customer/{_id}:
     get:
       description: Get a customer
+      tags:
+        - Customer
       parameters:
         - in: path
           name: _id
@@ -497,6 +533,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     patch:
       description: Updates a customer
+      tags:
+        - Customer
       parameters:
         - in: path
           name: _id
@@ -530,6 +568,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     delete:
       description: Removes a customer
+      tags:
+        - Customer
       parameters:
         - in: path
           name: _id
@@ -559,6 +599,8 @@ paths:
   /customer/customer/names:
     get:
       description: Returns a list of customer names
+      tags:
+        - Customer
       responses:
         "200":
           description: Names of customer returned successfully
@@ -577,6 +619,8 @@ paths:
   /customer/customer/{email}:
     get:
       description: Get a customer with a specific email
+      tags:
+        - Customer
       parameters:
         - in: path
           name: email
@@ -607,6 +651,8 @@ paths:
   /foods-fastfood:
     get:
       description: Returns a list of fastfood foods
+      tags:
+        - Fastfood Food
       responses:
         "200":
           description: List of fastfood foods returned successfully
@@ -624,6 +670,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     post:
       description: Creates a new food of fastfood
+      tags:
+        - Fastfood Food
       requestBody:
         required: true
         content:
@@ -652,6 +700,8 @@ paths:
   /foods-fastfood/{_id}:
     get:
       description: Get a food of fastfood
+      tags:
+        - Fastfood Food
       parameters:
         - in: path
           name: _id
@@ -680,6 +730,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     patch:
       description: Updates a food of fastfood
+      tags:
+        - Fastfood Food
       parameters:
         - in: path
           name: _id
@@ -713,6 +765,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     delete:
       description: Removes a food of fastfood
+      tags:
+        - Fastfood Food
       parameters:
         - in: path
           name: _id
@@ -742,6 +796,8 @@ paths:
   /foods-menu:
     get:
       description: Returns a list of menu foods
+      tags:
+        - Menu Food
       responses:
         "200":
           description: List of menu foods returned successfully
@@ -759,6 +815,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     post:
       description: Creates a new food of menu
+      tags:
+        - Menu Food
       requestBody:
         required: true
         content:
@@ -787,6 +845,8 @@ paths:
   /foods-menu/{_id}:
     get:
       description: Get a food of menu
+      tags:
+        - Menu Food
       parameters:
         - in: path
           name: _id
@@ -815,6 +875,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     patch:
       description: Updates a food of menu
+      tags:
+        - Menu Food
       parameters:
         - in: path
           name: _id
@@ -848,6 +910,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     delete:
       description: Removes a food of menu
+      tags:
+        - Menu Food
       parameters:
         - in: path
           name: _id
@@ -877,6 +941,8 @@ paths:
   /menu:
     get:
       description: Returns a list of menu
+      tags:
+        - Menu
       responses:
         "200":
           description: List of menu returned successfully
@@ -895,6 +961,8 @@ paths:
   /menu/{_id}:
     get:
       description: Get a menu
+      tags:
+        - Menu
       parameters:
         - in: path
           name: _id
@@ -923,6 +991,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     patch:
       description: Updates a menu
+      tags:
+        - Menu
       parameters:
         - in: path
           name: _id
@@ -957,6 +1027,8 @@ paths:
   /menu/week/{week}:
     get:
       description: Get a specific weekly menu
+      tags:
+        - Menu
       parameters:
         - in: path
           name: week
@@ -988,6 +1060,8 @@ paths:
   /order-fastfood:
     get:
       description: Returns a list of fastfood orders
+      tags:
+        - Fastfood Order
       security:
         - bearerAuth: []
       responses:
@@ -1007,6 +1081,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     post:
       description: Creates a new order of fastfood
+      tags:
+        - Fastfood Order
       security:
         - bearerAuth: []
       requestBody:
@@ -1037,6 +1113,8 @@ paths:
   /order-fastfood/{_id}:
     get:
       description: Get a order of fastfood
+      tags:
+        - Fastfood Order
       security:
         - bearerAuth: []
       parameters:
@@ -1067,6 +1145,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     patch:
       description: Updates a order of fastfood
+      tags:
+        - Fastfood Order
       security:
         - bearerAuth: []
       parameters:
@@ -1102,6 +1182,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     delete:
       description: Removes a order of fastfood
+      tags:
+        - Fastfood Order
       security:
         - bearerAuth: []
       parameters:
@@ -1133,6 +1215,8 @@ paths:
   /order-fastfood/paid/orders:
     get:
       description: Returns list of paid fastfood orders
+      tags:
+        - Fastfood Order
       security:
         - bearerAuth: []
       responses:
@@ -1153,6 +1237,8 @@ paths:
   /order-fastfood/customer/{_id}:
     get:
       description: Get list of a customer all orders
+      tags:
+        - Fastfood Order
       security:
         - bearerAuth: []
       parameters:
@@ -1179,6 +1265,8 @@ paths:
   /order-menu:
     get:
       description: Returns a list of menu orders
+      tags:
+        - Menu Order
       security:
         - bearerAuth: []
       responses:
@@ -1198,6 +1286,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     post:
       description: Creates a new order of menu
+      tags:
+        - Menu Order
       security:
         - bearerAuth: []
       requestBody:
@@ -1228,6 +1318,8 @@ paths:
   /order-menu/{_id}:
     get:
       description: Get a order of menu
+      tags:
+        - Menu Order
       security:
         - bearerAuth: []
       parameters:
@@ -1258,6 +1350,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     patch:
       description: Updates a order of menu
+      tags:
+        - Menu Order
       security:
         - bearerAuth: []
       parameters:
@@ -1293,6 +1387,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     delete:
       description: Removes a order of menu
+      tags:
+        - Menu Order
       security:
         - bearerAuth: []
       parameters:
@@ -1324,6 +1420,8 @@ paths:
   /order-menu/paid/orders:
     get:
       description: Returns list of paid menu orders
+      tags:
+        - Menu Order
       security:
         - bearerAuth: []
       responses:
@@ -1344,6 +1442,8 @@ paths:
   /order-menu/customer/{_id}:
     get:
       description: Get list of a customer all menu orders
+      tags:
+        - Menu Order
       security:
         - bearerAuth: []
       parameters:
@@ -1370,8 +1470,8 @@ paths:
   /user:
     get:
       description: Returns a list of users
-      security:
-        - bearerAuth: []
+      tags:
+        - User
       responses:
         "200":
           description: List of users returned successfully
@@ -1389,8 +1489,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     post:
       description: Creates a new user
-      security:
-        - bearerAuth: []
+      tags:
+        - User
       requestBody:
         required: true
         content:
@@ -1419,8 +1519,8 @@ paths:
   /user/{_id}:
     get:
       description: Get a user
-      security:
-        - bearerAuth: []
+      tags:
+        - User
       parameters:
         - in: path
           name: _id
@@ -1449,8 +1549,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     patch:
       description: Updates a user
-      security:
-        - bearerAuth: []
+      tags:
+        - User
       parameters:
         - in: path
           name: _id
@@ -1484,8 +1584,8 @@ paths:
                 $ref: "#/components/schemas/Error"
     delete:
       description: Removes a user
-      security:
-        - bearerAuth: []
+      tags:
+        - User
       parameters:
         - in: path
           name: _id
@@ -1550,6 +1650,37 @@ paths:
             text/html:
               schema:
                 type: string
+  /signup:
+    post:
+      description: Creates a new user with password
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Signup"
+      responses:
+        "201":
+          description: User has been logged in successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                example: { message: "user created" }
+        "400":
+          description: Missing credentials
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "401":
+          description: Unauthorized, process failed
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
 components:
   securitySchemes:
     bearerAuth:
@@ -1990,6 +2121,22 @@ components:
         customerID:
           type: string
           example: "629e4f9c2cd842ed2e447cc8"
+    Login:
+      type: object
+      properties:
+        success:
+          type: boolean
+        accessToken:
+          type: string
+        user:
+          type: object
+          $ref: "#/components/schemas/User"
+          additionalProperties:
+            password:
+              type: string
+    Signup:
+      type: object
+      example: { email: "kovacs.peter@gmail.com", password: "customer" }
     Error:
       type: object
       required:
