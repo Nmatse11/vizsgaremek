@@ -102,11 +102,12 @@
 
         </div>
 
-        <div class="row col-10 offset-1">
-          <button [disabled]="categoryForm.invalid" mat-raised-button color="save" class="mr-2" type="submit">{{
+        <div class="row col-10 offset-1 d-flex flex-column flex-sm-row">
+          <button [disabled]="categoryForm.invalid" mat-raised-button color="save" class="mr-sm-2 mb-3 mb-sm-0"
+            type="submit">{{
             editPageText[1].name }}</button>
-          <button mat-raised-button color="cancel" [routerLink]="['/', 'fastfood', 'category' ]" class="mr-2"
-            type="button">
+          <button mat-raised-button color="cancel" [routerLink]="['/', 'fastfood', 'category' ]"
+            class="mr-sm-2 mb-3 mb-sm-0" type="button">
             {{ editPageText[3].name }}
           </button>
           <button *ngIf="id !== '0'" mat-raised-button color="delete" (click)="onDelete(category._id)" type="button">

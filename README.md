@@ -29,7 +29,7 @@ Az információk nem túl hosszúak és összetettek, hogy a felhasználó azonn
 **Elfogadási kritérium:**  
 Megfelelő, reszponzív menüsáv, ami az összes a felhasználó szerepkörének megfelelő menüpontot tartalmazza.
 Kezdéskor bejelentkezés és regisztráció menüpontok láthatóak.
-Bejelentkezés esetén a bejelentkező neve és a kijelentkezés gomb.
+Bejelentkezés esetén a desktop nézetveb bejelentkező neve és a kijelentkezés gomb. Mobil nézetben pedig ennek megfelelő gombok.
 
 ---
 
@@ -51,7 +51,7 @@ A pontos dátum folyamatos figyelése és ennek megfelelően az oldal tartalmán
 **Elfogadási kritérium:**
 
 - Egyértelműen jelölni azt, hogy melyik hetet látjuk éppen.
-- Külön gombok az előttünk álló hetek kiválasztására.
+- Külön gombok az előttünk álló két hét kiválasztására.
 
 **3. pont**
 
@@ -69,7 +69,7 @@ Egy gombcsoport, aminek elemeire kattintva a megadott menü konstrukcióhoz gör
 
 **5. pont**
 
-> _Minden menü mellett megjelennek az opcionálisan választható egyéb termékek._
+> _A főmenük alatt megjelennek az opcionálisan választható egyéb termékek._
 
 **Elfogadási kritérium:**
 Opcionális termékek:
@@ -88,7 +88,7 @@ Opcionális termékek:
 
 - Egyértelműen látszik, hogy melyik menü és opcionális termék mennyibe kerül egy hétre, illetve egy napra.
 - A termékek rendelési kódjának feltüntetése
-- A megrendeléshez szükséges gomb elhelyezése (a vásárlók bejelentkezés esetén látható)
+- A megrendeléshez szükséges gomb elhelyezése (a vásárlók bejelentkezés esetén látható) - FEJLESZTÉSI LEHETŐSÉG
 
 **7. pont**
 
@@ -107,9 +107,9 @@ Az aloldalon feltűnő helyen elhelyezünk egy gombot, ami felugró ablakként s
 
 **Elfogadási kritérium:**
 
-- Könnyen azonosítható, hogy melyik étel melyik menükonstrukcióhoz tartozik
-- A leves és a főétel egy egységet alkot. Az áruk együtt kerül megadásra, ez adja ki egy menü egy napi árát.
-- A reggelik, s desszertek, a sütemények, a savanyúságok és az üdítők opcionálisan vásárolhatóak a menühöz. Ezek ára szintén feltüntetésre kerül és nincsenek benne a menü sem napi, sem heti árában.
+- Könnyen azonosítható, hogy melyik étel melyik menükonstrukcióhoz tartozik.
+- A leves és a főétel egy egységet alkot. Ezek ára együttesen kerül megadásra, ez adja ki egy menü egy napi árát.
+- A reggelik, a desszertek, a sütemények, a savanyúságok és az üdítők opcionálisan vásárolhatóak a menühöz. Ezek ára szintén feltüntetésre kerül és nincsenek benne a menü sem napi, sem heti árában.
 
 **2. pont**
 
@@ -119,8 +119,7 @@ Az aloldalon feltűnő helyen elhelyezünk egy gombot, ami felugró ablakként s
 
 - Az ételeket kártyák segítségével jelenítjük meg egy adott napra egy adott menühöz kapcsolva.
 - A kártyán látszik az adott étel neve és egy info ikon, aminek a segítségével megnézhetjük a róla készült fotó és a hozzá tartozó allergéneket.
-- Az információk között szerepel, hogy mekkora mennyiségben (grammal vagy literben) rendelhetjük meg az adott ételt a kiválasztott menükonstrukcióban.
-- Az étel neve alatt szerepel az ára Ft-ban megadva.
+- Az információk között szerepel, hogy mekkora mennyiségben (grammal vagy literben) rendelhetjük meg az adott ételt a kiválasztott menükonstrukcióból.
 
   **3. pont**
 
@@ -154,7 +153,7 @@ A vállalt kiszállítási időt is megadjuk.
 **Elfogadási kritérium:**  
 A gyorskaják fajták szerint jól elkülönítve, felsorolva jelennek meg.
 Ezekhez nem tartozik kép, viszont az allergéneket itt is feltüntetjük.
-Minden sor végén szerepel az adott ételhez tartozó ár, illetve egy megrendelés gomb (a vásárlók bejelentkezés esetén látható)
+Minden sor végén szerepel az adott ételhez tartozó ár, illetve egy megrendelés gomb (a vásárlók bejelentkezés esetén látható) - FEJLESZTÉSI LEHETŐSÉG
 A hét csoport:
 
 - Pizzák
@@ -173,11 +172,11 @@ A hét csoport:
 
 **Elfogadási kritérium:**  
 Űrlapos formában kérjük be az adatokat.
-Kell felhasználó név, jelszó, illetve a rendeléshez szükség van az illető telefonszámára, email címére, címére és a kiszállítási címre.
+Kell email cím és jelszó, illetve a rendeléshez szükség van az illető telefonszámára, címére és a kiszállítási címre.
 Az űrlap kitöltése közben már automatikusan történik a validáció.
-Hiba esetén szövege hibaüzenetben jelöljük a felhasználónak a problémát.
+Hiba esetén szöveges hibaüzenetben jelöljük a felhasználónak a problémát.
 Sikeres regisztráció esetén a szerepkörben megfelelő oldalra navigálunk át.
-Mégsem esetén a főoldalra térünk vissza.
+Mégse gombra kattintás esetén a főoldalra térünk vissza.
 
 ### Belépési aloldal:
 
@@ -187,11 +186,10 @@ Mégsem esetén a főoldalra térünk vissza.
 
 **Elfogadási kritérium:**  
 Űrlapos formában kérjük be az adatokat.
-Kell felhasználó név, jelszó.
+Kell email cím és jelszó.
 A bejelentkezés gombra kattintáskor történik a validáció és az autentikáció.
-Hiba esetén szövege hibaüzenetben jelöljük a felhasználónak a problémát.
+Hiba esetén szöveges hibaüzenetben jelöljük a felhasználónak a problémát.
 Sikeres belépés esetén a szerepkörben megfelelő oldalra navigálunk át.
-Mégsem esetén a főoldalra térünk vissza.
 
 ### Dashboard aloldal:
 
@@ -235,13 +233,6 @@ A táblázatban megjelenő adatok könnyebb áttekintése miatt nem jelenítjük
 
 **5. pont**
 
-> _Az egyes főkategóriákhoz külön szűrő gombok elhelyezése_
-
-**Elfogadási kritérium:**  
-Mivel a menühöz tartozó ételek és a gyorskaják teljesen más felépítésűek, ezért külön gombok vannak arra, hogy a főkategóriák között választhassunk. Ebben az esetben újra töltődik a táblázat a megfelelő adatokkal.
-
-**6. pont**
-
 > _Új étel felvétele_
 
 **Elfogadási kritérium:**  
@@ -251,21 +242,21 @@ A mentés előtt automatikus validáció történik, ami nem engedi a rossz adat
 A sikeres mentés esetén egy felugró üzenetet kapunk a műveletről és visszatérünk a listaoldalra, ahol már a friss adatok látszanak.
 A mégsére kattintva szintén visszatérünk a listaoldalra.
 
-**7. pont**
+**6. pont**
 
 > _Egy étel adatainak megtekintése_
 
 **Elfogadási kritérium:**  
-Mivel a listaoldalon csak kevés adatot tudunk jól láthatóan megjeleníteni, ezért a táblázat utolsó cellájában minden ételhez tartozik egy információs gomb. Erre kattintva egy új oldalra kerülünk, ahol az ételről készült fotót is megnézhetjük, illetve űrlapos formában megjelennek az adatok is.
+Mivel a listaoldalon csak kevés adatot tudunk jól láthatóan megjeleníteni, ezért a táblázat utolsó cellájában minden ételhez tartozik egy információs gomb. Erre kattintva egy új oldalra kerülünk, ahol menühöz kapcsolódó étel esetén a róla készült fotót is megnézhetjük, illetve űrlapos formában megjelennek az adatok is.
 Az menühöz tartozó ételekhez esetén nem csak azt nézhetjük meg, ami az adatbázisban szerepel, hanem azokat az adatok is láthatóak, hogy
 
-- hányszor szerepel az aktuális 4 hetes menüben,
 - hányszor szerepelt eddig összesen
-- melyik hét melyik napján lesz elérhető
-  Megfelelő gombra kattintva szerkeszthetjük és törölhetjük az adott ételt.
-  A mégsére kattintva visszatérünk a listaoldalra.
+- melyik héten volt, van vagy lesz elérhető
 
-**8. pont**
+Megfelelő gombra kattintva szerkeszthetjük és törölhetjük az adott ételt.
+A mégsére kattintva visszatérünk a listaoldalra.
+
+**7. pont**
 
 > _Egy étel törlése az adatbázisból_
 
@@ -275,7 +266,7 @@ A listaoldalon a táblázat utolsó cellájában lévő törlés gombbal.
 Vagy a információs oldalon az adatok alján lévő törlés gomb segítségével.
 A törlés előtt egy biztonsági kérdést kapunk, amiben meg kell erősítenünk, hogy valóban törölni szeretnénk-e az adott ételt.
 A sikeres törlés esetén egy felugró üzenetet kapunk a műveletről és visszatérünk a listaoldalra, ahol már a frissített adatok látszanak.
-A mégsére kattintva szintén visszatérünk a listaoldalra.
+A mégse gombra kattintva szintén visszatérünk a listaoldalra.
 
 ### Kategóriák aloldal:
 
@@ -325,7 +316,7 @@ Megfelelő gombra kattintva új kategóriát vehetünk fel az adatbázisba.
 Űrlapos formában történik az adatok bevitele.
 A mentés előtt automatikus validáció történik, ami nem engedi a rossz adatok elmentését.
 A sikeres mentés esetén egy felugró üzenetet kapunk a műveletről és visszatérünk a listaoldalra, ahol már a friss adatok látszanak.
-A mégsére kattintva szintén visszatérünk a listaoldalra.
+A mégse gombra kattintva szintén visszatérünk a listaoldalra.
 
 **7. pont**
 
@@ -333,7 +324,7 @@ A mégsére kattintva szintén visszatérünk a listaoldalra.
 
 **Elfogadási kritérium:**  
 Mivel a listaoldalon csak kevés adatot tudunk jól láthatóan megjeleníteni, ezért a táblázat utolsó cellájában minden kategóriához tartozik egy információs gomb. Erre kattintva egy új oldalra kerülünk, ahol űrlapos formában megjelennek az adott kategória adatai. Megfelelő gombra kattintva szerkeszthetjük és törölhetjük az adott kategóriát.
-A mégsére kattintva visszatérünk a listaoldalra.
+A mégse gombra kattintva visszatérünk a listaoldalra.
 
 **8. pont**
 
@@ -343,9 +334,9 @@ A mégsére kattintva visszatérünk a listaoldalra.
 Egy adott kategóriát kétféleképpen is törölhetünk az adatbázisból.
 A listaoldalon a táblázat utolsó cellájában lévő törlés gombbal.
 Vagy a információs oldalon az adatok alján lévő törlés gomb segítségével.
-A törlés előtt egy biztonsági kérdést kapunk, amiben meg kell erősítenünk, hogy valóban törölni szeretnénk-e az adott gyorskaját.
+A törlés előtt egy biztonsági kérdést kapunk, amiben meg kell erősítenünk, hogy valóban törölni szeretnénk-e az adott kategóriát.
 A sikeres törlés esetén egy felugró üzenetetkapunk a műveletről és visszatérünk a listaoldalra, ahol már a frissített adatok látszanak.
-A mégsére kattintva szintén visszatérünk a listaoldalra.
+A mégse gombra kattintva szintén visszatérünk a listaoldalra.
 
 ### Menü szerkesztése aloldal:
 
@@ -354,28 +345,22 @@ A mégsére kattintva szintén visszatérünk a listaoldalra.
 > _Az adatbázisban szereplő összes menü szerkesztésére szolgáló oldal._
 
 **Elfogadási kritérium:**  
-Könnyen átlátható táblázatos forma, ahol egy űrlap segítségével állíthatjuk be, hogy az egyes menüket négy hétre.
+Könnyen átlátható táblázatos forma, ahol egy űrlap segítségével állíthatjuk be, hogy az egyes menüket az összes hetére.
 
 **2. pont**
 
 > _Minden menünek külön jelenik meg._
 
 **Elfogadási kritérium:**  
-Gombok segítségével választhatunk, hogy éppen melyik menüt szeretnénk szerkeszteni. Ez azért fontos, mert így csak az adott menühöz tartozó ételek fognak megjelenni az űrlapon
+Gombok segítségével választhatunk, hogy éppen melyik menüt szeretnénk szerkeszteni. Ez azért fontos, mert így csak az adott menühöz tartozó ételek fognak megjelenni az űrlapon.
+Fontos, hogy az aktuálisan megrendelhető három hét menüje nem szerkeszthető.
 
 **3. pont**
-
-> _A változatos étrend kialakítása._
-
-**Elfogadási kritérium:**  
-Nagyon fontos, hogy a menük változatosak legyenek és kiegyensúlyozott étrendet biztosítsanak a végfelhasználóknak, ezért különböző logikai megoldások segítségével folyamatosan mutatják az adminnak, hogy melyik étel került régen sorra. Így elkerülve a sokszori ismétlést.
-
-**4. pont** OPCIONÁLIS
 
 > _Menük random generálása._
 
 **Elfogadási kritérium:**  
-Az admin munkáját megkönnyítően egy random menügeneráló gomb is került az oldalra, ami figyelve a változatosságra készíti el a menüterveket.
+Az admin és az editor munkáját megkönnyítően egy random menügeneráló gomb is került az oldalra, ami automatikusan készíti el a menüterveket egy adott konstrukcióhoz egy adott hétre.
 Természetesen ezeket később még lehet módosítani.
 
 ### Vásárlók aloldal:
@@ -417,7 +402,7 @@ Alap esetben a regisztrációs aloldalon történő adatok megadásával törté
 Űrlapos formában történik az adatok bevitele.
 A mentés előtt automatikus validáció történik, ami nem engedi a rossz adatok elmentését.
 A sikeres mentés esetén egy felugró üzenetetkapunk a műveletről és visszatérünk a listaoldalra, ahol már a friss adatok látszanak.
-A mégsére kattintva szintén visszatérünk a listaoldalra.
+A mégse gombra kattintva szintén visszatérünk a listaoldalra.
 
 **7. pont**
 
@@ -425,9 +410,9 @@ A mégsére kattintva szintén visszatérünk a listaoldalra.
 
 **Elfogadási kritérium:**  
 Mivel a listaoldalon csak kevés adatot tudunk jól láthatóan megjeleníteni, ezért a táblázat utolsó cellájában minden vásárlóhoz tartozik egy információs gomb. Erre kattintva egy új oldalra kerülünk, ahol űrlapos formában megjelennek a vásárló adatai.
-Az alapinformációkon túl láthatjuk, hogy az adott vásárló hányszor vásárolt tőlünk, illetve mekkora összegben.
+Az alapinformációkon túl láthatjuk, hogy az adott vásárló milyen ételt, mikor és hányszor vásárolt.
 Megfelelő gombra kattintva szerkeszthetjük és törölhetjük az adott vásárlót.
-A mégsére kattintva visszatérünk a listaoldalra.
+A mégse gombra kattintva visszatérünk a listaoldalra.
 
 **8. pont**
 
@@ -482,7 +467,7 @@ Alap esetben a regisztrációs kosáron keresztül történik az új megrendelé
 Űrlapos formában történik az adatok bevitele.
 A mentés előtt automatikus validáció történik, ami nem engedi a rossz adatok elmentését.
 A sikeres mentés esetén egy felugró üzenetetkapunk a műveletről és visszatérünk a listaoldalra, ahol már a friss adatok látszanak.
-A mégsére kattintva szintén visszatérünk a listaoldalra.
+A mégse gombra kattintva szintén visszatérünk a listaoldalra.
 
 **7. pont**
 
@@ -490,6 +475,7 @@ A mégsére kattintva szintén visszatérünk a listaoldalra.
 
 **Elfogadási kritérium:**  
 Mivel a listaoldalon csak kevés adatot tudunk jól láthatóan megjeleníteni, ezért a táblázat utolsó cellájában minden megrendeléshez tartozik egy információs gomb. Erre kattintva egy új oldalra kerülünk, ahol űrlapos formában megjelennek a megrendelés adatai.
+Ezen az oldalon szerepel az adott rendelés összes tétele, feltüntetve a kategóriát és rendelési mennyiséget.
 Megfelelő gombra kattintva szerkeszthetjük és törölhetjük az adott megrendelést.
 A mégsére kattintva visszatérünk a listaoldalra.
 
@@ -512,8 +498,7 @@ A mégsére kattintva szintén visszatérünk a listaoldalra.
 > _Az adatbázisban nyilvántartott számlák táblázatos megjelenítése._
 
 **Elfogadási kritérium:**  
-Az adatbázisban szereplő összes számla felsorolása táblázatos formában. Egy számla id alapján össze van kötve a vásárlók adatbázisával, a könnyebb értelmezhetőség miatt, amikor egy megrendelést adatait látjuk, akkor az id helyett a vásárló neve jelenik meg.
-A számlán szerepel az adott kategóriai kódja és a megrendelési darabszáma. Ennek segítségével számolódik ki a számla végösszege.
+Az adatbázisban szereplő összes számla felsorolása táblázatos formában. Egy számla id alapján össze van kötve a rendelések adatbázissal, a könnyebb értelmezhetőség miatt, amikor egy megrendelést adatait látjuk, akkor az id helyén a rendelés azonodító jelenik meg.
 
 **2. pont**
 
@@ -553,5 +538,5 @@ A mégsére kattintva szintén visszatérünk a listaoldalra.
 
 **Elfogadási kritérium:**  
 Mivel a listaoldalon csak kevés adatot tudunk jól láthatóan megjeleníteni, ezért a táblázat utolsó cellájában minden megrendeléshez tartozik egy információs gomb. Erre kattintva egy új oldalra kerülünk, ahol űrlapos formában megjelennek a megrendelés adatai.
-Egy külön gombra kattintva nyomtatható formában is megtekinthetjük a számla adatait.
+Ezek az adatok a számviteli törvénynek megfelelően nem szerkeszthetőek.
 A vissza gombra kattintva visszatérünk a listaoldalra.

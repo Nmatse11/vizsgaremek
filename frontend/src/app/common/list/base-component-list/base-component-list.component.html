@@ -1,14 +1,14 @@
-<div class="container pt-3">
+<div class="container pt-3 d-flex justify-content-center">
   <hr>
   <hr>
-  <div class="button-group d-flex justify-content-center">
-    <button mat-raised-button color="add" class="mr-3 pt-2 pb-1" [ngClass]="categoryName === 'menu' ? 'active' : ''"
-      [routerLink]="['/', 'menu', componentName]" type="button">
-      <h2>{{ setButtonText('menu', componentName) }}</h2>
+  <div class="button-group d-flex flex-column flex-lg-row justify-content-center">
+    <button mat-raised-button color="add" class="mr-lg-3 pt-2 pb-1 mb-3 mb-lg-0"
+      [ngClass]="categoryName === 'menu' ? 'active' : ''" [routerLink]="['/', 'menu', componentName]" type="button">
+      <h2 class="h4 h2-sm">{{ setButtonText('menu', componentName) }}</h2>
     </button>
     <button mat-raised-button color="add" class="pt-2 pb-1" [ngClass]="categoryName === 'fastfood' ? 'active' : ''"
       [routerLink]="['/', 'fastfood', componentName]" type="button">
-      <h2>{{ setButtonText('fastfood', componentName) }}</h2>
+      <h2 class="h4 h2-sm">{{ setButtonText('fastfood', componentName) }}</h2>
     </button>
   </div>
   <hr>

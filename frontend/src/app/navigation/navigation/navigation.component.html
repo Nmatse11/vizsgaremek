@@ -6,7 +6,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+    <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
       <li class="nav-item" *ngFor="let item of navbarItems">
         <a class="nav-link d-flex flex-row align-items-center" [routerLink]="item.link" data-toggle="collapse"
           data-target=".navbar-collapse.show">
@@ -31,7 +31,7 @@
         <a class="nav-link d-flex flex-row align-items-center" [routerLink]="item.link" data-toggle="collapse"
           data-target=".navbar-collapse.show">
           <i class="material-icons">{{ item.icon }} </i>
-          <p class="nav-link-text">{{ item.text }}</p>
+          <p class="nav-link-text loginText">{{ item.text }}</p>
         </a>
       </li>
     </ul>
@@ -39,12 +39,15 @@
       <li class="nav-item" *ngFor="let item of loginUserNavbarItems">
         <a class="nav-link d-flex flex-row align-items-center" [routerLink]="item.link" data-toggle="collapse"
           data-target=".navbar-collapse.show">
-          <i class="material-icons">{{ item.icon }} </i>
-          <p *ngIf="item.text !== loginUserNavbarItems[1].text && user.role === 'customer'" class="nav-link-text">
+          <i class="material-icons" *ngIf="item.icon !== 'logout'">{{ item.icon }}</i>
+          <i class="material-icons" *ngIf="item.icon === 'logout'" (click)="onLogout()">{{ item.icon }}</i>
+          <p *ngIf="item.text !== loginUserNavbarItems[1].text && user.role === 'customer'"
+            class="nav-link-text customerText">
             {{ customerName }}</p>
-          <p *ngIf="item.text !== loginUserNavbarItems[1].text && user.role !== 'customer'" class="nav-link-text">
+          <p *ngIf="item.text !== loginUserNavbarItems[1].text && user.role !== 'customer'"
+            class="nav-link-text userText">
             {{ item.text }}</p>
-          <a *ngIf="item.text === loginUserNavbarItems[1].text" class="nav-link-text" (click)="onLogout()">
+          <a *ngIf="item.text === loginUserNavbarItems[1].text" class="nav-link-text userText" (click)="onLogout()">
             {{ item.text }}
           </a>
         </a>

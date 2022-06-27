@@ -283,6 +283,12 @@ export class ConfigService {
     {name: 'hozzáadása'}
   ]
 
+  filterItems: IButtonItem[] = [
+    {name: 'Keresés'},
+    {name: 'oszlopok szerint'},
+    {name: 'Bármilyen egyezés'}
+  ]
+
   foodMenuItems: ITableColumnItem[] = [
     {key: 'name', title: 'Név'},
     {key: 'menu', title: 'Menü'},
@@ -335,7 +341,7 @@ export class ConfigService {
   billMenuItems: ITableColumnItem[] = [
     {key: 'orderDate', title: 'Rendelés dátuma'},
     {key: 'billDate', title: 'Számla dátuma'},
-    {key: 'orderID', title: 'Rendelés azonosító'},
+    {key: 'orderID', title: 'Megrendelő neve'},
     {key: 'type', title: 'Típus'},
     {key: 'amount', title: 'Összeg'},
     {key: 'status', title: 'Státusz'}
@@ -393,6 +399,35 @@ export class ConfigService {
 
   dialogItems: IDialogItem[] = [
     {title: 'Megerősítés', message: 'Biztos vagy benne, hogy törölni szeretnéd?', ok: 'Igen', cancel: 'Mégse'}
+  ]
+
+  orderDialogItems: IDialogItem[] = [
+    {title: 'Rendelési információk', message: '', ok: 'Ok', cancel: 'Vissza'}
+  ]
+
+  orderMenuDialog: IButtonItem[] = [
+    {name: 'Először is a rendeléshez be kell jelentkezni.'},
+    {name: 'Ezután a gombok segítségével kiválaszthatod azt a hetet, amikor rendelni szeretnél.'},
+    {name: 'A listából válogass a Neked tetsző menük közül.'},
+    {name: 'A rendeléshez a kosár ikonra kell kattintani és ugyanitt beállíthatod, hogy hány adagot szeretnél rendelni az adott termékből.'},
+    {name: 'Bármilyen allergia esetén fontos, hogy figyelj az allergia ikonokra.'},
+    {name: 'Végül válassz kiszállítási módot:'},
+    {name: 'Személyes átvétel: INGYENES'},
+    {name: 'Szegedi kiszállítás: INGYENES'},
+    {name: 'Távolabbi településekre: 1000 Ft/hét'},
+  ]
+
+  orderFastfoodDialog: IButtonItem[] = [
+    {name: 'A gyorskajákat személyesen és telefonon is megrendelheted.'},
+    {name: 'Az online rendeléshez be kell jelentkezni.'},
+    {name: 'Ezután a gombok segítségével kiválaszthatod a Neked tetsző gyorskaját/gyorskajákat.'},
+    {name: 'Fontos, hogy nem lehet darabszámot beállítani, vagyis ha egy termékből többet szeretnél rendelni, akkor többször kell elhelyezned a kosárba.'},
+    {name: 'Pizzából választhatsz, hogy normál vagy családi méretet szeretnél.'},
+    {name: 'Bármilyen allergia esetén fontos, hogy figyelj az allergia ikonokra.'},
+    {name: 'Végül válassz kiszállítási módot:'},
+    {name: 'Személyes átvétel: INGYENES'},
+    {name: 'Szegedi kiszállítás: INGYENES'},
+    {name: 'Távolabbi településekre: 1000 Ft/kiszállás'},
   ]
 
   toastrItems: IToastrItem[] = [
@@ -600,6 +635,7 @@ export class ConfigService {
     {name: 'Email cím'},
     {name: 'Jelszó'},
     {name: 'Vissza'},
+    {name: 'A megadott email cím vagy jelszó hibás.'}
   ];
 
   patternItems: IPatternItem[] = [

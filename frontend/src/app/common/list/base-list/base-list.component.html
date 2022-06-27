@@ -1,7 +1,7 @@
-<div class="container min-vh-100 pb-5">
+<div class="container min-vh-100 pb-5 px-0">
 
-  <h1 class=" text-center mt-3 tabletitle">{{ tableTitle }}</h1>
-  <div class="d-flex justify-content-center">
+  <h1 class="text-center mt-3 tabletitle">{{ tableTitle }}</h1>
+  <div class="d-flex justify-content-center mb-3">
     <button mat-raised-button color="add" *ngIf="categoryName"
       [routerLink]="['/', categoryName, componentName, 'edit', '0']" class="btn h5 mt-3">
       {{ addButton }}
@@ -12,21 +12,19 @@
     </button>
   </div>
 
-
-
   <div>
     <div *ngIf="columnsArray">
       <mat-form-field appearance="standard" class="float-left ml-4">
-        <mat-label>Keresés</mat-label>
+        <mat-label>{{ filterItems[0].name }}</mat-label>
         <input matInput (keyup)="applyFilter()" [(ngModel)]="phrase" placeholder="Kifejezés..." #input>
       </mat-form-field>
 
       <mat-form-field appearance="standard" class="ml-4">
-        <mat-label>oszlopok szerint</mat-label>
+        <mat-label>{{ filterItems[1].name }}</mat-label>
         <mat-select [(value)]="filterKey" (selectionChange)="applyFilter()">
-          <mat-option value="">Bármilyen egyezés</mat-option>
-          <mat-option *ngFor="let key of columnsArray" [value]="key">
-            {{ key }}
+          <mat-option [value]="''">{{ filterItems[2].name }}</mat-option>
+          <mat-option *ngFor="let key of filterColumns; index as i" [value]="key">
+            {{ filterArray[i] }}
           </mat-option>
         </mat-select>
       </mat-form-field>
@@ -43,7 +41,7 @@
     </div>
 
 
-    <div class="table-responsive mat-elevation-z8">
+    <div class="table-responsive mat-elevation-z8 px-0">
       <table *ngIf="List" mat-table matSort [dataSource]="List" class="admintable text-center">
 
         <ng-container [matColumnDef]="col.title" *ngFor="let col of columns">

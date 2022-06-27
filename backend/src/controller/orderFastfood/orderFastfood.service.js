@@ -10,7 +10,7 @@ exports.findAll = async () => {
   return doc.sort((a, b) => (new Date(a.date)) - (new Date(b.date)))
 };
 
-exports.findOne = id => OrderFastfood.findById(id)
+exports.findOne = id => OrderFastfood.findById(id).populate('customerID')
 
 exports.update = (id, updateData) => OrderFastfood.findByIdAndUpdate(id, updateData, { new: true });
 

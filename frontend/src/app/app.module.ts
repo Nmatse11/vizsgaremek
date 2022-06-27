@@ -103,6 +103,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { BarChartComponent } from './common/charts/bar-chart/bar-chart.component';
 import { PieChartComponent } from './common/charts/pie-chart/pie-chart.component';
 import { ProfilComponent } from './page/profil/profil.component';
+import { OrderDialogComponent } from './common/dialog/order-dialog/order-dialog.component';
 
 @NgModule({
   declarations: [
@@ -154,7 +155,8 @@ import { ProfilComponent } from './page/profil/profil.component';
     MenuCategoryComponent,
     FastfoodCategoryComponent,
     BaseComponentListComponent,
-    ProfilComponent
+    ProfilComponent,
+    OrderDialogComponent
   ],
   imports: [
     BrowserModule,

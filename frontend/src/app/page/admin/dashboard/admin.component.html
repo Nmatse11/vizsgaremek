@@ -1,11 +1,12 @@
-<div class="container py-1">
+<div class="container-fluid container-lg py-1">
   <hr>
   <hr>
-  <div class=" button-group d-flex flew-row justify-content-center mb-2">
-    <button mat-flat-button color="stat-button" class="mr-1 pb-0 text-white col-2" (click)="scroll('statMenu')">
+  <div class=" button-group d-flex flex-column flex-lg-row justify-content-center mb-2">
+    <button mat-flat-button color="stat-button" class="mr-1 pb-0 text-white col-lg-2 mb-2 mb-lg-0"
+      (click)="scroll('statMenu')">
       <p class="mb-0">{{ titles[2].title }}</p>
     </button>
-    <button mat-flat-button color="stat-button" class="mr-1 pb-0 text-white col-2" (click)="scroll('statFastfood')">
+    <button mat-flat-button color="stat-button" class="mr-1 pb-0 text-white col-lg-2" (click)="scroll('statFastfood')">
       <p class="mb-0">{{ titles[4].title }}</p>
     </button>
   </div>
@@ -13,7 +14,7 @@
   <hr>
 </div>
 
-<div class="container">
+<div class="container-fluid container-lg px-0">
   <div class="row">
     <div class="col-lg-8 offset-lg-2 d-flex justify-content-center my-3">
       <h2 class="dashboardTitle">{{ titles[0].title }}</h2>
@@ -30,7 +31,7 @@
     </div>
 
     <div class="col-lg-8 offset-lg-2 d-flex justify-content-center my-3">
-      <h4>{{ titles[1].title }}</h4>
+      <h4 class="text-center">{{ titles[1].title }}</h4>
     </div>
     <div class="col-12 col-lg-8 offset-lg-2 d-md-flex flex-sm-row"
       *ngIf="dontPaidOrderNumberMenu$ && allOfOrderNumberMenu$">
@@ -114,14 +115,14 @@
       </div>
     </div>
 
-    <div class="col-12 d-flex flex-column justify-content-center my-3"
+    <div class="col-12 d-flex flex-column justify-content-center my-3 px-0"
       *ngIf="FoodList$ && CategoryMenuList$ &&  OrderMenuList$" id="statMenu">
       <h4 class="dashboardTitle text-center">{{ titles[2].title }}</h4>
       <app-menu-cards [FoodList$]="FoodList$" [CategoryMenuList$]="CategoryMenuList$" [OrderMenuList$]="OrderMenuList$">
       </app-menu-cards>
     </div>
 
-    <div class="col-12 d-flex flex-column justify-content-center my-3"
+    <div class="col-12 d-flex flex-column justify-content-center my-3 px-0"
       *ngIf="FastfoodList$ && CategoryFastfoodList$ &&  OrderFastfoodList$" id="statFastfood">
       <h4 class="dashboardTitle text-center">{{ titles[4].title }}</h4>
       <app-fastfood-cards [FastfoodList$]="FastfoodList$" [CategoryFastfoodList$]="CategoryFastfoodList$"

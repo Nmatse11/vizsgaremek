@@ -1,23 +1,29 @@
-<div class="container py-1">
+<div class="container-fluid container-md py-1">
   <hr>
   <hr>
-  <div class=" button-group d-flex flew-row justify-content-center mb-2">
+  <div class=" button-group d-flex flex-md-row flex-column justify-content-center mb-2">
     <button *ngFor="let button of fastFoodPrimaryTitleItems" mat-flat-button color="primary-button"
-      class="mr-1 pb-0 text-white col-2" (click)="scroll('scroll'+button.key)">
+      class="mr-1 pb-0 text-white col-md-2 mb-2 mb-md-0" (click)="scroll('scroll'+button.key)">
       <p class="mb-0">{{ button.title }}</p>
     </button>
   </div>
-  <div class="button-group d-flex flew-row justify-content-center mb-2">
+  <div class="button-group d-flex flex-md-row flex-column justify-content-center mb-2">
     <button *ngFor="let button of fastFoodSecondaryTitleItems" mat-flat-button color="secondary-button"
-      class="mr-1 pb-0 col-2" (click)="scroll('scroll'+button.key)">
+      class="mr-1 pb-d-0 col-md-2 mb-2 mb-md-0" (click)="scroll('scroll'+button.key)">
       <p class="mb-0">{{ button.title }}</p>
     </button>
   </div>
   <hr>
   <hr>
+  <div class="button-group mb-2 d-flex justify-content-end">
+    <button mat-fab class="info" (click)="onOrderInformation()">
+      <i class="material-icons infoIcon pb-2">info</i>
+    </button>
+  </div>
 </div>
 
-<div *ngIf="fastfoodArray && fastfoodArray.length === 7" class="container pb-5 mb-5">
+
+<div *ngIf="fastfoodArray && fastfoodArray.length === 7" class="container-fluid container-md pb-5 mb-5">
   <div class="mb-5" *ngFor="let array of fastfoodArray; index as i" [id]="'scroll'+fastfoodCodes[i]">
     <app-base-fastfood-card *ngIf="i === 0" [background]="fastfoodClass[i]" [title]="fastfoodTitles[i]"
       [fastfoodArray]="fastfoodArray[i]" [price1]="priceArray[i]" [price2]="priceArray[i + 1]"

@@ -74,7 +74,6 @@ export class MenuCardsComponent implements OnInit {
       }
     }
 
-
   setNumberOfFood(categories: CategoryMenu[], foods: Food[]): void {
       categories.map(category => {
       let value = category.categoryCode

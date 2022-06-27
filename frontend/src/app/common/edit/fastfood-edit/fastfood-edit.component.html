@@ -79,9 +79,9 @@
           </div>
         </div>
 
-        <div class="row mb-2 justify-content-center">
-          <div class="col-lg-10 col-md-12 mb-5 d-flex">
-            <div class="col-lg-4 col-md-12 mb-2" *ngIf="id !== '0'">
+        <div class="row mb-md-2 justify-content-center">
+          <div class="col-lg-10 col-md-12 mb-5 d-flex flex-column flex-md-row">
+            <div class="col-lg-4 col-md-12 mb-2 numberOfDesktop" *ngIf="id !== '0'">
               <h6>{{ editPageText[4].name }}
                 <span class="font-weight-bold" *ngIf="fastfood.category === 'PIZ'">({{ editPageText[5].name }})</span>:
                 {{ fastfood.numberOfOrder }} {{ editPageText[7].name }}
@@ -91,7 +91,7 @@
             </div>
             <div class="d-flex flex-column">
               <p>{{ fastfoodEditItems[3].label }}</p>
-              <div class="d-flex flex-row">
+              <div class="d-flex flex-column flex-md-row">
                 <div class="custom-control custom-checkbox mr-3" *ngFor="let allergen of allergensValue; index as i">
                   <input class="custom-control-input" [(ngModel)]="fastfood[fastfoodEditItems[3].prop][0][allergen]"
                     [name]="allergen" type="checkbox" [id]="allergen">
@@ -101,15 +101,24 @@
                 </div>
               </div>
             </div>
+            <div class="col-lg-4 col-md-12 mt-4 numberOfMobil" *ngIf="id !== '0'">
+              <h6>{{ editPageText[4].name }}
+                <span class="font-weight-bold" *ngIf="fastfood.category === 'PIZ'">({{ editPageText[5].name }})</span>:
+                {{ fastfood.numberOfOrder }} {{ editPageText[7].name }}
+              </h6>
+              <h6 *ngIf="fastfood.category === 'PIZ'">{{ editPageText[4].name }} <span class="font-weight-bold">
+                  ({{ editPageText[6].name }})</span>: {{fastfood.numberOfOrderFamily }} {{ editPageText[7].name }}</h6>
+            </div>
           </div>
         </div>
 
 
-        <div class="row col-10 offset-1">
-          <button [disabled]="fastfoodForm.invalid" mat-raised-button color="save" class="mr-2" type="submit">{{
+        <div class="row col-10 offset-1 d-flex flex-column flex-sm-row">
+          <button [disabled]="fastfoodForm.invalid" mat-raised-button color="save" class="mr-sm-2 mb-3 mb-sm-0"
+            type="submit">{{
             editPageText[1].name }}</button>
-          <button mat-raised-button color="cancel" [routerLink]="['/', 'fastfood', 'product' ]" class="mr-2"
-            type="button">
+          <button mat-raised-button color="cancel" [routerLink]="['/', 'fastfood', 'product' ]"
+            class="mr-sm-2 mb-3 mb-sm-0" type="button">
             {{ editPageText[3].name }}
           </button>
           <button *ngIf="id !== '0'" mat-raised-button color="delete" (click)="onDelete(fastfood._id)" type="button">

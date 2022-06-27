@@ -54,3 +54,25 @@
     color: $light;
     letter-spacing: 0.1rem;
 }
+
+.loginText, .customerText {
+
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.userText {
+
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 993px) and (max-width: 1390px) {
+    display: none;
+  }
+}

@@ -23,7 +23,7 @@
 
 A /frontend/environments mappában be kell állítani az API-végpont elérési útvonalát, ha nincs ott
 
-- _environment.ts_ állomány: http://localhost:3000/
+- _environment.ts_ állomány: http://127.0.0.1:3000/
 - _environment.prod.ts_ állomány: http://localhost:3000/
 
 ## **4. Az alkalmazás indítása**
@@ -32,13 +32,6 @@ A megadott Docker container indítása és inicializálása:
 
 - El kell indítani a Docker Desktop alkalmazást
 - A /backend mappába belépve a terminálban ki kell adni az `npm run deploy` parancsot
-
-VAGY
-
-- A terminálon be kell lépni a /backend mappába és futtatni az `npm start` parancsot.
-- Egy másik terminálon be kell lépni a /frontend mappába és futtatni az `npm start` parancsot.
-- A http://localhost:3000/ API végponton fog működni az adatbázis
-- A http://localhost:4200/ API végponton fog futni az alkalmazás
 
 _Megjegyzés_:  
 A belépéshez érvényes e-mail-cím és jelszó párosok:

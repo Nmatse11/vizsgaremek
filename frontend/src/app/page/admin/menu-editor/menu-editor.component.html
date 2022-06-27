@@ -1,8 +1,8 @@
-<div class="container pt-4 pb-5 min-vh-100">
+<div class="container-fluid container-md pt-4 pb-5 min-vh-100">
   <hr>
   <hr>
-  <div class=" button-group d-flex flew-row justify-content-center my-4">
-    <mat-form-field class="mr-3 pt-3">
+  <div class=" button-group d-flex flex-sm-row flex-column justify-content-center my-4">
+    <mat-form-field class="mr-sm-3 pt-3">
       <mat-label>{{ menuEditorMenuSelect }}</mat-label>
       <mat-select [(ngModel)]="selectedMenuKey">
         <mat-option *ngFor="let menu of menuSelectArrayKey; index as i" [value]="menu">{{ menuSelectArrayName[i] }}
@@ -21,10 +21,10 @@
   </div>
   <hr>
   <hr>
-  <div class="container py-3 d-flex flew-row justify-content-center align-items-center">
-    <h4 class="mr-5">{{ menuSelectArrayName[menuSelectArrayKey.indexOf(selectedMenuKey)] }}</h4>
-    <h4 *ngIf="selectedWeek !== 0" class="mr-5">{{ selectedWeek }}. {{ weekText}}</h4>
-    <h4 *ngIf="selectedWeek === 0" class="mr-5">52. {{ weekText}}</h4>
+  <div class="container py-3 d-flex flex-md-row flex-column justify-content-center align-items-center">
+    <h4 class="text-center mr-md-5">{{ menuSelectArrayName[menuSelectArrayKey.indexOf(selectedMenuKey)] }}</h4>
+    <h4 *ngIf="selectedWeek !== 0" class="text-center mr-md-5">{{ selectedWeek }}. {{ weekText}}</h4>
+    <h4 *ngIf="selectedWeek === 0" class="text-center mr-md-5">52. {{ weekText}}</h4>
     <h4
       *ngIf="weekArray && getYear(this.weekService.getWeekDays(selectedWeek)[0]) && getYear(this.weekService.getWeekDays(selectedWeek)[4])
     || weekArray && !getYear(this.weekService.getWeekDays(selectedWeek)[0]) && !getYear(this.weekService.getWeekDays(selectedWeek)[4])">
@@ -48,7 +48,8 @@
     </h4>
   </div>
 
-  <div *ngIf="!randomMenu || cancel === true" class="container d-flex flex-row justify-content-center pb-5 h-100">
+  <div *ngIf="!randomMenu || cancel === true"
+    class="container d-flex flex-lg-row flex-column justify-content-center pb-5 h-100">
     <div *ngFor="let day of dayIndex" class="menu_card px-0">
       <mat-card class="h-10 menu_thead border rounded-0">
         <mat-card-content class="text-center">
@@ -79,7 +80,8 @@
     </div>
   </div>
 
-  <div *ngIf="randomMenu && cancel === false" class="container d-flex flex-row justify-content-center pb-5 h-100">
+  <div *ngIf="randomMenu && cancel === false"
+    class="container d-flex flex-lg-row flex-column justify-content-center pb-5 h-100">
     <div *ngFor="let day of dayIndex" class="menu_card px-0">
       <mat-card class="h-10 menu_thead border rounded-0">
         <mat-card-content class="text-center">
@@ -107,7 +109,7 @@
     </div>
   </div>
 
-  <div class="container col-6 offset-3 py-5 d-flex flex-column justify-content-center align-items-center">
+  <div class="container col-md-6 offset-md-3 py-5 d-flex flex-column justify-content-center align-items-center">
     <div class="font-weight-bold mb-2 text-center">{{ generationText }}</div>
     <div class="button-group d-flex flex-column justify-content-center align-items-center">
       <button
@@ -116,12 +118,12 @@
         {{ generationButtonText }} ( {{ selectedWeek }}. {{ weekText }} -
         {{ menuSelectArrayName[menuSelectArrayKey.indexOf(selectedMenuKey)] }} )
       </button>
-      <button *ngIf="randomMenu" mat-raised-button color="save" type="button" class="mt-5 btn-block"
+      <button *ngIf="randomMenu && cancel !== true" mat-raised-button color="save" type="button" class="mt-5 btn-block"
         [matTooltip]='menuSaveButtonText' TooltipTouchGestures="auto" matTooltipPosition="after"
         matTooltipClass="mat-save" (click)="saveMenu(selectedWeek, selectedMenuKey)">
         <h3 class="my-2">{{ editPageText[1].name }}</h3>
       </button>
-      <button *ngIf="randomMenu" mat-raised-button color="cancel" type="button" class="mt-5"
+      <button *ngIf="randomMenu && cancel !== true" mat-raised-button color="cancel" type="button" class="mt-5"
         (click)="cancelRandomMenu()">
         {{ editPageText[3].name }}
       </button>

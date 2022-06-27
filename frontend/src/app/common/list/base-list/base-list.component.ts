@@ -1,12 +1,10 @@
-import { AfterViewInit, Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ComponentFactoryResolver, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { Observable } from 'rxjs';
+import { Observable, filter } from 'rxjs';
 import { Customer } from 'src/app/model/customer';
-import { OrderFastfood } from 'src/app/model/order-fastfood';
-import { OrderMenu } from 'src/app/model/order-menu';
 import { ConfigService, ITableColumnItem } from 'src/app/service/config.service';
 import { CustomerService } from 'src/app/service/customer.service';
 import { DeleteDialogComponent } from '../../dialog/delete-dialog/delete-dialog.component';
@@ -31,8 +29,6 @@ export class BaseListComponent implements OnInit, AfterViewInit {
   @Input() componentName!: string;
   @Input() categoryName?: string;
 
-  @Input() sortPropIfObject!: string;
-
   @Output() removeById: EventEmitter<string> = new EventEmitter();
 
   @ViewChild(MatSort) sort: MatSort = new MatSort();
@@ -56,6 +52,9 @@ export class BaseListComponent implements OnInit, AfterViewInit {
 
   filterKey: string = '';
   phrase: string = '';
+  filterColumns!: string[]
+  filterArray!: string[]
+  filterItems = this.config.filterItems
 
   oderEditError = this.config.orderEditErrorText
 
@@ -75,9 +74,15 @@ export class BaseListComponent implements OnInit, AfterViewInit {
           this.columnsArray = []
           this.columns.map(item => this.columnsArray.push(item.title))
           this.columnsArray.push('option');
+          if (this.componentName !== 'bill') {
+          this.filterColumns = this.columns.map(item => item.key)
+          this.filterArray = this.columns.map(item => item.title)
+          }
 
           if (this.componentName === 'bill') {
             this.getCustomer()
+            this.filterColumns = this.columns.map(item => item.key).filter(item => item !== 'orderID')
+            this.filterArray = this.columns.map(item => item.title).filter(item => item !== 'Megrendelő neve')
           }
 
           this.List = new MatTableDataSource<any>(result)
@@ -97,8 +102,19 @@ export class BaseListComponent implements OnInit, AfterViewInit {
 
           this.List.sort = this.sort;
           this.List.sortingDataAccessor = (row: any, colName: string): string => {
-            if (typeof row[colName] === 'object') {
-              return row[colName][this.sortPropIfObject] as string
+            this.columns.filter(item => {
+                if (item.title === colName) {
+                  colName = item.key
+                }
+              })
+            if (colName === 'allergens' || colName === "shipAddress") {
+                return Object.values(row[colName][0]).join(' ') as string
+            }
+            if (colName === 'customerID') {
+              return Object.entries(row[colName]).filter(item => item[0] === 'firstName' || item[0] === 'lastName').flat()[1] as string
+            }
+            if (colName === 'orderID') {
+              return row[colName]._id as string
             }
             return row[colName] as string;
           }
@@ -285,22 +301,88 @@ export class BaseListComponent implements OnInit, AfterViewInit {
 
   filterFunction(data: any, jsonString: string) {
     const filterObject = JSON.parse(jsonString);
-    const phrase = filterObject.phrase.toLowerCase();
+    let phrase = filterObject.phrase.toLowerCase();
     const filterKey = filterObject.filterKey;
+
+    const transformData = [
+      {key: 'breakfast', name: 'reggeli'},
+      {key: 'soup', name: 'leves'},
+      {key: 'main_course', name: 'főétel'},
+      {key: 'dessert', name: 'desszert'},
+      {key: 'cake', name: 'sütemény'},
+      {key: 'pickles', name: 'savanyúság'},
+      {key: 'drink', name: 'üdítő'},
+      {key: 'salata', name: 'saláta'},
+      {key: 'side_dish', name: 'köret'},
+      {key: 'menu', name: 'menü'},
+      {key: 'fastfood', name: 'gyorskaja'},
+      {key: 'prime', name: 'főmenü'},
+      {key: 'option', name: 'opcionális'},
+      {key: 'primary', name: 'elsődleges'},
+      {key: 'secondary', name: 'mellékeles'},
+      {key: 'new', name: 'Új'},
+      {key: 'paid', name: 'Fizetett'},
+      {key: 'free', name: 'Ingyenes kiszállítás'},
+      {key: 'personal', name: 'Személyes átvétel'},
+      {key: 'shipping', name: 'Kiszállítás'},
+      {key: 'gluten', name: 'Glutén'},
+      {key: 'milk', name: 'Tej'},
+      {key: 'soya', name: 'Szója'},
+      {key: 'egg', name: 'Tojás'},
+      {key: 'peanut', name: 'Földimogyoró'},
+      {key: 'walnut', name: 'Diófélék'},
+      {key: 'true', name: 'igen'},
+      {key: 'false', name: 'nem'}
+
+    ]
 
     if (!phrase) { return true };
 
-    let array = [];
+    if (phrase) {
+      transformData.filter(item => {
+        if (item.name.toLowerCase().includes(phrase)) {
+          phrase = item.key;
+        }
+      })
+    }
+
+    let array: any = [];
 
     if (filterKey) {
-      array[0] = typeof data[filterKey] === 'object' ?
-        Object.values(data[filterKey]) : data[filterKey];
+      if (filterKey === 'allergens') {
+        array[0] = Object.keys(data[filterKey][0]).filter(item => data[filterKey][0][item] === true)
+      }
+      if (filterKey === 'customerID') {
+        let customerArray = Object.entries(data[filterKey]).filter(item => item[0] === 'firstName' || item[0] === 'lastName').flat()
+        array[0] = [customerArray[1], customerArray[3]]
+      }
+      if (data[filterKey] && typeof data[filterKey][0] === 'object' && filterKey !== 'allergens' && filterKey !== 'customerID') {
+        array[0] = Object.values(data[filterKey][0])
+      }
+      if (data[filterKey] && typeof data[filterKey][0] !== 'object' && filterKey !== 'allergens' && filterKey !== 'customerID') {
+        array[0] = data[filterKey];
+      }
     } else {
-      array = Object.keys(data)
-        .map(key => typeof data[key] === 'object' ?
-          Object.values(data[key]) : data[key]);
-    }
-    return array.flat().join(' ').trim().toLowerCase().includes(phrase);
+      Object.keys(data)
+      .map(key => {
+          if (key === 'allergens') {
+            array.push(Object.keys(data[key][0]).filter(item => data[key][0][item] === true))
+          }
+          if (key === 'customerID') {
+            let customerArray = Object.entries(data[key]).filter(item => item[0] === 'firstName' || item[0] === 'lastName').flat()
+            array.push(customerArray[1])
+            array.push(customerArray[3])
+          }
+          if (typeof data[key][0] === 'object' && key !== 'allergens' && key !== 'customerID') {
+            array.push(Object.values(data[key][0]))
+          }
+          if (typeof data[key][0] !== 'object' && key !== 'allergens' && key !== 'customerID' ) {
+            array.push(data[key])
+          }
+        })
+      }
+
+    return array.flat().join(' ').trim().toLowerCase().includes(phrase)
   };
 
   onDelete(id: string): void {

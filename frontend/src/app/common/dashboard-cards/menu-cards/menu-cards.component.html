@@ -1,46 +1,44 @@
-<div *ngIf="loading === true" class="container d-flex justify-content-center d-md-block">
-  <div class="row col-12 col-md-10 offset-md-1 my-3">
-    <div class="col-12 d-md-flex flex-sm-row justify-content-center">
-      <div class="col-12 col-md-6">
-        <app-base-dashboard-stat-card [cardTitle]="cardTitle1" [materialIcon]="materialIcon1"
-          [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle2" [menuCodes]="menuCodesPrimeWithoutN"
-          [menuNumber]="menuNumberPrime" [valueType]="valueType" [sumOfValue]="sumOfNumberPrime">
-        </app-base-dashboard-stat-card>
-      </div>
-      <div class="col-12 col-md-6">
-        <app-base-dashboard-stat-card [cardTitle]="cardTitle1" [materialIcon]="materialIcon1"
-          [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle2" [menuCodes]="menuCodesOption"
-          [menuNumber]="menuNumberOption" [valueType]="valueType" [sumOfValue]="sumOfNumberOption">
-        </app-base-dashboard-stat-card>
-      </div>
+<div *ngIf="loading === true" class="row col-12 col-md-10 offset-md-1 my-3 px-0 d-flex justify-content-center">
+  <div class="col-12 d-md-flex flex-sm-row justify-content-center">
+    <div class="col-12 col-md-6 justify-content-center">
+      <app-base-dashboard-stat-card [cardTitle]="cardTitle1" [materialIcon]="materialIcon1" [theadTitle1]="theadTitle1"
+        [theadTitle2]="theadTitle2" [menuCodes]="menuCodesPrimeWithoutN" [menuNumber]="menuNumberPrime"
+        [valueType]="valueType" [sumOfValue]="sumOfNumberPrime">
+      </app-base-dashboard-stat-card>
     </div>
-    <div class="col-12 d-md-flex flex-sm-row justify-content-center">
-      <div class="col-12 col-md-6">
-        <app-base-dashboard-stat-card [cardTitle]="cardTitle2" [materialIcon]="materialIcon2"
-          [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle2" [menuCodes]="menuCodesPrime"
-          [menuNumber]="menuOrderPrime" [valueType]="valueType" [sumOfValue]="sumOfOrderPrime">
-        </app-base-dashboard-stat-card>
-      </div>
-      <div class="col-12 col-md-6">
-        <app-base-dashboard-stat-card [cardTitle]="cardTitle2" [materialIcon]="materialIcon2"
-          [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle2" [menuCodes]="menuCodesOption"
-          [menuNumber]="menuOrderOption" [valueType]="valueType" [sumOfValue]="sumOfOrderOption">
-        </app-base-dashboard-stat-card>
-      </div>
+    <div class="col-12 col-md-6 justify-content-center">
+      <app-base-dashboard-stat-card [cardTitle]="cardTitle1" [materialIcon]="materialIcon1" [theadTitle1]="theadTitle1"
+        [theadTitle2]="theadTitle2" [menuCodes]="menuCodesOption" [menuNumber]="menuNumberOption"
+        [valueType]="valueType" [sumOfValue]="sumOfNumberOption">
+      </app-base-dashboard-stat-card>
     </div>
-    <div class="col-12 d-md-flex flex-sm-row justify-content-center">
-      <div class="col-12 col-md-6">
-        <app-base-dashboard-stat-card [cardTitle]="cardTitle3" [materialIcon]="materialIcon3"
-          [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle3" [menuCodes]="menuCodesPrime"
-          [menuNumber]="menuAmountPrime" [sumOfValue]="sumOfAmountPrime" [type]="type">
-        </app-base-dashboard-stat-card>
-      </div>
-      <div class="col-12 col-md-6">
-        <app-base-dashboard-stat-card [cardTitle]="cardTitle3" [materialIcon]="materialIcon3"
-          [theadTitle1]="theadTitle1" [theadTitle2]="theadTitle3" [menuCodes]="menuCodesOption"
-          [menuNumber]="menuAmountOption" [sumOfValue]="sumOfAmountOption" [type]="type">
-        </app-base-dashboard-stat-card>
-      </div>
+  </div>
+  <div class="col-12 d-md-flex flex-sm-row justify-content-center">
+    <div class="col-12 col-md-6 justify-content-center">
+      <app-base-dashboard-stat-card [cardTitle]="cardTitle2" [materialIcon]="materialIcon2" [theadTitle1]="theadTitle1"
+        [theadTitle2]="theadTitle2" [menuCodes]="menuCodesPrime" [menuNumber]="menuOrderPrime" [valueType]="valueType"
+        [sumOfValue]="sumOfOrderPrime">
+      </app-base-dashboard-stat-card>
+    </div>
+    <div class="col-12 col-md-6 justify-content-center">
+      <app-base-dashboard-stat-card [cardTitle]="cardTitle2" [materialIcon]="materialIcon2" [theadTitle1]="theadTitle1"
+        [theadTitle2]="theadTitle2" [menuCodes]="menuCodesOption" [menuNumber]="menuOrderOption" [valueType]="valueType"
+        [sumOfValue]="sumOfOrderOption">
+      </app-base-dashboard-stat-card>
+    </div>
+  </div>
+  <div class="col-12 d-md-flex flex-sm-row justify-content-center">
+    <div class="col-12 col-md-6 justify-content-center">
+      <app-base-dashboard-stat-card [cardTitle]="cardTitle3" [materialIcon]="materialIcon3" [theadTitle1]="theadTitle1"
+        [theadTitle2]="theadTitle3" [menuCodes]="menuCodesPrime" [menuNumber]="menuAmountPrime"
+        [sumOfValue]="sumOfAmountPrime" [type]="type">
+      </app-base-dashboard-stat-card>
+    </div>
+    <div class="col-12 col-md-6 justify-content-center">
+      <app-base-dashboard-stat-card [cardTitle]="cardTitle3" [materialIcon]="materialIcon3" [theadTitle1]="theadTitle1"
+        [theadTitle2]="theadTitle3" [menuCodes]="menuCodesOption" [menuNumber]="menuAmountOption"
+        [sumOfValue]="sumOfAmountOption" [type]="type">
+      </app-base-dashboard-stat-card>
     </div>
   </div>
 </div>

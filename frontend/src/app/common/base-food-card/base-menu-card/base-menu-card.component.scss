@@ -9,7 +9,11 @@
 }
 
 .allImg {
-  width: 1.5rem
+  width: 1.5rem;
+
+  @media screen and (max-width: 992px) {
+    width: 2rem;
+  }
 }
 
 .hoverImg {

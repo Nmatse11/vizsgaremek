@@ -36,5 +36,9 @@
 }
 
 .foodImg {
-  width: 30rem
+  width: 30rem;
+
+  @media screen and (max-width: 576px) {
+    width: 70vw;
+  }
 }

@@ -4,6 +4,13 @@ const createError = require('http-errors');
 const Menu = require('../../model/menu.model');
 const menuService = require('./menu.service');
 
+exports.findAll = (req, res, next) => {
+  return menuService.findAll()
+    .then(menus => {
+      res.json(menus);
+    });
+};
+
 exports.findOne = (req, res, next) => {
   return menuService.findOne(req.params.id)
     .then(menu => {

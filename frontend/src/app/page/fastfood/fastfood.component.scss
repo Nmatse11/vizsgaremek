@@ -46,3 +46,18 @@
     background-color: $a-b-e-menu-color
   }
 }
+
+.info {
+  background-color: $primary;
+  color: $light;
+  width: 5rem;
+  height: 5rem;
+
+  &:hover {
+    background-color: $secondary;
+  }
+}
+
+.infoIcon {
+  font-size: 3rem;
+}

@@ -5,6 +5,14 @@
   color: $light;
   width: 25rem;
 
+  @media screen and (max-width: 992px) {
+    width: 70vw;
+  }
+
+  @media screen and (max-width: 444px) {
+    width: 85vw;
+  }
+
   &:hover {
     background-color: $primary;
   }

@@ -34,3 +34,19 @@
 .card-header {
   background-color: $d-menu-color;
 }
+
+.numberOfDesktop {
+  display: block;
+
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+
+.numberOfMobil {
+  display: none;
+
+  @media screen and (max-width: 576px) {
+    display: block;
+  }
+}

@@ -9,6 +9,7 @@ import { CustomerService } from 'src/app/service/customer.service';
 import { OrderMenuItem } from 'src/app/model/order-menu-item';
 import { DeleteDialogComponent } from '../../dialog/delete-dialog/delete-dialog.component';
 import { MatDialog } from '@angular/material/dialog';
+import { MenuCategoryService } from 'src/app/service/menu-category.service';
 
 @Component({
   selector: 'app-menu-order-edit',
@@ -44,6 +45,9 @@ export class MenuOrderEditComponent implements OnInit {
   customerKeys: string[] = []
   customerValue: string[] = []
 
+  categoryPriceKeys: string[] = []
+  categoryPricevalue: number[] = []
+
   deleteDialog = this.config.dialogItems
 
   constructor(
@@ -54,6 +58,7 @@ export class MenuOrderEditComponent implements OnInit {
     private router: Router,
     private toastr: ToastrService,
     private dialog: MatDialog,
+    private menuCategoryService: MenuCategoryService,
   ) { }
 
   ngOnInit(): void {

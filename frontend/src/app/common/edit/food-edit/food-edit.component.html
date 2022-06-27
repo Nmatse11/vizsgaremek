@@ -28,7 +28,7 @@
             </div>
           </div>
           <div class="col-lg-5 col-md-12">
-            <div class="form-group mt-4 pt-1 d-flex flex-row">
+            <div class="form-group mt-sm-4 pt-1 d-flex flex-column flex-sm-row">
               <div class="custom-control custom-checkbox mr-3">
                 <input class="custom-control-input" [(ngModel)]="food[foodEditItems[6].prop]"
                   [name]="foodEditItems[6].prop" type="checkbox" [id]="foodEditItems[6].prop">
@@ -92,11 +92,11 @@
         </div>
 
 
-        <div class="row mb-2 justify-content-center">
+        <div class="row mb-md-2 justify-content-center">
           <div class="col-lg-10 col-md-12 mb-5 d-flex">
             <div class="d-flex flex-column">
               <p>{{ foodEditItems[3].label }}</p>
-              <div class="d-flex flex-row">
+              <div class="d-flex flex-column flex-md-row">
                 <div class="custom-control custom-checkbox mr-3" *ngFor="let allergen of allergensValue; index as i">
                   <input class="custom-control-input" [(ngModel)]="food[foodEditItems[3].prop][0][allergen]"
                     [name]="allergen" type="checkbox" [id]="allergen">
@@ -109,14 +109,14 @@
           </div>
         </div>
 
-        <div class="row mb-2 justify-content-center">
+        <div class="row mb-md-2 justify-content-center" *ngIf="id !== '0'">
           <div class="col-lg-10 col-md-12 d-flex flex-column" *ngIf="food.numberInMenu">
             <h6>{{ editPageText[15].name }}:
               {{ food.numberInMenu }} {{ editPageText[7].name }}</h6>
             <h6>{{ editPageText[16].name }}:</h6>
           </div>
-          <div class="col-lg-10 col-md-12 mb-5 d-flex flex-row" *ngIf="food.weekOfYear">
-            <span *ngFor="let week of food.weekOfYear" class="mr-2 text-center">
+          <div class="col-lg-10 col-md-12 mb-5 d-flex flex-sm-row flex-column" *ngIf="food.weekOfYear">
+            <span *ngFor="let week of food.weekOfYear" class="mr-2 text-sm-center">
               <span *ngIf="week === 0">52. {{ weekText }}</span>
               <span *ngIf="week !== 0">{{ week }}. {{ weekText }}</span>
             </span>
@@ -124,10 +124,12 @@
         </div>
 
 
-        <div class="row col-10 offset-1">
-          <button [disabled]="foodForm.invalid" mat-raised-button color="save" class="mr-2" type="submit">{{
+        <div class="row col-10 offset-1 d-flex flex-column flex-sm-row">
+          <button [disabled]="foodForm.invalid" mat-raised-button color="save" class="mr-sm-2 mb-3 mb-sm-0"
+            type="submit">{{
             editPageText[1].name }}</button>
-          <button mat-raised-button color="cancel" [routerLink]="['/', 'menu', 'product']" class="mr-2" type="button">
+          <button mat-raised-button color="cancel" [routerLink]="['/', 'menu', 'product']" class="mr-sm-2 mb-3 mb-sm-0"
+            type="button">
             {{ editPageText[3].name }}
           </button>
           <button *ngIf="id !== '0'" mat-raised-button color="delete" (click)="onDelete(food._id)" type="button">

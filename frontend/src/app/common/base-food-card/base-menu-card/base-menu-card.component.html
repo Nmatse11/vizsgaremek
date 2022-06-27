@@ -1,19 +1,19 @@
 <mat-card class="menu-card h-100 d-flex flex-column align-self-end border rounded-0 mat-elevation-z4">
-  <mat-card-content *ngIf="menuName1" class="mb-2">
+  <mat-card-content *ngIf="menuName1" class="mb-lg-2">
     <p>{{ menuName1 }}</p>
   </mat-card-content>
-  <mat-card-subtitle
-    class="text-right mr-2 pt-3 mb-2 text-muted mt-auto align-self-end d-flex flex-row justify-content-end"
+  <mat-card-content
+    class="text-right mr-5 mr-lg-2 pt-lg-3 mb-lg-2 pl-4 pl-md-0 text-muted mt-auto align-self-md-end d-flex flex-row justify-content-md-end"
     *ngIf="allergensSoup">
     <p class="small" *ngFor="let allergen of setAllergen(allergensSoup[0])" [matTooltip]='setAllergenName(allergen)'
       matTooltipPosition="below" TooltipTouchGestures="auto"> <img class="allImg" [src]="setAllergenIcon(allergen)"
         [alt]="allergen">
     </p>
-  </mat-card-subtitle>
+  </mat-card-content>
   <mat-card-subtitle *ngIf="menuName2 && allergensSoup" id="parent" class="text-left ml-2 mb-0 text-muted mt-auto">
     <i class="material-icons info">info</i>
     <div id="hover-content" class="border border-dark">
-      <h6 class="text-center mt-2">{{ menuName1 }}</h6>
+      <h6 class="text-center mt-2 mx-2 mx-lg-0">{{ menuName1 }}</h6>
       <img class="hoverImg" [src]="imgLinkSoup" alt="soup">
       <p *ngIf="weighSoup" class="text-right small mr-2 mb-1">{{ weightText }}: {{ weighSoup }} {{ unit }}</p>
       <p class="text-right small mr-2">{{ allergenText }}:
@@ -29,14 +29,15 @@
   <mat-card-content *ngIf="menuName2" class="mb-0">
     <p>{{ menuName2 }}</p>
   </mat-card-content>
-  <mat-card-footer class="text-right mr-2 mb-1 text-muted mt-auto align-self-end d-flex flex-row justify-content-end"
+  <mat-card-content
+    class="text-right mr-5 mr-lg-2 mb-md-0 mt-2 pt-3 mb-3 pb-2 pb-lg-0 pl-4 pl-md-0 text-muted mt-auto align-self-md-end d-flex flex-row justify-content-md-end"
     *ngIf="allergens">
     <p class="small" *ngFor="let allergen of setAllergen(allergens[0])" [matTooltip]='setAllergenName(allergen)'
       matTooltipPosition="below" TooltipTouchGestures="auto"> <img class="allImg" [src]="setAllergenIcon(allergen)"
         [alt]="allergen">
     </p>
-  </mat-card-footer>
-  <mat-card-footer id="parent" class="text-left ml-2 mb-0 text-muted mt-auto">
+  </mat-card-content>
+  <mat-card-footer id="parent" class="text-left ml-2 mb-5 mb-lg-0 pb-3 pb-lg-0 text-muted mt-auto">
     <i class="material-icons info">info</i>
     <div id="hover-content" class="border border-dark">
       <h6 *ngIf="!menuName2" class="text-center mt-2">{{ menuName1 }}</h6>

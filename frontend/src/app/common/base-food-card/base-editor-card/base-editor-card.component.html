@@ -6,7 +6,7 @@
     </p>
   </mat-card-content>
   <mat-card-content *ngIf="editItem1 === true && SoupFoods">
-    <mat-form-field class="m-0 p-0">
+    <mat-form-field class="m-0 p-0 col-12">
       <mat-label>{{ menuFormText[0] }}</mat-label>
       <mat-select [(ngModel)]="newMenuName1">
         <mat-option *ngFor="let food of SoupFoods" [value]="food.name">{{ food.name }}</mat-option>
@@ -26,7 +26,7 @@
     </p>
   </mat-card-content>
   <mat-card-content *ngIf="editItem2 === true && Foods">
-    <mat-form-field class="m-0 p-0">
+    <mat-form-field class="m-0 p-0 col-12">
       <mat-label>{{ menuFormText[0] }}</mat-label>
       <mat-select [(ngModel)]="newMenuName2">
         <mat-option *ngFor="let food of Foods" [value]="food.name">{{ food.name }}</mat-option>

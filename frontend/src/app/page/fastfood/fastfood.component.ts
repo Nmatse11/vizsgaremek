@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Observable } from 'rxjs';
+import { OrderDialogComponent } from 'src/app/common/dialog/order-dialog/order-dialog.component';
 import { CategoryFastfood } from 'src/app/model/category-fastfood';
 import { Fastfood } from 'src/app/model/fastfood';
 import { ConfigService } from 'src/app/service/config.service';
@@ -36,10 +38,14 @@ export class FastfoodComponent implements OnInit {
 
   allergensItems = this.config.allergensItems
 
+  orderDialog = this.config.orderDialogItems
+  orderFastfoodDialog = this.config.orderFastfoodDialog.map(item => item.name)
+
   constructor(
     private config: ConfigService,
     private fastfoodService: FastfoodService,
     private fastfoodCategoryService: FastfoodCategoryService,
+    private dialog: MatDialog,
   ) { }
 
   ngOnInit(): void {
@@ -85,6 +91,21 @@ export class FastfoodComponent implements OnInit {
     if (el) {
       el.scrollIntoView({behavior: 'smooth'});
     }
+  }
+
+  onOrderInformation(): void {
+    const confirmDialog = this.dialog.open(OrderDialogComponent, {
+      data: {
+        title: this.orderDialog[0].title,
+        message: this.orderFastfoodDialog,
+        ok: this.orderDialog[0].ok,
+        cancel: this.orderDialog[0].cancel
+      }
+    });
+    confirmDialog.afterClosed().subscribe(result => {
+      if (result === true) {
+      }
+    });
   }
 
 }

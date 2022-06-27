@@ -7,9 +7,9 @@
       <p *ngIf="!isPizza">{{ fastfood.descripiton }}</p>
     </mat-card-content>
     <mat-card-content class="d-flex flex-row mb-0" *ngIf="isPizza">
-      <p class=" col-8 mb-1">{{ fastfood.descripiton }}</p>
-      <h6 class="col-2 text-center text-muted">{{ normalPizza }} - {{ normalPizzaSize }} {{ unit }}</h6>
-      <h6 class="col-2 text-center text-muted">{{ familyPizza}} - {{ familyPizzaSize }} {{ unit }}</h6>
+      <p class="col-md-8 mb-1">{{ fastfood.descripiton }}</p>
+      <h6 class="col-2 text-center text-muted mobilScreen">{{ normalPizza }} - {{ normalPizzaSize }} {{ unit }}</h6>
+      <h6 class="col-2 text-center text-muted mobilScreen">{{ familyPizza}} - {{ familyPizzaSize }} {{ unit }}</h6>
     </mat-card-content>
     <mat-card-content class="d-flex flex-row mb-0">
       <mat-card-footer class="col-8 ml-2 text-muted mt-auto d-flex flex-row mb-0" *ngIf="fastfood.allergens">
@@ -18,12 +18,21 @@
             class="allImgFastFood" [src]="setAllergenIcon(allergen)" [alt]="allergen">
         </p>
       </mat-card-footer>
-      <h5 *ngIf="isPizza" class="col-2 text-center ml-1">{{ price1 | customCurrency }}</h5>
-      <h5 *ngIf="isPizza" class="col-2 text-center">{{ price2 | customCurrency }}</h5>
+      <h5 *ngIf="isPizza" class="col-2 text-center ml-1 mobilScreen">{{ price1 | customCurrency }}</h5>
+      <h5 *ngIf="isPizza" class="col-2 text-center mobilScreen">{{ price2 | customCurrency }}</h5>
     </mat-card-content>
     <mat-card-content class="d-flex justify-content-end mr-5 mb-1">
       <h5 *ngIf="fastfood.category === cat3">{{ price3 | customCurrency }}</h5>
       <h5 *ngIf="fastfood.category === cat1">{{ price1 | customCurrency }}</h5>
       <h5 *ngIf="fastfood.category === cat2">{{ price2 | customCurrency }}</h5>
     </mat-card-content>
+    <mat-card-content class="d-flex flex-row mb-0 mt-3" *ngIf="isPizza">
+      <h6 class="col-6 text-center text-muted justMobilScreen">{{ normalPizza }} - {{ normalPizzaSize }} {{ unit }}</h6>
+      <h6 class="col-6 text-center text-muted justMobilScreen">{{ familyPizza}} - {{ familyPizzaSize }} {{ unit }}</h6>
+    </mat-card-content>
+    <mat-card-content class="d-flex flex-row mb-0" *ngIf="isPizza">
+      <h5 class="col-6 text-center ml-1 justMobilScreen">{{ price1 | customCurrency }}</h5>
+      <h5 class="col-6 text-center justMobilScreen">{{ price2 | customCurrency }}</h5>
+    </mat-card-content>
   </mat-card>
+</div>

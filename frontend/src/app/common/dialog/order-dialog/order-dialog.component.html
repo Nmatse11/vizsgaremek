@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>{{ data.title }}</h1>
+<div mat-dialog-content>
+  <ul>
+    <li *ngFor="let message of data.message">{{ message }}</li>
+  </ul>
+</div>
+<div class="d-flex justify-content-center align-item-center m-3">
+  <input class="btn btn-success confirm-ok mr-3 w-50" type="button" [value]="data.ok" [mat-dialog-close]="true">
+  <input class="btn btn-danger confirm-cancel w-50" type="button" [value]="data.cancel" [mat-dialog-close]="false">
+</div>

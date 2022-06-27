@@ -6,6 +6,8 @@ import { ConfigService } from 'src/app/service/config.service';
 import { FoodService } from 'src/app/service/food.service';
 import { MenuService } from 'src/app/service/menu.service';
 import { WeekService } from 'src/app/service/week.service';
+import { MatDialog } from '@angular/material/dialog';
+import { OrderDialogComponent } from 'src/app/common/dialog/order-dialog/order-dialog.component';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -49,12 +51,16 @@ export class MenuComponent implements OnInit {
 
   buttonBoolean = [true, false, false]
 
+  orderDialog = this.config.orderDialogItems
+  orderMenuDialog = this.config.orderMenuDialog.map(item => item.name)
+
   constructor(
     public weekService: WeekService,
     private config: ConfigService,
     private menuService: MenuService,
     private foodService: FoodService,
     private menuCategoryService: MenuCategoryService,
+    private dialog: MatDialog,
   ) { }
 
   ngOnInit(): void {
@@ -66,7 +72,7 @@ export class MenuComponent implements OnInit {
     }
     if (new Date().getDay() === 6 || new Date().getDay() === 0) {
       this.weekNumber = this.weekService.weekNumber + 1
-      this.week = this.weekNumber + 1
+      this.week = this.weekNumber
     }
   }
 
@@ -87,6 +93,11 @@ export class MenuComponent implements OnInit {
   weekButton(value: number) {
     this.buttonBoolean = [false, false, false]
     this.buttonBoolean[value]= true
+    this.week = value + this.weekNumber
+  }
+
+  weekButtonMobil(value: number) {
+    this.buttonBoolean = [false, false, false]
     this.week = value + this.weekNumber
   }
 
@@ -135,8 +146,23 @@ export class MenuComponent implements OnInit {
     }
   }
 
-    customDateFormats(date: Date): string {
+  customDateFormats(date: Date): string {
     return date.toLocaleDateString('hu', { month: '2-digit', day: '2-digit', })
+  }
+
+  onOrderInformation(): void {
+    const confirmDialog = this.dialog.open(OrderDialogComponent, {
+      data: {
+        title: this.orderDialog[0].title,
+        message: this.orderMenuDialog,
+        ok: this.orderDialog[0].ok,
+        cancel: this.orderDialog[0].cancel
+      }
+    });
+    confirmDialog.afterClosed().subscribe(result => {
+      if (result === true) {
+      }
+    });
   }
 
 }

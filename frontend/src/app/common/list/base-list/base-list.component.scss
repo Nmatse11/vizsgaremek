@@ -4,6 +4,10 @@
 .tabletitle {
   font-family: 'Dancing Script', cursive;
   font-size: 5rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 4rem;
+  }
 }
 
 .admin {
@@ -35,6 +39,14 @@ button, .nav-link, mat-paginator, mat-checkbox, mat-icon-button  {
   &-add {
     background-color: $primary;
     color: $light;
+
+    @media screen and (max-width: 576px) {
+      width: 70vw;
+    }
+
+    @media screen and (max-width: 444px) {
+      width: 85vw;
+    }
   }
 
   &-edit {

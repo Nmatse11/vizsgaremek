@@ -75,7 +75,7 @@
           </div>
         </div>
 
-        <h4 class="col-lg-10 offset-1 mt-4 mb-2">{{ editPageText[8].name }}</h4>
+        <h4 class="col-lg-10 offset-lg-1 mt-4 mb-2">{{ editPageText[8].name }}</h4>
 
         <div class="row mt-2 mb-2 justify-content-center">
           <div class="form-group col-lg-5 col-md-6 mb-2">
@@ -133,7 +133,7 @@
           </div>
         </div>
 
-        <h4 class="col-lg-10 offset-1 mt-4 mb-2">{{ editPageText[9].name }}</h4>
+        <h4 class="col-lg-10 offset-lg-1 mt-4 mb-2">{{ editPageText[9].name }}</h4>
 
         <div class="row mt-2 mb-2 justify-content-center">
           <div class="form-group col-lg-5 col-md-6 mb-2">
@@ -192,17 +192,17 @@
           </div>
         </div>
 
-
         <div *ngIf="orderMenuArray[0] && orderMenuArray[0].length !== 0" class="row mt-2 mb-5 justify-content-center">
-          <h4 class="col-lg-10 offset-1 mt-4 mb-2">{{ editPageText[20].name }}</h4>
+          <h4 class="col-md-10 offset-md-1 mt-4 mb-2">{{ editPageText[20].name }}</h4>
 
-          <div class="col-lg-10 offset-1 d-flex flex-row" *ngFor="let orders of orderMenuArray[0]; index as i">
-            <p class="col-1 font-weight-bold">{{ i + 1 }}.</p>
-            <p class="col-2">{{ orders.date }}</p>
-            <div class="col-11 d-flex flex-column">
+          <div class="col-md-10 offset-md-1 d-flex flex-md-row flex-column"
+            *ngFor="let orders of orderMenuArray[0]; index as i">
+            <p class="col-lg-1 font-weight-bold">{{ i + 1 }}.</p>
+            <p class="col-md-3 col-lg-2">{{ orders.date }}</p>
+            <div class="col-md-10 col-lg-11 d-flex flex-column">
               <div *ngFor="let order of orderMenuArray[0][i].order" class="d-flex flex-row">
-                <p class="mr-2">{{ order.week }}. {{ weekText }}</p>
-                <p class="col-2">{{ getMenuName(order.menuCode) }}</p>
+                <p class="mr-md-2">{{ order.week }}. {{ weekText }}</p>
+                <p class="col-7 col-sm-4">{{ getMenuName(order.menuCode) }}</p>
                 <p>{{ order.portion }} {{ editPageText[7].name }}</p>
               </div>
             </div>
@@ -212,12 +212,13 @@
 
         <div *ngIf="orderFastfoodArray[0] && orderFastfoodArray[0].length !== 0"
           class="row mt-2 mb-5 justify-content-center">
-          <h4 class="col-lg-10 offset-1 mt-4 mb-2">{{ editPageText[21].name }}</h4>
+          <h4 class="col-md-10 offset-md-1 mt-4 mb-2">{{ editPageText[21].name }}</h4>
 
-          <div class="col-lg-10 offset-1 d-flex flex-row" *ngFor="let orders of orderFastfoodArray[0]; index as i">
-            <p class="col-1 font-weight-bold">{{ i + 1 }}.</p>
-            <p class="col-2">{{ orders.date }}</p>
-            <div class="col-11 d-flex flex-column">
+          <div class="col-md-10 offset-md-1 d-flex flex-md-row flex-column"
+            *ngFor="let orders of orderFastfoodArray[0]; index as i">
+            <p class="col-lg-1 font-weight-bold">{{ i + 1 }}.</p>
+            <p class="col-md-3 col-lg-2">{{ orders.date }}</p>
+            <div class="col-md-8 col-lg-11 d-flex flex-column">
               <div *ngFor="let order of orderFastfoodArray[0][i].order" class="d-flex flex-row">
                 <p class="mr-1">{{ getFastfoodName(order.productID) }}</p>
                 <p *ngIf="fastfoodPizza.includes(order.productID)">
@@ -227,10 +228,11 @@
           </div>
         </div>
 
-        <div class="row col-10 offset-1">
-          <button [disabled]="customerForm.invalid" mat-raised-button color="save" class="mr-2" type="submit">{{
+        <div class="row col-10 offset-1 d-flex flex-column flex-sm-row">
+          <button [disabled]="customerForm.invalid" mat-raised-button color="save" class="mr-sm-2 mb-3 mb-sm-0"
+            type="submit">{{
             editPageText[1].name }}</button>
-          <button mat-raised-button color="cancel" routerLink="/customer" class="mr-2" type="button">
+          <button mat-raised-button color="cancel" routerLink="/customer" class="mr-sm-2 mb-3 mb-sm-0" type="button">
             {{ editPageText[3].name }}
           </button>
           <button *ngIf="id !== '0'" mat-raised-button color="delete" (click)="onDelete(customer._id)" type="button">
